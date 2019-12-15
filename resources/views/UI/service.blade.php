@@ -17,7 +17,7 @@
     <!-- End banner Area -->	
 
     <!-- Start services Area -->
-    <section style="background-image:url({{asset('public/UI')}}/img/about/service-background.jpg);background-repeat: no-repeat;
+    <section style="background-image:url({{asset('UI')}}/img/about/service-background.jpg);background-repeat: no-repeat;
              background-size: 100% 100%;" class="services-area">
         <div style="background-color: rgba(0,0,0,0.5);padding: 120px 0px;" class="">
             <div class="container">

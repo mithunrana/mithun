@@ -183,7 +183,7 @@
                             </div>
                             <a href="{{asset('UI')}}/img/p2.jpg" class="img-pop-up">	
                                 <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="{{asset('public/UI')}}/img/preview.png" alt=""></div>
+                                    <div class="text align-self-center d-flex"><img src="{{asset('UI')}}/img/preview.png" alt=""></div>
                                 </div>
                             </a>                              		
                         </div>
@@ -200,7 +200,7 @@
                             </div>
                             <a href="{{asset('UI')}}/img/p3.jpg" class="img-pop-up">	
                                 <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="{{asset('public/UI')}}/img/preview.png" alt=""></div>
+                                    <div class="text align-self-center d-flex"><img src="{{asset('UI')}}/img/preview.png" alt=""></div>
                                 </div>
                             </a> 
 

@@ -12,7 +12,7 @@
                 <div class="single-post col-sm-12 col-lg-6 col-md-6">
                     <div style="background-color: #d8d8d8;">
                         <div class="feature-img">
-                            <img class="img-fluid" src="{{asset('public/UI')}}/img/blog/feature-img1.jpg" alt="">
+                            <img class="img-fluid" src="{{asset('UI')}}/img/blog/feature-img1.jpg" alt="">
                         </div>
                         <a class="posts-title" href="blog-single.html"><h3>Astronomy Binoculars A Great Alternative</h3></a>
                     </div>
@@ -21,7 +21,7 @@
                 <div class="single-post col-sm-12 col-lg-6 col-md-6">
                     <div style="background-color: #d8d8d8;">
                         <div class="feature-img">
-                            <img class="img-fluid" src="{{asset('public/UI')}}/img/blog/feature-img1.jpg" alt="">
+                            <img class="img-fluid" src="{{asset('UI')}}/img/blog/feature-img1.jpg" alt="">
                         </div>
                         <a class="posts-title" href="blog-single.html"><h3>Astronomy Binoculars A Great Alternative</h3></a>
                     </div>
@@ -40,10 +40,10 @@
                             <div class="overlay overlay-bg"></div>
                             <a href="#" target="_blank">
                                 <div class="thumb">
-                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('public/UI')}}/img/blog/cat-widget1.jpg" alt="">
+                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('UI')}}/img/blog/cat-widget1.jpg" alt="">
                                 </div>
                                 <div class="content-details">
-                                    <img style="height:60px;width:60px;" src="{{asset('public/UI')}}/img/download.png">
+                                    <img style="height:60px;width:60px;" src="{{asset('UI')}}/img/download.png">
                                 </div>
                             </a>
                         </div>
@@ -56,10 +56,10 @@
                             <div class="overlay overlay-bg"></div>
                             <a href="#" target="_blank">
                                 <div class="thumb">
-                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('public/UI')}}/img/blog/cat-widget1.jpg" alt="">
+                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('UI')}}/img/blog/cat-widget1.jpg" alt="">
                                 </div>
                                 <div class="content-details">
-                                    <img style="height:60px;width:60px;" src="{{asset('public/UI')}}/img/download.png">
+                                    <img style="height:60px;width:60px;" src="{{asset('UI')}}/img/download.png">
                                 </div>
                             </a>
                         </div>
@@ -72,10 +72,10 @@
                             <div class="overlay overlay-bg"></div>
                             <a href="#" target="_blank">
                                 <div class="thumb">
-                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('public/UI')}}/img/blog/cat-widget1.jpg" alt="">
+                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('UI')}}/img/blog/cat-widget1.jpg" alt="">
                                 </div>
                                 <div class="content-details">
-                                    <img style="height:60px;width:60px;" src="{{asset('public/UI')}}/img/download.png">
+                                    <img style="height:60px;width:60px;" src="{{asset('UI')}}/img/download.png">
                                 </div>
                             </a>
                         </div>
@@ -88,10 +88,10 @@
                             <div class="overlay overlay-bg"></div>
                             <a href="#" target="_blank">
                                 <div class="thumb">
-                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('public/UI')}}/img/blog/cat-widget1.jpg" alt="">
+                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('UI')}}/img/blog/cat-widget1.jpg" alt="">
                                 </div>
                                 <div class="content-details">
-                                    <img style="height:60px;width:60px;" src="{{asset('public/UI')}}/img/download.png">
+                                    <img style="height:60px;width:60px;" src="{{asset('UI')}}/img/download.png">
                                 </div>
                             </a>
                         </div>
@@ -104,10 +104,10 @@
                             <div class="overlay overlay-bg"></div>
                             <a href="#" target="_blank">
                                 <div class="thumb">
-                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('public/UI')}}/img/blog/cat-widget1.jpg" alt="">
+                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('UI')}}/img/blog/cat-widget1.jpg" alt="">
                                 </div>
                                 <div class="content-details">
-                                    <img style="height:60px;width:60px;" src="{{asset('public/UI')}}/img/download.png">
+                                    <img style="height:60px;width:60px;" src="{{asset('UI')}}/img/download.png">
                                 </div>
                             </a>
                         </div>
@@ -120,10 +120,10 @@
                             <div class="overlay overlay-bg"></div>
                             <a href="#" target="_blank">
                                 <div class="thumb">
-                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('public/UI')}}/img/blog/cat-widget1.jpg" alt="">
+                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('UI')}}/img/blog/cat-widget1.jpg" alt="">
                                 </div>
                                 <div class="content-details">
-                                    <img style="height:60px;width:60px;" src="{{asset('public/UI')}}/img/download.png">
+                                    <img style="height:60px;width:60px;" src="{{asset('UI')}}/img/download.png">
                                 </div>
                             </a>
                         </div>
@@ -136,10 +136,10 @@
                             <div class="overlay overlay-bg"></div>
                             <a href="#" target="_blank">
                                 <div class="thumb">
-                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('public/UI')}}/img/blog/cat-widget1.jpg" alt="">
+                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('UI')}}/img/blog/cat-widget1.jpg" alt="">
                                 </div>
                                 <div class="content-details">
-                                    <img style="height:60px;width:60px;" src="{{asset('public/UI')}}/img/download.png">
+                                    <img style="height:60px;width:60px;" src="{{asset('UI')}}/img/download.png">
                                 </div>
                             </a>
                         </div>
@@ -152,10 +152,10 @@
                             <div class="overlay overlay-bg"></div>
                             <a href="#" target="_blank">
                                 <div class="thumb">
-                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('public/UI')}}/img/blog/cat-widget1.jpg" alt="">
+                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('UI')}}/img/blog/cat-widget1.jpg" alt="">
                                 </div>
                                 <div class="content-details">
-                                    <img style="height:60px;width:60px;" src="{{asset('public/UI')}}/img/download.png">
+                                    <img style="height:60px;width:60px;" src="{{asset('UI')}}/img/download.png">
                                 </div>
                             </a>
                         </div>
@@ -168,10 +168,10 @@
                             <div class="overlay overlay-bg"></div>
                             <a href="#" target="_blank">
                                 <div class="thumb">
-                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('public/UI')}}/img/blog/cat-widget1.jpg" alt="">
+                                    <img class="content-image img-fluid d-block mx-auto" src="{{asset('UI')}}/img/blog/cat-widget1.jpg" alt="">
                                 </div>
                                 <div class="content-details">
-                                    <img style="height:60px;width:60px;" src="{{asset('public/UI')}}/img/download.png">
+                                    <img style="height:60px;width:60px;" src="{{asset('UI')}}/img/download.png">
                                 </div>
                             </a>
                         </div>
