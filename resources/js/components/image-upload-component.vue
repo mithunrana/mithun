@@ -21,7 +21,6 @@
                                                 <input type="text" class="form-control" v-model="name">
                                                 <strong>Image:</strong>
                                                 <input type="file" class="form-control" v-on:change="onImageChange">
-
                                                 <button  class="btn btn-success">Submit</button>
                                             </form>
                                         </div>

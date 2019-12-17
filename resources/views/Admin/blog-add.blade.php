@@ -87,7 +87,7 @@
                                         <div class="col-sm-12">
                                             <select  @change="changeCountry($event)" class="form-control col-sm-12">
                                                 <option value="">=============Select Category===========</option>
-                                                @foreach(App\BlogCategory::all() as $cat)
+                                                @foreach(App\Category::all() as $cat)
                                                     <option value="{{$cat->id}}">{{$cat->CategoryName}}</option>
                                                 @endforeach
                                             </select>
