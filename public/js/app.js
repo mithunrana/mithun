@@ -1941,6 +1941,8 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       Category: {},
+      categoryInsert: true,
+      categoryUpdate: false,
       success: '',
       CategoyList: [],
       CategoryDetails: {
@@ -1971,6 +1973,8 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     CategoryEdit: function CategoryEdit(row) {
+      this.categoryInsert = false;
+      this.categoryUpdate = true;
       this.CategoryDetails = row;
     },
     CategoryUpdate: function CategoryUpdate(data) {
@@ -37724,7 +37728,7 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "categoryurl" } }, [
+                _c("label", { attrs: { for: "browsertitle" } }, [
                   _vm._v("Browser Title:")
                 ]),
                 _vm._v(" "),
@@ -37738,7 +37742,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", id: "categoryurl" },
+                  attrs: { type: "text", id: "browsertitle" },
                   domProps: { value: _vm.CategoryDetails.CategoryBrowserTitle },
                   on: {
                     input: function($event) {
@@ -37821,27 +37825,31 @@ var render = function() {
                 })
               ]),
               _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-success",
-                  on: { click: _vm.CategorySave }
-                },
-                [_vm._v("Save")]
-              ),
+              _vm.categoryInsert
+                ? _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-success",
+                      on: { click: _vm.CategorySave }
+                    },
+                    [_vm._v("Save")]
+                  )
+                : _vm._e(),
               _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-success",
-                  on: {
-                    click: function($event) {
-                      return _vm.CategoryUpdate(_vm.CategoryDetails)
-                    }
-                  }
-                },
-                [_vm._v("Update")]
-              )
+              _vm.categoryUpdate
+                ? _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-success",
+                      on: {
+                        click: function($event) {
+                          return _vm.CategoryUpdate(_vm.CategoryDetails)
+                        }
+                      }
+                    },
+                    [_vm._v("Update")]
+                  )
+                : _vm._e()
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-sm-6" }, [

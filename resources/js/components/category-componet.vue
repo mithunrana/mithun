@@ -19,8 +19,8 @@
                                     <input type="text" v-model="CategoryDetails.CategoryUrl" class="form-control" id="categoryurl">
                                 </div>
                                 <div class="form-group">
-                                    <label for="categoryurl">Browser Title:</label>
-                                    <input type="text" v-model="CategoryDetails.CategoryBrowserTitle" class="form-control" id="categoryurl">
+                                    <label for="browsertitle">Browser Title:</label>
+                                    <input type="text" v-model="CategoryDetails.CategoryBrowserTitle" class="form-control" id="browsertitle">
                                 </div>
                                 <div class="form-group">
                                     <label for="seokeyword">Seo Keyword:</label>
@@ -30,8 +30,8 @@
                                     <label for="seodescription">Seo Description:</label>
                                     <textarea type="text" v-model="CategoryDetails.CategorySeoDescription" class="form-control" id="seodescription"></textarea>
                                 </div>
-                                <button @click="CategorySave"  class="btn btn-success">Save</button>
-                            <button @click="CategoryUpdate(CategoryDetails)"  class="btn btn-success">Update</button>
+                                <button v-if="categoryInsert" @click="CategorySave"  class="btn btn-success">Save</button>
+                            <button v-if="categoryUpdate" @click="CategoryUpdate(CategoryDetails)"  class="btn btn-success">Update</button>
                         </div>
 
                         <div class="col-sm-6">
@@ -69,6 +69,8 @@
         data(){
             return{
                 Category:{},
+                categoryInsert:true,
+                categoryUpdate:false,
                 success: '',
                 CategoyList:[],
                 CategoryDetails:{CategoryName:null,CategoryUrl:null,CategorySeoKeyword:null,CategorySeoDescription:null,CategoryBrowserTitle:null}
@@ -85,6 +87,8 @@
                 axios.post('/categorysave',this.CategoryDetails).then(response=>{this.success = response.data.success;});
             },
             CategoryEdit(row){
+                this.categoryInsert =false;
+                    this.categoryUpdate = true;
                 this.CategoryDetails = row;
             },
             CategoryUpdate(data){
