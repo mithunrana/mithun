@@ -16,12 +16,17 @@ class CreateBlogsTable extends Migration
         Schema::create('blogs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('browser_title');
-            $table->string('permalink');
             $table->string('blog_title');
+            $table->string('permalink');
+            $table->string('embedded_video');
+            $table->string('blog_details');
+            $table->integer('category');
+            $table->integer('blog_poster');
+            $table->integer('featured_image');
             $table->string('seo_keyword');
             $table->string('seo_description');
-            $table->string('embedded_video');
-            $table->integer('category');
+            $table->string('imageAltText');
+            $table->string('imageTitleText');
             $table->timestamps();
         });
     }
