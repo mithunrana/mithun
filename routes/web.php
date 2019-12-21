@@ -19,12 +19,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //=========================ADMIN SITE REQUEST START HERE ========================//
 Route::get('/category','CategoryController@index');
+Route::post('/categorysave','CategoryController@store');
 Route::get('/getall-category','CategoryController@getAll');
 Route::post('/update-category','CategoryController@categoryUpdate');
-Route::post('/categorysave','CategoryController@store');
 
+
+Route::get('/blog-manage','BlogController@manage');
 Route::get('/blog-add','BlogController@create');
-
+Route::post('/blog-add','BlogController@store');
 
 Route::get('/getallimage','ImageUploadController@imagelist');
 Route::post('/formSubmit','ImageUploadController@imageUpload');

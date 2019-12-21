@@ -82,27 +82,26 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <div class="row">
                                                         <p style="font-size: 19px;">Attachment Details: </p>
                                                         <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-10 col-xs-12">
-                                                            <img class="img-thumbnail" style="max-width: 100%;" :src="'Admin/img/b1.jpg'">
+                                                            <img class="img-thumbnail" style="max-width: 100%;" :src="imageData.imageurl">
                                                         </div>
                                                         <form action="">
                                                             <div style="margin-bottom:2px;" class="form-group">
-                                                                <label for="imagelocation">Email address:</label>
+                                                                <label for="imagelocation">Image Location:</label>
                                                                 <input type="text" v-model="imageData.imageurl" class="form-control" id="imagelocation">
                                                             </div>
                                                             <div style="margin-bottom:2px;" class="form-group">
-                                                                <label for="ImageAltText">Password:</label>
-                                                                <input type="text" class="form-control" id="ImageAltText">
+                                                                <label for="getImageAltText">Image Alt:</label>
+                                                                <input type="text" class="form-control" id="getImageAltText">
                                                             </div>
+                                                            <input type="hidden" :value="imageData.id" id="getimageId">
                                                             <div style="margin-bottom:2px;" class="form-group">
-                                                                <label for="ImageTitleText">Password:</label>
-                                                                <input type="text" class="form-control" id="ImageTitleText">
+                                                                <label for="getImageTitleText">Image Title:</label>
+                                                                <input type="text" class="form-control" id="getImageTitleText">
                                                             </div>
-                                                            <button type="button" class="btn btn-default">Select</button>
+                                                            <button type="button" class="btn btn-info" id="selectimagedata">Image Data</button>
                                                         </form>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

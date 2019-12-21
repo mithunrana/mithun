@@ -2120,7 +2120,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -38425,91 +38424,97 @@ var render = function() {
                             ]),
                             _vm._v(" "),
                             _c("div", { staticClass: "col-sm-4" }, [
-                              _c("div", { staticClass: "row" }, [
-                                _c(
-                                  "p",
-                                  { staticStyle: { "font-size": "19px" } },
-                                  [_vm._v("Attachment Details: ")]
-                                ),
-                                _vm._v(" "),
+                              _c(
+                                "p",
+                                { staticStyle: { "font-size": "19px" } },
+                                [_vm._v("Attachment Details: ")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "col-sm-10 col-xs-12",
+                                  staticStyle: {
+                                    "padding-right": "5px",
+                                    "padding-left": "5px"
+                                  }
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass: "img-thumbnail",
+                                    staticStyle: { "max-width": "100%" },
+                                    attrs: { src: _vm.imageData.imageurl }
+                                  })
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c("form", { attrs: { action: "" } }, [
                                 _c(
                                   "div",
                                   {
-                                    staticClass: "col-sm-10 col-xs-12",
-                                    staticStyle: {
-                                      "padding-right": "5px",
-                                      "padding-left": "5px"
-                                    }
+                                    staticClass: "form-group",
+                                    staticStyle: { "margin-bottom": "2px" }
                                   },
                                   [
-                                    _c("img", {
-                                      staticClass: "img-thumbnail",
-                                      staticStyle: { "max-width": "100%" },
-                                      attrs: { src: "Admin/img/b1.jpg" }
+                                    _c(
+                                      "label",
+                                      { attrs: { for: "imagelocation" } },
+                                      [_vm._v("Image Location:")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.imageData.imageurl,
+                                          expression: "imageData.imageurl"
+                                        }
+                                      ],
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        type: "text",
+                                        id: "imagelocation"
+                                      },
+                                      domProps: {
+                                        value: _vm.imageData.imageurl
+                                      },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.$set(
+                                            _vm.imageData,
+                                            "imageurl",
+                                            $event.target.value
+                                          )
+                                        }
+                                      }
                                     })
                                   ]
                                 ),
                                 _vm._v(" "),
-                                _c("form", { attrs: { action: "" } }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group",
-                                      staticStyle: { "margin-bottom": "2px" }
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        { attrs: { for: "imagelocation" } },
-                                        [_vm._v("Email address:")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("input", {
-                                        directives: [
-                                          {
-                                            name: "model",
-                                            rawName: "v-model",
-                                            value: _vm.imageData.imageurl,
-                                            expression: "imageData.imageurl"
-                                          }
-                                        ],
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          id: "imagelocation"
-                                        },
-                                        domProps: {
-                                          value: _vm.imageData.imageurl
-                                        },
-                                        on: {
-                                          input: function($event) {
-                                            if ($event.target.composing) {
-                                              return
-                                            }
-                                            _vm.$set(
-                                              _vm.imageData,
-                                              "imageurl",
-                                              $event.target.value
-                                            )
-                                          }
-                                        }
-                                      })
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _vm._m(0),
-                                  _vm._v(" "),
-                                  _vm._m(1),
-                                  _vm._v(" "),
-                                  _c(
-                                    "button",
-                                    {
-                                      staticClass: "btn btn-default",
-                                      attrs: { type: "button" }
-                                    },
-                                    [_vm._v("Select")]
-                                  )
-                                ])
+                                _vm._m(0),
+                                _vm._v(" "),
+                                _c("input", {
+                                  attrs: { type: "hidden", id: "getimageId" },
+                                  domProps: { value: _vm.imageData.id }
+                                }),
+                                _vm._v(" "),
+                                _vm._m(1),
+                                _vm._v(" "),
+                                _c(
+                                  "button",
+                                  {
+                                    staticClass: "btn btn-info",
+                                    attrs: {
+                                      type: "button",
+                                      id: "selectimagedata"
+                                    }
+                                  },
+                                  [_vm._v("Image Data")]
+                                )
                               ])
                             ])
                           ])
@@ -38536,11 +38541,13 @@ var staticRenderFns = [
       "div",
       { staticClass: "form-group", staticStyle: { "margin-bottom": "2px" } },
       [
-        _c("label", { attrs: { for: "ImageAltText" } }, [_vm._v("Password:")]),
+        _c("label", { attrs: { for: "getImageAltText" } }, [
+          _vm._v("Image Alt:")
+        ]),
         _vm._v(" "),
         _c("input", {
           staticClass: "form-control",
-          attrs: { type: "text", id: "ImageAltText" }
+          attrs: { type: "text", id: "getImageAltText" }
         })
       ]
     )
@@ -38553,13 +38560,13 @@ var staticRenderFns = [
       "div",
       { staticClass: "form-group", staticStyle: { "margin-bottom": "2px" } },
       [
-        _c("label", { attrs: { for: "ImageTitleText" } }, [
-          _vm._v("Password:")
+        _c("label", { attrs: { for: "getImageTitleText" } }, [
+          _vm._v("Image Title:")
         ]),
         _vm._v(" "),
         _c("input", {
           staticClass: "form-control",
-          attrs: { type: "text", id: "ImageTitleText" }
+          attrs: { type: "text", id: "getImageTitleText" }
         })
       ]
     )
