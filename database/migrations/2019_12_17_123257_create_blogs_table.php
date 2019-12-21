@@ -20,7 +20,7 @@ class CreateBlogsTable extends Migration
             $table->string('permalink');
             $table->string('embedded_video');
             $table->string('blog_details');
-            $table->integer('category');
+            $table->integer('category')->nullable();
             $table->integer('blog_poster');
             $table->integer('featured_image');
             $table->string('seo_keyword');
