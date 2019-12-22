@@ -27,6 +27,7 @@ class CreateBlogsTable extends Migration
             $table->string('seo_description');
             $table->string('imageAltText');
             $table->string('imageTitleText');
+            $table->integer('ActiveStatus')->default('0');;
             $table->timestamps();
         });
     }

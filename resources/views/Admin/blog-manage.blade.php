@@ -28,26 +28,20 @@
                             <table class="table table-striped">
                                 <thead>
                                 <tr>
-                                    <th>Firstname</th>
-                                    <th>Lastname</th>
-                                    <th>Email</th>
+                                    <th>Blog Name</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>John</td>
-                                    <td>Doe</td>
-                                    <td>john@example.com</td>
-                                </tr>
-                                <tr>
-                                    <td>Mary</td>
-                                    <td>Moe</td>
-                                    <td>mary@example.com</td>
-                                </tr>
-                                <tr>
-                                    <td>July</td>
-                                    <td>Dooley</td>
-                                    <td>july@example.com</td>
+                                    <td>Dummy text refers to the bits of content that are used to fill a website</td>
+                                    <td><input type="checkbox" checked data-toggle="toggle"></td>
+                                    <td>
+                                        <a href="#" class="btn btn-success"><i style="font-size:17px;" class="fa fa-eye"></i></a>
+                                        <a href="#" class="btn btn-info"> <i style="font-size:17px;" class="fa fa-edit"></i></a>
+                                        <a href="#" class="btn btn-danger"><i  style="font-size:17px;" class="fa fa-close"></i></a>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table>
