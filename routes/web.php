@@ -28,6 +28,11 @@ Route::get('/blog-manage','BlogController@manage');
 Route::get('/blog-add','BlogController@create');
 Route::post('/blog-add','BlogController@store');
 
+
+Route::get('/service-add','ServiceController@serviceCreate');
+Route::post('/service-store','ServiceController@serviceStore');
+
+
 Route::get('/getallimage','ImageUploadController@imagelist');
 Route::post('/formSubmit','ImageUploadController@imageUpload');
 

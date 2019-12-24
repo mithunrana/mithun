@@ -101,6 +101,7 @@
                                                                 <input type="text" class="form-control" id="getImageTitleText">
                                                             </div>
                                                             <button type="button" class="btn btn-info" id="selectimagedata">Image Data</button>
+                                                            <button type="button" class="btn btn-info" id="iconselect">Image Icon</button>
                                                         </form>
                                                 </div>
                                             </div>

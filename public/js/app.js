@@ -2120,6 +2120,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -38514,6 +38515,15 @@ var render = function() {
                                     }
                                   },
                                   [_vm._v("Image Data")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "button",
+                                  {
+                                    staticClass: "btn btn-info",
+                                    attrs: { type: "button", id: "iconselect" }
+                                  },
+                                  [_vm._v("Image Icon")]
                                 )
                               ])
                             ])

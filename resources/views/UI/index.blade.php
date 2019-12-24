@@ -159,21 +159,30 @@
             <div class="filters-content">
                 <div class="row grid">
                     <div class="single-portfolio col-sm-4 all vector">
-                        <div class="relative">
-                            <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                                <img class="image img-fluid" src="{{asset('UI')}}/img/p1.jpg" alt="">
-                            </div>
-                            <a href="{{asset('UI')}}/img/p1.jpg" class="img-pop-up">	
-                                <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="{{asset('UI')}}/img/preview.png" alt=""></div>
+                        <div class="work-box">
+                            <div class="relative">
+                                <div class="thumb">
+                                    <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
                                 </div>
-                            </a>                              		
+                            </div>
+                            <div class="p-inner">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
+                                        <div class="w-more">
+                                            <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                                        </div>
+                                    </div>
+                                    <div  class="col-sm-4">
+                                        <div style="float: right;margin-right: 10px;" class="w-like">
+                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display: inline-block">
+                                                <i style="vertical-align: middle;" class="fa fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="p-inner">
-                            <h4>2D Vinyl Design</h4>
-                            <div class="cat">vector</div>
-                        </div>					                               
                     </div>
                     <div class="single-portfolio col-sm-4 all raster">
                         <div class="work-box">
@@ -202,72 +211,107 @@
                         </div>
                     </div>                            
                     <div class="single-portfolio col-sm-4 all ui">
-                        <div class="relative">
-                            <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                                <img class="image img-fluid" src="{{asset('UI')}}/img/p3.jpg" alt="">
-                            </div>
-                            <a href="{{asset('UI')}}/img/p3.jpg" class="img-pop-up">	
-                                <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="{{asset('UI')}}/img/preview.png" alt=""></div>
+                        <div class="work-box">
+                            <div class="relative">
+                                <div class="thumb">
+                                    <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
                                 </div>
-                            </a> 
-
-                        </div>
-                        <div class="p-inner">
-                            <h4>Creative Poster Design</h4>
-                            <div class="cat">Agency</div>
+                            </div>
+                            <div class="p-inner">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
+                                        <div class="w-more">
+                                            <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                                        </div>
+                                    </div>
+                                    <div  class="col-sm-4">
+                                        <div style="float: right;margin-right: 10px;" class="w-like">
+                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display: inline-block">
+                                                <i style="vertical-align: middle;" class="fa fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="single-portfolio col-sm-4 all printing">
-                        <div class="relative">
-                            <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                                <img class="image img-fluid" src="{{asset('UI')}}/img/p4.jpg" alt="">
-                            </div>
-                            <a href="{{asset('UI')}}/img/p4.jpg" class="img-pop-up">	
-                                <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="{{asset('UI')}}/img/preview.png" alt=""></div>
+                        <div class="work-box">
+                            <div class="relative">
+                                <div class="thumb">
+                                    <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
                                 </div>
-                            </a>                            		
-                        </div> 
-                        <div class="p-inner">
-                            <h4>Embosed Logo Design</h4>
-                            <div class="cat">Portal</div>
+                            </div>
+                            <div class="p-inner">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
+                                        <div class="w-more">
+                                            <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                                        </div>
+                                    </div>
+                                    <div  class="col-sm-4">
+                                        <div style="float: right;margin-right: 10px;" class="w-like">
+                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display: inline-block">
+                                                <i style="vertical-align: middle;" class="fa fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="single-portfolio col-sm-4 all vector">
-                        <div class="relative">
-                            <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                                <img class="image img-fluid" src="{{asset('UI')}}/img/p5.jpg" alt="">
-                            </div>
-                            <a href="{{asset('UI')}}/img/p5.jpg" class="img-pop-up">	
-                                <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="{{asset('UI')}}/img/preview.png" alt=""></div>
+                        <div class="work-box">
+                            <div class="relative">
+                                <div class="thumb">
+                                    <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
                                 </div>
-                            </a>                             		
-                        </div>
-                        <div class="p-inner">
-                            <h4>3D Helmet Design</h4>
-                            <div class="cat">vector</div>
+                            </div>
+                            <div class="p-inner">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
+                                        <div class="w-more">
+                                            <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                                        </div>
+                                    </div>
+                                    <div  class="col-sm-4">
+                                        <div style="float: right;margin-right: 10px;" class="w-like">
+                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display: inline-block">
+                                                <i style="vertical-align: middle;" class="fa fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="single-portfolio col-sm-4 all raster">
-                        <div class="relative">
-                            <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                                <img class="image img-fluid" src="{{asset('UI')}}/img/p6.jpg" alt="">
-                            </div>
-                            <a href="{{asset('UI')}}/img/p6.jpg" class="img-pop-up">	
-                                <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="{{asset('UI')}}/img/preview.png" alt=""></div>
+                        <div class="work-box">
+                            <div class="relative">
+                                <div class="thumb">
+                                    <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
                                 </div>
-                            </a>                             		
-                        </div>
-                        <div class="p-inner">
-                            <h4>2D Vinyl Design</h4>
-                            <div class="cat">raster</div>
+                            </div>
+                            <div class="p-inner">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
+                                        <div class="w-more">
+                                            <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                                        </div>
+                                    </div>
+                                    <div  class="col-sm-4">
+                                        <div style="float: right;margin-right: 10px;" class="w-like">
+                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display: inline-block">
+                                                <i style="vertical-align: middle;" class="fa fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

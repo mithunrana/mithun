@@ -31,6 +31,12 @@
         </li>
 
         <li>
+          <a href="{{url('service-add')}}">
+            <span class="glyphicon glyphicon-th-list"></span><span>Service</span>
+          </a>
+        </li>
+
+        <li>
           <a href="{{url('category')}}">
             <i class="fa fa-list-alt" aria-hidden="true"></i>
             <span>Category</span>
