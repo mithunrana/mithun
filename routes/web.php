@@ -33,6 +33,10 @@ Route::get('/portfolio-add','PortfolioController@create');
 Route::post('/portfolio-store','PortfolioController@store');
 
 
+Route::get('/profile-update','AboutController@profile');
+Route::post('/profile-update','AboutController@profileUpdate');
+
+
 Route::get('/service-add','ServiceController@serviceCreate');
 Route::post('/service-store','ServiceController@serviceStore');
 
