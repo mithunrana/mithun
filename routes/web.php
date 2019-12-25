@@ -29,6 +29,10 @@ Route::get('/blog-add','BlogController@create');
 Route::post('/blog-add','BlogController@store');
 
 
+Route::get('/portfolio-add','PortfolioController@create');
+Route::post('/portfolio-store','PortfolioController@store');
+
+
 Route::get('/service-add','ServiceController@serviceCreate');
 Route::post('/service-store','ServiceController@serviceStore');
 

@@ -146,26 +146,15 @@
                 </div>
             </div>
 
-            <div class="filters">
-                <ul>
-                    <li class="active" data-filter="*">All</li>
-                    <li data-filter=".vector">Vector</li>
-                    <li data-filter=".raster">Raster</li>
-                    <li data-filter=".ui">UI/UX</li>
-                    <li data-filter=".printing">Printing</li>
-                </ul>
-            </div>
-
-            <div class="filters-content">
-                <div class="row grid">
-                    <div class="single-portfolio col-sm-4 all vector">
+                <div class="row">
+                    <div style="margin-bottom:20px;" class="col-sm-4">
                         <div class="work-box">
                             <div class="relative">
                                 <div class="thumb">
                                     <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="p-inner">
+                            <div style="margin-top: 10px;" class="p-inner">
                                 <div class="row">
                                     <div class="col-sm-8">
                                         <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
@@ -175,8 +164,8 @@
                                     </div>
                                     <div  class="col-sm-4">
                                         <div style="float: right;margin-right: 10px;" class="w-like">
-                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display: inline-block">
-                                                <i style="vertical-align: middle;" class="fa fa-plus"></i>
+                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
+                                                <p style="text-align:center;"><i class="fa fa-plus"></i></p>
                                             </div>
                                         </div>
                                     </div>
@@ -184,14 +173,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="single-portfolio col-sm-4 all raster">
+
+                    <div style="margin-bottom:20px;" class="col-sm-4">
                         <div class="work-box">
                             <div class="relative">
                                 <div class="thumb">
                                     <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="p-inner">
+                            <div style="margin-top: 10px;" class="p-inner">
                                 <div class="row">
                                     <div class="col-sm-8">
                                         <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
@@ -201,8 +191,8 @@
                                     </div>
                                     <div  class="col-sm-4">
                                         <div style="float: right;margin-right: 10px;" class="w-like">
-                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display: inline-block">
-                                                <i style="vertical-align: middle;" class="fa fa-plus"></i>
+                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
+                                                <p style="text-align:center;"><i class="fa fa-plus"></i></p>
                                             </div>
                                         </div>
                                     </div>
@@ -210,14 +200,14 @@
                             </div>
                         </div>
                     </div>                            
-                    <div class="single-portfolio col-sm-4 all ui">
+                    <div style="margin-bottom:20px;" class="col-sm-4">
                         <div class="work-box">
                             <div class="relative">
                                 <div class="thumb">
                                     <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="p-inner">
+                            <div style="margin-top: 10px;" class="p-inner">
                                 <div class="row">
                                     <div class="col-sm-8">
                                         <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
@@ -227,8 +217,8 @@
                                     </div>
                                     <div  class="col-sm-4">
                                         <div style="float: right;margin-right: 10px;" class="w-like">
-                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display: inline-block">
-                                                <i style="vertical-align: middle;" class="fa fa-plus"></i>
+                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
+                                                <p style="text-align:center;"><i class="fa fa-plus"></i></p>
                                             </div>
                                         </div>
                                     </div>
@@ -236,14 +226,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="single-portfolio col-sm-4 all printing">
+
+                    <div style="margin-bottom:20px;" class="col-sm-4">
                         <div class="work-box">
                             <div class="relative">
                                 <div class="thumb">
                                     <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="p-inner">
+                            <div style="margin-top: 10px;" class="p-inner">
                                 <div class="row">
                                     <div class="col-sm-8">
                                         <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
@@ -253,8 +244,8 @@
                                     </div>
                                     <div  class="col-sm-4">
                                         <div style="float: right;margin-right: 10px;" class="w-like">
-                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display: inline-block">
-                                                <i style="vertical-align: middle;" class="fa fa-plus"></i>
+                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
+                                                <p style="text-align:center;"><i class="fa fa-plus"></i></p>
                                             </div>
                                         </div>
                                     </div>
@@ -262,14 +253,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="single-portfolio col-sm-4 all vector">
+
+                    <div style="margin-bottom:20px;" class="col-sm-4">
                         <div class="work-box">
                             <div class="relative">
                                 <div class="thumb">
                                     <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="p-inner">
+                            <div style="margin-top: 10px;" class="p-inner">
                                 <div class="row">
                                     <div class="col-sm-8">
                                         <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
@@ -279,8 +271,8 @@
                                     </div>
                                     <div  class="col-sm-4">
                                         <div style="float: right;margin-right: 10px;" class="w-like">
-                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display: inline-block">
-                                                <i style="vertical-align: middle;" class="fa fa-plus"></i>
+                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
+                                                <p style="text-align:center;"><i class="fa fa-plus"></i></p>
                                             </div>
                                         </div>
                                     </div>
@@ -288,14 +280,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="single-portfolio col-sm-4 all raster">
+
+                    <div style="margin-bottom:20px;" class="col-sm-4">
                         <div class="work-box">
                             <div class="relative">
                                 <div class="thumb">
                                     <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="p-inner">
+                            <div style="margin-top: 10px;" class="p-inner">
                                 <div class="row">
                                     <div class="col-sm-8">
                                         <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
@@ -305,8 +298,8 @@
                                     </div>
                                     <div  class="col-sm-4">
                                         <div style="float: right;margin-right: 10px;" class="w-like">
-                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display: inline-block">
-                                                <i style="vertical-align: middle;" class="fa fa-plus"></i>
+                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
+                                                <p style="text-align:center;"><i class="fa fa-plus"></i></p>
                                             </div>
                                         </div>
                                     </div>
@@ -315,7 +308,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
         </div>
     </section>

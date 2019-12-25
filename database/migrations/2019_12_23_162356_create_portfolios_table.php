@@ -18,7 +18,7 @@ class CreatePortfoliosTable extends Migration
             $table->string('Portfolio_title');
             $table->string('BrowserTitle');
             $table->string('permalink');
-            $table->integer('category');
+            $table->integer('category')->nullable();
             $table->integer('featured_image');
             $table->string('SeoKeyword');
             $table->string('SeoDescription');
@@ -26,7 +26,7 @@ class CreatePortfoliosTable extends Migration
             $table->string('FeaturedImageTitleText');
             $table->text('MainContent');
             $table->text('OpenContent');
-            $table->integer('Active_Statue');
+            $table->integer('Active_Statue')->default('0');
             $table->timestamps();
         });
     }

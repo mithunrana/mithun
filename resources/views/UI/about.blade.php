@@ -101,7 +101,7 @@
                             <time>Masters in Graphics & Fine Arts</time>
                         </h4>
                         <p><b>Session:</b> 2010-11</p>
-                        <p><b>Result:</b> 3.78 (In the Scale of 4.00)</p>
+                        <p style="color:white;"><b>Result:</b> 3.78 (In the Scale of 4.00)</p>
                     </div>
                 </li>
                 <li>
@@ -110,7 +110,7 @@
                         <h4>
                             <time>Creative Content Developer</time>
                         </h4>
-                        <p>July 2015 to Present</p>
+                        <p style="color:white;">July 2015 to Present</p>
                     </div>
                 </li>
                 <li>
@@ -119,7 +119,7 @@
                             <time>Bachelor in Graphics & UI/UX</time>
                         </h4>
                         <p><b>Session:</b> 2006-09</p>
-                        <p><b>Result:</b> 3.40 (In the Scale of 4.00)</p>
+                        <p style="color:white;"><b>Result:</b> 3.40 (In the Scale of 4.00)</p>
                     </div>
                 </li>
                 <li>
@@ -128,7 +128,7 @@
                         <h4>
                             <time>Senior UI/UX Designer</time>
                         </h4>
-                        <p>July 2015 to Present</p>
+                        <p style="color:white;">July 2015 to Present</p>
                     </div>
                 </li>
                 <li>
@@ -137,7 +137,7 @@
                             <time>Diploma in Fine Arts & Printing</time>
                         </h4>
                         <p><b>Session:</b> 2003-06</p>
-                        <p><b>Result:</b> 4.94 (In the Scale of 5.00)</p>
+                        <p style="color:white;"><b>Result:</b> 4.94 (In the Scale of 5.00)</p>
                     </div>
                 </li>
             </ul>
