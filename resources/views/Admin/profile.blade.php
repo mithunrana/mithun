@@ -42,15 +42,15 @@
                     <div class="col-sm-8">
                             <div class="form-group">
                                 <label for="name">Name:</label>
-                                <input type="text" class="form-control" value="" name="Name" id="Name">
+                                <input type="text" class="form-control" @isset($Profile->Name)value="{{$Profile->Name}}"@endisset name="Name" id="Name">
                             </div>
                             <div class="form-group">
                                 <label for="email1">Email One:</label>
-                                <input type="text" class="form-control" value="" name="Email1" id="email1">
+                                <input type="text" class="form-control" @isset($Profile->Email1)value="{{$Profile->Email1}}"@endisset name="Email1" id="email1">
                             </div>
                             <div class="form-group">
                                 <label for="email2">Email Two:</label>
-                                <input type="text" class="form-control" value="" name="Email2" id="email2">
+                                <input type="text" class="form-control" @isset($Profile->Email2)value="{{$Profile->Email2}}"@endisset name="Email2" id="email2">
                             </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="shortbrief">Short Brief:</label>
-                                <textarea type="text" rows="6" class="form-control" name="ShortBrief" id="shortbrief"></textarea>
+                                <textarea type="text" rows="6" class="form-control" name="ShortBrief" id="shortbrief">@isset($Profile->ShortBrief){{$Profile->ShortBrief}}@endisset</textarea>
                             </div>
                         </div>
                     </div>
@@ -66,15 +66,15 @@
                         <div class="col-sm-8">
                                 <div class="form-group">
                                     <label for="phone1">Phone 1:</label>
-                                    <input type="text" class="form-control" name="Phone1" id="phone1">
+                                    <input type="text" class="form-control" @isset($Profile->Phone1)value="{{$Profile->Phone1}}"@endisset name="Phone1" id="phone1">
                                 </div>
                                 <div class="form-group">
                                     <label for="phone2">Phone 2:</label>
-                                    <input type="text" class="form-control" name="Phone2" id="phone2">
+                                    <input type="text" class="form-control" @isset($Profile->Phone2)value="{{$Profile->Phone2}}"@endisset name="Phone2" id="phone2">
                                 </div>
                                 <div class="form-group">
                                     <label for="address">Address:</label>
-                                    <textarea type="text" rows="2" class="form-control" name="Address" id="address"></textarea>
+                                    <textarea type="text" rows="2" class="form-control"   name="Address" id="address">@isset($Profile->Address){{$Profile->Address}}@endisset</textarea>
                                 </div>
                         </div>
                         <div class="col-sm-4">
@@ -85,82 +85,82 @@
                     <div class="col-sm-12">
                         <div class="form-group col-sm-6">
                             <label for="name">Discover Link:</label>
-                            <input type="text" class="form-control" name="Discover_link" id="name">
+                            <input type="text" class="form-control" @isset($Profile->Discover_link)value="{{$Profile->Discover_link}}"@endisset name="Discover_link" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">
                             <label for="name">Resume Download Link:</label>
-                            <input type="text" class="form-control" name="Download_link" id="name">
+                            <input type="text" class="form-control" @isset($Profile->Download_link)value="{{$Profile->Download_link}}"@endisset name="Download_link" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">
                             <label for="name">Facebook Link:</label>
-                            <input type="text" class="form-control" name="Facebook_Link" id="name">
+                            <input type="text" class="form-control" @isset($Profile->Facebook_Link)value="{{$Profile->Facebook_Link}}"@endisset name="Facebook_Link" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">
                             <label for="name">Youtube Link:</label>
-                            <input type="text" class="form-control" name="Youtube_Link" id="name">
+                            <input type="text" class="form-control" @isset($Profile->Youtube_Link)value="{{$Profile->Youtube_Link}}"@endisset name="Youtube_Link" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">
                             <label for="name">Twitter Link:</label>
-                            <input type="text" class="form-control" name="Twitter_Link" id="name">
+                            <input type="text" class="form-control" @isset($Profile->Twitter_Link)value="{{$Profile->Twitter_Link}}"@endisset name="Twitter_Link" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">
                             <label for="name">Linked in Link:</label>
-                            <input type="text" class="form-control" name="Linkedin_Link" id="name">
+                            <input type="text" class="form-control" @isset($Profile->Linkedin_Link)value="{{$Profile->Linkedin_Link}}"@endisset name="Linkedin_Link" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">
                             <label for="name">Fiverr Link:</label>
-                            <input type="text" class="form-control" name="Fiveer_Link" id="name">
+                            <input type="text" class="form-control" @isset($Profile->Fiveer_Link)value="{{$Profile->Fiveer_Link}}"@endisset name="Fiveer_Link" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">
                             <label for="name">Upwork Link:</label>
-                            <input type="text" class="form-control" name="Upwork_Link" id="name">
+                            <input type="text" class="form-control" @isset($Profile->Upwork_Link)value="{{$Profile->Upwork_Link}}"@endisset name="Upwork_Link" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">
                             <label for="name">Instagram Link:</label>
-                            <input type="text" class="form-control" name="Instagram_Link" id="name">
+                            <input type="text" class="form-control" @isset($Profile->Instagram_Link)value="{{$Profile->Instagram_Link}}"@endisset name="Instagram_Link" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">
                             <label for="name">Pinterest Link:</label>
-                            <input type="text" class="form-control" name="Pinterest_Link" id="name">
+                            <input type="text" class="form-control" @isset($Profile->Pinterest_Link)value="{{$Profile->Pinterest_Link}}"@endisset name="Pinterest_Link" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">
                             <label for="name">Behance Link:</label>
-                            <input type="text" class="form-control" name="Behance_Link" id="name">
+                            <input type="text" class="form-control" @isset($Profile->Behance_Link)value="{{$Profile->Behance_Link}}"@endisset name="Behance_Link" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">
                             <label for="name">Dribble Link:</label>
-                            <input type="text" class="form-control" name="Dribble_Link" id="name">
+                            <input type="text" class="form-control" @isset($Profile->Dribble_Link)value="{{$Profile->Dribble_Link}}"@endisset name="Dribble_Link" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">
                             <label for="name">Vimeo Link:</label>
-                            <input type="text" class="form-control" name="Vimeo_Link" id="name">
+                            <input type="text" class="form-control" @isset($Profile->Vimeo_Link)value="{{$Profile->Vimeo_Link}}"@endisset name="Vimeo_Link" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">
                             <label for="name">Github Link:</label>
-                            <input type="text" class="form-control" name="Github_Link" id="name">
+                            <input type="text" class="form-control" @isset($Profile->Github_Link)value="{{$Profile->Github_Link}}"@endisset name="Github_Link" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">
                             <label for="name">Google Map:</label>
-                            <input type="text" class="form-control" name="Google_Map" id="name">
+                            <input type="text" class="form-control" @isset($Profile->Google_Map)value="{{$Profile->Google_Map}}"@endisset name="Google_Map" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">
                             <label for="name">Stack Overflow:</label>
-                            <input type="text" class="form-control" name="stackoverflow_link" id="name">
+                            <input type="text" class="form-control" @isset($Profile->stackoverflow_link)value="{{$Profile->stackoverflow_link}}"@endisset name="stackoverflow_link" id="name">
                         </div>
                     </div>
                     <div class="col-sm-12">

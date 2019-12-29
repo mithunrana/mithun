@@ -11,7 +11,8 @@ class AboutController extends Controller {
 
 
     public function profile(){
-        return view('Admin.profile');
+        $Profile = AboutProfile::first();
+        return view('Admin.profile',compact('Profile'));
     }
 
 
