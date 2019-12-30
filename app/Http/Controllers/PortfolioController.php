@@ -7,7 +7,8 @@ use App\Portfolio;
 class PortfolioController extends Controller
 {
     public function index(){
-        return view('UI.portfolio');
+        $Portfolios = Portfolio::get()->where('Active_Status',1);
+       return view('UI.portfolio');
     }
 
     public function create(){

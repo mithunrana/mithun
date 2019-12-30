@@ -26,7 +26,7 @@ class CreatePortfoliosTable extends Migration
             $table->string('FeaturedImageTitleText');
             $table->text('MainContent');
             $table->text('OpenContent');
-            $table->integer('Active_Statue')->default('0');
+            $table->integer('Active_Status')->default('0');
             $table->timestamps();
         });
     }

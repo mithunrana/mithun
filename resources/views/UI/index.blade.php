@@ -149,6 +149,7 @@
             </div>
 
                 <div class="row">
+                    @foreach($Portfolios as $portfolio)
                     <div style="margin-bottom:20px;" class="col-sm-4">
                         <div class="work-box">
                             <div class="relative">
@@ -159,7 +160,7 @@
                             <div style="margin-top: 10px;" class="p-inner">
                                 <div class="row">
                                     <div class="col-sm-8">
-                                        <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
+                                        <h2 style="font-size: 1.2rem;">{{$portfolio->Portfolio_title}}</h2>
                                         <div class="w-more">
                                             <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
                                         </div>
@@ -175,7 +176,7 @@
                             </div>
                         </div>
                     </div>
-
+                    @endforeach
                     <div style="margin-bottom:20px;" class="col-sm-4">
                         <div class="work-box">
                             <div class="relative">
