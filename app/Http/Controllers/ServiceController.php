@@ -7,7 +7,8 @@ use App\Service;
 class ServiceController extends Controller
 {
     public function index(){
-        return view('UI.service');
+        $service = Service::first();
+        return view('UI.service',compact('service'));
     }
 
     public function serviceCreate(){

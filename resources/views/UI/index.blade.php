@@ -37,17 +37,19 @@
                     </div>
                 </div>						
                 <div class="row">
+                    @foreach($services as $service)
                     <div class="col-lg-4 col-md-6">
                         <div style="background-color:white;">
                             <div class="single-services">
-                                <span style="background-color:#FF5722;color: white;padding: 15px;"  class="lnr lnr-pie-chart"></span>
-                                <a  href="#"><h4 style="color:#ff5722;">Web Design</h4></a>
+                                <span style="background-color:#FF5722;color: white;padding: 15px;"  class="lnr"><img src="{{$service->icon->imageurl}}" style="width:30px;height: 20px"></span>
+                                <a  href="#"><h4 style="color:#ff5722;">{{$service->service_title}}</h4></a>
                                 <p style="color:black;">
                                     “It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”
                                 </p>
                             </div>
                         </div>
                     </div>
+                    @endforeach
                     <div class="col-lg-4 col-md-6">
                         <div style="background-color:white;">
                             <div class="single-services">
