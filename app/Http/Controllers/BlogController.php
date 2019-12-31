@@ -34,6 +34,7 @@ class BlogController extends Controller
             'browser_title' => $request->browser_title,
             'permalink' => $request->permalink,
             'blog_title' => $request->blog_title,
+            'video_url'=> $request->videourl,
             'embedded_video' => $request->embedded_video,
             'category' => $request->category,
             'blog_details' => $request->blog_details,

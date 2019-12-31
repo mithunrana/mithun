@@ -56,6 +56,13 @@
                                             </div>
                                         </div>
 
+                                        <div class="form-group col-sm-12">
+                                            <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12" for="pwd">Video URL:</label>
+                                            <div style="padding-left: 0px;" class="col-sm-12">
+                                                <input type="text" class="form-control" id="pwd" placeholder="Enter Video URL" name="videourl" required>
+                                            </div>
+                                        </div>
+
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="col-sm-12">

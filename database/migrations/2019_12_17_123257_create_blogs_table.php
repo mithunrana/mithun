@@ -18,6 +18,7 @@ class CreateBlogsTable extends Migration
             $table->string('browser_title');
             $table->string('blog_title');
             $table->string('permalink');
+            $table->string('video_url');
             $table->string('embedded_video');
             $table->string('blog_details');
             $table->integer('category')->nullable();

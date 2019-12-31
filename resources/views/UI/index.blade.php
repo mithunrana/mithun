@@ -383,10 +383,20 @@
                     </p>
                 </div>
             </div>
-            <div class="row">	
+            <div class="row">
+
+                @foreach($Blogs as $Blog)
+
+                @php
+                   $video_id = explode("?v=", $Blog->video_url);
+                   $video_id = $video_id[1];
+                   $thumbnail="http://img.youtube.com/vi/".$video_id."/maxresdefault.jpg";
+                @endphp
+
                 <div class="single-recent-blog col-lg-4 col-md-4">
                     <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="{{asset('UI')}}/img/b1.jpg" alt="">	
+                       <!-- <img class="f-img img-fluid mx-auto" src="{{asset('UI')}}/img/b1.jpg" alt="">-->
+                       <img class="f-img img-fluid mx-auto" src="{{$thumbnail}}" alt="">
                     </div>
                     <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
                         <div>
@@ -400,13 +410,14 @@
                         </div>
                     </div>							
                     <a href="#">
-                        <h4>Break Through Self Doubt
-                            And Fear</h4>
+                        <h4>Break Through Self Doubt And Fear</h4>
                     </a>
                     <p>
                         Dream interpretation has many forms; it can be done be done for the sake of fun, hobby or can be taken up as a serious career.
                     </p>
                 </div>
+                @endforeach
+
                 <div class="single-recent-blog col-lg-4 col-md-4">
                     <div class="thumb">
                         <img class="f-img img-fluid mx-auto" src="{{asset('UI')}}/img/b2.jpg" alt="">	
