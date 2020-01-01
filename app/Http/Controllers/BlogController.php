@@ -17,6 +17,7 @@ class BlogController extends Controller
         $New =   Blog::where('Active_Status',1)->orderBy('id', 'DESC')->skip(0)->take(1)->get();
         $FeaturesVideo =   Blog::where('Active_Status',1)->orderBy('id', 'DESC')->skip(1)->take(2)->get();
         $Categories = Category::get();
+
         return view('UI.blog',compact('Blogs','New','FeaturesVideo','Categories'));
     }
 

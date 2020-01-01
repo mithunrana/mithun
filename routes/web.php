@@ -35,6 +35,7 @@ Route::get('/portfolio-manage','PortfolioController@portfolioManage');
 Route::get('/portfolio-add','PortfolioController@create');
 Route::get('/portfolio-edit/{id}','PortfolioController@portfolioEdit');
 Route::post('/portfolio-store','PortfolioController@store');
+Route::post('/portfolio-update/{id}','PortfolioController@portfolioUpdate');
 
 
 Route::get('/profile-update','AboutController@profile');

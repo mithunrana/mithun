@@ -22,6 +22,12 @@
             <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('portfolio-add')}}" class="btn btn-success pull-left">Add New +</a>
             <div class="row">
                 <div class="col-sm-12">
+                    @if(Session::has('message'))
+                        <div class="alert alert-success alert-dismissible">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            {{Session::get('message')}}
+                        </div>
+                    @endif
                     <div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">

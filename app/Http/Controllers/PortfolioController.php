@@ -31,4 +31,21 @@ class PortfolioController extends Controller
         return view('Admin.portfolio-update',compact('Portfolio'));
     }
 
+    public function portfolioUpdate($id){
+        $Portfolio = Portfolio::findOrFail($id);
+        $Portfolio->Portfolio_title = request('Portfolio_title');
+        $Portfolio->BrowserTitle = request('BrowserTitle');
+        $Portfolio->permalink = request('permalink');
+        $Portfolio->category = request('category');
+        $Portfolio->featured_image = request('featured_image');
+        $Portfolio->SeoKeyword = request('SeoKeyword');
+        $Portfolio->SeoDescription = request('SeoDescription');
+        $Portfolio->FeaturedImageAltText = request('FeaturedImageAltText');
+        $Portfolio->FeaturedImageTitleText = request('FeaturedImageTitleText');
+        $Portfolio->MainContent = request('MainContent');
+        $Portfolio->OpenContent = request('OpenContent');
+        $Portfolio->save();
+        return redirect()->to('portfolio-manage')->with('message','Portfolio Update Successfully');
+    }
+
 }

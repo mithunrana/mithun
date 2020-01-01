@@ -24,14 +24,13 @@
             <image-component></image-component>
             <!-- Modal -->
 
-
             <!-- Main row -->
             <div class="row">
                 <div class="col-sm-12">
                     <div class="panel panel-primary">
                         <div class="panel-heading">Service Add Side</div>
                         <div class="panel-body">
-                            <form class="form-horizontal" action="{{url('portfolio-store')}}" method="post">
+                            <form class="form-horizontal" action="{{url('portfolio-update',[$Portfolio->id])}}" method="post">
                                 @csrf
                                 <div class="col-sm-12">
                                     <div class="row">
@@ -39,14 +38,14 @@
                                             <div class="form-group">
                                                 <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12">Browser Title:</label>
                                                 <div style="padding-left: 0px;">
-                                                    <input type="text"  class="form-control" value="{{$Portfolio->Portfolio_title}}" placeholder="Enter browser Title" name="BrowserTitle">
+                                                    <input type="text"  class="form-control" value="{{$Portfolio->BrowserTitle}}" placeholder="Enter browser Title" name="BrowserTitle">
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
                                                 <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12">Permalink:</label>
                                                 <div style="padding-left: 0px;">
-                                                    <input type="text" class="form-control" value="{{$Portfolio->Portfolio_title}}" placeholder="Enter Blog Permalink" name="permalink">
+                                                    <input type="text" class="form-control" value="{{$Portfolio->permalink}}" placeholder="Enter Blog Permalink" name="permalink">
                                                 </div>
                                             </div>
 
@@ -68,16 +67,16 @@
                                         </div>
                                         <div class="col-sm-4">
                                             <div>
-                                                <img style="width: 100%;margin-top: 27px;" src="{{asset('Admin')}}//img/default-image.webp">
+                                                <img style="width: 100%;margin-top: 27px;" src="/{{$Portfolio->featuredimage->imageurl}}">
                                                 <p style="width:100%; border-top-left-radius:0px;border-top-right-radius:0px;"  data-toggle="modal" data-target="#imagemodal" class="btn btn-primary">Select Image</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <input type="hidden" value="{{$Portfolio->Portfolio_title}}" name="featured_image" id="setimageid"/>
-                                <input type="hidden" value="{{$Portfolio->Portfolio_title}}" name="FeaturedImageTitleText" id="setImageAltText"/>
-                                <input type="hidden"  value="{{$Portfolio->Portfolio_title}}" name="FeaturedImageAltText" id="setImageTitleText"/>
+                                <input type="hidden" value="{{$Portfolio->featured_image}}" name="featured_image" id="setimageid"/>
+                                <input type="hidden" value="{{$Portfolio->FeaturedImageTitleText}}" name="FeaturedImageTitleText" id="setImageAltText"/>
+                                <input type="hidden"  value="{{$Portfolio->FeaturedImageAltText}}" name="FeaturedImageAltText" id="setImageTitleText"/>
 
                                 <div class="clearfix"></div>
 
@@ -87,22 +86,15 @@
                                             <div class="form-group">
                                                 <label style="text-align:left;" class="control-label" for="pwd">SEO Keyword:</label>
                                                 <div>
-                                                    <input type="text" class="form-control" value="{{$Portfolio->Portfolio_title}}" id="pwd" placeholder="Enter SEO Keyword" name="SeoKeyword">
+                                                    <input type="text" class="form-control" value="{{$Portfolio->SeoKeyword}}" id="pwd" placeholder="Enter SEO Keyword" name="SeoKeyword">
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
                                                 <label style="text-align:left;" class="control-label" for="seodescription">SEO Description:</label>
                                                 <div>
-                                                    <textarea type="text" class="form-control" id="seodescription" placeholder="Enter SEO Description" name="SeoDescription">{{$Portfolio->Portfolio_title}}</textarea>
+                                                    <textarea type="text" class="form-control" id="seodescription" placeholder="Enter SEO Description" name="SeoDescription">{{$Portfolio->SeoDescription}}</textarea>
                                                 </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div>
-                                                <img style="width: 100%;margin-top: 27px;" src="{{asset('Admin')}}//img/default-image.webp">
-                                                <p style="width:100%; border-top-left-radius:0px;border-top-right-radius:0px;"  data-toggle="modal" data-target="#imagemodal" class="btn btn-primary">Select Image</p>
                                             </div>
                                         </div>
                                     </div>
@@ -112,13 +104,13 @@
                                     <div class="form-group">
                                         <label style="text-align:left;" class="control-label" for="servicedetails">Portfolio Details:</label>
                                         <div>
-                                            <textarea type="text" rows="5" class="form-control" id="servicedetails" placeholder="Enter Blog Details" name="MainContent">{{$Portfolio->Portfolio_title}}</textarea>
+                                            <textarea type="text" rows="5" class="form-control" id="servicedetails" placeholder="Enter Blog Details" name="MainContent">{{$Portfolio->MainContent}}</textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label style="text-align:left;" class="control-label" for="opencontent">Portfolio Open Content:</label>
                                         <div>
-                                            <textarea type="text" rows="5" class="form-control" id="opencontent" placeholder="Enter Blog Details" name="OpenContent">{{$Portfolio->Portfolio_title}}</textarea>
+                                            <textarea type="text" rows="5" class="form-control" id="opencontent" placeholder="Enter Blog Details" name="OpenContent">{{$Portfolio->OpenContent}}</textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">

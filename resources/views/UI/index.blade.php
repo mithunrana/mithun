@@ -154,7 +154,7 @@
                         <div class="work-box">
                             <div class="relative">
                                 <div class="thumb">
-                                    <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
+                                    <img class="image img-fluid" src="{{$portfolio->featuredimage->imageurl}}" alt="">
                                 </div>
                             </div>
                             <div style="margin-top: 10px;" class="p-inner">
@@ -177,113 +177,6 @@
                         </div>
                     </div>
                     @endforeach
-                    <div style="margin-bottom:20px;" class="col-sm-4">
-                        <div class="work-box">
-                            <div class="relative">
-                                <div class="thumb">
-                                    <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
-                                </div>
-                            </div>
-                            <div style="margin-top: 10px;" class="p-inner">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
-                                        <div class="w-more">
-                                            <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                                        </div>
-                                    </div>
-                                    <div  class="col-sm-4">
-                                        <div style="float: right;margin-right: 10px;" class="w-like">
-                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
-                                                <p style="text-align:center;"><i class="fa fa-plus"></i></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                            
-                    <div style="margin-bottom:20px;" class="col-sm-4">
-                        <div class="work-box">
-                            <div class="relative">
-                                <div class="thumb">
-                                    <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
-                                </div>
-                            </div>
-                            <div style="margin-top: 10px;" class="p-inner">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
-                                        <div class="w-more">
-                                            <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                                        </div>
-                                    </div>
-                                    <div  class="col-sm-4">
-                                        <div style="float: right;margin-right: 10px;" class="w-like">
-                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
-                                                <p style="text-align:center;"><i class="fa fa-plus"></i></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="margin-bottom:20px;" class="col-sm-4">
-                        <div class="work-box">
-                            <div class="relative">
-                                <div class="thumb">
-                                    <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
-                                </div>
-                            </div>
-                            <div style="margin-top: 10px;" class="p-inner">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
-                                        <div class="w-more">
-                                            <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                                        </div>
-                                    </div>
-                                    <div  class="col-sm-4">
-                                        <div style="float: right;margin-right: 10px;" class="w-like">
-                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
-                                                <p style="text-align:center;"><i class="fa fa-plus"></i></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="margin-bottom:20px;" class="col-sm-4">
-                        <div class="work-box">
-                            <div class="relative">
-                                <div class="thumb">
-                                    <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
-                                </div>
-                            </div>
-                            <div style="margin-top: 10px;" class="p-inner">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
-                                        <div class="w-more">
-                                            <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                                        </div>
-                                    </div>
-                                    <div  class="col-sm-4">
-                                        <div style="float: right;margin-right: 10px;" class="w-like">
-                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
-                                                <p style="text-align:center;"><i class="fa fa-plus"></i></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div style="margin-bottom:20px;" class="col-sm-4">
                         <div class="work-box">
                             <div class="relative">
