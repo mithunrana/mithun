@@ -2088,39 +2088,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -38092,7 +38059,7 @@ var render = function() {
                                             },
                                             attrs: {
                                               imgid: perimage.id,
-                                              src: perimage.imageurl
+                                              src: "/" + perimage.imageurl
                                             },
                                             on: {
                                               click: function($event) {
@@ -38120,7 +38087,7 @@ var render = function() {
                                             "max-width": "100%",
                                             height: "140px"
                                           },
-                                          attrs: { src: "Admin/img/b1.jpg" }
+                                          attrs: { src: "/Admin/img/b1.jpg" }
                                         })
                                       ]
                                     ),
@@ -38141,7 +38108,7 @@ var render = function() {
                                             "max-width": "100%",
                                             height: "140px"
                                           },
-                                          attrs: { src: "Admin/img/b1.jpg" }
+                                          attrs: { src: "/Admin/img/b1.jpg" }
                                         })
                                       ]
                                     ),
@@ -38162,7 +38129,7 @@ var render = function() {
                                             "max-width": "100%",
                                             height: "140px"
                                           },
-                                          attrs: { src: "Admin/img/b1.jpg" }
+                                          attrs: { src: "/Admin/img/b1.jpg" }
                                         })
                                       ]
                                     ),
@@ -38183,238 +38150,7 @@ var render = function() {
                                             "max-width": "100%",
                                             height: "140px"
                                           },
-                                          attrs: { src: "Admin/img/b1.jpg" }
-                                        })
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-3 col-xs-6",
-                                        staticStyle: {
-                                          "padding-right": "5px",
-                                          "padding-left": "5px"
-                                        }
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass: "img-thumbnail",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            height: "140px"
-                                          },
-                                          attrs: { src: "Admin/img/b1.jpg" }
-                                        })
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-3 col-xs-6",
-                                        staticStyle: {
-                                          "padding-right": "5px",
-                                          "padding-left": "5px"
-                                        }
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass: "img-thumbnail",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            height: "140px"
-                                          },
-                                          attrs: { src: "Admin/img/b1.jpg" }
-                                        })
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-3 col-xs-6",
-                                        staticStyle: {
-                                          "padding-right": "5px",
-                                          "padding-left": "5px"
-                                        }
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass: "img-thumbnail",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            height: "140px"
-                                          },
-                                          attrs: { src: "Admin/img/b1.jpg" }
-                                        })
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-3 col-xs-6",
-                                        staticStyle: {
-                                          "padding-right": "5px",
-                                          "padding-left": "5px"
-                                        }
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass: "img-thumbnail",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            height: "140px"
-                                          },
-                                          attrs: { src: "Admin/img/b1.jpg" }
-                                        })
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-3 col-xs-6",
-                                        staticStyle: {
-                                          "padding-right": "5px",
-                                          "padding-left": "5px"
-                                        }
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass: "img-thumbnail",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            height: "140px"
-                                          },
-                                          attrs: { src: "Admin/img/b1.jpg" }
-                                        })
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-3 col-xs-6",
-                                        staticStyle: {
-                                          "padding-right": "5px",
-                                          "padding-left": "5px"
-                                        }
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass: "img-thumbnail",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            height: "140px"
-                                          },
-                                          attrs: { src: "Admin/img/b1.jpg" }
-                                        })
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-3 col-xs-6",
-                                        staticStyle: {
-                                          "padding-right": "5px",
-                                          "padding-left": "5px"
-                                        }
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass: "img-thumbnail",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            height: "140px"
-                                          },
-                                          attrs: { src: "Admin/img/b1.jpg" }
-                                        })
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-3 col-xs-6",
-                                        staticStyle: {
-                                          "padding-right": "5px",
-                                          "padding-left": "5px"
-                                        }
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass: "img-thumbnail",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            height: "140px"
-                                          },
-                                          attrs: { src: "Admin/img/b1.jpg" }
-                                        })
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-3 col-xs-6",
-                                        staticStyle: {
-                                          "padding-right": "5px",
-                                          "padding-left": "5px"
-                                        }
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass: "img-thumbnail",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            height: "140px"
-                                          },
-                                          attrs: { src: "Admin/img/b1.jpg" }
-                                        })
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-3 col-xs-6",
-                                        staticStyle: {
-                                          "padding-right": "5px",
-                                          "padding-left": "5px"
-                                        }
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass: "img-thumbnail",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            height: "140px"
-                                          },
-                                          attrs: { src: "Admin/img/b1.jpg" }
-                                        })
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-3 col-xs-6",
-                                        staticStyle: {
-                                          "padding-right": "5px",
-                                          "padding-left": "5px"
-                                        }
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass: "img-thumbnail",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            height: "140px"
-                                          },
-                                          attrs: { src: "Admin/img/b1.jpg" }
+                                          attrs: { src: "/Admin/img/b1.jpg" }
                                         })
                                       ]
                                     )
@@ -38444,7 +38180,7 @@ var render = function() {
                                   _c("img", {
                                     staticClass: "img-thumbnail",
                                     staticStyle: { "max-width": "100%" },
-                                    attrs: { src: _vm.imageData.imageurl }
+                                    attrs: { src: "/" + _vm.imageData.imageurl }
                                   })
                                 ]
                               ),

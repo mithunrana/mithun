@@ -3404,7 +3404,6 @@ dl.accordion.time-line:before {
 
 .top-category-widget-area .single-cat-widget {
     position: relative;
-    text-align: center;
 }
 
 .top-category-widget-area .single-cat-widget .overlay-bg {
@@ -3445,7 +3444,7 @@ dl.accordion.time-line:before {
 
 @media (max-width: 991px) {
     .top-category-widget-area .single-cat-widget {
-        margin-bottom: 50px;
+
     }
 }
 

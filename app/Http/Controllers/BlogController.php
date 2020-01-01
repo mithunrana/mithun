@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Blog;
+use App\Category;
 class BlogController extends Controller
 {
     /*public function __construct()
@@ -11,8 +11,13 @@ class BlogController extends Controller
         $this->middleware('auth');
     }*/
 
+
     public function index(){
-        return view('UI.blog');
+        $Blogs =  Blog::where('Active_Status',1)->orderBy('id', 'ASC')->get();
+        $New =   Blog::where('Active_Status',1)->orderBy('id', 'DESC')->skip(0)->take(1)->get();
+        $FeaturesVideo =   Blog::where('Active_Status',1)->orderBy('id', 'DESC')->skip(1)->take(2)->get();
+        $Categories = Category::get();
+        return view('UI.blog',compact('Blogs','New','FeaturesVideo','Categories'));
     }
 
 

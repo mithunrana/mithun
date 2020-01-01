@@ -17,7 +17,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
+
 //=========================ADMIN SITE REQUEST START HERE ========================//
+
 Route::get('/category','CategoryController@index');
 Route::post('/categorysave','CategoryController@store');
 Route::get('/getall-category','CategoryController@getAll');
@@ -29,7 +31,9 @@ Route::get('/blog-add','BlogController@create');
 Route::post('/blog-add','BlogController@store');
 
 
+Route::get('/portfolio-manage','PortfolioController@portfolioManage');
 Route::get('/portfolio-add','PortfolioController@create');
+Route::get('/portfolio-edit/{id}','PortfolioController@portfolioEdit');
 Route::post('/portfolio-store','PortfolioController@store');
 
 
@@ -43,5 +47,4 @@ Route::post('/service-store','ServiceController@serviceStore');
 
 Route::get('/getallimage','ImageUploadController@imagelist');
 Route::post('/formSubmit','ImageUploadController@imageUpload');
-
 //=========================ADMIN SITE REQUEST END HERE ==========================//

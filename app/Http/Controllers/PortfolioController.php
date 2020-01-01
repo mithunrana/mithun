@@ -19,4 +19,16 @@ class PortfolioController extends Controller
      Portfolio::Create($request->all());
         //echo "hello world";
     }
+
+    public function portfolioManage(){
+        $PortfolioList = Portfolio::get();
+        return view('Admin.portfoliomanage',compact('PortfolioList'));
+    }
+
+
+    public function portfolioEdit($id){
+        $Portfolio = Portfolio::findOrFail($id);
+        return view('Admin.portfolio-update',compact('Portfolio'));
+    }
+
 }

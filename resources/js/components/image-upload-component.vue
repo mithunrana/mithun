@@ -31,52 +31,19 @@
                                                     <div class="row">
                                                         <div style="max-height: 600px;overflow: scroll;overflow-x: hidden;">
                                                         <div v-for="perimage in imageslist" style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img :imgid="perimage.id" class="img-thumbnail" @click="clickView(perimage)" style="max-width: 100%;height: 140px;" :src="perimage.imageurl">
+                                                            <img :imgid="perimage.id" class="img-thumbnail" @click="clickView(perimage)" style="max-width: 100%;height: 140px;" :src="'/'+perimage.imageurl">
                                                         </div>
                                                         <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'Admin/img/b1.jpg'">
+                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'/Admin/img/b1.jpg'">
                                                         </div>
                                                         <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'Admin/img/b1.jpg'">
+                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'/Admin/img/b1.jpg'">
                                                         </div>
                                                         <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'Admin/img/b1.jpg'">
+                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'/Admin/img/b1.jpg'">
                                                         </div>
                                                         <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'Admin/img/b1.jpg'">
-                                                        </div>
-                                                        <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'Admin/img/b1.jpg'">
-                                                        </div>
-                                                        <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'Admin/img/b1.jpg'">
-                                                        </div>
-                                                        <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'Admin/img/b1.jpg'">
-                                                        </div>
-                                                        <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'Admin/img/b1.jpg'">
-                                                        </div>
-                                                        <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'Admin/img/b1.jpg'">
-                                                        </div>
-                                                        <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'Admin/img/b1.jpg'">
-                                                        </div>
-                                                        <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'Admin/img/b1.jpg'">
-                                                        </div>
-                                                        <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'Admin/img/b1.jpg'">
-                                                        </div>
-                                                        <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'Admin/img/b1.jpg'">
-                                                        </div>
-                                                        <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'Admin/img/b1.jpg'">
-                                                        </div>
-                                                        <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'Admin/img/b1.jpg'">
+                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'/Admin/img/b1.jpg'">
                                                         </div>
                                                         </div>
                                                     </div>
@@ -84,7 +51,7 @@
                                                 <div class="col-sm-4">
                                                         <p style="font-size: 19px;">Attachment Details: </p>
                                                         <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-10 col-xs-12">
-                                                            <img class="img-thumbnail" style="max-width: 100%;" :src="imageData.imageurl">
+                                                            <img class="img-thumbnail" style="max-width: 100%;" :src="'/'+imageData.imageurl">
                                                         </div>
                                                         <form action="">
                                                             <div style="margin-bottom:2px;" class="form-group">

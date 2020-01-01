@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a215687a-b125-41dd-8599-63d499aac5f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/mithun.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mithun.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/portfolio-update.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/portfoliomanage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Blog.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UIHomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UIHomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_17_123257_create_blogs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_17_123257_create_blogs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/blog-add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/blog-add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/UI/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PortfolioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PortfolioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/UI/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/UI/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/image-upload-component.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/image-upload-component.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/inc/adminSideBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/inc/adminSideBar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,9 +41,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>{{asset('public/Admin')}</find>
-      <find>{{asset('public/admin')}}</find>
-      <find>jquery.knob.min.js</find>
       <find>public</find>
       <find>$RelatedTutorialList</find>
       <find>relatedTutorialSelectForTutorialViewPage</find>
@@ -70,6 +68,9 @@
       <find>favicon.ico</find>
       <find>specificMail?mail</find>
       <find>hikv</find>
+      <find>Astronomy Binoculars A Great Alternative</find>
+      <find>widget-wrap</find>
+      <find>single-cat-widget</find>
     </findStrings>
     <replaceStrings>
       <replace>{{asset('UI')}}</replace>
@@ -82,14 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/PortFolio Manage.php" />
-        <option value="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Portfolio UI  image add.php" />
-        <option value="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Portfolioedit.php" />
-        <option value="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Add.php" />
-        <option value="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Category.php" />
-        <option value="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Edit.php" />
-        <option value="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Manage.php" />
-        <option value="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution edit.php" />
         <option value="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution Peripherals Product Add.php" />
         <option value="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution Video Capture Product Add.php" />
         <option value="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution Video Recording Product add.php" />
@@ -129,10 +122,18 @@
         <option value="$PROJECT_DIR$/app/Service.php" />
         <option value="$PROJECT_DIR$/resources/views/Admin/blog-add.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_12_17_123257_create_blogs_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" />
         <option value="$PROJECT_DIR$/app/Blog.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UIHomeController.php" />
+        <option value="$PROJECT_DIR$/public/UI/css/main.css" />
         <option value="$PROJECT_DIR$/resources/views/UI/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/blog.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/Admin/inc/adminSideBar.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PortfolioController.php" />
+        <option value="$PROJECT_DIR$/resources/views/Admin/portfoliomanage.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/Admin/portfolio-update.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/image-upload-component.vue" />
       </list>
     </option>
   </component>
@@ -234,8 +235,77 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mithun" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mithun" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mithun" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mithun" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mithun" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mithun" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mithun" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mithun" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mithun" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mithun" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mithun" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,16 +376,18 @@
       <workItem from="1577711592056" duration="812000" />
       <workItem from="1577717869735" duration="2592000" />
       <workItem from="1577804159330" duration="5155000" />
+      <workItem from="1577853265102" duration="8012000" />
+      <workItem from="1577879902746" duration="10070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222259000" />
+    <option name="totallyTimeSpent" value="240341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.20522387" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.16684435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50080776" side_tool="true" weight="0.17270789" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -415,102 +487,15 @@
           <line>106</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/Admin/portfoliomanage.blade.php</url>
+          <line>27</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Admin Pannel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="166" column="86" selection-start-line="166" selection-start-column="86" selection-end-line="166" selection-end-column="86" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#193#200#1" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#section#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../soshinebd/application/models/UserAccountModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="159" column="44" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/user profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="98" column="77" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../soshinebd/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../soshinebd/application/views/portfolio main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="75" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../soshinebd/application/views/portfolio view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../soshinebd/inc/Menu-Bar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="226" column="147" selection-start-line="226" selection-start-column="147" selection-end-line="226" selection-end-column="147" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../soshinebd/application/views/contact-us.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../soshinebd/application/views/user-signup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="84" column="137" lean-forward="true" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="137" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#193#200#1" expanded="true" />
-            <element signature="e#4324#4349#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../soshinebd/application/views/user-verify.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="42" column="55" selection-start-line="36" selection-start-column="20" selection-end-line="47" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../soshinebd/application/views/user-login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../soshinebd/inc/Admin Panel/header-source-file.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
@@ -729,13 +714,6 @@
         <state relative-caret-position="-816" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ServiceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_12_23_161744_create_services_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -753,20 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Blog.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -777,27 +741,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="389" column="20" selection-start-line="389" selection-start-column="20" selection-end-line="389" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Portfolio.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UIHomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="e#40#61#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -812,6 +759,137 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="24" column="40" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/UI/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="785">
+          <caret line="3446" selection-start-line="3446" selection-end-line="3446" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="393" column="23" selection-start-line="389" selection-start-column="16" selection-end-line="393" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="19" column="79" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="79" />
+          <folding>
+            <element signature="e#39#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ServiceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Admin/blog-manage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UIHomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="73" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="73" />
+          <folding>
+            <element signature="e#40#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Admin/inc/adminSideBar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Admin/portfolio add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Admin/portfolio-update.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1079">
+          <caret line="63" column="93" selection-start-line="63" selection-start-column="93" selection-end-line="63" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/blog.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1607">
+          <caret line="232" column="30" selection-start-line="232" selection-start-column="30" selection-end-line="232" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PortfolioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="33" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="68" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Admin/portfoliomanage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="41" column="83" selection-start-line="41" selection-start-column="83" selection-end-line="41" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/image-upload-component.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="53" column="122" selection-start-line="53" selection-start-column="122" selection-end-line="53" selection-end-column="122" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

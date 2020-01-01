@@ -31,6 +31,12 @@
         </li>
 
         <li>
+          <a href="{{url('portfolio-manage')}}">
+            <i class="fa fa-youtube-play"></i><span>PORTFOLIO</span>
+          </a>
+        </li>
+
+        <li>
           <a href="{{url('service-add')}}">
             <span class="glyphicon glyphicon-th-list"></span><span>Service</span>
           </a>
