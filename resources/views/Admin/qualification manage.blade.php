@@ -19,7 +19,7 @@
 
 
         <section id="app" class="content">
-            <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('blog-add')}}" class="btn btn-success pull-left">Add New +</a>
+            <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('add-qualification')}}" class="btn btn-success pull-left">Add New +</a>
             <div class="row">
                 <div class="col-sm-12">
                     @if(Session::has('message'))
@@ -40,24 +40,24 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($Blogs as $Blog)
-                                <tr>
-                                    <td>{{$Blog->browser_title}}</td>
-                                    <td><input type="checkbox" checked data-toggle="toggle"></td>
-                                    <td>
-                                        <a href="#" class="btn btn-success"><i style="font-size:17px;" class="fa fa-eye"></i></a>
-                                        <a href="{{url('blog-edit',[$Blog->id])}}" class="btn btn-info"> <i style="font-size:17px;" class="fa fa-edit"></i></a>
-                                        <a href="#" class="btn btn-danger"><i  style="font-size:17px;" class="fa fa-close"></i></a>
-                                    </td>
-                                </tr>
+                                @foreach($Qualifications as $Qualification)
+                                    <tr>
+                                        <td>{{$Qualification->Degree}}</td>
+                                        <td><input type="checkbox" checked data-toggle="toggle"></td>
+                                        <td>
+                                            <a href="#" class="btn btn-success"><i style="font-size:17px;" class="fa fa-eye"></i></a>
+                                            <a href="{{url('edit-qualification',[$Qualification->id])}}" class="btn btn-info"> <i style="font-size:17px;" class="fa fa-edit"></i></a>
+                                            <a href="#" class="btn btn-danger"><i  style="font-size:17px;" class="fa fa-close"></i></a>
+                                        </td>
+                                    </tr>
                                 @endforeach
                                 </tbody>
                             </table>
                         </div>
 
                     </div>
-                    </div>
                 </div>
+            </div>
         </section>
     </div>
     <!-- /.content-wrapper -->

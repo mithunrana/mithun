@@ -51,7 +51,7 @@
                                                 <div class="col-sm-4">
                                                         <p style="font-size: 19px;">Attachment Details: </p>
                                                         <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-10 col-xs-12">
-                                                            <img class="img-thumbnail" style="max-width: 100%;" :src="'/'+imageData.imageurl">
+                                                            <img class="img-thumbnail" id="previousimage" style="max-width: 100%;" :src="'/'+imageData.imageurl">
                                                         </div>
                                                         <form action="">
                                                             <div style="margin-bottom:2px;" class="form-group">
@@ -60,12 +60,12 @@
                                                             </div>
                                                             <div style="margin-bottom:2px;" class="form-group">
                                                                 <label for="getImageAltText">Image Alt:</label>
-                                                                <input type="text" class="form-control" id="getImageAltText">
+                                                                <input type="text"  class="form-control" id="getImageAltText">
                                                             </div>
                                                             <input type="hidden" :value="imageData.id" id="getimageId">
                                                             <div style="margin-bottom:2px;" class="form-group">
                                                                 <label for="getImageTitleText">Image Title:</label>
-                                                                <input type="text" class="form-control" id="getImageTitleText">
+                                                                <input type="text"  class="form-control" id="getImageTitleText">
                                                             </div>
                                                             <button type="button" class="btn btn-info" id="selectimagedata">Image Data</button>
                                                             <button type="button" class="btn btn-info" id="iconselect">Image Icon</button>

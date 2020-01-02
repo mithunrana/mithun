@@ -40,24 +40,24 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($Blogs as $Blog)
-                                <tr>
-                                    <td>{{$Blog->browser_title}}</td>
-                                    <td><input type="checkbox" checked data-toggle="toggle"></td>
-                                    <td>
-                                        <a href="#" class="btn btn-success"><i style="font-size:17px;" class="fa fa-eye"></i></a>
-                                        <a href="{{url('blog-edit',[$Blog->id])}}" class="btn btn-info"> <i style="font-size:17px;" class="fa fa-edit"></i></a>
-                                        <a href="#" class="btn btn-danger"><i  style="font-size:17px;" class="fa fa-close"></i></a>
-                                    </td>
-                                </tr>
+                                @foreach($ServiceList as $Service)
+                                    <tr>
+                                        <td>{{$Service->service_title}}</td>
+                                        <td><input type="checkbox" checked data-toggle="toggle"></td>
+                                        <td>
+                                            <a href="#" class="btn btn-success"><i style="font-size:17px;" class="fa fa-eye"></i></a>
+                                            <a href="{{url('service-edit',[$Service->id])}}" class="btn btn-info"> <i style="font-size:17px;" class="fa fa-edit"></i></a>
+                                            <a href="#" class="btn btn-danger"><i  style="font-size:17px;" class="fa fa-close"></i></a>
+                                        </td>
+                                    </tr>
                                 @endforeach
                                 </tbody>
                             </table>
                         </div>
 
                     </div>
-                    </div>
                 </div>
+            </div>
         </section>
     </div>
     <!-- /.content-wrapper -->

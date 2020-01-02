@@ -24,13 +24,14 @@
             <image-component></image-component>
             <!-- Modal -->
 
+
             <!-- Main row -->
             <div class="row">
                 <div class="col-sm-12">
                     <div class="panel panel-primary">
                         <div class="panel-heading">Service Add Side</div>
                         <div class="panel-body">
-                            <form class="form-horizontal" action="{{url('portfolio-update',[$Portfolio->id])}}" method="post">
+                            <form class="form-horizontal" action="{{url('service-update',[$Service->id])}}" method="post">
                                 @csrf
                                 <div class="col-sm-12">
                                     <div class="row">
@@ -38,45 +39,37 @@
                                             <div class="form-group">
                                                 <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12">Browser Title:</label>
                                                 <div style="padding-left: 0px;">
-                                                    <input type="text"  class="form-control" value="{{$Portfolio->BrowserTitle}}" placeholder="Enter browser Title" name="BrowserTitle">
+                                                    <input type="text"  class="form-control" value="{{$Service->BrowserTitle}}" placeholder="Enter browser Title" name="BrowserTitle">
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
                                                 <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12">Permalink:</label>
                                                 <div style="padding-left: 0px;">
-                                                    <input type="text" class="form-control" value="{{$Portfolio->permalink}}" placeholder="Enter Blog Permalink" name="permalink">
+                                                    <input type="text" class="form-control"value="{{$Service->permalink}}" placeholder="Enter Blog Permalink" name="permalink">
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12" for="servicetitle">Portfolio Title:</label>
+                                                <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12" for="servicetitle">Service Title:</label>
                                                 <div style="padding-left: 0px;">
-                                                    <input type="text" class="form-control" value="{{$Portfolio->Portfolio_title}}" id="servicetitle" placeholder="Enter blog title" name="Portfolio_title">
+                                                    <input type="text" class="form-control" value="{{$Service->service_title}}" id="servicetitle" placeholder="Enter blog title" name="service_title">
                                                 </div>
-                                            </div>
-                                            <label for="sel1">Portfolio Category:</label>
-                                            <div class="form-group">
-                                                <select name="category" class="form-control">
-                                                    <option value="">=============Select Category===========</option>
-                                                    @foreach(App\PortfolioCategory::all() as $cat)
-                                                        <option value="{{$Portfolio->category}}" {{$cat->id == $Portfolio->category ? 'selected="selected"' : ''}}>{{$cat->CategoryName}}</option>
-                                                    @endforeach
-                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div>
-                                                <img style="width: 100%;margin-top: 27px;" src="/{{$Portfolio->featuredimage->imageurl}}">
-                                                <p style="width:100%; border-top-left-radius:0px;border-top-right-radius:0px;" id="imageslect" data-toggle="modal" data-target="#imagemodal" class="btn btn-primary">Select Image</p>
+                                                <img style="width: 100%;margin-top: 27px;" src="/{{$Service->featuredimage->imageurl}}">
+                                                <p style="width:100%; border-top-left-radius:0px;border-top-right-radius:0px;"  data-toggle="modal" data-target="#imagemodal" class="btn btn-primary">Select Image</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <input type="hidden" value="{{$Portfolio->featured_image}}" name="featured_image" id="setimageid"/>
-                                <input type="hidden" value="{{$Portfolio->FeaturedImageTitleText}}" name="FeaturedImageTitleText" id="setImageAltText"/>
-                                <input type="hidden"  value="{{$Portfolio->FeaturedImageAltText}}" name="FeaturedImageAltText" id="setImageTitleText"/>
+                                <input type="hidden" value="{{$Service->featured_image}}" name="featured_image" id="setimageid"/>
+                                <input type="hidden" value="{{$Service->ServiceIcon}}" name="ServiceIcon" id="setimageid2"/>
+                                <input type="hidden" value="{{$Service->FeaturedImageTitleText}}" name="FeaturedImageTitleText" id="setImageAltText"/>
+                                <input type="hidden" value="{{$Service->FeaturedImageAltText}}" name="FeaturedImageAltText" id="setImageTitleText"/>
 
                                 <div class="clearfix"></div>
 
@@ -86,15 +79,22 @@
                                             <div class="form-group">
                                                 <label style="text-align:left;" class="control-label" for="pwd">SEO Keyword:</label>
                                                 <div>
-                                                    <input type="text" class="form-control" value="{{$Portfolio->SeoKeyword}}" id="pwd" placeholder="Enter SEO Keyword" name="SeoKeyword">
+                                                    <input type="text" class="form-control" value="{{$Service->SeoKeyword}}" id="pwd" placeholder="Enter SEO Keyword" name="SeoKeyword">
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
                                                 <label style="text-align:left;" class="control-label" for="seodescription">SEO Description:</label>
                                                 <div>
-                                                    <textarea type="text" class="form-control" id="seodescription" placeholder="Enter SEO Description" name="SeoDescription">{{$Portfolio->SeoDescription}}</textarea>
+                                                    <textarea type="text" class="form-control" id="seodescription" placeholder="Enter SEO Description" name="SeoDescription">{{$Service->SeoDescription}}</textarea>
                                                 </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div>
+                                                <img style="width: 100%;margin-top: 27px;" src="/{{$Service->icon->imageurl}}">
+                                                <p style="width:100%; border-top-left-radius:0px;border-top-right-radius:0px;"  data-toggle="modal" data-target="#imagemodal" class="btn btn-primary">Select Image</p>
                                             </div>
                                         </div>
                                     </div>
@@ -102,15 +102,15 @@
 
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <label style="text-align:left;" class="control-label" for="servicedetails">Portfolio Details:</label>
+                                        <label style="text-align:left;" class="control-label" for="servicedetails">Service Details:</label>
                                         <div>
-                                            <textarea type="text" rows="5" class="form-control" id="servicedetails" placeholder="Enter Blog Details" name="MainContent">{{$Portfolio->MainContent}}</textarea>
+                                            <textarea type="text" rows="5" class="form-control" id="servicedetails" placeholder="Enter Blog Details" name="MainContent">{{$Service->MainContent}}</textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label style="text-align:left;" class="control-label" for="opencontent">Portfolio Open Content:</label>
+                                        <label style="text-align:left;" class="control-label" for="opencontent">Service Open Content:</label>
                                         <div>
-                                            <textarea type="text" rows="5" class="form-control" id="opencontent" placeholder="Enter Blog Details" name="OpenContent">{{$Portfolio->OpenContent}}</textarea>
+                                            <textarea type="text" rows="5" class="form-control" id="opencontent" placeholder="Enter Blog Details" name="OpenContent">{{$Service->OpenContent}}</textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -140,13 +140,11 @@
 <script>
     $(document).ready(function() {
 
-
-        $('#previousimage').attr('src','/'+'{{$Portfolio->featuredimage->imageurl}}');
-        $('#imagelocation').attr('value','/'+'{{$Portfolio->featuredimage->imageurl}}');
-        $('#getimageId').attr('value','{{$Portfolio->featured_image}}');
-        $('#getImageAltText').attr('value','{{$Portfolio->FeaturedImageAltText}}');
-        $('#getImageTitleText').attr('value','{{$Portfolio->FeaturedImageTitleText}}');
-
+        $('#previousimage').attr('src','/'+'{{$Service->featuredimage->imageurl}}');
+        $('#imagelocation').attr('value','/'+'{{$Service->featuredimage->imageurl}}');
+        $('#getimageId').attr('value','{{$Service->featured_image}}');
+        $('#getImageAltText').attr('value','{{$Service->FeaturedImageAltText}}');
+        $('#getImageTitleText').attr('value','{{$Service->FeaturedImageTitleText}}');
 
         $('#selectimagedata').click(function(){
             var imageid = $('#getimageId').val();
@@ -156,6 +154,12 @@
             $('#setImageAltText').attr('value',imagealttext);
             $('#setImageTitleText').attr('value',imagetitletext);
         })
+
+        $('#iconselect').click(function(){
+            var imageid = $('#getimageId').val();
+            $('#setimageid2').attr('value',imageid);
+        });
+
     });
 </script>
 

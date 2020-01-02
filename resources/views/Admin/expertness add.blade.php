@@ -31,33 +31,22 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">
-                            <table class="table table-striped">
-                                <thead>
-                                <tr>
-                                    <th>Blog Name</th>
-                                    <th>Status</th>
-                                    <th>Action</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                @foreach($Blogs as $Blog)
-                                <tr>
-                                    <td>{{$Blog->browser_title}}</td>
-                                    <td><input type="checkbox" checked data-toggle="toggle"></td>
-                                    <td>
-                                        <a href="#" class="btn btn-success"><i style="font-size:17px;" class="fa fa-eye"></i></a>
-                                        <a href="{{url('blog-edit',[$Blog->id])}}" class="btn btn-info"> <i style="font-size:17px;" class="fa fa-edit"></i></a>
-                                        <a href="#" class="btn btn-danger"><i  style="font-size:17px;" class="fa fa-close"></i></a>
-                                    </td>
-                                </tr>
-                                @endforeach
-                                </tbody>
-                            </table>
+                            <form method="post" action="{{url('store-expertness')}}">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="name">Name of expertness:</label>
+                                    <input type="text" class="form-control" name="Name" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="percentage">Percentage:</label>
+                                    <input type="text" class="form-control" name="Percentage" id="percentage">
+                                </div>
+                                <button type="submit" class="btn btn-info">Submit</button>
+                            </form>
                         </div>
-
-                    </div>
                     </div>
                 </div>
+            </div>
         </section>
     </div>
     <!-- /.content-wrapper -->

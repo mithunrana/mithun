@@ -19,7 +19,6 @@
 
 
         <section id="app" class="content">
-            <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('blog-add')}}" class="btn btn-success pull-left">Add New +</a>
             <div class="row">
                 <div class="col-sm-12">
                     @if(Session::has('message'))
@@ -31,33 +30,28 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">
-                            <table class="table table-striped">
-                                <thead>
-                                <tr>
-                                    <th>Blog Name</th>
-                                    <th>Status</th>
-                                    <th>Action</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                @foreach($Blogs as $Blog)
-                                <tr>
-                                    <td>{{$Blog->browser_title}}</td>
-                                    <td><input type="checkbox" checked data-toggle="toggle"></td>
-                                    <td>
-                                        <a href="#" class="btn btn-success"><i style="font-size:17px;" class="fa fa-eye"></i></a>
-                                        <a href="{{url('blog-edit',[$Blog->id])}}" class="btn btn-info"> <i style="font-size:17px;" class="fa fa-edit"></i></a>
-                                        <a href="#" class="btn btn-danger"><i  style="font-size:17px;" class="fa fa-close"></i></a>
-                                    </td>
-                                </tr>
-                                @endforeach
-                                </tbody>
-                            </table>
-                        </div>
+                            <form method="post" action="{{url('update-qualification',[$Qualification->id])}}">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="Degree">Name of Degree:</label>
+                                    <input type="text" class="form-control" value="{{$Qualification->Degree}}" name="Degree" id="Degree">
+                                </div>
 
-                    </div>
+                                <div class="form-group">
+                                    <label for="Session">Session:</label>
+                                    <input type="text" class="form-control" value="{{$Qualification->Session}}" name="Session" id="Session">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="Result">Name of Degree:</label>
+                                    <input type="text" class="form-control" value="{{$Qualification->Result}}" name="Result" id="Result">
+                                </div>
+                                <button type="submit" class="btn btn-info">Submit</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
+            </div>
         </section>
     </div>
     <!-- /.content-wrapper -->

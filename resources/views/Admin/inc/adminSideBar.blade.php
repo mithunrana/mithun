@@ -45,7 +45,25 @@
         <li>
           <a href="{{url('category')}}">
             <i class="fa fa-list-alt" aria-hidden="true"></i>
-            <span>Category</span>
+            <span>Blog Category</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{url('category')}}">
+            <i class="fa fa-list-alt" aria-hidden="true"></i>
+            <span>Portfolio Category</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{url('manage-expertness')}}">
+            <i class="fa fa-chain-broken"></i>
+            <span>Expertness</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{url('manage-qualification')}}">
+            <i class="fa fa-graduation-cap"></i>
+            <span>Qualification</span>
           </a>
         </li>
       </ul>

@@ -26,9 +26,17 @@ Route::get('/getall-category','CategoryController@getAll');
 Route::post('/update-category','CategoryController@categoryUpdate');
 
 
+Route::get('/portfolio-category','PortfolioController@portfolioCategory');
+Route::post('/portfolio-category-save','PortfolioController@portfolioCategoryStore');
+Route::get('/getall-portfolio-category','PortfolioController@getAllCategory');
+Route::post('/update-portfolio-category','PortfolioController@portfolioCategoryUpdate');
+
+
 Route::get('/blog-manage','BlogController@manage');
 Route::get('/blog-add','BlogController@create');
 Route::post('/blog-add','BlogController@store');
+Route::get('/blog-edit/{id}','BlogController@edit');
+Route::post('/blog-update/{id}','BlogController@update');
 
 
 Route::get('/portfolio-manage','PortfolioController@portfolioManage');
@@ -38,12 +46,26 @@ Route::post('/portfolio-store','PortfolioController@store');
 Route::post('/portfolio-update/{id}','PortfolioController@portfolioUpdate');
 
 
+Route::get('/manage-expertness','ExpertnessWithQualification@manageExpertness');
+Route::get('/add-expertness','ExpertnessWithQualification@addExpertness');
+Route::post('/store-expertness','ExpertnessWithQualification@storeExpertness');
+
+Route::get('/manage-qualification','ExpertnessWithQualification@manageQualification');
+Route::get('/add-qualification','ExpertnessWithQualification@addQualification');
+Route::post('/store-qualification','ExpertnessWithQualification@storeQualification');
+Route::get('/edit-qualification/{id}','ExpertnessWithQualification@editQualification');
+Route::post('/update-qualification/{id}','ExpertnessWithQualification@updateQualification');
+
+
 Route::get('/profile-update','AboutController@profile');
 Route::post('/profile-update','AboutController@profileUpdate');
 
 
 Route::get('/service-add','ServiceController@serviceCreate');
 Route::post('/service-store','ServiceController@serviceStore');
+Route::get('/service-manage','ServiceController@serviceManage');
+Route::get('/service-edit/{id}','ServiceController@edit');
+Route::post('/service-update/{id}','ServiceController@update');
 
 
 Route::get('/getallimage','ImageUploadController@imagelist');
