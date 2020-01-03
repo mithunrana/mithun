@@ -35,28 +35,28 @@
                                 @csrf
                                 <div class="col-sm-12">
                                     <div class="col-sm-8">
-                                        <div class="form-group col-sm-12">
+                                        <div class="form-group">
                                             <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12">Browser Title:</label>
                                             <div style="padding-left: 0px;" class="col-sm-12">
                                                 <input type="text"  class="form-control" placeholder="Enter browser Title" name="browser_title">
                                             </div>
                                         </div>
 
-                                        <div class="form-group col-sm-12">
+                                        <div class="form-group">
                                             <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12">Permalink:</label>
                                             <div style="padding-left: 0px;" class="col-sm-12">
                                                 <input type="text" class="form-control" placeholder="Enter Blog Permalink" name="permalink">
                                             </div>
                                         </div>
 
-                                        <div class="form-group col-sm-12">
+                                        <div class="form-group">
                                             <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12" for="pwd">Blog Title:</label>
                                             <div style="padding-left: 0px;" class="col-sm-12">
                                                 <input type="text" class="form-control" id="pwd" placeholder="Enter blog title" name="blog_title">
                                             </div>
                                         </div>
 
-                                        <div class="form-group col-sm-12">
+                                        <div class="form-group">
                                             <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12" for="pwd">Video URL:</label>
                                             <div style="padding-left: 0px;" class="col-sm-12">
                                                 <input type="text" class="form-control" id="pwd" placeholder="Enter Video URL" name="video_url" required>
@@ -65,10 +65,8 @@
 
                                     </div>
                                     <div class="col-sm-4">
-                                        <div class="col-sm-12">
                                             <img style="width: 100%;margin-top: 27px;" src="{{asset('Admin')}}//img/b3.jpg">
                                             <p style="width:100%; border-top-left-radius:0px;border-top-right-radius:0px;"  data-toggle="modal" data-target="#imagemodal" class="btn btn-primary">Select Image</p>
-                                        </div>
                                     </div>
                                 </div>
 

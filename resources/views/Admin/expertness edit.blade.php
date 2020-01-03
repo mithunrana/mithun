@@ -21,24 +21,18 @@
         <section id="app" class="content">
             <div class="row">
                 <div class="col-sm-12">
-                    @if(Session::has('message'))
-                        <div class="alert alert-success alert-dismissible">
-                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                            {{Session::get('message')}}
-                        </div>
-                    @endif
                     <div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">
-                            <form method="post" action="{{url('store-expertness')}}">
+                            <form method="post" action="{{url('update-expertness',[$Expertness->id])}}">
                                 @csrf
                                 <div class="form-group">
                                     <label for="name">Name of expertness:</label>
-                                    <input type="text" class="form-control" name="Name" id="name">
+                                    <input type="text" class="form-control" value="{{$Expertness->Name}}" name="Name" id="name">
                                 </div>
                                 <div class="form-group">
                                     <label for="percentage">Percentage:</label>
-                                    <input type="text" class="form-control" name="Percentage" id="percentage">
+                                    <input type="text" class="form-control" value="{{$Expertness->Percentage}}" name="Percentage" id="percentage">
                                 </div>
                                 <button type="submit" class="btn btn-info">Submit</button>
                             </form>

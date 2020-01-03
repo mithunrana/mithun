@@ -23,6 +23,19 @@ class ExpertnessWithQualification extends Controller
     }
 
 
+    public function editExpertness($id){
+        $Expertness = Expertness::findOrFail($id);
+        return view('Admin.expertness edit',compact('Expertness'));
+    }
+
+
+    public function updateExpertness($id){
+        $Expertness = Expertness::findOrFail($id);
+        $Expertness->Name = request('Name');
+        $Expertness->Percentage = request('Percentage');
+        $Expertness->save();
+        return redirect()->to('manage-expertness')->with('message','Expertness Successfully Update');
+    }
 
 
     public function addQualification(){

@@ -38,7 +38,8 @@
 
         <li>
           <a href="{{url('service-add')}}">
-            <span class="glyphicon glyphicon-th-list"></span><span>Service</span>
+            <i class="fa fa-list"></i>
+            <span>Service</span>
           </a>
         </li>
 
@@ -64,6 +65,12 @@
           <a href="{{url('manage-qualification')}}">
             <i class="fa fa-graduation-cap"></i>
             <span>Qualification</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{url('manage-comment')}}">
+            <i class="fa fa-graduation-cap"></i>
+            <span>Comment</span>
           </a>
         </li>
       </ul>

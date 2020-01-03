@@ -40,14 +40,14 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($Expertness as $Expertnes)
+                                @foreach($Comments as $Comment)
                                     <tr>
-                                        <td>{{$Expertnes->Name}}</td>
+                                        <td>{{$Comment->Name}}</td>
                                         <td><input type="checkbox" checked data-toggle="toggle"></td>
                                         <td>
                                             <a href="#" class="btn btn-success"><i style="font-size:17px;" class="fa fa-eye"></i></a>
-                                            <a href="{{url('edit-expertness',[$Expertnes->id])}}" class="btn btn-info"> <i style="font-size:17px;" class="fa fa-edit"></i></a>
-                                            <a href="#" class="btn btn-danger"><i  style="font-size:17px;" class="fa fa-close"></i></a>
+                                            <a href="{{url('comment-edit',[$Comment->id])}}" class="btn btn-info"> <i style="font-size:17px;" class="fa fa-edit"></i></a>
+                                            <a href="{{url('comment-delete',[$Comment->id])}}" onclick="return ConfirmDelete();" class="btn btn-danger"><i  style="font-size:17px;" class="fa fa-close"></i></a>
                                         </td>
                                     </tr>
                                 @endforeach
@@ -72,4 +72,16 @@
     <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
+<script>
+    function ConfirmDelete()
+    {
+        var x = confirm("Are you sure you want to delete?");
+        if (x){
+            return true;
+        }
+        else{
+           return false;
+        }
+    }
+</script>
 @include('Admin.inc.footersource');

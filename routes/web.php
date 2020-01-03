@@ -49,12 +49,24 @@ Route::post('/portfolio-update/{id}','PortfolioController@portfolioUpdate');
 Route::get('/manage-expertness','ExpertnessWithQualification@manageExpertness');
 Route::get('/add-expertness','ExpertnessWithQualification@addExpertness');
 Route::post('/store-expertness','ExpertnessWithQualification@storeExpertness');
+Route::get('/edit-expertness/{id}','ExpertnessWithQualification@editExpertness');
+Route::post('/update-expertness/{id}','ExpertnessWithQualification@updateExpertness');
+
+
 
 Route::get('/manage-qualification','ExpertnessWithQualification@manageQualification');
 Route::get('/add-qualification','ExpertnessWithQualification@addQualification');
 Route::post('/store-qualification','ExpertnessWithQualification@storeQualification');
 Route::get('/edit-qualification/{id}','ExpertnessWithQualification@editQualification');
 Route::post('/update-qualification/{id}','ExpertnessWithQualification@updateQualification');
+
+
+Route::get('/manage-comment','CommentController@index');
+Route::get('/comment-add','CommentController@add');
+Route::post('/comment-store','CommentController@store');
+Route::get('/comment-edit/{id}','CommentController@edit');
+Route::post('/comment-update/{id}','CommentController@update');
+Route::get('/comment-delete/{id}','CommentController@delete');
 
 
 Route::get('/profile-update','AboutController@profile');
