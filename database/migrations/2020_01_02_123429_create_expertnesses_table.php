@@ -17,6 +17,7 @@ class CreateExpertnessesTable extends Migration
             $table->bigIncrements('id');
             $table->string('Name');
             $table->integer('Percentage');
+            $table->integer('Active_Status')->default(0);
             $table->timestamps();
         });
     }

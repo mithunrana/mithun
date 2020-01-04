@@ -18,6 +18,7 @@ class CreateQualificationsTable extends Migration
             $table->string('Degree');
             $table->string('Session');
             $table->string('Result');
+            $table->integer('Active_Status')->default(0);
             $table->timestamps();
         });
     }

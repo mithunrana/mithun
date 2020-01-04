@@ -19,7 +19,7 @@
 
 
         <section id="app" class="content">
-            <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('add-expertness')}}" class="btn btn-success pull-left">Add New +</a>
+            <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('comment-add')}}" class="btn btn-success pull-left">Add New +</a>
             <div class="row">
                 <div class="col-sm-12">
                     @if(Session::has('message'))

@@ -24,7 +24,6 @@
             <image-component></image-component>
             <!-- Modal -->
 
-
             <!-- Main row -->
             <div class="row">
                 <div class="col-sm-12">

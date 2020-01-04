@@ -50,7 +50,7 @@
           </a>
         </li>
         <li>
-          <a href="{{url('category')}}">
+          <a href="{{url('portfolio-category')}}">
             <i class="fa fa-list-alt" aria-hidden="true"></i>
             <span>Portfolio Category</span>
           </a>

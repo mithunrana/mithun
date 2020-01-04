@@ -2264,8 +2264,11 @@ __webpack_require__.r(__webpack_exports__);
 
       axios.post('/portfolio-category-save', this.CategoryDetails).then(function (response) {
         _this2.success = response.data.success;
+
+        _this2.init();
+
+        _this2.CategoryDetails = {};
       });
-      this.init();
     },
     CategoryEdit: function CategoryEdit(row) {
       this.categoryInsert = false;
@@ -2278,6 +2281,7 @@ __webpack_require__.r(__webpack_exports__);
       if (!confirm('Are you sure')) return;
       axios.post('update-portfolio-category', data).then(function (response) {
         _this3.success = response.data.success;
+        _this3.CategoryDetails = {};
       });
     }
   }

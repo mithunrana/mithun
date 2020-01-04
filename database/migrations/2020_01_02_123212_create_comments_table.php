@@ -19,6 +19,7 @@ class CreateCommentsTable extends Migration
             $table->string('Designation');
             $table->string('Image');
             $table->string('Comment');
+            $table->integer('Active_Status')->default(0);
             $table->timestamps();
         });
     }

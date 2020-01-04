@@ -51,6 +51,7 @@ Route::get('/add-expertness','ExpertnessWithQualification@addExpertness');
 Route::post('/store-expertness','ExpertnessWithQualification@storeExpertness');
 Route::get('/edit-expertness/{id}','ExpertnessWithQualification@editExpertness');
 Route::post('/update-expertness/{id}','ExpertnessWithQualification@updateExpertness');
+Route::get('/delete-expertness/{id}','ExpertnessWithQualification@deleteExpertness');
 
 
 
@@ -59,6 +60,7 @@ Route::get('/add-qualification','ExpertnessWithQualification@addQualification');
 Route::post('/store-qualification','ExpertnessWithQualification@storeQualification');
 Route::get('/edit-qualification/{id}','ExpertnessWithQualification@editQualification');
 Route::post('/update-qualification/{id}','ExpertnessWithQualification@updateQualification');
+Route::get('/delete-qualification/{id}','ExpertnessWithQualification@deleteQualification');
 
 
 Route::get('/manage-comment','CommentController@index');

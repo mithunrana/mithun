@@ -84,17 +84,25 @@
                 axios.get('/getall-portfolio-category').then(response=>{this.CategoyList=response.data});
             },
             CategorySave(){
-                axios.post('/portfolio-category-save',this.CategoryDetails).then(response=>{this.success = response.data.success;});
-                this.init();
+                axios.post('/portfolio-category-save',this.CategoryDetails).then(response=>{
+                    this.success = response.data.success;
+                    this.init();
+                    this.CategoryDetails = {};
+                });
             },
+
             CategoryEdit(row){
                 this.categoryInsert =false;
                 this.categoryUpdate = true;
                 this.CategoryDetails = row;
             },
+
             CategoryUpdate(data){
                 if(!confirm('Are you sure')) return;
-                axios.post('update-portfolio-category',data).then(response=>{this.success = response.data.success;});
+                axios.post('update-portfolio-category',data).then(response=>{
+                    this.success = response.data.success;
+                    this.CategoryDetails = {};
+                });
             }
         }
     }

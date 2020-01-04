@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Comment;
 use Illuminate\Http\Request;
 use App\Expertness;
 use App\Qualification;
@@ -37,6 +38,16 @@ class ExpertnessWithQualification extends Controller
         return redirect()->to('manage-expertness')->with('message','Expertness Successfully Update');
     }
 
+    public function deleteExpertness($id){
+        $Qualification = Expertness::find($id);
+        $Qualification->delete();
+        return redirect()->to('manage-expertness')->with('message','Expertness delete Successfully');
+    }
+
+
+
+
+
 
     public function addQualification(){
         return view('Admin.qualification add');
@@ -65,4 +76,12 @@ class ExpertnessWithQualification extends Controller
         Qualification::Create($request->all());
         return redirect()->to('manage-qualification')->with('message','Qualification Successfully Added');
     }
+
+    public function deleteQualification($id){
+        $Qualification = Qualification::find($id);
+        $Qualification->delete();
+        return redirect()->to('manage-qualification')->with('message','Qualification delete Successfully');
+    }
+
+
 }
