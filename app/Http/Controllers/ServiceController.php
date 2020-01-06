@@ -17,6 +17,7 @@ class ServiceController extends Controller
 
     public function serviceStore(Request $request){
         Service::create($request->all());
+        return redirect()->to('service-manage')->with('message','Service Update Successfully');
     }
 
     public function serviceManage(){
