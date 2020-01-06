@@ -37,7 +37,7 @@
         </li>
 
         <li>
-          <a href="{{url('service-add')}}">
+          <a href="{{url('service-manage')}}">
             <i class="fa fa-list"></i>
             <span>Service</span>
           </a>
