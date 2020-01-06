@@ -48,7 +48,7 @@
                                     <td>
                                         <a class="btn btn-info" @click="CategoryEdit(category)">View</a>
                                         <a class="btn btn-primary" @click="CategoryEdit(category)">Edit</a>
-                                        <a class="btn btn-danger" @click="CategoryEdit(category)">Delete</a>
+                                        <a class="btn btn-danger"  @click="CategoryDelete(category)">Delete</a>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -84,7 +84,11 @@
                 axios.get('/getall-category').then(response=>{this.CategoyList=response.data});
             },
             CategorySave(){
-                axios.post('/categorysave',this.CategoryDetails).then(response=>{this.success = response.data.success;});
+                axios.post('/categorysave',this.CategoryDetails).then(response=>{
+                    this.success = response.data.success;
+                    this.init();
+                    this.CategoryDetails = {} ;
+                });
             },
             CategoryEdit(row){
                 this.categoryInsert =false;
@@ -94,6 +98,11 @@
             CategoryUpdate(data){
                 if(!confirm('Are you sure')) return;
                 axios.post('update-category',data).then(response=>{this.success = response.data.success;});
+            },
+            CategoryDelete(data){
+                if(!confirm('Are you sure delete this category')) return;
+                axios.post('delete-category',data).then(response=>{this.success = response.data.success;this.init();});
+                alertify.success('Category Delete Successfully')
             }
         }
     }

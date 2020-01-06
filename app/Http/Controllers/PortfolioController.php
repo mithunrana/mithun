@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Service;
 use Illuminate\Http\Request;
 use App\Portfolio;
 use App\PortfolioCategory;
@@ -19,7 +20,7 @@ class PortfolioController extends Controller
 
     public function store(Request $request){
      Portfolio::Create($request->all());
-        //echo "hello world";
+     return redirect()->to('portfolio-manage')->with('message','Portfolio Delete Successfully');
     }
 
     public function portfolioManage(){
@@ -51,6 +52,11 @@ class PortfolioController extends Controller
     }
 
 
+    public function portfolioDelete($id){
+        $Portfolio = Portfolio::find($id);
+        $Portfolio->delete();
+        return redirect()->to('portfolio-manage')->with('message','Portfolio delete Successfully');
+    }
 
 
     public function portfolioCategory(){

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
+use App\Blog;
 class CategoryController extends Controller
 {
     public function index(){
@@ -32,5 +33,19 @@ class CategoryController extends Controller
             Category::find($r->input('id'))->update($r->all());
             return response()->json(['success'=>'Category Update Successfully...']);
         }
+    }
+
+    public function categoryDelete(Request $r){
+        $Category =  Category::findOrFail($r->id);
+        if(Blog::where('category',$r->id)->first()){
+            $Blog = Blog::where('category',$r->id)->first();
+            $Blog->Active_Status = '0';
+            $Blog->category = '0';
+            $Blog->save();
+            $Category->delete();
+        }else{
+            $Category->delete();
+        }
+        return response()->json(['success'=>'Category delete Successfully...']);
     }
 }

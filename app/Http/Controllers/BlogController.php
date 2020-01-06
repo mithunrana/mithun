@@ -48,6 +48,7 @@ class BlogController extends Controller
             'featured_image' => $request->featured_image,
             'blog_poster' => $userid
         ]);
+        return redirect()->to('blog-manage')->with('message','Blog Added Successfully');
     }
 
     public function manage(){
@@ -79,5 +80,10 @@ class BlogController extends Controller
     }
 
 
+    public function delete($id){
+        $Blog = Blog::find($id);
+        $Blog->delete();
+        return redirect()->to('blog-manage')->with('message','Blog delete Successfully');
+    }
 
 }

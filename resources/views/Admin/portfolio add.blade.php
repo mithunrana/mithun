@@ -68,7 +68,7 @@
                                         </div>
                                         <div class="col-sm-4">
                                             <div>
-                                                <img style="width: 100%;margin-top: 27px;" src="{{asset('Admin')}}//img/default-image.webp">
+                                                <img style="width: 100%;margin-top: 27px;" id="previewImage" src="{{asset('Admin')}}//img/default-image.webp">
                                                 <p style="width:100%; border-top-left-radius:0px;border-top-right-radius:0px;"  data-toggle="modal" data-target="#imagemodal" class="btn btn-primary">Select Image</p>
                                             </div>
                                         </div>
@@ -96,13 +96,6 @@
                                                 <div>
                                                     <textarea type="text" class="form-control" id="seodescription" placeholder="Enter SEO Description" name="SeoDescription"></textarea>
                                                 </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div>
-                                                <img style="width: 100%;margin-top: 27px;" src="{{asset('Admin')}}//img/default-image.webp">
-                                                <p style="width:100%; border-top-left-radius:0px;border-top-right-radius:0px;"  data-toggle="modal" data-target="#imagemodal" class="btn btn-primary">Select Image</p>
                                             </div>
                                         </div>
                                     </div>
@@ -151,6 +144,9 @@
             var imageid = $('#getimageId').val();
             var imagealttext = $('#getImageAltText').val();
             var imagetitletext = $('#getImageTitleText').val();
+            var imageurl = $('#imagelocation').val();
+
+            $('#previewImage').attr('src','/'+imageurl);
             $('#setimageid').attr('value',imageid);
             $('#setImageAltText').attr('value',imagealttext);
             $('#setImageTitleText').attr('value',imagetitletext);

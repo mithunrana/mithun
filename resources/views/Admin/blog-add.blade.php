@@ -65,7 +65,7 @@
 
                                     </div>
                                     <div class="col-sm-4">
-                                            <img style="width: 100%;margin-top: 27px;" src="{{asset('Admin')}}//img/b3.jpg">
+                                            <img id="previewImage" style="width: 100%;margin-top: 27px;" src="{{asset('Admin')}}//img/b3.jpg">
                                             <p style="width:100%; border-top-left-radius:0px;border-top-right-radius:0px;"  data-toggle="modal" data-target="#imagemodal" class="btn btn-primary">Select Image</p>
                                     </div>
                                 </div>
@@ -147,6 +147,9 @@
             var imageid = $('#getimageId').val();
             var imagealttext = $('#getImageAltText').val();
             var imagetitletext = $('#getImageTitleText').val();
+            var imageurl = $('#imagelocation').val();
+
+            $('#previewImage').attr('src','/'+imageurl);
             $('#setimageid').attr('value',imageid);
             $('#setImageAltText').attr('value',imagealttext);
             $('#setImageTitleText').attr('value',imagetitletext);

@@ -24,6 +24,7 @@ Route::get('/category','CategoryController@index');
 Route::post('/categorysave','CategoryController@store');
 Route::get('/getall-category','CategoryController@getAll');
 Route::post('/update-category','CategoryController@categoryUpdate');
+Route::post('/delete-category','CategoryController@categoryDelete');
 
 
 Route::get('/portfolio-category','PortfolioController@portfolioCategory');
@@ -37,6 +38,7 @@ Route::get('/blog-add','BlogController@create');
 Route::post('/blog-add','BlogController@store');
 Route::get('/blog-edit/{id}','BlogController@edit');
 Route::post('/blog-update/{id}','BlogController@update');
+Route::get('/blog-delete/{id}','BlogController@delete');
 
 
 Route::get('/portfolio-manage','PortfolioController@portfolioManage');
@@ -44,6 +46,7 @@ Route::get('/portfolio-add','PortfolioController@create');
 Route::get('/portfolio-edit/{id}','PortfolioController@portfolioEdit');
 Route::post('/portfolio-store','PortfolioController@store');
 Route::post('/portfolio-update/{id}','PortfolioController@portfolioUpdate');
+Route::get('/portfolio-delete/{id}','PortfolioController@portfolioDelete');
 
 
 Route::get('/manage-expertness','ExpertnessWithQualification@manageExpertness');
@@ -80,6 +83,7 @@ Route::post('/service-store','ServiceController@serviceStore');
 Route::get('/service-manage','ServiceController@serviceManage');
 Route::get('/service-edit/{id}','ServiceController@edit');
 Route::post('/service-update/{id}','ServiceController@update');
+Route::get('/service-delete/{id}','ServiceController@delete');
 
 
 Route::get('/getallimage','ImageUploadController@imagelist');

@@ -1970,6 +1970,10 @@ __webpack_require__.r(__webpack_exports__);
 
       axios.post('/categorysave', this.CategoryDetails).then(function (response) {
         _this2.success = response.data.success;
+
+        _this2.init();
+
+        _this2.CategoryDetails = {};
       });
     },
     CategoryEdit: function CategoryEdit(row) {
@@ -1984,6 +1988,17 @@ __webpack_require__.r(__webpack_exports__);
       axios.post('update-category', data).then(function (response) {
         _this3.success = response.data.success;
       });
+    },
+    CategoryDelete: function CategoryDelete(data) {
+      var _this4 = this;
+
+      if (!confirm('Are you sure delete this category')) return;
+      axios.post('delete-category', data).then(function (response) {
+        _this4.success = response.data.success;
+
+        _this4.init();
+      });
+      alertify.success('Category Delete Successfully');
     }
   }
 });
@@ -37995,7 +38010,7 @@ var render = function() {
                             staticClass: "btn btn-danger",
                             on: {
                               click: function($event) {
-                                return _vm.CategoryEdit(category)
+                                return _vm.CategoryDelete(category)
                               }
                             }
                           },

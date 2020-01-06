@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Qualification;
 use Illuminate\Http\Request;
 use App\Service;
 class ServiceController extends Controller
@@ -44,5 +45,12 @@ class ServiceController extends Controller
         $Service->OpenContent = request('OpenContent');
         $Service->save();
         return redirect()->to('service-manage')->with('message','Service Update Successfully');
+    }
+
+
+    public function delete($id){
+        $Qualification = Service::find($id);
+        $Qualification->delete();
+        return redirect()->to('service-manage')->with('message','Service delete Successfully');
     }
 }
