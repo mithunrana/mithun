@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Blog;
 use App\Category;
 use App\Service;
 use Illuminate\Http\Request;
@@ -59,6 +60,12 @@ class PortfolioController extends Controller
     }
 
 
+
+
+
+
+
+
     public function portfolioCategory(){
         return view('Admin.portfolio category');
         //echo "hello world";
@@ -90,4 +97,17 @@ class PortfolioController extends Controller
     }
 
 
+    public function portfolioCategoryDelete(Request $r){
+        $Category =  PortfolioCategory::findOrFail($r->id);
+        if(Portfolio::where('category',$r->id)->first()){
+            $Portfolio = Portfolio::where('category',$r->id)->first();
+            $Portfolio->Active_Status = '0';
+            $Portfolio->category = '0';
+            $Portfolio->save();
+            $Category->delete();
+        }else{
+            $Category->delete();
+        }
+        return response()->json(['success'=>'Category delete Successfully...']);
+    }
 }

@@ -48,7 +48,7 @@
                                     <td>
                                         <a class="btn btn-info" @click="CategoryEdit(category)">View</a>
                                         <a class="btn btn-primary" @click="CategoryEdit(category)">Edit</a>
-                                        <a class="btn btn-danger" @click="CategoryEdit(category)">Delete</a>
+                                        <a class="btn btn-danger" @click="CategoryDelete(category)">Delete</a>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -103,6 +103,11 @@
                     this.success = response.data.success;
                     this.CategoryDetails = {};
                 });
+            },
+            CategoryDelete(data){
+                if(!confirm('Are you sure delete this category')) return;
+                axios.post('portfolio-category-delete',data).then(response=>{this.success = response.data.success;this.init();});
+                alertify.success('Category Delete Successfully')
             }
         }
     }

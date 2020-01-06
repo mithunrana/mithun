@@ -47,6 +47,7 @@ Route::get('/portfolio-edit/{id}','PortfolioController@portfolioEdit');
 Route::post('/portfolio-store','PortfolioController@store');
 Route::post('/portfolio-update/{id}','PortfolioController@portfolioUpdate');
 Route::get('/portfolio-delete/{id}','PortfolioController@portfolioDelete');
+Route::post('/portfolio-category-delete/','PortfolioController@portfolioCategoryDelete');
 
 
 Route::get('/manage-expertness','ExpertnessWithQualification@manageExpertness');

@@ -28,7 +28,7 @@
                             {{Session::get('message')}}
                         </div>
                     @endif
-                    <div class="panel panel-primary">
+                    <!--<div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">
                             <table class="table table-striped">
@@ -54,7 +54,8 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                    </div>-->
+                    <portfolio-component></portfolio-component>
                 </div>
             </div>
         </section>

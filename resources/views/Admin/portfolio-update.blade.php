@@ -60,7 +60,7 @@
                                                 <select name="category" class="form-control">
                                                     <option value="">=============Select Category===========</option>
                                                     @foreach(App\PortfolioCategory::all() as $cat)
-                                                        <option value="{{$Portfolio->category}}" {{$cat->id == $Portfolio->category ? 'selected="selected"' : ''}}>{{$cat->CategoryName}}</option>
+                                                        <option value="{{$cat->id}}" {{$cat->id == $Portfolio->category ? 'selected="selected"' : ''}}>{{$cat->CategoryName}}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
