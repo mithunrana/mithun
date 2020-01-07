@@ -59,6 +59,28 @@ class PortfolioController extends Controller
         return redirect()->to('portfolio-manage')->with('message','Portfolio delete Successfully');
     }
 
+    public function portfolioActiveDeactive($id,$portfolioid){
+        $portfolioId = $portfolioid;
+        $status = $id;
+        if($status==0){
+            $Portfolio =  Portfolio::findOrFail($portfolioId);
+            $CategoryId = $Portfolio->category;
+            if($CategoryId==0){
+                return redirect()->to('portfolio-manage')->with('message','Please Set Before Active Category');
+            }else{
+                $Portfolio =  Portfolio::findOrFail($portfolioId);
+                $Portfolio->Active_Status = '1';
+                $Portfolio->save();
+                return redirect()->to('portfolio-manage')->with('message','Portfolio Active Successfully');
+            }
+        }else{
+            $Portfolio =  Portfolio::findOrFail($portfolioId);
+            $Portfolio->Active_Status = '0';
+            $Portfolio->save();
+            return redirect()->to('portfolio-manage')->with('message','Portfolio Deactive Successfully');
+        }
+    }
+
 
 
 

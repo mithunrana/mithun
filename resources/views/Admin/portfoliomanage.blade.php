@@ -28,7 +28,7 @@
                             {{Session::get('message')}}
                         </div>
                     @endif
-                    <!--<div class="panel panel-primary">
+                    <div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">
                             <table class="table table-striped">
@@ -43,7 +43,14 @@
                                 @foreach($PortfolioList as $Portfolio)
                                 <tr>
                                     <td>{{$Portfolio->Portfolio_title}}</td>
-                                    <td><input type="checkbox" checked data-toggle="toggle"></td>
+                                    <td>
+                                       @if($Portfolio->Active_Status==0)
+                                          <a class="btn btn-danger" href="{{url('portfolio-active-deactive',[$Portfolio->Active_Status,$Portfolio->id])}}">Deactive</a>
+                                       @endif
+                                       @if($Portfolio->Active_Status==1)
+                                           <a class="btn btn-success" href="{{url('portfolio-active-deactive',[$Portfolio->Active_Status,$Portfolio->id])}}">Active</a>
+                                       @endif
+                                    </td>
                                     <td>
                                         <a href="#" class="btn btn-success"><i style="font-size:17px;" class="fa fa-eye"></i></a>
                                         <a href="{{url('portfolio-edit',[$Portfolio->id])}}" class="btn btn-info"> <i style="font-size:17px;" class="fa fa-edit"></i></a>
@@ -54,8 +61,7 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>-->
-                    <portfolio-component></portfolio-component>
+                    </div>
                 </div>
             </div>
         </section>
