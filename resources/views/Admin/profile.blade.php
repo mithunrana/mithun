@@ -25,6 +25,21 @@
             <!-- Modal -->
 
 
+            <form enctype="multipart/form-data" action="{{url('profile-cvupdate')}}" method="POST">
+                @csrf
+                <div class="col-sm-12">
+                    @if($errors->has('cv'))
+                        <div class="error" style="color: red">
+                            {{$errors->first('cv')}}
+                        </div>
+                    @endif
+                    <div class="form-group">
+                        <input type="file" class="form-control"  name="cv">
+                    </div>
+                    <button style="margin-bottom: 15px;" class="btn btn-success pull-right" type="submit">CV UPDATE</button>
+                </div>
+            </form>
+
             <!-- Main row -->
             <div class="row">
                 <form method="POST" action="{{url('profile-update')}}">
@@ -92,11 +107,6 @@
                         <div class="form-group col-sm-6">
                             <label for="name">Discover Link:</label>
                             <input type="text" class="form-control" @isset($Profile->Discover_link)value="{{$Profile->Discover_link}}"@endisset name="Discover_link" id="name">
-                        </div>
-
-                        <div class="form-group col-sm-6">
-                            <label for="name">Resume Download Link:</label>
-                            <input type="text" class="form-control" @isset($Profile->Download_link)value="{{$Profile->Download_link}}"@endisset name="Download_link" id="name">
                         </div>
 
                         <div class="form-group col-sm-6">

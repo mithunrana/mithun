@@ -15,6 +15,22 @@ class AboutController extends Controller {
         return view('Admin.profile',compact('Profile'));
     }
 
+    public function cvUpdate(Request $request){
+        $this->validate($request,[
+            'cv' => 'required|mimes:pdf|max:2048',
+        ]);
+
+        if($request->hasFile('cv')){
+            $Profile = AboutProfile::first();
+            $file = $request->file('cv');
+            $text = $file->getClientOriginalExtension();
+            $fileName='mithunrana'.'.'.$text;
+            $file->move('documents',$fileName);
+            $Profile->Download_link = $fileName;
+            $Profile->save();
+            return redirect()->back()->with('message','CV Uploaded Successfully');
+        }
+    }
 
     public function profileUpdate(Request $request){
         //$users = DB::table('about_profiles')->get();
@@ -24,7 +40,6 @@ class AboutController extends Controller {
             $Profile->Name = $request->Name;
             $Profile->ShortBrief = $request->ShortBrief;
             $Profile->Details = $request->Details;
-            $Profile->Discover_link = $request->Discover_link;
             $Profile->Download_link = $request->Download_link;
             $Profile->Email1 = $request->Email1;
             $Profile->Email2 = $request->Email2;
@@ -54,7 +69,6 @@ class AboutController extends Controller {
             $Profile->ShortBrief = $request->ShortBrief;
             $Profile->Details = $request->Details;
             $Profile->Discover_link = $request->Discover_link;
-            $Profile->Download_link = $request->Download_link;
             $Profile->Email1 = $request->Email1;
             $Profile->Email2 = $request->Email2;
             $Profile->Phone1 = $request->Phone1;

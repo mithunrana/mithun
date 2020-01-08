@@ -89,7 +89,7 @@ Route::get('/comment-active-deactive/{id}/{postid}','CommentController@activeDea
 
 Route::get('/profile-update','AboutController@profile');
 Route::post('/profile-update','AboutController@profileUpdate');
-
+Route::post('/profile-cvupdate','AboutController@cvUpdate');
 
 Route::get('/service-add','ServiceController@serviceCreate');
 Route::post('/service-store','ServiceController@serviceStore');
