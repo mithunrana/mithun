@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Service;
 use Illuminate\Http\Request;
 use App\Comment;
 class CommentController extends Controller
@@ -40,5 +41,21 @@ class CommentController extends Controller
         $Comment = Comment::find($id);
         $Comment->delete();
         return redirect()->to('manage-comment')->with('message','Comment delete Successfully');
+    }
+
+    public function activeDeactiveComment($status,$commentId){
+        $portfolioId = $commentId;
+        $status = $status;
+        if($status==0){
+            $Portfolio =  Comment::findOrFail($portfolioId);
+            $Portfolio->Active_Status = '1';
+            $Portfolio->save();
+            return redirect()->to('manage-comment')->with('message','Comment Active Successfully');
+        }else{
+            $Portfolio =  Comment::findOrFail($portfolioId);
+            $Portfolio->Active_Status = '0';
+            $Portfolio->save();
+            return redirect()->to('manage-comment')->with('message','Comment Deactive Successfully');
+        }
     }
 }

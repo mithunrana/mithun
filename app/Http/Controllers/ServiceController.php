@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Portfolio;
 use App\Qualification;
 use Illuminate\Http\Request;
 use App\Service;
@@ -52,5 +53,21 @@ class ServiceController extends Controller
         $Qualification = Service::find($id);
         $Qualification->delete();
         return redirect()->to('service-manage')->with('message','Service delete Successfully');
+    }
+
+    public function activeDeactive($status,$serviceId){
+        $portfolioId = $serviceId;
+        $status = $status;
+        if($status==0){
+            $Portfolio =  Service::findOrFail($portfolioId);
+            $Portfolio->Active_Status = '1';
+            $Portfolio->save();
+            return redirect()->to('service-manage')->with('message','Service Active Successfully');
+        }else{
+            $Portfolio =  Service::findOrFail($portfolioId);
+            $Portfolio->Active_Status = '0';
+            $Portfolio->save();
+            return redirect()->to('service-manage')->with('message','Service Deactive Successfully');
+        }
     }
 }

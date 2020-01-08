@@ -52,6 +52,12 @@
                                 <label for="email2">Email Two:</label>
                                 <input type="text" class="form-control" @isset($Profile->Email2)value="{{$Profile->Email2}}"@endisset name="Email2" id="email2">
                             </div>
+                            @if(Session::has('message'))
+                                <div class="alert alert-success alert-dismissible">
+                                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                    {{Session::get('message')}}
+                                </div>
+                            @endif
                     </div>
                 </div>
                     <div class="col-sm-12">

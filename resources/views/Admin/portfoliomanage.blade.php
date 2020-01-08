@@ -19,7 +19,7 @@
 
 
         <section id="app" class="content">
-            <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('portfolio-add')}}" class="btn btn-success pull-left">Add New +</a>
+            <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('portfolio-add')}}" class="btn btn-success pull-left">Add New +</a> <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('admin-panel')}}" class="btn btn-info pull-right">Dashbord</a>
             <div class="row">
                 <div class="col-sm-12">
                     @if(Session::has('message'))
@@ -45,10 +45,10 @@
                                     <td>{{$Portfolio->Portfolio_title}}</td>
                                     <td>
                                        @if($Portfolio->Active_Status==0)
-                                          <a class="btn btn-danger" href="{{url('portfolio-active-deactive',[$Portfolio->Active_Status,$Portfolio->id])}}">Deactive</a>
+                                          <a class="btn btn-danger" href="{{url('portfolio-active-deactive',[$Portfolio->Active_Status,$Portfolio->id])}}">Deactive <i class="fa fa-ban" aria-hidden="true"></i></a>
                                        @endif
                                        @if($Portfolio->Active_Status==1)
-                                           <a class="btn btn-success" href="{{url('portfolio-active-deactive',[$Portfolio->Active_Status,$Portfolio->id])}}">Active</a>
+                                           <a class="btn btn-success" href="{{url('portfolio-active-deactive',[$Portfolio->Active_Status,$Portfolio->id])}}">Active <i class="fa fa-check"></i></a>
                                        @endif
                                     </td>
                                     <td>

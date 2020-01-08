@@ -19,7 +19,7 @@
 
 
         <section id="app" class="content">
-            <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('service-add')}}" class="btn btn-success pull-left">Add New +</a>
+            <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('service-add')}}" class="btn btn-success pull-left">Add New +</a> <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('admin-panel')}}" class="btn btn-info pull-right">Dashbord</a>
             <div class="row">
                 <div class="col-sm-12">
                     @if(Session::has('message'))
@@ -43,7 +43,14 @@
                                 @foreach($ServiceList as $Service)
                                     <tr>
                                         <td>{{$Service->service_title}}</td>
-                                        <td><input type="checkbox" checked data-toggle="toggle"></td>
+                                        <td>
+                                            @if($Service->Active_Status==0)
+                                                <a class="btn btn-danger" href="{{url('service-active-deactive',[$Service->Active_Status,$Service->id])}}">Deactive <i class="fa fa-ban" aria-hidden="true"></i></a>
+                                            @endif
+                                            @if($Service->Active_Status==1)
+                                                <a class="btn btn-success" href="{{url('service-active-deactive',[$Service->Active_Status,$Service->id])}}">Active <i class="fa fa-check"></i></a>
+                                            @endif
+                                        </td>
                                         <td>
                                             <a href="#" id="test" class="btn btn-success"><i style="font-size:17px;" class="fa fa-eye"></i></a>
                                             <a href="{{url('service-edit',[$Service->id])}}" class="btn btn-info"> <i style="font-size:17px;" class="fa fa-edit"></i></a>

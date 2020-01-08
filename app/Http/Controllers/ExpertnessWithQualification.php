@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Comment;
+use App\Service;
 use Illuminate\Http\Request;
 use App\Expertness;
 use App\Qualification;
@@ -44,6 +45,21 @@ class ExpertnessWithQualification extends Controller
         return redirect()->to('manage-expertness')->with('message','Expertness delete Successfully');
     }
 
+    public function activeDeactiveExpertness($status,$expertnessId){
+        $portfolioId = $expertnessId;
+        $status = $status;
+        if($status==0){
+            $Portfolio =  Expertness::findOrFail($portfolioId);
+            $Portfolio->Active_Status = '1';
+            $Portfolio->save();
+            return redirect()->to('manage-expertness')->with('message','Expertness Active Successfully');
+        }else{
+            $Portfolio =  Expertness::findOrFail($portfolioId);
+            $Portfolio->Active_Status = '0';
+            $Portfolio->save();
+            return redirect()->to('manage-expertness')->with('message','Expertness Deactive Successfully');
+        }
+    }
 
 
 
@@ -81,6 +97,22 @@ class ExpertnessWithQualification extends Controller
         $Qualification = Qualification::find($id);
         $Qualification->delete();
         return redirect()->to('manage-qualification')->with('message','Qualification delete Successfully');
+    }
+
+    public function activeDeactiveQualification($status,$qualificationId){
+        $portfolioId = $qualificationId;
+        $status = $status;
+        if($status==0){
+            $Portfolio =  Qualification::findOrFail($portfolioId);
+            $Portfolio->Active_Status = '1';
+            $Portfolio->save();
+            return redirect()->to('manage-qualification')->with('message','Qualification Active Successfully');
+        }else{
+            $Portfolio =  Qualification::findOrFail($portfolioId);
+            $Portfolio->Active_Status = '0';
+            $Portfolio->save();
+            return redirect()->to('manage-qualification')->with('message','Qualification Deactive Successfully');
+        }
     }
 
 

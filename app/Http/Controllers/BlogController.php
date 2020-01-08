@@ -86,4 +86,27 @@ class BlogController extends Controller
         return redirect()->to('blog-manage')->with('message','Blog delete Successfully');
     }
 
+
+    public function blogActiveDeactive($status,$blogId){
+        $portfolioId = $blogId;
+        $status = $status;
+        if($status==0){
+            $Portfolio =  Blog::findOrFail($portfolioId);
+            $CategoryId = $Portfolio->category;
+            if($CategoryId==0){
+                return redirect()->to('blog-manage')->with('message','Please Set Before Active Category');
+            }else{
+                $Portfolio =  Blog::findOrFail($portfolioId);
+                $Portfolio->Active_Status = '1';
+                $Portfolio->save();
+                return redirect()->to('blog-manage')->with('message','Portfolio Active Successfully');
+            }
+        }else{
+            $Portfolio =  Blog::findOrFail($portfolioId);
+            $Portfolio->Active_Status = '0';
+            $Portfolio->save();
+            return redirect()->to('blog-manage')->with('message','Portfolio Deactive Successfully');
+        }
+    }
+
 }

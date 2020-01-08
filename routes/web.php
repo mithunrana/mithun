@@ -20,6 +20,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //=========================ADMIN SITE REQUEST START HERE ========================//
 
+Route::get('/admin-panel','AdminController@index');
+
 Route::get('/category','CategoryController@index');
 Route::post('/categorysave','CategoryController@store');
 Route::get('/getall-category','CategoryController@getAll');
@@ -39,6 +41,8 @@ Route::post('/blog-add','BlogController@store');
 Route::get('/blog-edit/{id}','BlogController@edit');
 Route::post('/blog-update/{id}','BlogController@update');
 Route::get('/blog-delete/{id}','BlogController@delete');
+Route::get('/blog-active-deactive/{id}/{postid}','BlogController@blogActiveDeactive');
+
 
 
 Route::get('/portfolio-manage','PortfolioController@portfolioManage');
@@ -51,12 +55,15 @@ Route::post('/portfolio-category-delete/','PortfolioController@portfolioCategory
 Route::get('/portfolio-active-deactive/{id}/{postid}','PortfolioController@portfolioActiveDeactive');
 
 
+
 Route::get('/manage-expertness','ExpertnessWithQualification@manageExpertness');
 Route::get('/add-expertness','ExpertnessWithQualification@addExpertness');
 Route::post('/store-expertness','ExpertnessWithQualification@storeExpertness');
 Route::get('/edit-expertness/{id}','ExpertnessWithQualification@editExpertness');
 Route::post('/update-expertness/{id}','ExpertnessWithQualification@updateExpertness');
 Route::get('/delete-expertness/{id}','ExpertnessWithQualification@deleteExpertness');
+Route::get('/expertness-active-deactive/{id}/{postid}','ExpertnessWithQualification@activeDeactiveExpertness');
+
 
 
 
@@ -66,6 +73,8 @@ Route::post('/store-qualification','ExpertnessWithQualification@storeQualificati
 Route::get('/edit-qualification/{id}','ExpertnessWithQualification@editQualification');
 Route::post('/update-qualification/{id}','ExpertnessWithQualification@updateQualification');
 Route::get('/delete-qualification/{id}','ExpertnessWithQualification@deleteQualification');
+Route::get('/qualification-active-deactive/{id}/{postid}','ExpertnessWithQualification@activeDeactiveQualification');
+
 
 
 Route::get('/manage-comment','CommentController@index');
@@ -74,6 +83,8 @@ Route::post('/comment-store','CommentController@store');
 Route::get('/comment-edit/{id}','CommentController@edit');
 Route::post('/comment-update/{id}','CommentController@update');
 Route::get('/comment-delete/{id}','CommentController@delete');
+Route::get('/comment-active-deactive/{id}/{postid}','CommentController@activeDeactiveComment');
+
 
 
 Route::get('/profile-update','AboutController@profile');
@@ -86,6 +97,7 @@ Route::get('/service-manage','ServiceController@serviceManage');
 Route::get('/service-edit/{id}','ServiceController@edit');
 Route::post('/service-update/{id}','ServiceController@update');
 Route::get('/service-delete/{id}','ServiceController@delete');
+Route::get('/service-active-deactive/{status}/{postid}','ServiceController@activeDeactive');
 
 
 Route::get('/getallimage','ImageUploadController@imagelist');
