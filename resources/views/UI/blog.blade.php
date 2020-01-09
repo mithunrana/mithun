@@ -3,7 +3,7 @@
     @include('UI.inc.menubar');
 
     <!-- Start top-category-widget Area -->
-    <section class="top-category-widget-area pt-90 pb-90 ">
+    <section class="top-category-widget-area pt-90">
         <div class="container">
             <div class="row">
 
@@ -28,7 +28,7 @@
                                 </a>
                             </div>
                         </div>
-                        <h2>
+                        <h2 style="padding:5px;font-size: 16px;font-family: Kiron, SolaimanLipi, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif !important;">
                             <a href="#" style="text-decoration: none;font-size: 18px;color:black;">{{$Blog->blog_title}}</a>
                         </h2>
                         </div>
@@ -50,7 +50,9 @@
                                         <img class="content-image img-fluid d-block mx-auto" src="{{$thumbnail}}" alt="">
                                     </div>
                                 </a>
-                                <a>{{$FeatureVideo->blog_title}}</a>
+                                <h2 style="padding:5px;font-size: 16px;font-family: Kiron, SolaimanLipi, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif !important;">
+                                    <a>{{$FeatureVideo->blog_title}}</a>
+                                </h2>
                             </div>
                         </div>
                         @endforeach
@@ -72,7 +74,7 @@
                                     @php
                                         $video_id = explode("?v=", $Blog->video_url);
                                         $video_id = $video_id[1];
-                                        $thumbnail="http://img.youtube.com/vi/".$video_id."/maxresdefault.jpg";
+                                        $thumbnail="http://img.youtube.com/vi/".$video_id."/mqdefault.jpg";
                                     @endphp
                                 <div style="margin-top:20px;" class="col-lg-6 col-6">
                                     <div style="background-color: #d8d8d8;">
@@ -89,7 +91,9 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <a href="#" style="text-decoration: none;font-size: 18px;text-align: left;">$Blog->{{$Blog->blog_title}}</a>
+                                        <h2 style="padding:5px;font-size: 16px;font-family: Kiron, SolaimanLipi, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif !important;">
+                                            <a style="color:black;" href="{{url('/',[$Blog->permalink])}}" style="text-decoration: none;font-size: 18px;text-align: left;">{{$Blog->blog_title}}</a>
+                                        </h2>
                                     </div>
                                 </div>
                                 @endforeach

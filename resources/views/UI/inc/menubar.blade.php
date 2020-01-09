@@ -11,7 +11,7 @@
                             <li><a href="{{url('service')}}">Services</a></li>
                             <li><a href="{{url('portfolio')}}">Portfolio</a></li>
                             <li class="menu-has-children">
-                                <a href="{{url('blog')}}">Blog</a>
+                                <a href="{{url('tutorials')}}">Blog</a>
                                 <ul>
                                     <li><a href="blog-view">Blog Home</a></li>
                                     <li><a href="{{url('blog-view')}}">Blog Single</a></li>

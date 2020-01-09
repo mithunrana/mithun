@@ -13,7 +13,6 @@
         <script src="{{asset('UI')}}/js/jquery.counterup.min.js"></script>
         <script src="{{asset('UI')}}/js/simple-skillbar.js"></script>							
         <script src="{{asset('UI')}}/js/owl.carousel.min.js"></script>							
-        <script src="{{asset('UI')}}/js/mail-script.js"></script>	
-        <script src="{{asset('UI')}}/js/main.js"></script>	
-    </body>
-</html>
+        <script src="{{asset('UI')}}/js/mail-script.js"></script>
+        <script src="{{asset('UI')}}/js/typed.min.js"></script>
+        <script src="{{asset('UI')}}/js/main.js"></script>

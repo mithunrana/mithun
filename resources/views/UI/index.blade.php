@@ -8,12 +8,20 @@
             <div class="row fullscreen align-items-center justify-content-between">
                 <div class="col-lg-6 col-md-6 banner-left">
                     <h6>This is me</h6>
-                    <h1>{{$about->Name}}</h1>
+                    <h1 style="margin-bottom:5px;">{{$about->Name}}</h1>
+                    <h2 class="sub typed" style="font-size: 18px;margin-bottom:5px;text-transform: uppercase;color:#5f5f5f;height:20px;"></h2>
                     <p>
                         You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures.
                     </p>
                     <a href="{{	$about->Discover_link}}" class="primary-btn text-uppercase">discover now</a>
                     <a href="#" class="primary-btn text-uppercase">Download Resume</a>
+                    <ul style="margin-top: 10px;">
+                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="https://facebook.com/"><i id="icon-design" class="fa fa-facebook"></i></a></li>
+                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="https://twitter.com/"><i id="icon-design" class="fa fa-twitter"></i></a></li>
+                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="https://plus.google.com/"><i id="icon-design" class="fa fa-google-plus"></i></a></li>
+                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="https://linkedin.com/"><i id="icon-design" class="fa fa-linkedin"></i></a></li>
+                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="https://instagram.com/"><i id="icon-design" class="fa fa-instagram"></i></a></li>
+                    </ul>
                 </div>
                 <div class="col-lg-6 col-md-6 banner-right d-flex align-self-end">
                     <img class="img-fluid" src="{{asset('UI')}}/img/hero-img.png" alt="">
@@ -392,5 +400,16 @@
     <!-- start footer Area -->
     @include('UI.inc.footer-bar');
     <!-- end footer Area -->
-    
     @include('UI.inc.footersource');
+    <script>
+        $(document).ready(function(){
+            var typed = new Typed('.typed', {
+                strings: ['Web Developer','Web Designer','SEO Expert','Graphics Designer','Digital Marketer','Youtuber'],
+                typeSpeed: 60,
+                showCursor:false,
+                loop:true
+            });
+        });
+    </script>
+</body>
+</html>

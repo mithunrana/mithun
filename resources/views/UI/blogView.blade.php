@@ -8,7 +8,7 @@
                 <div class="row d-flex align-items-center justify-content-center">
                     <div class="about-content col-lg-12">
                         <h1 class="text-white">
-                            Blog Details Page				
+                            {{$BlogDetails->blog_title}}
                         </h1>	
                         <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span><a href="blog-home.html">Blog </a> <span class="lnr lnr-arrow-right"></span> <a href="blog-single.html"> Blog Details Page</a></p>
                     </div>	
@@ -24,9 +24,7 @@
                     <div class="col-lg-8 posts-list">
                         <div class="single-post row">
                             <div class="col-lg-12">
-                                <div class="feature-img">
-                                    <img class="img-fluid" src="{{asset('UI')}}/img/blog/feature-img1.jpg" alt="">
-                                </div>									
+                                {!!html_entity_decode($BlogDetails->embedded_video)!!}
                             </div>
                             <div class="col-lg-3  col-md-3 meta-details">
                                 <ul class="tags">
@@ -59,6 +57,11 @@
                                 <p>
                                     Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed
                                 </p>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="feature-img">
+                                    <img class="img-fluid" src="{{asset('UI')}}/img/blog/feature-img1.jpg" alt="">
+                                </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="quotes">
@@ -229,6 +232,7 @@
                             </form>
                         </div>
                     </div>
+
                     <div class="col-lg-4 sidebar-widgets">
                         <div class="widget-wrap">
                             <div class="single-sidebar-widget search-widget">
@@ -237,66 +241,7 @@
                                     <button type="submit"><i class="fa fa-search"></i></button>
                                 </form>
                             </div>
-                            <div class="single-sidebar-widget user-info-widget">
-                                <img src="{{asset('UI')}}/img/blog/user-info.png" alt="">
-                                <a href="#"><h4>Charlie Barber</h4></a>
-                                <p>
-                                    Senior blog writer
-                                </p>
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-github"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                </ul>
-                                <p>
-                                    Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits detractors.
-                                </p>
-                            </div>
-                            <div class="single-sidebar-widget popular-post-widget">
-                                <h4 class="popular-title">Popular Posts</h4>
-                                <div class="popular-post-list">
-                                    <div class="single-post-list d-flex flex-row align-items-center">
-                                        <div class="thumb">
-                                            <img class="img-fluid" src="img/blog/pp1.jpg" alt="">
-                                        </div>
-                                        <div class="details">
-                                            <a href="{{asset('UI')}}/blog-single.html"><h6>Space The Final Frontier</h6></a>
-                                            <p>02 Hours ago</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-post-list d-flex flex-row align-items-center">
-                                        <div class="thumb">
-                                            <img class="img-fluid" src="img/blog/pp2.jpg" alt="">
-                                        </div>
-                                        <div class="details">
-                                            <a href="blog-single.html"><h6>The Amazing Hubble</h6></a>
-                                            <p>02 Hours ago</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-post-list d-flex flex-row align-items-center">
-                                        <div class="thumb">
-                                            <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp3.jpg" alt="">
-                                        </div>
-                                        <div class="details">
-                                            <a href="blog-single.html"><h6>Astronomy Or Astrology</h6></a>
-                                            <p>02 Hours ago</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-post-list d-flex flex-row align-items-center">
-                                        <div class="thumb">
-                                            <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp4.jpg" alt="">
-                                        </div>
-                                        <div class="details">
-                                            <a href="blog-single.html"><h6>Asteroids telescope</h6></a>
-                                            <p>02 Hours ago</p>
-                                        </div>
-                                    </div>															
-                                </div>
-                            </div>
-                            <div class="single-sidebar-widget ads-widget">
-                                <a href="#"><img class="img-fluid" src="{{asset('UI')}}/img/blog/ads-banner.jpg" alt=""></a>
-                            </div>
+
                             <div class="single-sidebar-widget post-category-widget">
                                 <h4 class="category-title">Post Catgories</h4>
                                 <ul class="cat-list">
@@ -341,9 +286,56 @@
                                             <p>Adventure</p>
                                             <p>44</p>
                                         </a>
-                                    </li>															
+                                    </li>
                                 </ul>
-                            </div>	
+                            </div>
+
+                            <div class="single-sidebar-widget ads-widget">
+                                <a href="#"><img class="img-fluid" src="{{asset('UI')}}/img/blog/ads-banner.jpg" alt=""></a>
+                            </div>
+
+                            <div class="single-sidebar-widget popular-post-widget">
+                                <h4 class="popular-title">Popular Posts</h4>
+                                <div class="popular-post-list">
+                                    <div class="single-post-list d-flex flex-row align-items-center">
+                                        <div class="thumb">
+                                            <img class="img-fluid" src="img/blog/pp1.jpg" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <a href="{{asset('UI')}}/blog-single.html"><h6>Space The Final Frontier</h6></a>
+                                            <p>02 Hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-post-list d-flex flex-row align-items-center">
+                                        <div class="thumb">
+                                            <img class="img-fluid" src="img/blog/pp2.jpg" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <a href="blog-single.html"><h6>The Amazing Hubble</h6></a>
+                                            <p>02 Hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-post-list d-flex flex-row align-items-center">
+                                        <div class="thumb">
+                                            <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp3.jpg" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <a href="blog-single.html"><h6>Astronomy Or Astrology</h6></a>
+                                            <p>02 Hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-post-list d-flex flex-row align-items-center">
+                                        <div class="thumb">
+                                            <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp4.jpg" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <a href="blog-single.html"><h6>Asteroids telescope</h6></a>
+                                            <p>02 Hours ago</p>
+                                        </div>
+                                    </div>															
+                                </div>
+                            </div>
+
                             <div class="single-sidebar-widget newsletter-widget">
                                 <h4 class="newsletter-title">Newsletter</h4>
                                 <p>
@@ -366,23 +358,6 @@
                                     You can unsubscribe at any time
                                 </p>								
                             </div>
-                            <div class="single-sidebar-widget tag-cloud-widget">
-                                <h4 class="tagcloud-title">Tag Clouds</h4>
-                                <ul>
-                                    <li><a href="#">Technology</a></li>
-                                    <li><a href="#">Fashion</a></li>
-                                    <li><a href="#">Architecture</a></li>
-                                    <li><a href="#">Fashion</a></li>
-                                    <li><a href="#">Food</a></li>
-                                    <li><a href="#">Technology</a></li>
-                                    <li><a href="#">Lifestyle</a></li>
-                                    <li><a href="#">Art</a></li>
-                                    <li><a href="#">Adventure</a></li>
-                                    <li><a href="#">Food</a></li>
-                                    <li><a href="#">Lifestyle</a></li>
-                                    <li><a href="#">Adventure</a></li>
-                                </ul>
-                            </div>								
                         </div>
                     </div>
                 </div>

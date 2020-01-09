@@ -12,7 +12,6 @@ class BlogController extends Controller
         $this->middleware('auth');
     }*/
 
-
     public function index(){
         $Blogs =  Blog::where('Active_Status',1)->orderBy('id', 'ASC')->get();
         $New =   Blog::where('Active_Status',1)->orderBy('id', 'DESC')->skip(0)->take(1)->get();
@@ -21,9 +20,14 @@ class BlogController extends Controller
         return view('UI.blog',compact('Blogs','New','FeaturesVideo','Categories'));
     }
 
+    public function manage(){
+        $Blogs = Blog::get();
+        return view('Admin.blog-manage',compact('Blogs'));
+    }
 
-    public function blogView(){
-        return view('UI.blogView');
+    public function blogByUrl($url){
+        $BlogDetails = Blog::where('permalink',$url)->first();
+        return view('UI.blogView',compact('BlogDetails'));
     }
 
     public function create(){
@@ -51,10 +55,7 @@ class BlogController extends Controller
         return redirect()->to('blog-manage')->with('message','Blog Added Successfully');
     }
 
-    public function manage(){
-        $Blogs = Blog::get();
-        return view('Admin.blog-manage',compact('Blogs'));
-    }
+
 
     public function edit($id){
         $Blog = Blog::findOrFail($id);

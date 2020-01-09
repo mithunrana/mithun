@@ -8,14 +8,12 @@ Route::get('/about','AboutController@index');
 Route::get('/contact','ContactController@index');
 Route::get('/portfolio','PortfolioController@index');
 Route::get('/service','ServiceController@index');
-Route::get('/blog','BlogController@index');
-Route::get('/blog-view','BlogController@blogView');
+Route::get('/tutorials','BlogController@index');
 //=========================USER SITE REQUEST START HERE ========================//
 
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
-
 
 
 //=========================ADMIN SITE REQUEST START HERE ========================//
@@ -35,7 +33,9 @@ Route::get('/getall-portfolio-category','PortfolioController@getAllCategory');
 Route::post('/update-portfolio-category','PortfolioController@portfolioCategoryUpdate');
 
 
+
 Route::get('/blog-manage','BlogController@manage');
+Route::get('/{url}','BlogController@blogByUrl');
 Route::get('/blog-add','BlogController@create');
 Route::post('/blog-add','BlogController@store');
 Route::get('/blog-edit/{id}','BlogController@edit');

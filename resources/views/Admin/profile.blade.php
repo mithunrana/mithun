@@ -60,6 +60,10 @@
                                 <input type="text" class="form-control" @isset($Profile->Name)value="{{$Profile->Name}}"@endisset name="Name" id="Name">
                             </div>
                             <div class="form-group">
+                                <label for="Designation">Designation:</label>
+                                <input type="text" class="form-control" @isset($Profile->Designation)value="{{$Profile->Designation}}"@endisset name="Designation" id="Designation">
+                            </div>
+                            <div class="form-group">
                                 <label for="email1">Email One:</label>
                                 <input type="text" class="form-control" @isset($Profile->Email1)value="{{$Profile->Email1}}"@endisset name="Email1" id="email1">
                             </div>
