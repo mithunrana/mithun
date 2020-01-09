@@ -22,13 +22,24 @@ class AboutController extends Controller {
 
         if($request->hasFile('cv')){
             $Profile = AboutProfile::first();
-            $file = $request->file('cv');
-            $text = $file->getClientOriginalExtension();
-            $fileName='mithunrana'.'.'.$text;
-            $file->move('documents',$fileName);
-            $Profile->Download_link = $fileName;
-            $Profile->save();
-            return redirect()->back()->with('message','CV Uploaded Successfully');
+            if(isset($Profile->id)){
+                $file = $request->file('cv');
+                $text = $file->getClientOriginalExtension();
+                $fileName='mithunrana'.'.'.$text;
+                $file->move('documents',$fileName);
+                $Profile->Download_link = $fileName;
+                $Profile->save();
+                return redirect()->back()->with('message','CV Uploaded Successfully');
+            }else{
+                $Profile = new  AboutProfile();
+                $file = $request->file('cv');
+                $text = $file->getClientOriginalExtension();
+                $fileName='mithunrana'.'.'.$text;
+                $file->move('documents',$fileName);
+                $Profile->Download_link = $fileName;
+                $Profile->save();
+                return redirect()->back()->with('message','CV Uploaded Successfully');
+            }
         }
     }
 

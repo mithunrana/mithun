@@ -10,7 +10,7 @@
                     <h1 class="text-white">
                         Contact Us				
                     </h1>	
-                    <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Contact Us</a></p>
+                    <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Contact Me</a></p>
                 </div>	
             </div>
         </div>
@@ -30,10 +30,7 @@
                             <span class="lnr lnr-home"></span>
                         </div>
                         <div class="contact-details">
-                            <h5>Binghamton, New York</h5>
-                            <p>
-                                4343 Hinkle Deegan Lake Road
-                            </p>
+                            <h5>{{$About->Address}}</h5>
                         </div>
                     </div>
                     <div class="single-contact-address d-flex flex-row">
@@ -41,8 +38,7 @@
                             <span class="lnr lnr-phone-handset"></span>
                         </div>
                         <div class="contact-details">
-                            <h5>00 (958) 9865 562</h5>
-                            <p>Mon to Fri 9am to 6 pm</p>
+                            <h5>{{$About->Phone1}}</h5>
                         </div>
                     </div>
                     <div class="single-contact-address d-flex flex-row">
@@ -50,8 +46,8 @@
                             <span class="lnr lnr-envelope"></span>
                         </div>
                         <div class="contact-details">
-                            <h5>support@colorlib.com</h5>
-                            <p>Send us your query anytime!</p>
+                            <h5>{{$About->Email1}}</h5>
+                            <h5>{{$About->Email2}}</h5>
                         </div>
                     </div>														
                 </div>
@@ -90,8 +86,7 @@
                     <div class="contact-info-box wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
                         <div class="info-box">
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <p>41/8, box culvert road, puran paltan</p>
-                            <p>Dhaka-100,Bangladesh</p>
+                            <p>{{$About->Address}}</p>
                         </div>
                     </div>
                 </div>
@@ -103,7 +98,7 @@
                              padding: 60px 40px 30px;"  class="info-box">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                             <p>Md Mithun Rana</p>
-                            <p><a href="https://facebook.com/mithunrana.bd">Click Here</a></p>
+                            <p><a target="_blank" href="{{$About->Facebook_Link}}">Click Here</a></p>
                         </div>
                     </div>
                 </div>
@@ -114,19 +109,39 @@
                              background: #ff5722;
                              padding: 60px 40px 30px;" class="info-box">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <p>mithunrana.developer@gmail.com</p>
-                            <p>techhelpinfobd@gmail.com</p>
+                            <p>{{$About->Email1}}</p>
+                            <p>{{$About->Email2}}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <section>
+        <div class="container">
+            <h3 style="text-align: center;margin-bottom: 10px;">MITHUN RANA SOCIAL ACCOUNT</h3>
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>mithun rana on facebook</p>
+                </div>
+                <div class="col-sm-3">
+                    <p>mithun rana on facebook</p>
+                </div>
+                <div class="col-sm-3">
+                    <p>mithun rana on facebook</p>
+                </div>
+                <div class="col-sm-3">
+                    <p>mithun rana on facebook</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section>
         <div style="margin:20px auto;" class="container">
             <div class="row">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.58703171331!2d90.4214808144554!3d23.726437095609363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9dc993a1b01%3A0xdec4159a8d408c61!2sMithun%20Rana%20Tech!5e0!3m2!1sen!2sbd!4v1574187615676!5m2!1sen!2sbd" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                {!! html_entity_decode($About->Google_Map) !!}
             </div>
         </div>
     </section>

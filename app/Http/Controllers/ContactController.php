@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\AboutProfile;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
    public function index(){
-       return view('UI.contact');
+       $About = AboutProfile::first();
+       return view('UI.contact',compact('About'));
    }
 }

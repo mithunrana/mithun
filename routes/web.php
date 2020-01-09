@@ -33,18 +33,6 @@ Route::get('/getall-portfolio-category','PortfolioController@getAllCategory');
 Route::post('/update-portfolio-category','PortfolioController@portfolioCategoryUpdate');
 
 
-
-Route::get('/blog-manage','BlogController@manage');
-Route::get('/{url}','BlogController@blogByUrl');
-Route::get('/blog-add','BlogController@create');
-Route::post('/blog-add','BlogController@store');
-Route::get('/blog-edit/{id}','BlogController@edit');
-Route::post('/blog-update/{id}','BlogController@update');
-Route::get('/blog-delete/{id}','BlogController@delete');
-Route::get('/blog-active-deactive/{id}/{postid}','BlogController@blogActiveDeactive');
-
-
-
 Route::get('/portfolio-manage','PortfolioController@portfolioManage');
 Route::get('/portfolio-add','PortfolioController@create');
 Route::get('/portfolio-edit/{id}','PortfolioController@portfolioEdit');
@@ -102,4 +90,14 @@ Route::get('/service-active-deactive/{status}/{postid}','ServiceController@activ
 
 Route::get('/getallimage','ImageUploadController@imagelist');
 Route::post('/formSubmit','ImageUploadController@imageUpload');
+
+Route::get('/blog-manage','BlogController@manage');
+Route::get('/blog-add','BlogController@create');
+Route::post('/blog-add','BlogController@store');
+Route::get('/blog-edit/{id}','BlogController@edit');
+Route::post('/blog-update/{id}','BlogController@update');
+Route::get('/blog-delete/{id}','BlogController@delete');
+Route::get('/blog-active-deactive/{id}/{postid}','BlogController@blogActiveDeactive');
+Route::get('/{url}','BlogController@blogByUrl');
+
 //=========================ADMIN SITE REQUEST END HERE ==========================//
