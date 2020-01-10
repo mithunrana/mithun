@@ -11,16 +11,16 @@
                     <h1 style="margin-bottom:5px;">{{$about->Name}}</h1>
                     <h2 class="sub typed" style="font-size: 18px;margin-bottom:5px;text-transform: uppercase;color:#5f5f5f;height:20px;"></h2>
                     <p>
-                        You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures.
+                        {{$about->ShortBrief}}
                     </p>
                     <a href="{{	$about->Discover_link}}" class="primary-btn text-uppercase">discover now</a>
-                    <a href="#" class="primary-btn text-uppercase">Download Resume</a>
+                    <a href="{{asset('documents')}}/{{	$about->Download_link}}" class="primary-btn text-uppercase" download>Download Resume</a>
                     <ul style="margin-top: 10px;">
-                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="https://facebook.com/"><i id="icon-design" class="fa fa-facebook"></i></a></li>
-                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="https://twitter.com/"><i id="icon-design" class="fa fa-twitter"></i></a></li>
-                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="https://plus.google.com/"><i id="icon-design" class="fa fa-google-plus"></i></a></li>
-                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="https://linkedin.com/"><i id="icon-design" class="fa fa-linkedin"></i></a></li>
-                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="https://instagram.com/"><i id="icon-design" class="fa fa-instagram"></i></a></li>
+                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="{{$about->Facebook_Link}}"><i id="icon-design" class="fa fa-facebook"></i></a></li>
+                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="{{$about->Twitter_Link}}"><i id="icon-design" class="fa fa-twitter"></i></a></li>
+                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="{{$about->Pinterest_Link}}"><i id="icon-design" class="fa fa-pinterest"></i></a></li>
+                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="{{$about->Linkedin_Link}}"><i id="icon-design" class="fa fa-linkedin"></i></a></li>
+                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="{{$about->Instagram_Link}}"><i id="icon-design" class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-6 banner-right d-flex align-self-end">
@@ -318,55 +318,6 @@
                     </p>
                 </div>
                 @endforeach
-
-                <div class="single-recent-blog col-lg-4 col-md-4">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="{{asset('UI')}}/img/b2.jpg" alt="">	
-                    </div>
-                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="{{asset('UI')}}/img/user.png" alt="">
-                            <a href="#"><span>Mark Wiens</span></a>
-                        </div>
-                        <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
-                        </div>
-                    </div>							
-                    <a href="#">
-                        <h4>Portable Fashion for
-                            young women</h4>
-                    </a>
-                    <p>
-                        You may be a skillful, effective employer but if you don’t trust your personnel and the opposite, then the chances of improving.
-                    </p>
-                </div>
-                <div class="single-recent-blog col-lg-4 col-md-4">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="{{asset('UI')}}/img/b3.jpg" alt="">	
-                    </div>
-                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="{{asset('UI')}}/img/user.png" alt="">
-                            <a href="#"><span>Mark Wiens</span></a>
-                        </div>
-                        <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
-                        </div>
-                    </div>							
-                    <a href="#">
-                        <h4>Do Dreams Serve As
-                            A Premonition</h4>
-                    </a>
-                    <p>
-                        So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work involved.
-                    </p>
-                </div>												
-
-
             </div>
         </div>	
     </section>

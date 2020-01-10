@@ -15,6 +15,11 @@ class PortfolioController extends Controller
        return view('UI.portfolio');
     }
 
+    public function singlePortfolio($url){
+        $Portfolio = Portfolio::get()->where('permalink',$url);
+        return view('UI.portfolio');
+    }
+
     public function create(){
         return view('Admin.portfolio add');
     }

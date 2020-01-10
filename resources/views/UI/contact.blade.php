@@ -123,16 +123,66 @@
             <h3 style="text-align: center;margin-bottom: 10px;">MITHUN RANA SOCIAL ACCOUNT</h3>
             <div class="row">
                 <div class="col-sm-3">
-                    <p>mithun rana on facebook</p>
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;" href="{{$About->Facebook_Link}}">mithun rana on facebook</a>
+                    </p>
                 </div>
                 <div class="col-sm-3">
-                    <p>mithun rana on facebook</p>
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;" href="{{$About->Youtube_Link}}">mithun rana on Youtube</a>
+                    </p>
                 </div>
                 <div class="col-sm-3">
-                    <p>mithun rana on facebook</p>
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;" href="{{$About->Twitter_Link}}">mithun rana on Twitter</a>
+                    </p>
                 </div>
                 <div class="col-sm-3">
-                    <p>mithun rana on facebook</p>
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;" href="{{$About->Linkedin_Link}}">mithun rana on Linked In</a>
+                    </p>
+                </div>
+
+                <div class="col-sm-3">
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;" href="{{$About->Instagram_Link}}">mithun rana on Instagram</a>
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;" href="{{$About->Pinterest_Link}}">mithun rana on pinterest</a>
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;" href="{{$About->Behance_Link}}">mithun rana on behance</a>
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;" href="{{$About->Dribble_Link}}">mithun rana on dribbble</a>
+                    </p>
+                </div>
+
+                <div class="col-sm-3">
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;" href="{{$About->Vimeo_Link}}">mithun rana on Vimeo</a>
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;" href="{{$About->Github_Link}}">mithun rana on Github</a>
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;" href="{{$About->stackoverflow_link}}">mithun rana on Stackoverflow</a>
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;" href="{{$About->Fiveer_Link}}">mithun rana on Fiverr</a>
+                    </p>
                 </div>
             </div>
         </div>

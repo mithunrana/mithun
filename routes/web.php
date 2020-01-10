@@ -7,7 +7,9 @@ Route::get('/', 'UIHomeController@index');
 Route::get('/about','AboutController@index');
 Route::get('/contact','ContactController@index');
 Route::get('/portfolio','PortfolioController@index');
+Route::get('/portfolio/{url}','PortfolioController@singlePortfolio');
 Route::get('/service','ServiceController@index');
+Route::get('/service/{url}','ServiceController@singleService');
 Route::get('/tutorials','BlogController@index');
 //=========================USER SITE REQUEST START HERE ========================//
 
