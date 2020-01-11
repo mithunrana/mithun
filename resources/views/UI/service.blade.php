@@ -37,7 +37,7 @@
                                 <img style="width: 100%;max-height:230px" src="{{$service->featuredimage->imageurl}}">
                             </div>
                             <div class="service-name">
-                                <h4 style="color:black;padding: 5px;text-transform: capitalize"><a href="service/{{$service->permalink}}">web design</a></h4>
+                                <h4 style="color:black;padding: 5px;text-transform: capitalize"><a href="service/{{$service->permalink}}">{{$service->service_title}}</a></h4>
                                 <p style="margin-top: 20px;padding: 5px;">
                                     {{str_limit($service->MainContent, $limit = 100, $end = '...')}}
                                 </p>
@@ -91,30 +91,20 @@
             </div>
             <div class="row">
                 <div class="active-testimonial">
+                    @foreach($Comments as $Comment)
                     <div class="single-testimonial item d-flex flex-row">
                         <div class="thumb">
-                            <img class="img-fluid" src="img/elements/user1.png" alt="">
+                            <img style="max-width:200px;"  src="/{{$Comment->images->imageurl}}" alt="">
                         </div>
                         <div class="desc">
                             <p>
-                                Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.		     
+                             {{$Comment->Comment}}
                             </p>
-                            <h4>Harriet Maxwell</h4>
-                            <p>CEO at Google</p>
+                            <h4>{{$Comment->Name}}</h4>
+                            <p>{{$Comment->Designation}}</p>
                         </div>
                     </div>
-                    <div class="single-testimonial item d-flex flex-row">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/elements/user2.png" alt="">
-                        </div>
-                        <div class="desc">
-                            <p>
-                                A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.
-                            </p>
-                            <h4>Carolyn Craig</h4>
-                            <p>CEO at Facebook</p>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

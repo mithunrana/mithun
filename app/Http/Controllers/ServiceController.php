@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Comment;
 use App\Portfolio;
 use App\Qualification;
 use Illuminate\Http\Request;
@@ -11,7 +12,8 @@ class ServiceController extends Controller
     public function index(){
         $service = Service::first();
         $services = Service::where('Active_Status',1)->get();
-        return view('UI.service',compact('service','services'));
+        $Comments = Comment::where('Active_Status',1)->get();
+        return view('UI.service',compact('service','services','Comments'));
     }
 
     public function singleService($url){
