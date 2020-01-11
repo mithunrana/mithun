@@ -18,7 +18,7 @@
                         <div style="text-align:center;" class="single-cat-widget">
                             <div style="margin-bottom: 10px;" class="content relative">
                                 <div class="overlay overlay-bg"></div>
-                                <a href="#" target="_blank">
+                                <a href="tutorial/{{$Blog->permalink}}">
                                     <div class="thumb">
                                         <img style="max-height:350px;" class="content-image img-fluid d-block mx-auto" src="{{$thumbnail}}" alt="">
                                     </div>
@@ -45,7 +45,7 @@
                             @endphp
                         <div class="single-cat-widget col-sm-12">
                             <div class="content relative">
-                                <a href="#" target="_blank">
+                                <a href="#">
                                     <div class="thumb">
                                         <img class="content-image img-fluid d-block mx-auto" src="{{$thumbnail}}" alt="">
                                     </div>
@@ -81,7 +81,7 @@
                                         <div style="text-align:center;" class="single-cat-widget">
                                             <div style="margin-bottom: 10px;" class="content relative">
                                                 <div class="overlay overlay-bg"></div>
-                                                <a href="#" target="_blank">
+                                                <a href="#">
                                                     <div class="thumb">
                                                         <img class="content-image img-fluid d-block mx-auto" src="{{$thumbnail}}" alt="">
                                                     </div>
@@ -92,7 +92,7 @@
                                             </div>
                                         </div>
                                         <h2 style="padding:5px;font-size: 16px;font-family: Kiron, SolaimanLipi, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif !important;">
-                                            <a style="color:black;" href="{{url('/',[$Blog->permalink])}}" style="text-decoration: none;font-size: 18px;text-align: left;">{{$Blog->blog_title}}</a>
+                                            <a style="color:black;" href="{{url('tutorial',[$Blog->permalink])}}" style="text-decoration: none;font-size: 18px;text-align: left;">{{$Blog->blog_title}}</a>
                                         </h2>
                                     </div>
                                 </div>
@@ -132,12 +132,6 @@
 
                 <div class="col-lg-4 sidebar-widgets">
                     <div style="margin-top: 20px;" class="widget-wrap">
-                        <div class="single-sidebar-widget search-widget">
-                            <form class="search-form" action="#">
-                                <input placeholder="Search Posts" name="search" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Posts'" >
-                                <button type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
                         <div class="single-sidebar-widget post-category-widget">
                             <h4 class="category-title">Post Catgories</h4>
                             <ul class="cat-list">

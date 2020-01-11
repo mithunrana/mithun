@@ -11,6 +11,7 @@ Route::get('/portfolio/{url}','PortfolioController@singlePortfolio');
 Route::get('/service','ServiceController@index');
 Route::get('/service/{url}','ServiceController@singleService');
 Route::get('/tutorials','BlogController@index');
+Route::get('/tutorial/{url}','BlogController@blogByUrl');
 //=========================USER SITE REQUEST START HERE ========================//
 
 
@@ -28,6 +29,14 @@ Route::get('/getall-category','CategoryController@getAll');
 Route::post('/update-category','CategoryController@categoryUpdate');
 Route::post('/delete-category','CategoryController@categoryDelete');
 
+
+Route::get('/blog-manage','BlogController@manage');
+Route::get('/blog-add','BlogController@create');
+Route::post('/blog-add','BlogController@store');
+Route::get('/blog-edit/{id}','BlogController@edit');
+Route::post('/blog-update/{id}','BlogController@update');
+Route::get('/blog-delete/{id}','BlogController@delete');
+Route::get('/blog-active-deactive/{id}/{postid}','BlogController@blogActiveDeactive');
 
 Route::get('/portfolio-category','PortfolioController@portfolioCategory');
 Route::post('/portfolio-category-save','PortfolioController@portfolioCategoryStore');
@@ -93,13 +102,5 @@ Route::get('/service-active-deactive/{status}/{postid}','ServiceController@activ
 Route::get('/getallimage','ImageUploadController@imagelist');
 Route::post('/formSubmit','ImageUploadController@imageUpload');
 
-Route::get('/blog-manage','BlogController@manage');
-Route::get('/blog-add','BlogController@create');
-Route::post('/blog-add','BlogController@store');
-Route::get('/blog-edit/{id}','BlogController@edit');
-Route::post('/blog-update/{id}','BlogController@update');
-Route::get('/blog-delete/{id}','BlogController@delete');
-Route::get('/blog-active-deactive/{id}/{postid}','BlogController@blogActiveDeactive');
-Route::get('/{url}','BlogController@blogByUrl');
-
+Route::get('/{url}','BlogController@blogByCategory');
 //=========================ADMIN SITE REQUEST END HERE ==========================//

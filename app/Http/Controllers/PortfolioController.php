@@ -12,12 +12,12 @@ class PortfolioController extends Controller
 {
     public function index(){
         $Portfolios = Portfolio::get()->where('Active_Status',1);
-       return view('UI.portfolio');
+       return view('UI.portfolio',compact('Portfolios'));
     }
 
     public function singlePortfolio($url){
-        $Portfolio = Portfolio::get()->where('permalink',$url);
-        return view('UI.portfolio');
+        $Portfolio = Portfolio::where('permalink',$url)->first();
+        return view('UI.portfolio single',compact('Portfolio'));
     }
 
     public function create(){

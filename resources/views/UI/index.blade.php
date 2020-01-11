@@ -13,8 +13,8 @@
                     <p>
                         {{$about->ShortBrief}}
                     </p>
-                    <a href="{{	$about->Discover_link}}" class="primary-btn text-uppercase">discover now</a>
-                    <a href="{{asset('documents')}}/{{	$about->Download_link}}" class="primary-btn text-uppercase" download>Download Resume</a>
+                    <a style="margin:5px 0px;" href="{{	$about->Discover_link}}" class="primary-btn text-uppercase">discover now</a>
+                    <a style="margin:5px 0px;" href="{{asset('documents')}}/{{	$about->Download_link}}" class="primary-btn text-uppercase" download>Download Resume</a>
                     <ul style="margin-top: 10px;">
                         <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="{{$about->Facebook_Link}}"><i id="icon-design" class="fa fa-facebook"></i></a></li>
                         <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="{{$about->Twitter_Link}}"><i id="icon-design" class="fa fa-twitter"></i></a></li>
@@ -30,6 +30,9 @@
         </div>					
     </section>
     <!-- End banner Area -->
+
+
+
 
     <!-- Start services Area -->
     <section style="background-image:url({{asset('UI')}}/img/about/service-background.jpg);background-repeat: no-repeat;
@@ -49,7 +52,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div style="background-color:white;">
                             <div class="single-services">
-                                <span style="background-color:#FF5722;color: white;padding: 15px;"  class="lnr"><img src="{{$service->icon->imageurl}}" style="width:30px;height: 20px"></span>
+                                <span style="background-color:#FF5722;color: white;padding: 15px;"  class="lnr"><img src="{{$service->icon->imageurl}}" style="width:35px;height:35px;margin-bottom: 10px;"></span>
                                 <a  href="#"><h4 style="color:#ff5722;">{{$service->service_title}}</h4></a>
                                 <p style="color:black;">
                                     “It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”
@@ -58,50 +61,6 @@
                         </div>
                     </div>
                     @endforeach
-                    <div class="col-lg-4 col-md-6">
-                        <div style="background-color:white;">
-                            <div class="single-services">
-                                <span style="background-color:#FF5722;color: white;padding: 15px;"  class="lnr lnr-laptop-phone"></span>
-                                <a href="#" style="color:#ff5722;"><h4 style="color:#ff5722;">Web Development</h4></a>
-                                <p>
-                                    If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div style="background-color:white;">
-                            <div class="single-services">
-                                <span style="background-color:#FF5722;color: white;padding: 15px;"  class="lnr lnr-camera"></span>
-                                <a href="#" style="color:#ff5722;"><h4 style="color:#ff5722;">Photography</h4></a>
-                                <p>
-                                    Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div style="background-color:white;">
-                            <div class="single-services">
-                                <span style="background-color:#FF5722;color: white;padding: 15px;" class="lnr lnr-picture"></span>
-                                <a href="#" style="color:#ff5722;"><h4 style="color:#ff5722;">Clipping Path</h4></a>
-                                <p>
-                                    Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div style="background-color:white;">
-                            <div class="single-services">
-                                <span style="background-color:#FF5722;color: white;padding: 15px;"  class="lnr lnr-tablet"></span>
-                                <a style="color:#ff5722;" href="#"><h4 style="color:#ff5722;">Apps Interface</h4></a>
-                                <p>
-                                    Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-4 col-md-6">
                         <div style="background-color:white;">
                             <div class="single-services">
@@ -118,6 +77,9 @@
         </div>
     </section>
     <!-- End services Area -->	
+
+
+
 
     <!-- Start fact Area -->
     <section style="padding: 30px 0px;background-color:#FF5722 " id="facts-area">
@@ -144,6 +106,9 @@
     </section>
     <!-- end fact Area -->	
 
+
+
+
     <!-- Start portfolio-area Area -->
     <section style="padding:30px 0px;" class="portfolio-area" id="portfolio">
         <div class="container">
@@ -158,64 +123,94 @@
 
                 <div class="row">
                     @foreach($Portfolios as $portfolio)
-                    <div style="margin-bottom:20px;" class="col-sm-4">
-                        <div class="work-box">
-                            <div class="relative">
-                                <div class="thumb">
-                                    <img class="image img-fluid" src="{{$portfolio->featuredimage->imageurl}}" alt="">
-                                </div>
-                            </div>
-                            <div style="margin-top: 10px;" class="p-inner">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 style="font-size: 1.2rem;">{{$portfolio->Portfolio_title}}</h2>
-                                        <div class="w-more">
-                                            <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                                        </div>
+                        <div style="margin-bottom:20px;" class="col-sm-4">
+                            <div class="work-box">
+                                <div class="relative">
+                                    <div class="thumb">
+                                        <img class="image img-fluid" src="{{$portfolio->featuredimage->imageurl}}" alt="">
                                     </div>
-                                    <div  class="col-sm-4">
-                                        <div style="float: right;margin-right: 10px;" class="w-like">
-                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
-                                                <p style="text-align:center;"><i class="fa fa-plus"></i></p>
+                                </div>
+                                <div style="margin-top: 10px;" class="p-inner">
+                                    <div class="row">
+                                        <div class="col-sm-10">
+                                            <h2 style="font-size:16px;">{{$portfolio->Portfolio_title}}</h2>
+                                            <div class="w-more">
+                                                <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                                            </div>
+                                        </div>
+                                        <div  class="col-sm-2">
+                                            <div style="float: right;" class="w-like">
+                                                <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
+                                                    <p style="text-align:center;"><i class="fa fa-plus"></i></p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    @endforeach
-                    <div style="margin-bottom:20px;" class="col-sm-4">
-                        <div class="work-box">
-                            <div class="relative">
-                                <div class="thumb">
-                                    <img class="image img-fluid" src="{{asset('UI')}}/img/imagetest.jpg" alt="">
-                                </div>
-                            </div>
-                            <div style="margin-top: 10px;" class="p-inner">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 style="font-size: 1.2rem;">Lorem impsum dolor</h2>
-                                        <div class="w-more">
-                                            <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                                        </div>
-                                    </div>
-                                    <div  class="col-sm-4">
-                                        <div style="float: right;margin-right: 10px;" class="w-like">
-                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
-                                                <p style="text-align:center;"><i class="fa fa-plus"></i></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
+                        <div style="margin-bottom:20px;" class="col-sm-4">
+                            <div class="work-box">
+                                <div class="relative">
+                                    <div class="thumb">
+                                        <img class="image img-fluid" src="{{$portfolio->featuredimage->imageurl}}" alt="">
+                                    </div>
+                                </div>
+                                <div style="margin-top: 10px;" class="p-inner">
+                                    <div class="row">
+                                        <div class="col-sm-10">
+                                            <h2 style="font-size:16px;">{{$portfolio->Portfolio_title}}</h2>
+                                            <div class="w-more">
+                                                <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                                            </div>
+                                        </div>
+                                        <div  class="col-sm-2">
+                                            <div style="float: right;" class="w-like">
+                                                <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
+                                                    <p style="text-align:center;"><i class="fa fa-plus"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom:20px;" class="col-sm-4">
+                            <div class="work-box">
+                                <div class="relative">
+                                    <div class="thumb">
+                                        <img class="image img-fluid" src="{{$portfolio->featuredimage->imageurl}}" alt="">
+                                    </div>
+                                </div>
+                                <div style="margin-top: 10px;" class="p-inner">
+                                    <div class="row">
+                                        <div class="col-sm-10">
+                                            <h2 style="font-size:16px;">{{$portfolio->Portfolio_title}}</h2>
+                                            <div class="w-more">
+                                                <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                                            </div>
+                                        </div>
+                                        <div  class="col-sm-2">
+                                            <div style="float: right;" class="w-like">
+                                                <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
+                                                    <p style="text-align:center;"><i class="fa fa-plus"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
         </div>
     </section>
     <!-- End portfolio-area Area -->	
+
+
+
 
     <!-- Start testimonial Area -->
     <section class="testimonial-area section-gap">
@@ -273,6 +268,9 @@
     <!-- End testimonial Area -->
 		
 
+
+
+
     <!-- Start recent-blog Area -->
     <section style="padding: 40px 0px;" class="recent-blog-area">
         <div class="container">
@@ -313,9 +311,6 @@
                     <a href="#">
                         <h4>Break Through Self Doubt And Fear</h4>
                     </a>
-                    <p>
-                        Dream interpretation has many forms; it can be done be done for the sake of fun, hobby or can be taken up as a serious career.
-                    </p>
                 </div>
                 @endforeach
             </div>
@@ -323,8 +318,11 @@
     </section>
     <!-- end recent-blog Area -->		
 
+
+
+
     <!-- Start brands Area -->
-    <section style="padding:70px 0px;background-color: #ff5722">
+    <!--<section style="padding:70px 0px;background-color: #ff5722">
         <div class="container">
             <div class="brand-wrap">
                 <div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
@@ -346,7 +344,9 @@
                 </div>
             </div>
         </div>
-    </section>			
+    </section>-->
+    <!-- End brands Area -->
+
 
     <!-- start footer Area -->
     @include('UI.inc.footer-bar');

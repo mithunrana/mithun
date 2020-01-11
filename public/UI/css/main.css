@@ -2942,7 +2942,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .single-recent-blog h4 {
     text-transform: uppercase;
     font-weight: 600;
-    margin-top: 35px;
+    margin-top: 10px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;

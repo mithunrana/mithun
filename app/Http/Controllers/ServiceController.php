@@ -10,7 +10,13 @@ class ServiceController extends Controller
 {
     public function index(){
         $service = Service::first();
-        return view('UI.service',compact('service'));
+        $services = Service::where('Active_Status',1)->get();
+        return view('UI.service',compact('service','services'));
+    }
+
+    public function singleService($url){
+       $Service = Service::where('permalink',$url)->first();
+       return view('UI.service single',compact('Service'));
     }
 
     public function serviceCreate(){

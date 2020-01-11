@@ -40,5 +40,7 @@
   <!-- Semantic UI theme -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/css/themes/semantic.min.css"/>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/css/themes/bootstrap.min.css"/>
+
+  <script src="{{asset('')}}tinymce/js/tinymce/tinymce.min.js"></script>
 </head>
 <body class="skin-blue sidebar-mini fixed" style="height: auto; min-height: 100%;">

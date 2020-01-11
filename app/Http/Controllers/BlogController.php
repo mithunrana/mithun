@@ -20,18 +20,26 @@ class BlogController extends Controller
         return view('UI.blog',compact('Blogs','New','FeaturesVideo','Categories'));
     }
 
-    public function manage(){
-        $Blogs = Blog::get();
-        return view('Admin.blog-manage',compact('Blogs'));
-    }
-
     public function blogByUrl($url){
         $BlogDetails = Blog::where('permalink',$url)->first();
         return view('UI.blogView',compact('BlogDetails'));
     }
 
+    public function blogByCategory($category){
+        $Category = Category::where('CategoryUrl',$category)->first();
+        $Categories = Category::get();
+        $Blogs =  Blog::where('category',$Category->id)->where('Active_Status',1)->orderBy('id', 'ASC')->get();
+        return view('UI.blog by category',compact('Blogs','Categories'));
+    }
+
     public function create(){
         return view('Admin.blog-add');
+    }
+
+
+    public function manage(){
+        $Blogs = Blog::get();
+        return view('Admin.blog-manage',compact('Blogs'));
     }
 
     public function store(Request $request){
