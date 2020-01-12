@@ -14,17 +14,17 @@
                         {{$about->ShortBrief}}
                     </p>
                     <a style="margin:5px 0px;" href="{{	$about->Discover_link}}" class="primary-btn text-uppercase">discover now</a>
-                    <a style="margin:5px 0px;" href="{{asset('documents')}}/{{	$about->Download_link}}" class="primary-btn text-uppercase" download>Download Resume</a>
+                    <a style="margin:5px 0px;" href="{{asset('documents')}}/{{$about->Download_link}}" class="primary-btn text-uppercase" download>Download Resume</a>
                     <ul style="margin-top: 10px;">
-                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="{{$about->Facebook_Link}}"><i id="icon-design" class="fa fa-facebook"></i></a></li>
-                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="{{$about->Twitter_Link}}"><i id="icon-design" class="fa fa-twitter"></i></a></li>
-                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="{{$about->Pinterest_Link}}"><i id="icon-design" class="fa fa-pinterest"></i></a></li>
-                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="{{$about->Linkedin_Link}}"><i id="icon-design" class="fa fa-linkedin"></i></a></li>
-                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a href="{{$about->Instagram_Link}}"><i id="icon-design" class="fa fa-instagram"></i></a></li>
+                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a target="_blank" href="{{$about->Facebook_Link}}"><i id="icon-design" class="fa fa-facebook"></i></a></li>
+                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a target="_blank" href="{{$about->Twitter_Link}}"><i id="icon-design" class="fa fa-twitter"></i></a></li>
+                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a target="_blank" href="{{$about->Pinterest_Link}}"><i id="icon-design" class="fa fa-pinterest"></i></a></li>
+                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a target="_blank" href="{{$about->Linkedin_Link}}"><i id="icon-design" class="fa fa-linkedin"></i></a></li>
+                        <li style="list-style:none;display: inline-block;margin: 0 3px;"><a target="_blank" href="{{$about->Instagram_Link}}"><i id="icon-design" class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-6 banner-right d-flex align-self-end">
-                    <img class="img-fluid" src="{{asset('UI')}}/img/hero-img.png" alt="">
+                    <img class="img-fluid" src="/{{$about->profileImage1->imageurl}}" alt="">
                 </div>
             </div>
         </div>					
@@ -51,27 +51,16 @@
                     @foreach($services as $service)
                     <div class="col-lg-4 col-md-6">
                         <div style="background-color:white;">
-                            <div class="single-services">
-                                <span style="background-color:#FF5722;color: white;padding: 15px;"  class="lnr"><img src="{{$service->icon->imageurl}}" style="width:35px;height:35px;margin-bottom: 10px;"></span>
-                                <a  href="#"><h4 style="color:#ff5722;">{{$service->service_title}}</h4></a>
+                                <div class="single-services">
+                                <span style="background-color:#FF5722;color: white;padding: 15px;"  class="lnr"><a href="service/{{$service->permalink}}"><img src="{{$service->icon->imageurl}}" style="width:35px;height:35px;margin-bottom: 10px;"></a></span>
+                                <a  href="service/{{$service->permalink}}"><h4 style="color:#ff5722;">{{$service->service_title}}</h4></a>
                                 <p style="color:black;">
-                                    “It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”
+                                    {{str_limit($service->MainContent,100)}}
                                 </p>
-                            </div>
+                                </div>
                         </div>
                     </div>
                     @endforeach
-                    <div class="col-lg-4 col-md-6">
-                        <div style="background-color:white;">
-                            <div class="single-services">
-                                <span style="background-color:#FF5722;color: white;padding: 15px;"  class="lnr lnr-rocket"></span>
-                                <a href="#"><h4 style="color:#ff5722;">Graphic Design</h4></a>
-                                <p>
-                                    You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.
-                                </p>
-                            </div>
-                        </div>				
-                    </div>														
                 </div>	
             </div>
         </div>
@@ -127,76 +116,26 @@
                             <div class="work-box">
                                 <div class="relative">
                                     <div class="thumb">
+                                        <a data-magnify="gallery" href="{{asset('')}}{{$portfolio->featuredimage->imageurl}}" data-caption="{{$portfolio->Portfolio_title}}">
                                         <img class="image img-fluid" src="{{$portfolio->featuredimage->imageurl}}" alt="">
+                                        </a>
                                     </div>
                                 </div>
                                 <div style="margin-top: 10px;" class="p-inner">
                                     <div class="row">
                                         <div class="col-sm-10">
-                                            <h2 style="font-size:16px;">{{$portfolio->Portfolio_title}}</h2>
+                                            <h2 style="font-size:16px;"><a href="portfolio/{{$portfolio->permalink}}">{{$portfolio->Portfolio_title}}</a></h2>
                                             <div class="w-more">
-                                                <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                                                <span style="color:red;">{{$portfolio->portfolioCategory->CategoryName}}</span> / <span class="w-date">{{$portfolio->created_at->diffForHumans()}}</span>
                                             </div>
                                         </div>
                                         <div  class="col-sm-2">
                                             <div style="float: right;" class="w-like">
-                                                <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
-                                                    <p style="text-align:center;"><i class="fa fa-plus"></i></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="margin-bottom:20px;" class="col-sm-4">
-                            <div class="work-box">
-                                <div class="relative">
-                                    <div class="thumb">
-                                        <img class="image img-fluid" src="{{$portfolio->featuredimage->imageurl}}" alt="">
-                                    </div>
-                                </div>
-                                <div style="margin-top: 10px;" class="p-inner">
-                                    <div class="row">
-                                        <div class="col-sm-10">
-                                            <h2 style="font-size:16px;">{{$portfolio->Portfolio_title}}</h2>
-                                            <div class="w-more">
-                                                <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                                            </div>
-                                        </div>
-                                        <div  class="col-sm-2">
-                                            <div style="float: right;" class="w-like">
-                                                <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
-                                                    <p style="text-align:center;"><i class="fa fa-plus"></i></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="margin-bottom:20px;" class="col-sm-4">
-                            <div class="work-box">
-                                <div class="relative">
-                                    <div class="thumb">
-                                        <img class="image img-fluid" src="{{$portfolio->featuredimage->imageurl}}" alt="">
-                                    </div>
-                                </div>
-                                <div style="margin-top: 10px;" class="p-inner">
-                                    <div class="row">
-                                        <div class="col-sm-10">
-                                            <h2 style="font-size:16px;">{{$portfolio->Portfolio_title}}</h2>
-                                            <div class="w-more">
-                                                <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                                            </div>
-                                        </div>
-                                        <div  class="col-sm-2">
-                                            <div style="float: right;" class="w-like">
-                                                <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
-                                                    <p style="text-align:center;"><i class="fa fa-plus"></i></p>
-                                                </div>
+                                                <a data-magnify="gallery" href="{{asset('')}}{{$portfolio->featuredimage->imageurl}}" data-caption="{{$portfolio->Portfolio_title}}">
+                                                    <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
+                                                        <p style="text-align:center;"><i class="fa fa-plus"></i></p>
+                                                    </div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -213,7 +152,6 @@
 
 
     <!-- Start testimonial Area -->
-    <!-- Start testimonial Area -->
     <section class="testimonial-area section-gap">
         <div class="container">
             <div class="row d-flex justify-content-center">
@@ -229,7 +167,7 @@
                     @foreach($Comments as $Comment)
                         <div class="single-testimonial item d-flex flex-row">
                             <div class="thumb">
-                                <img style="max-width:200px;"  src="/{{$Comment->images->imageurl}}" alt="">
+                                <img style="max-width:50px;"  src="/{{$Comment->images->imageurl}}" alt="">
                             </div>
                             <div class="desc">
                                 <p>
@@ -244,7 +182,6 @@
             </div>
         </div>
     </section>
-    <!-- End testimonial Area -->
     <!-- End testimonial Area -->
 		
 
@@ -263,7 +200,6 @@
                 </div>
             </div>
             <div class="row">
-
                 @foreach($Blogs as $Blog)
 
                 @php
@@ -272,24 +208,21 @@
                    $thumbnail="http://img.youtube.com/vi/".$video_id."/maxresdefault.jpg";
                 @endphp
 
-                <div class="single-recent-blog col-lg-4 col-md-4">
+                <div style="margin-top: 20px;" class="single-recent-blog col-lg-4 col-md-4">
                     <div class="thumb">
                        <!-- <img class="f-img img-fluid mx-auto" src="{{asset('UI')}}/img/b1.jpg" alt="">-->
-                       <img class="f-img img-fluid mx-auto" src="{{$thumbnail}}" alt="">
+                       <a href="tutorial/{{$Blog->permalink}}"><img class="f-img img-fluid mx-auto" src="{{$thumbnail}}" alt=""></a>
                     </div>
                     <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
                         <div>
-                            <img class="img-fluid" src="{{asset('UI')}}/img/user.png" alt="">
-                            <a href="#"><span>Mark Wiens</span></a>
+                            <a href="{{$Blog->Category->CategoryUrl}}"><span>{{$Blog->Category->CategoryName}}</span></a>
                         </div>
                         <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
+                            {{$Blog->created_at->diffForHumans()}}
                         </div>
                     </div>							
                     <a href="#">
-                        <h4>Break Through Self Doubt And Fear</h4>
+                        <h4><a href="tutorial/{{$Blog->permalink}}">Break Through Self Doubt And Fear</a></h4>
                     </a>
                 </div>
                 @endforeach
@@ -341,6 +274,28 @@
                 loop:true
             });
         });
+    </script>
+    <script>
+        $('[data-magnify]').magnify({
+            headToolbar: [
+                'minimize',
+                'maximize',
+                'close'
+            ],
+            footToolbar: [
+                'prev',
+                'next',
+                'zoomIn',
+                'zoomOut',
+                'fullscreen',
+                'actualSize',
+                'rotateLeft',
+                'rotateRight'
+            ],
+            modalWidth: 400,
+            modalHeight: 400
+        });
+
     </script>
 </body>
 </html>

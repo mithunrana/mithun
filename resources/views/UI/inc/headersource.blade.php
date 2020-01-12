@@ -28,4 +28,5 @@
         <link rel="stylesheet" href="{{asset('UI')}}/css/animate.min.css">
         <link rel="stylesheet" href="{{asset('UI')}}/css/owl.carousel.css">				
         <link rel="stylesheet" href="{{asset('UI')}}/css/main.css">
+        <link rel="stylesheet" href="{{asset('UI')}}/css/jquery.magnify.min.css">
     </head>

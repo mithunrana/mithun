@@ -16,3 +16,4 @@
         <script src="{{asset('UI')}}/js/mail-script.js"></script>
         <script src="{{asset('UI')}}/js/typed.min.js"></script>
         <script src="{{asset('UI')}}/js/main.js"></script>
+        <script src="{{asset('UI')}}/js/jquery.magnify.min.js"></script>

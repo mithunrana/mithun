@@ -34,7 +34,9 @@
                         <div class="work-box">
                             <div class="relative">
                                 <div class="thumb">
-                                    <a href="portfolio/{{$portfolio->permalink}}"><img class="image img-fluid" src="{{$portfolio->featuredimage->imageurl}}" alt=""></a>
+                                    <a data-magnify="gallery" href="{{asset('')}}{{$portfolio->featuredimage->imageurl}}" data-caption="{{$portfolio->Portfolio_title}}">
+                                        <img class="image img-fluid" src="{{$portfolio->featuredimage->imageurl}}" alt="">
+                                    </a>
                                 </div>
                             </div>
                             <div style="margin-top: 10px;" class="p-inner">
@@ -42,14 +44,16 @@
                                     <div class="col-sm-10">
                                         <h2 style="font-size:16px;"><a href="portfolio/{{$portfolio->permalink}}">{{$portfolio->Portfolio_title}}</a></h2>
                                         <div class="w-more">
-                                            <span style="color:red;">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                                            <span style="color:red;">{{$portfolio->portfolioCategory->CategoryName}}</span> / <span class="w-date">{{$portfolio->created_at->diffForHumans()}}</span>
                                         </div>
                                     </div>
                                     <div  class="col-sm-2">
                                         <div style="float: right;" class="w-like">
-                                            <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
-                                                <p style="text-align:center;"><i class="fa fa-plus"></i></p>
-                                            </div>
+                                            <a data-magnify="gallery" href="{{asset('')}}{{$portfolio->featuredimage->imageurl}}" data-caption="{{$portfolio->Portfolio_title}}">
+                                                <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
+                                                    <p style="text-align:center;"><i class="fa fa-plus"></i></p>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

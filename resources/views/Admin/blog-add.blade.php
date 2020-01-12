@@ -12,8 +12,7 @@
                 <small>Control panel</small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Dashboard</li>
+                <li class="active"><a href="admin-panel"><i class="fa fa-dashboard"></i> Dashboard</a></li>
             </ol>
         </section>
 
@@ -71,8 +70,8 @@
                                 </div>
 
                                 <input type="hidden" value="" name="featured_image" id="setimageid"/>
-                                <input type="hidden" value="" name="imageTitleText" id="setImageAltText"/>
-                                <input type="hidden"  value="" name="imageAltText" id="setImageTitleText"/>
+                                <input type="hidden" value="" name="imageAltText" id="setImageAltText"/>
+                                <input type="hidden"  value="" name="imageTitleText" id="setImageTitleText"/>
 
                                 <div class="clearfix"></div>
 

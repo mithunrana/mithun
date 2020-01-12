@@ -20,12 +20,12 @@ class CreatePortfoliosTable extends Migration
             $table->string('permalink');
             $table->integer('category')->nullable();
             $table->integer('featured_image');
-            $table->string('SeoKeyword')->nullable();
-            $table->string('SeoDescription')->nullable();
+            $table->text('SeoKeyword')->nullable();
+            $table->text('SeoDescription')->nullable();
             $table->string('FeaturedImageAltText')->nullable();
             $table->string('FeaturedImageTitleText')->nullable();
-            $table->text('MainContent');
-            $table->text('OpenContent');
+            $table->longText('MainContent');
+            $table->longText('OpenContent');
             $table->integer('Active_Status')->default('0');
             $table->timestamps();
         });

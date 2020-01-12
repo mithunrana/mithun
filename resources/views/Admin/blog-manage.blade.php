@@ -12,14 +12,13 @@
                 <small>Control panel</small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Dashboard</li>
+                <li class="active"><a href="admin-panel"><i class="fa fa-dashboard"></i> Dashboard</a></li>
             </ol>
         </section>
 
 
         <section id="app" class="content">
-            <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('blog-add')}}" class="btn btn-success pull-left">Add New +</a> <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('admin-panel')}}" class="btn btn-info pull-right">Dashbord</a>
+            <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('blog-add')}}" class="btn btn-success pull-left">Add New +</a> <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('admin-panel')}}" class="btn btn-info pull-right"><i class="fa fa-dashboard"></i> Dashbord</a>
             <div class="row">
                 <div class="col-sm-12">
                     @if(Session::has('message'))

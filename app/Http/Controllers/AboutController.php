@@ -1,12 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Comment;
 use Illuminate\Http\Request;
 use App\AboutProfile;
+use App\Expertness;
+use App\Qualification;
 class AboutController extends Controller {
 
     public function index() {
-        return view('UI.about');
+        $Profile = AboutProfile::first();
+        $Expertness = Expertness::where('Active_Status',1)->get();
+        $Qualifications = Qualification::where('Active_Status',1)->get();
+        $Comments = Comment::where('Active_Status',1)->get();
+        return view('UI.about',compact('Profile','Expertness','Qualifications','Comments'));
     }
 
 
@@ -61,7 +68,8 @@ class AboutController extends Controller {
             $Profile->Facebook_Link = $request->Facebook_Link;
             $Profile->Youtube_Link = $request->Youtube_Link;
             $Profile->Twitter_Link = $request->Twitter_Link;
-
+            $Profile->image1 = $request->image1;
+            $Profile->image2 = $request->image2;
             $Profile->Linkedin_Link = $request->Linkedin_Link;
             $Profile->Fiveer_Link = $request->Fiveer_Link;
             $Profile->Upwork_Link = $request->Upwork_Link;
@@ -90,7 +98,8 @@ class AboutController extends Controller {
             $Profile->Facebook_Link = $request->Facebook_Link;
             $Profile->Youtube_Link = $request->Youtube_Link;
             $Profile->Twitter_Link = $request->Twitter_Link;
-
+            $Profile->image1 = $request->image1;
+            $Profile->image2 = $request->image2;
             $Profile->Linkedin_Link = $request->Linkedin_Link;
             $Profile->Fiveer_Link = $request->Fiveer_Link;
             $Profile->Upwork_Link = $request->Upwork_Link;

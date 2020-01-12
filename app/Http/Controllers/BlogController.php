@@ -21,15 +21,16 @@ class BlogController extends Controller
     }
 
     public function blogByUrl($url){
+        $Categories = Category::get();
         $BlogDetails = Blog::where('permalink',$url)->first();
-        return view('UI.blogView',compact('BlogDetails'));
+        return view('UI.blogView',compact('BlogDetails','Categories'));
     }
 
     public function blogByCategory($category){
         $Category = Category::where('CategoryUrl',$category)->first();
         $Categories = Category::get();
         $Blogs =  Blog::where('category',$Category->id)->where('Active_Status',1)->orderBy('id', 'ASC')->get();
-        return view('UI.blog by category',compact('Blogs','Categories'));
+        return view('UI.blog by category',compact('Blogs','Categories','Category'));
     }
 
     public function create(){

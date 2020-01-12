@@ -17,8 +17,8 @@ class CreateCategoriesTable extends Migration
             $table->bigIncrements('id');
             $table->string('CategoryName');
             $table->string('CategoryUrl');
-            $table->string('CategorySeoKeyword');
-            $table->string('CategorySeoDescription');
+            $table->text('CategorySeoKeyword');
+            $table->text('CategorySeoDescription');
             $table->string('CategoryBrowserTitle');
             $table->timestamps();
         });

@@ -44,10 +44,10 @@
             <div class="row">
                 <form method="POST" action="{{url('profile-update')}}">
                 @csrf
-                <input type="hidden" class="form-control" value="" id="image1" name="image1">
-                <input type="hidden" class="form-control" value="" id="image2" name="image2">
-                <input type="hidden" class="form-control" value="" id="setImageAltText" name="imageAltText">
-                <input type="hidden" class="form-control" value="" id="setImageTitleText" name="imageTitleText">
+                <input type="hidden" class="form-control" @isset($Profile->image1) value="{{$Profile->image1}}" @endisset id="image1" name="image1">
+                <input type="hidden" class="form-control" @isset($Profile->image2) value="{{$Profile->image2}}" @endisset id="image2" name="image2">
+                <input type="hidden" class="form-control" @isset($Profile->imageAltText) value="{{$Profile->imageAltText}}" @endisset id="setImageAltText" name="imageAltText">
+                <input type="hidden" class="form-control" @isset($Profile->imageTitleText) value="{{$Profile->imageTitleText}}" @endisset id="setImageTitleText" name="imageTitleText">
 
                 <div class="col-sm-12">
                     <div class="col-sm-4">

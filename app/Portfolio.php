@@ -10,5 +10,10 @@ class Portfolio extends Model
         return $this->belongsTo(images::class,'featured_image');
     }
 
+    public function portfolioCategory(){
+        return $this->belongsTo(PortfolioCategory::class,'category');
+    }
+
+
     protected $guarded=[];
 }

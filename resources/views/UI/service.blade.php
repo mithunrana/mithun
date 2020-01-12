@@ -41,7 +41,7 @@
                                 <p style="margin-top: 20px;padding: 5px;">
                                     {{str_limit($service->MainContent, $limit = 100, $end = '...')}}
                                 </p>
-                                <a href="#" style="color:red;font-size: 20px;padding: 5px 5px;">View Details -></a>
+                                <a href="service/{{$service->permalink}}" style="color:red;font-size: 20px;padding: 5px 5px;">View Details -></a>
                             </div>
                         </div>
                     </div>
@@ -92,24 +92,26 @@
             <div class="row">
                 <div class="active-testimonial">
                     @foreach($Comments as $Comment)
-                    <div class="single-testimonial item d-flex flex-row">
-                        <div class="thumb">
-                            <img style="max-width:200px;"  src="/{{$Comment->images->imageurl}}" alt="">
+                        <div class="single-testimonial item d-flex flex-row">
+                            <div class="thumb">
+                                <img style="max-width:50px;"  src="/{{$Comment->images->imageurl}}" alt="">
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    {{$Comment->Comment}}
+                                </p>
+                                <h4>{{$Comment->Name}}</h4>
+                                <p>{{$Comment->Designation}}</p>
+                            </div>
                         </div>
-                        <div class="desc">
-                            <p>
-                             {{$Comment->Comment}}
-                            </p>
-                            <h4>{{$Comment->Name}}</h4>
-                            <p>{{$Comment->Designation}}</p>
-                        </div>
-                    </div>
                     @endforeach
                 </div>
             </div>
         </div>
     </section>
-    <!-- End testimonial Area -->			
+    <!-- End testimonial Area -->
+
+
 
     <!-- start footer Area -->
     @include('UI.inc.footer-bar');

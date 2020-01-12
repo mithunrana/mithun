@@ -19,13 +19,13 @@ class CreateBlogsTable extends Migration
             $table->string('blog_title');
             $table->string('permalink');
             $table->string('video_url');
-            $table->string('embedded_video');
+            $table->text('embedded_video');
             $table->longText('blog_details');
             $table->integer('category')->nullable();
             $table->integer('blog_poster');
             $table->integer('featured_image');
-            $table->string('seo_keyword')->nullable();
-            $table->string('seo_description')->nullable();
+            $table->text('seo_keyword')->nullable();
+            $table->text('seo_description')->nullable();
             $table->string('imageAltText')->nullable();
             $table->string('imageTitleText')->nullable();
             $table->integer('Active_Status')->default('0');

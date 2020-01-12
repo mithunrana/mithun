@@ -20,8 +20,8 @@ class CreateServicesTable extends Migration
             $table->string('permalink');
             $table->integer('featured_image');
             $table->integer('ServiceIcon');
-            $table->string('SeoKeyword')->nullable();
-            $table->string('SeoDescription')->nullable();
+            $table->text('SeoKeyword')->nullable();
+            $table->text('SeoDescription')->nullable();
             $table->string('FeaturedImageAltText')->nullable();
             $table->string('FeaturedImageTitleText')->nullable();
             $table->text('MainContent');

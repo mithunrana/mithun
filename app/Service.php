@@ -2,8 +2,9 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
 use App\images;
+use Illuminate\Database\Eloquent\Model;
+use App\PortfolioCategory;
 class Service extends Model
 {
     protected $guarded=[];
@@ -15,5 +16,6 @@ class Service extends Model
     public function icon(){
         return $this->belongsTo(images::class,'ServiceIcon');
     }
+
 
 }

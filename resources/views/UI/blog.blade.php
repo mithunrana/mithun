@@ -2,11 +2,28 @@
 <body>	
     @include('UI.inc.menubar');
 
+    <!-- start banner Area -->
+    <section class="relative about-banner">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="about-content col-lg-12">
+                    <h1 class="text-white">
+                        Bangla Video Tutorial
+                    </h1>
+                    <p class="text-white link-nav"><a href="{{asset('')}}">Home </a>
+                        <span class="lnr lnr-arrow-right"></span><a href="/tutorials">Tutorials</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End banner Area -->
+
     <!-- Start top-category-widget Area -->
-    <section class="top-category-widget-area pt-90">
+    <section style="padding-top: 10px;" class="top-category-widget-area">
         <div class="container">
             <div class="row">
-
                 <div class="col-lg-9">
                     @foreach($New as $Blog)
                         @php
@@ -29,7 +46,7 @@
                             </div>
                         </div>
                         <h2 style="padding:5px;font-size: 16px;font-family: Kiron, SolaimanLipi, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif !important;">
-                            <a href="#" style="text-decoration: none;font-size: 18px;color:black;">{{$Blog->blog_title}}</a>
+                            <a href="tutorial/{{$Blog->permalink}}" style="text-decoration: none;font-size: 18px;color:black;">{{$Blog->blog_title}}</a>
                         </h2>
                         </div>
                         @endforeach
@@ -45,13 +62,13 @@
                             @endphp
                         <div class="single-cat-widget col-sm-12">
                             <div class="content relative">
-                                <a href="#">
+                                <a href="tutorial/{{$Blog->permalink}}">
                                     <div class="thumb">
                                         <img class="content-image img-fluid d-block mx-auto" src="{{$thumbnail}}" alt="">
                                     </div>
                                 </a>
                                 <h2 style="padding:5px;font-size: 16px;font-family: Kiron, SolaimanLipi, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif !important;">
-                                    <a>{{$FeatureVideo->blog_title}}</a>
+                                    <a href="tutorial/{{$Blog->permalink}}">{{$FeatureVideo->blog_title}}</a>
                                 </h2>
                             </div>
                         </div>
@@ -131,25 +148,30 @@
 
 
                 <div class="col-lg-4 sidebar-widgets">
-                    <div style="margin-top: 20px;" class="widget-wrap">
+                    <div class="widget-wrap">
                         <div class="single-sidebar-widget post-category-widget">
-                            <h4 class="category-title">Post Catgories</h4>
+                            <h4 style="background-color: red;" class="category-title">Post Catgories</h4>
                             <ul class="cat-list">
-                                @foreach($Categories as $Category)
-                                    <li>
-                                        <a href="#" class="d-flex justify-content-between">
-                                            <p> <a href="{{$Category->CategoryUrl}}">{{$Category->CategoryName}}</a></p>
-                                            <!--<p>37</p>-->
-                                        </a>
-                                    </li>
-                                @endforeach
+                                <ul class="cat-list">
+                                    @foreach($Categories as $Category)
+                                        <li>
+                                            <a href="/{{$Category->CategoryUrl}}" class="d-flex justify-content-between">
+                                                <p style="text-transform: capitalize;">{{$Category->CategoryName}}</p>
+                                                <p>@php
+                                                        echo count(App\Blog::where('category',$Category->id)->get());
+                                                    @endphp
+                                                </p>
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                </ul>
                             </ul>
                         </div>
                         <div class="single-sidebar-widget ads-widget">
                             <a href="#"><img class="img-fluid" src="{{asset('UI')}}/img/blog/ads-banner.jpg" alt=""></a>
                         </div>
                         <div class="single-sidebar-widget popular-post-widget">
-                            <h4 class="popular-title">Popular Posts</h4>
+                            <h4 style="background-color: red;" class="popular-title">Popular Posts</h4>
                             <div class="popular-post-list">
                                 <div class="single-post-list d-flex flex-row align-items-center">
                                     <div class="thumb">
@@ -188,29 +210,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="single-sidebar-widget newsletter-widget">
-                            <h4 class="newsletter-title">Newsletter</h4>
-                            <p>
-                                Here, I focus on a range of items and features that we use in life without
-                                giving them a second thought.
-                            </p>
-                            <div class="form-group d-flex flex-row">
-                                <div class="col-autos">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'" >
-                                    </div>
-                                </div>
-                                <a href="#" class="bbtns">Subcribe</a>
-                            </div>
-                            <p class="text-bottom">
-                                You can unsubscribe at any time
-                            </p>
                         </div>
                     </div>
                 </div>
