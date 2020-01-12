@@ -1946,11 +1946,11 @@ __webpack_require__.r(__webpack_exports__);
       success: '',
       CategoyList: [],
       CategoryDetails: {
-        CategoryName: null,
-        CategoryUrl: null,
-        CategorySeoKeyword: null,
-        CategorySeoDescription: null,
-        CategoryBrowserTitle: null
+        CategoryName: '',
+        CategoryUrl: '',
+        CategorySeoKeyword: '',
+        CategorySeoDescription: '',
+        CategoryBrowserTitle: ''
       }
     };
   },
@@ -1968,13 +1968,17 @@ __webpack_require__.r(__webpack_exports__);
     CategorySave: function CategorySave() {
       var _this2 = this;
 
-      axios.post('/categorysave', this.CategoryDetails).then(function (response) {
-        _this2.success = response.data.success;
+      if (this.CategoryDetails.CategoryName == '' || this.CategoryDetails.CategoryUrl == '' || this.CategoryDetails.CategorySeoKeyword == '' || this.CategoryDetails.CategorySeoDescription == '' || this.CategoryDetails.CategoryBrowserTitle == '') {
+        alertify.alert('Blog Category', 'Please Fill Out All Field');
+      } else {
+        axios.post('/categorysave', this.CategoryDetails).then(function (response) {
+          _this2.success = response.data.success;
 
-        _this2.init();
+          _this2.init();
 
-        _this2.CategoryDetails = {};
-      });
+          _this2.CategoryDetails = {};
+        });
+      }
     },
     CategoryEdit: function CategoryEdit(row) {
       this.categoryInsert = false;
