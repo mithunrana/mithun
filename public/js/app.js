@@ -1988,20 +1988,35 @@ __webpack_require__.r(__webpack_exports__);
       this.success = '';
     },
     UniqueCheck: function UniqueCheck() {
-      alert('hello world');
+      var _this2 = this;
+
+      if (this.CategoryDetails.CategoryName.length > 1) {
+        axios.get('portfolio-category-name-check', {
+          params: {
+            name: this.CategoryDetails.CategoryName
+          }
+        }).then(function (response) {
+          /*if(response.data==1){
+              this.success = 'Find';
+          }else{
+              this.success = 'Not Find';
+          }*/
+          _this2.success = response.data;
+        });
+      }
     },
     CategorySave: function CategorySave() {
-      var _this2 = this;
+      var _this3 = this;
 
       if (this.CategoryDetails.CategoryName == '' || this.CategoryDetails.CategoryUrl == '' || this.CategoryDetails.CategorySeoKeyword == '' || this.CategoryDetails.CategorySeoDescription == '' || this.CategoryDetails.CategoryBrowserTitle == '') {
         alertify.alert('Blog Category', 'Please Fill Out All Field');
       } else {
         axios.post('/categorysave', this.CategoryDetails).then(function (response) {
-          _this2.success = response.data.success;
+          _this3.success = response.data.success;
 
-          _this2.init();
+          _this3.init();
 
-          _this2.CategoryDetails = {
+          _this3.CategoryDetails = {
             CategoryName: '',
             CategoryUrl: '',
             CategorySeoKeyword: '',
@@ -2018,30 +2033,30 @@ __webpack_require__.r(__webpack_exports__);
       this.CategoryDetails = row;
     },
     CategoryUpdate: function CategoryUpdate(data) {
-      var _this3 = this;
+      var _this4 = this;
 
       if (!confirm('Are you sure')) return;
       axios.post('update-category', data).then(function (response) {
-        _this3.success = response.data.success;
-        _this3.CategoryDetails = {
+        _this4.success = response.data.success;
+        _this4.CategoryDetails = {
           CategoryName: '',
           CategoryUrl: '',
           CategorySeoKeyword: '',
           CategorySeoDescription: '',
           CategoryBrowserTitle: ''
         };
-        _this3.categoryInsert = true;
-        _this3.categoryUpdate = false;
+        _this4.categoryInsert = true;
+        _this4.categoryUpdate = false;
       });
     },
     CategoryDelete: function CategoryDelete(data) {
-      var _this4 = this;
+      var _this5 = this;
 
       if (!confirm('Are you sure delete this category')) return;
       axios.post('delete-category', data).then(function (response) {
-        _this4.success = response.data.success;
+        _this5.success = response.data.success;
 
-        _this4.init();
+        _this5.init();
       });
       alertify.success('Category Delete Successfully');
     }

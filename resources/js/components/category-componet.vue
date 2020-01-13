@@ -100,7 +100,16 @@
                 this.success = '';
             },
             UniqueCheck(){
-                alert('hello world');
+                if(this.CategoryDetails.CategoryName.length>1){
+                    axios.get('portfolio-category-name-check',{params:{name:this.CategoryDetails.CategoryName}}).then(response=>{
+                        /*if(response.data==1){
+                            this.success = 'Find';
+                        }else{
+                            this.success = 'Not Find';
+                        }*/
+                        this.success = response.data ;
+                    });
+                }
             },
             CategorySave(){
                 if((this.CategoryDetails.CategoryName == '') || (this.CategoryDetails.CategoryUrl == '') || (this.CategoryDetails.CategorySeoKeyword == '') || (this.CategoryDetails.CategorySeoDescription == '') || (this.CategoryDetails.CategoryBrowserTitle == '') ){
