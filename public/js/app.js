@@ -1934,6 +1934,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -1943,6 +1944,7 @@ __webpack_require__.r(__webpack_exports__);
       Category: {},
       categoryInsert: true,
       categoryUpdate: false,
+      closeButton: false,
       success: '',
       CategoyList: [],
       CategoryDetails: {
@@ -1965,6 +1967,29 @@ __webpack_require__.r(__webpack_exports__);
         _this.CategoyList = response.data;
       });
     },
+    CategoryView: function CategoryView(row) {
+      this.closeButton = true;
+      this.categoryInsert = false;
+      this.categoryUpdate = false;
+      this.CategoryDetails = row;
+    },
+    Close: function Close() {
+      this.closeButton = false;
+      this.categoryInsert = true;
+      this.CategoryDetails = {
+        CategoryName: '',
+        CategoryUrl: '',
+        CategorySeoKeyword: '',
+        CategorySeoDescription: '',
+        CategoryBrowserTitle: ''
+      };
+    },
+    setNull: function setNull() {
+      this.success = '';
+    },
+    UniqueCheck: function UniqueCheck() {
+      alert('hello world');
+    },
     CategorySave: function CategorySave() {
       var _this2 = this;
 
@@ -1976,11 +2001,18 @@ __webpack_require__.r(__webpack_exports__);
 
           _this2.init();
 
-          _this2.CategoryDetails = {};
+          _this2.CategoryDetails = {
+            CategoryName: '',
+            CategoryUrl: '',
+            CategorySeoKeyword: '',
+            CategorySeoDescription: '',
+            CategoryBrowserTitle: ''
+          };
         });
       }
     },
     CategoryEdit: function CategoryEdit(row) {
+      this.closeButton = false;
       this.categoryInsert = false;
       this.categoryUpdate = true;
       this.CategoryDetails = row;
@@ -1991,6 +2023,15 @@ __webpack_require__.r(__webpack_exports__);
       if (!confirm('Are you sure')) return;
       axios.post('update-category', data).then(function (response) {
         _this3.success = response.data.success;
+        _this3.CategoryDetails = {
+          CategoryName: '',
+          CategoryUrl: '',
+          CategorySeoKeyword: '',
+          CategorySeoDescription: '',
+          CategoryBrowserTitle: ''
+        };
+        _this3.categoryInsert = true;
+        _this3.categoryUpdate = false;
       });
     },
     CategoryDelete: function CategoryDelete(data) {
@@ -2247,6 +2288,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -2256,14 +2298,15 @@ __webpack_require__.r(__webpack_exports__);
       Category: {},
       categoryInsert: true,
       categoryUpdate: false,
+      closeButton: false,
       success: '',
       CategoyList: [],
       CategoryDetails: {
-        CategoryName: null,
-        CategoryUrl: null,
-        CategorySeoKeyword: null,
-        CategorySeoDescription: null,
-        CategoryBrowserTitle: null
+        CategoryName: '',
+        CategoryUrl: '',
+        CategorySeoKeyword: '',
+        CategorySeoDescription: '',
+        CategoryBrowserTitle: ''
       }
     };
   },
@@ -2278,18 +2321,49 @@ __webpack_require__.r(__webpack_exports__);
         _this.CategoyList = response.data;
       });
     },
+    CategoryView: function CategoryView(row) {
+      this.closeButton = true;
+      this.categoryInsert = false;
+      this.categoryUpdate = false;
+      this.CategoryDetails = row;
+    },
+    Close: function Close() {
+      this.closeButton = false;
+      this.categoryInsert = true;
+      this.CategoryDetails = {
+        CategoryName: '',
+        CategoryUrl: '',
+        CategorySeoKeyword: '',
+        CategorySeoDescription: '',
+        CategoryBrowserTitle: ''
+      };
+    },
+    setNull: function setNull() {
+      this.success = '';
+    },
     CategorySave: function CategorySave() {
       var _this2 = this;
 
-      axios.post('/portfolio-category-save', this.CategoryDetails).then(function (response) {
-        _this2.success = response.data.success;
+      if (this.CategoryDetails.CategoryName == '' || this.CategoryDetails.CategoryUrl == '' || this.CategoryDetails.CategorySeoKeyword == '' || this.CategoryDetails.CategorySeoDescription == '' || this.CategoryDetails.CategoryBrowserTitle == '') {
+        alertify.alert('Blog Category', 'Please Fill Out All Field');
+      } else {
+        axios.post('/portfolio-category-save', this.CategoryDetails).then(function (response) {
+          _this2.success = response.data.success;
 
-        _this2.init();
+          _this2.init();
 
-        _this2.CategoryDetails = {};
-      });
+          _this2.CategoryDetails = {
+            CategoryName: '',
+            CategoryUrl: '',
+            CategorySeoKeyword: '',
+            CategorySeoDescription: '',
+            CategoryBrowserTitle: ''
+          };
+        });
+      }
     },
     CategoryEdit: function CategoryEdit(row) {
+      this.closeButton = false;
       this.categoryInsert = false;
       this.categoryUpdate = true;
       this.CategoryDetails = row;
@@ -2300,7 +2374,13 @@ __webpack_require__.r(__webpack_exports__);
       if (!confirm('Are you sure')) return;
       axios.post('update-portfolio-category', data).then(function (response) {
         _this3.success = response.data.success;
-        _this3.CategoryDetails = {};
+        _this3.CategoryDetails = {
+          CategoryName: '',
+          CategoryUrl: '',
+          CategorySeoKeyword: '',
+          CategorySeoDescription: '',
+          CategoryBrowserTitle: ''
+        };
       });
     },
     CategoryDelete: function CategoryDelete(data) {
@@ -37778,7 +37858,12 @@ var render = function() {
                     "button",
                     {
                       staticClass: "close",
-                      attrs: { type: "button", "data-dismiss": "alert" }
+                      attrs: { type: "button", "data-dismiss": "alert" },
+                      on: {
+                        click: function($event) {
+                          return _vm.setNull()
+                        }
+                      }
                     },
                     [_vm._v("×")]
                   ),
@@ -37811,6 +37896,9 @@ var render = function() {
                   attrs: { type: "text", id: "categoryname" },
                   domProps: { value: _vm.CategoryDetails.CategoryName },
                   on: {
+                    keyup: function($event) {
+                      return _vm.UniqueCheck()
+                    },
                     input: function($event) {
                       if ($event.target.composing) {
                         return
@@ -37979,6 +38067,21 @@ var render = function() {
                     },
                     [_vm._v("Update")]
                   )
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.closeButton
+                ? _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-success",
+                      on: {
+                        click: function($event) {
+                          return _vm.Close(_vm.CategoryDetails)
+                        }
+                      }
+                    },
+                    [_vm._v("Close")]
+                  )
                 : _vm._e()
             ]),
             _vm._v(" "),
@@ -37999,7 +38102,7 @@ var render = function() {
                             staticClass: "btn btn-info",
                             on: {
                               click: function($event) {
-                                return _vm.CategoryEdit(category)
+                                return _vm.CategoryView(category)
                               }
                             }
                           },
@@ -38540,7 +38643,12 @@ var render = function() {
                     "button",
                     {
                       staticClass: "close",
-                      attrs: { type: "button", "data-dismiss": "alert" }
+                      attrs: { type: "button", "data-dismiss": "alert" },
+                      on: {
+                        click: function($event) {
+                          return _vm.setNull()
+                        }
+                      }
                     },
                     [_vm._v("×")]
                   ),
@@ -38741,6 +38849,21 @@ var render = function() {
                     },
                     [_vm._v("Update")]
                   )
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.closeButton
+                ? _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-success",
+                      on: {
+                        click: function($event) {
+                          return _vm.Close(_vm.CategoryDetails)
+                        }
+                      }
+                    },
+                    [_vm._v("Close")]
+                  )
                 : _vm._e()
             ]),
             _vm._v(" "),
@@ -38761,7 +38884,7 @@ var render = function() {
                             staticClass: "btn btn-info",
                             on: {
                               click: function($event) {
-                                return _vm.CategoryEdit(category)
+                                return _vm.CategoryView(category)
                               }
                             }
                           },

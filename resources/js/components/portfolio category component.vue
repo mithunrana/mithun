@@ -5,7 +5,7 @@
                 <div class="panel-heading">Portfolio Category Manage Here</div>
                 <div class="panel-body">
                     <div v-if="success != ''" class="alert alert-success alert-dismissible" role="alert">
-                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <button type="button" class="close" @click="setNull()" data-dismiss="alert">&times;</button>
                         {{success}}
                     </div>
                     <div class="row">
@@ -32,6 +32,7 @@
                             </div>
                             <button v-if="categoryInsert" @click="CategorySave"  class="btn btn-success">Save</button>
                             <button v-if="categoryUpdate" @click="CategoryUpdate(CategoryDetails)"  class="btn btn-success">Update</button>
+                            <button v-if="closeButton" @click="Close(CategoryDetails)"  class="btn btn-success">Close</button>
                         </div>
 
                         <div class="col-sm-6">
@@ -46,7 +47,7 @@
                                 <tr v-for="category in CategoyList">
                                     <td>{{category.CategoryName}}</td>
                                     <td>
-                                        <a class="btn btn-info" @click="CategoryEdit(category)">View</a>
+                                        <a class="btn btn-info" @click="CategoryView(category)">View</a>
                                         <a class="btn btn-primary" @click="CategoryEdit(category)">Edit</a>
                                         <a class="btn btn-danger" @click="CategoryDelete(category)">Delete</a>
                                     </td>
@@ -71,9 +72,10 @@
                 Category:{},
                 categoryInsert:true,
                 categoryUpdate:false,
+                closeButton:false,
                 success: '',
                 CategoyList:[],
-                CategoryDetails:{CategoryName:null,CategoryUrl:null,CategorySeoKeyword:null,CategorySeoDescription:null,CategoryBrowserTitle:null}
+                CategoryDetails:{CategoryName:'',CategoryUrl:'',CategorySeoKeyword:'',CategorySeoDescription:'',CategoryBrowserTitle:''}
             }
         },
         created: function () {
@@ -83,15 +85,33 @@
             init(){
                 axios.get('/getall-portfolio-category').then(response=>{this.CategoyList=response.data});
             },
-            CategorySave(){
-                axios.post('/portfolio-category-save',this.CategoryDetails).then(response=>{
-                    this.success = response.data.success;
-                    this.init();
-                    this.CategoryDetails = {};
-                });
+            CategoryView(row){
+                this.closeButton = true;
+                this.categoryInsert =false;
+                this.categoryUpdate = false;
+                this.CategoryDetails = row;
             },
-
+            Close(){
+                this.closeButton = false;
+                this.categoryInsert =true;
+                this.CategoryDetails = {CategoryName:'',CategoryUrl:'',CategorySeoKeyword:'',CategorySeoDescription:'',CategoryBrowserTitle:''} ;
+            },
+            setNull(){
+                this.success = '';
+            },
+            CategorySave(){
+                if((this.CategoryDetails.CategoryName == '') || (this.CategoryDetails.CategoryUrl == '') || (this.CategoryDetails.CategorySeoKeyword == '') || (this.CategoryDetails.CategorySeoDescription == '') || (this.CategoryDetails.CategoryBrowserTitle == '') ){
+                    alertify.alert('Blog Category', 'Please Fill Out All Field');
+                }else{
+                    axios.post('/portfolio-category-save',this.CategoryDetails).then(response=>{
+                        this.success = response.data.success;
+                        this.init();
+                        this.CategoryDetails = {CategoryName:'',CategoryUrl:'',CategorySeoKeyword:'',CategorySeoDescription:'',CategoryBrowserTitle:''} ;
+                    });
+                }
+            },
             CategoryEdit(row){
+                this.closeButton = false;
                 this.categoryInsert =false;
                 this.categoryUpdate = true;
                 this.CategoryDetails = row;
@@ -101,7 +121,7 @@
                 if(!confirm('Are you sure')) return;
                 axios.post('update-portfolio-category',data).then(response=>{
                     this.success = response.data.success;
-                    this.CategoryDetails = {};
+                    this.CategoryDetails = {CategoryName:'',CategoryUrl:'',CategorySeoKeyword:'',CategorySeoDescription:'',CategoryBrowserTitle:''} ;
                 });
             },
             CategoryDelete(data){
