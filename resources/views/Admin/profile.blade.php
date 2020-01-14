@@ -51,7 +51,7 @@
 
                 <div class="col-sm-12">
                     <div class="col-sm-4">
-                        <img style="width: 100%;" id="firstimage" src="images/img_lights.jpg" >
+                        <img style="width: 100%;" id="firstimage" @isset($Profile->image1) src="/{{$Profile->profileImage1->imageurl}}" @endisset src="images/default-image.png" >
                         <p style="width:100%; border-top-left-radius:0px;border-top-right-radius:0px;"  data-toggle="modal" data-target="#imagemodal" class="btn btn-primary">Select Image</p>
                     </div>
                     <div class="col-sm-8">
@@ -79,7 +79,33 @@
                             @endif
                     </div>
                 </div>
+
                     <div class="col-sm-12">
+
+                        <div class="col-sm-12">
+                            <div style="margin-top: 20px;" class="row">
+                            <div class="form-group col-sm-3">
+                                <label for="shortbrief">Compleated Project:</label>
+                                <input type="number" class="form-control" @isset($Profile->CompleateProject)value="{{$Profile->CompleateProject}}"@endisset name="CompleateProject" id="phone1">
+                            </div>
+
+                            <div class="form-group col-sm-3">
+                                <label for="shortbrief">Happy Clients:</label>
+                                <input type="number" class="form-control" @isset($Profile->HappyClient)value="{{$Profile->HappyClient}}"@endisset name="HappyClient" id="phone1">
+                            </div>
+
+                            <div class="form-group col-sm-3">
+                                <label for="shortbrief">Experience:</label>
+                                <input type="number" class="form-control" @isset($Profile->Experience)value="{{$Profile->Experience}}"@endisset name="Experience" id="phone1">
+                            </div>
+
+                            <div class="form-group col-sm-3">
+                                <label for="shortbrief">Total Skill Of Work :</label>
+                                <input type="number" class="form-control" @isset($Profile->TotalSkillOfWork)value="{{$Profile->TotalSkillOfWork}}"@endisset name="TotalSkillOfWork" id="phone1">
+                            </div>
+                            </div>
+                        </div>
+
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="shortbrief">Short Brief:</label>
@@ -103,7 +129,7 @@
                                 </div>
                         </div>
                         <div class="col-sm-4">
-                            <img style="width: 100%;" id="Previewimage2" src="images/img_lights.jpg"/>
+                            <img style="width: 100%;" id="Previewimage2" @isset($Profile->image2) src="/{{$Profile->profileImage2->imageurl}}" @endisset src="images/default-image.png"/>
                             <p style="width:100%; border-top-left-radius:0px;border-top-right-radius:0px;"  data-toggle="modal" data-target="#imagemodal" class="btn btn-primary">Select Image</p>
                         </div>
                     </div>

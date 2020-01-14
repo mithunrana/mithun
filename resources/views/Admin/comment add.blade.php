@@ -38,35 +38,35 @@
                                                 <div class="form-group">
                                                     <label style="text-align:left;padding-left: 0px;" for="Name" class="control-label col-sm-12">Name:</label>
                                                     <div style="padding-left: 0px;" class="col-sm-12">
-                                                        <input type="text"  class="form-control" id="Name" placeholder="Enter browser Title" name="Name">
+                                                        <input type="text"  class="form-control" id="Name" placeholder="Enter browser Title" name="Name" required>
                                                     </div>
                                                 </div>
+
+                                                <input type="hidden" value="" name="Image" id="setimageid"/>
 
                                                 <div class="form-group">
                                                     <label style="text-align:left;padding-left: 0px;" id="Designation" class="control-label col-sm-12">Designation:</label>
                                                     <div style="padding-left: 0px;" class="col-sm-12">
-                                                        <input type="text" id="Designation" class="form-control" placeholder="Enter Blog Permalink" name="Designation">
+                                                        <input type="text" id="Designation" class="form-control" placeholder="Enter Blog Permalink" name="Designation" required>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group">
                                                     <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12" for="comment">Comment:</label>
                                                     <div style="padding-left: 0px;" class="col-sm-12">
-                                                        <textarea type="text" class="form-control" id="comment" placeholder="Enter blog title" name="Comment"></textarea>
+                                                        <textarea type="text" class="form-control" id="comment" placeholder="Enter blog title" name="Comment" required></textarea>
                                                     </div>
                                                 </div>
+                                            <button type="submit" class="btn btn-success">Add Comment</button>
                                         </div>
                                         <div class="col-sm-4">
-                                           <img style="width: 100%;margin-top: 27px;" src="{{asset('Admin')}}//img/b3.jpg">
+                                            @if($errors->has('Image'))
+                                                <div class="error" style="color: red">
+                                                    {{$errors->first('Image')}}
+                                                </div>
+                                            @endif
+                                           <img id="previewImage" style="width: 100%;margin-top: 27px;" src="/images/default-image.png">
                                             <p style="width:100%; border-top-left-radius:0px;border-top-right-radius:0px;"  data-toggle="modal" data-target="#imagemodal" class="btn btn-primary">Select Image</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <input type="hidden" value="" name="Image" id="setimageid"/>
-                                <div class="col-sm-12">
-                                    <div class="form-group col-sm-12">
-                                        <div class="col-sm-12">
-                                            <button type="submit">Submit</button>
                                         </div>
                                     </div>
                                 </div>
@@ -92,6 +92,8 @@
     $(document).ready(function() {
 
         $('#selectimagedata').click(function(){
+            var imageurl = $('#imagelocation').val();
+            $('#previewImage').attr('src','/'+imageurl);
             var imageid = $('#getimageId').val();
             $('#setimageid').attr('value',imageid);
         });

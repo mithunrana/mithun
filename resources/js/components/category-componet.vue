@@ -11,11 +11,11 @@
                     <div class="row">
                         <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="categoryname">Category Name:</label>
-                                    <input type="text" v-on:keyup="UniqueCheck()" v-model="CategoryDetails.CategoryName" class="form-control" id="categoryname">
+                                    <label for="categoryname">Category Name: <span style="color:green;font-size: 15px;" v-if="categoryNameCheck !=''">{{categoryNameCheck}}</span></label>
+                                    <input type="text" v-model="CategoryDetails.CategoryName" class="form-control" id="categoryname">
                                 </div>
                                 <div class="form-group">
-                                    <label for="categoryurl">Category Url:</label>
+                                    <label for="categoryurl">Category Url: <span style="color:green;font-size: 15px;" v-if="categoryUrlCheck !=''">{{categoryUrlCheck}}</span></label>
                                     <input type="text" v-model="CategoryDetails.CategoryUrl" class="form-control" id="categoryurl">
                                 </div>
                                 <div class="form-group">
@@ -73,6 +73,8 @@
                 categoryInsert:true,
                 categoryUpdate:false,
                 closeButton:false,
+                categoryNameCheck:'',
+                categoryUrlCheck:'',
                 success: '',
                 CategoyList:[],
                 CategoryDetails:{CategoryName:'',CategoryUrl:'',CategorySeoKeyword:'',CategorySeoDescription:'',CategoryBrowserTitle:''}
@@ -98,18 +100,6 @@
             },
             setNull(){
                 this.success = '';
-            },
-            UniqueCheck(){
-                if(this.CategoryDetails.CategoryName.length>1){
-                    axios.get('portfolio-category-name-check',{params:{name:this.CategoryDetails.CategoryName}}).then(response=>{
-                        /*if(response.data==1){
-                            this.success = 'Find';
-                        }else{
-                            this.success = 'Not Find';
-                        }*/
-                        this.success = response.data ;
-                    });
-                }
             },
             CategorySave(){
                 if((this.CategoryDetails.CategoryName == '') || (this.CategoryDetails.CategoryUrl == '') || (this.CategoryDetails.CategorySeoKeyword == '') || (this.CategoryDetails.CategorySeoDescription == '') || (this.CategoryDetails.CategoryBrowserTitle == '') ){

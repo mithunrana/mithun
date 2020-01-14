@@ -26,10 +26,20 @@
                         <div class="panel-body">
                             <form method="post" action="{{url('update-expertness',[$Expertness->id])}}">
                                 @csrf
+                                @if($errors->has('Name'))
+                                    <div class="error" style="color: red">
+                                        {{$errors->first('Name')}}
+                                    </div>
+                                @endif
                                 <div class="form-group">
                                     <label for="name">Name of expertness:</label>
                                     <input type="text" class="form-control" value="{{$Expertness->Name}}" name="Name" id="name">
                                 </div>
+                                @if($errors->has('Percentage'))
+                                    <div class="error" style="color: red">
+                                        {{$errors->first('Percentage')}}
+                                    </div>
+                                @endif
                                 <div class="form-group">
                                     <label for="percentage">Percentage:</label>
                                     <input type="text" class="form-control" value="{{$Expertness->Percentage}}" name="Percentage" id="percentage">

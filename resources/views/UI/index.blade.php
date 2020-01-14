@@ -75,20 +75,20 @@
         <div class="container">				
             <div class="row">
                 <div class="col-lg-3 col-md-6 single-fact">
-                    <h1 class="counter">2536</h1>
-                    <p>Projects Completed</p>
+                    <h1 class="counter">{{$about->CompleateProject}}</h1>
+                    <p>Compleated Project</p>
                 </div>
                 <div class="col-lg-3 col-md-6 single-fact">
-                    <h1 class="counter">6784</h1>
-                    <p>Happy Clients</p>
+                    <h1 class="counter">{{$about->HappyClient}}</h1>
+                    <p>Happy Client</p>
                 </div>
                 <div class="col-lg-3 col-md-6 single-fact">
-                    <h1 class="counter">2239</h1>
-                    <p>Cups of Coffee</p>
+                    <h1 class="counter">{{$about->Experience}}</h1>
+                    <p>Experience Of Year</p>
                 </div>	
                 <div class="col-lg-3 col-md-6 single-fact">
-                    <h1 class="counter">435</h1>
-                    <p>Real Professionals</p>
+                    <h1 class="counter">{{$about->TotalSkillOfWork}}</h1>
+                    <p>Total Skill Of Work</p>
                 </div>												
             </div>
         </div>	
@@ -167,7 +167,7 @@
                     @foreach($Comments as $Comment)
                         <div class="single-testimonial item d-flex flex-row">
                             <div class="thumb">
-                                <img style="max-width:50px;"  src="/{{$Comment->images->imageurl}}" alt="">
+                                <img style="width:85px;"  src="/{{$Comment->images->imageurl}}" alt="">
                             </div>
                             <div class="desc">
                                 <p>

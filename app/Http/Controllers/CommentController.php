@@ -17,6 +17,10 @@ class CommentController extends Controller
     }
 
     public function store(Request $request){
+        $this->validate($request,[
+            'Image' => 'required',
+        ]);
+
        Comment::Create($request->all());
         return redirect()->to('manage-comment')->with('message','Comment Added Successfully');
     }
@@ -26,8 +30,12 @@ class CommentController extends Controller
         return view('Admin.comment-edit',compact('Comment'));
     }
 
-    public function update($id)
+    public function update($id,Request $request)
     {
+        $this->validate($request,[
+            'Image' => 'required',
+        ]);
+
         $Comment = Comment::findOrFail($id);
         $Comment->Name = request('Name');
         $Comment->Designation = request('Designation');

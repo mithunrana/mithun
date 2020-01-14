@@ -32,10 +32,20 @@
                         <div class="panel-body">
                             <form method="post" action="{{url('store-expertness')}}">
                                 @csrf
+                                @if($errors->has('Name'))
+                                    <div class="error" style="color: red">
+                                        {{$errors->first('Name')}}
+                                    </div>
+                                @endif
                                 <div class="form-group">
                                     <label for="name">Name of expertness:</label>
                                     <input type="text" class="form-control" name="Name" id="name">
                                 </div>
+                                @if($errors->has('Percentage'))
+                                    <div class="error" style="color: red">
+                                        {{$errors->first('Percentage')}}
+                                    </div>
+                                @endif
                                 <div class="form-group">
                                     <label for="percentage">Percentage:</label>
                                     <input type="text" class="form-control" name="Percentage" id="percentage">

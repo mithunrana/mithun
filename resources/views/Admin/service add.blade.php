@@ -24,7 +24,6 @@
             <image-component></image-component>
             <!-- Modal -->
 
-
             <!-- Main row -->
             <div class="row">
                 <div class="col-sm-12">
@@ -36,30 +35,36 @@
                                 <div class="col-sm-12">
                                 <div class="row">
                                     <div class="col-sm-8">
+
                                         <div class="form-group">
                                             <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12">Browser Title:</label>
                                             <div style="padding-left: 0px;">
-                                                <input type="text"  class="form-control" placeholder="Enter browser Title" name="BrowserTitle">
+                                                <input type="text"  class="form-control" placeholder="Enter browser Title" name="BrowserTitle" required>
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12">Permalink:</label>
                                             <div style="padding-left: 0px;">
-                                                <input type="text" class="form-control" placeholder="Enter Blog Permalink" name="permalink">
+                                                <input type="text" class="form-control" placeholder="Enter Blog Permalink" name="permalink" required>
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12" for="servicetitle">Service Title:</label>
                                             <div style="padding-left: 0px;">
-                                                <input type="text" class="form-control" id="servicetitle" placeholder="Enter blog title" name="service_title">
+                                                <input type="text" class="form-control" id="servicetitle" placeholder="Enter blog title" name="service_title" required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-4">
+                                        @if($errors->has('featured_image'))
+                                            <div class="error" style="color: red">
+                                                {{$errors->first('featured_image')}}
+                                            </div>
+                                        @endif
                                         <div>
-                                            <img style="width: 100%;margin-top: 27px;" id="previewImage" src="{{asset('Admin')}}//img/default-image.webp">
+                                            <img style="width: 100%;margin-top: 27px;" id="previewImage" src="/images/default-image.png">
                                             <p style="width:100%; border-top-left-radius:0px;border-top-right-radius:0px;"  data-toggle="modal" data-target="#imagemodal" class="btn btn-primary">Select Image</p>
                                         </div>
                                     </div>
@@ -79,21 +84,26 @@
                                             <div class="form-group">
                                                 <label style="text-align:left;" class="control-label" for="pwd">SEO Keyword:</label>
                                                 <div>
-                                                    <input type="text" class="form-control" id="pwd" placeholder="Enter SEO Keyword" name="SeoKeyword">
+                                                    <input type="text" class="form-control" id="pwd" placeholder="Enter SEO Keyword" name="SeoKeyword" required>
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
                                                 <label style="text-align:left;" class="control-label" for="seodescription">SEO Description:</label>
                                                 <div>
-                                                    <textarea type="text" class="form-control" id="seodescription" placeholder="Enter SEO Description" name="SeoDescription"></textarea>
+                                                    <textarea type="text" class="form-control" id="seodescription" placeholder="Enter SEO Description" name="SeoDescription"></textarea required>
                                                 </div>
                                             </div>
 
                                         </div>
                                         <div class="col-sm-4">
+                                            @if($errors->has('ServiceIcon'))
+                                                <div class="error" style="color: red">
+                                                    {{$errors->first('ServiceIcon')}}
+                                                </div>
+                                            @endif
                                             <div>
-                                                <img style="width: 100%;margin-top: 27px;" id="previewImage2" src="{{asset('Admin')}}//img/default-image.webp">
+                                                <img style="width: 100%;margin-top: 27px;" id="previewImage2" src="/images/default-image.png">
                                                 <p style="width:100%; border-top-left-radius:0px;border-top-right-radius:0px;"  data-toggle="modal" data-target="#imagemodal" class="btn btn-primary">Select Image</p>
                                             </div>
                                         </div>
@@ -104,13 +114,13 @@
                                     <div class="form-group">
                                         <label style="text-align:left;" class="control-label" for="servicedetails">Service Details:</label>
                                         <div>
-                                            <textarea type="text" rows="5" class="form-control" id="servicedetails" placeholder="Enter Blog Details" name="MainContent"></textarea>
+                                            <textarea type="text" rows="5" class="form-control" id="servicedetails" placeholder="Enter Blog Details" name="MainContent" required></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label style="text-align:left;" class="control-label" for="opencontent">Service Open Content:</label>
                                         <div>
-                                            <textarea type="text" rows="5" class="form-control" id="opencontent" placeholder="Enter Blog Details" name="OpenContent"></textarea>
+                                            <textarea type="text" rows="5" class="form-control" id="opencontent" placeholder="Enter Blog Details" name="OpenContent" required></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">

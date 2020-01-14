@@ -23,7 +23,7 @@
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-6 col-md-6 home-about-left">
-                        <img class="img-fluid" src="/{{$Profile->profileImage2->imageurl}}" alt="">
+                        <img class="img-fluid" @isset($Profile->image2) src="/{{$Profile->profileImage2->imageurl}}" @endisset alt="">
                     </div>
                     <div class="col-lg-5 col-md-6 home-about-right">
                         <h6>About Me</h6>
@@ -85,134 +85,41 @@
 
 
         <!-- Start testimonial Area -->
-    <section class="testimonial-area section-gap">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="menu-content col-lg-8">
-                    <div class="title text-center">
-                        <h1 style="color:#FF5722" class="mb-10">Client’s Feedback About Me</h1>
-                        <p style="color:#FF5722">It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.</p>
-                    </div>
-                </div>
-            </div>
-            <div style="border: 1px solid red;" class="row">
-                <div class="active-testimonial">
-                    <div class="single-testimonial item d-flex flex-row">
-                        <div class="thumb">
-                            <img class="img-fluid" src="{{asset('UI')}}/img/elements/user1.png" alt="">
-                        </div>
-                        <div class="desc">
-                            <p style="color:black;font-weight:500;">
-                                Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.		     
-                            </p>
-                            <h4 style="color:black;">Harriet Maxwell</h4>
-                            <p style="color:black;">CEO at Google</p>
-                        </div>
-                    </div>
-                    <div class="single-testimonial item d-flex flex-row">
-                        <div class="thumb">
-                            <img class="img-fluid" src="{{asset('UI')}}/img/elements/user2.png" alt="">
-                        </div>
-                        <div class="desc">
-                            <p style="color:black;font-weight:500;">
-                                Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.		     
-                            </p>
-                            <h4>Carolyn Craig</h4>
-                            <p>CEO at Facebook</p>
-                        </div>
-                    </div>
-                    <div class="single-testimonial item d-flex flex-row">
-                        <div class="thumb">
-                            <img class="img-fluid" src="{{asset('UI')}}/img/elements/user2.png" alt="">
-                        </div>
-                        <div class="desc">
-                            <p style="color:black;font-weight:500;">
-                                Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.		     
-                            </p>
-                            <h4>Mithun Rana</h4>
-                            <p>CEO at Tech Help Info</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End testimonial Area -->			
-
-        <!-- Start brands Area -->
-        <section class="brands-area">
+        <section class="testimonial-area section-gap">
             <div class="container">
-                <div class="brand-wrap">
-                    <div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
-                        <div class="col single-brand">
-                            <a href="#"><img class="mx-auto" src="{{asset('UI')}}/img/l1.png" alt=""></a>
+                <div class="row d-flex justify-content-center">
+                    <div class="menu-content pb-70 col-lg-8">
+                        <div class="title text-center">
+                            <h1 class="mb-10">Client’s Feedback About Me</h1>
+                            <p>It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.</p>
                         </div>
-                        <div class="col single-brand">
-                            <a href="#"><img class="mx-auto" src="{{asset('UI')}}/img/l2.png" alt=""></a>
-                        </div>
-                        <div class="col single-brand">
-                            <a href="#"><img class="mx-auto" src="{{asset('UI')}}/img/l3.png" alt=""></a>
-                        </div>
-                        <div class="col single-brand">
-                            <a href="#"><img class="mx-auto" src="{{asset('UI')}}/img/l4.png" alt=""></a>
-                        </div>
-                        <div class="col single-brand">
-                            <a href="#"><img class="mx-auto" src="{{asset('UI')}}/img/l5.png" alt=""></a>
-                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="active-testimonial">
+                        @foreach($Comments as $Comment)
+                            <div class="single-testimonial item d-flex flex-row">
+                                <div class="thumb">
+                                    <img style="width:85px;"  src="/{{$Comment->images->imageurl}}" alt="">
+                                </div>
+                                <div class="desc">
+                                    <p>
+                                        {{$Comment->Comment}}
+                                    </p>
+                                    <h4>{{$Comment->Name}}</h4>
+                                    <p>{{$Comment->Designation}}</p>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End brands Area -->	
+        <!-- End testimonial Area -->
+
 
         <!-- start footer Area -->
-        <footer class="footer-area section-gap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-6 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h4>About Me</h4>
-                            <p>
-                                We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.
-                            </p>
-                            <p class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-6 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h4>Newsletter</h4>
-                            <p>Stay updated with our latest trends</p>
-                            <div class="" id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" name="EMAIL" placeholder="Enter Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address '" required="" type="email">
-                                        <div class="input-group-btn">
-                                            <button class="btn btn-default" type="submit">
-                                                <span class="lnr lnr-arrow-right"></span>
-                                            </button>    
-                                        </div>
-                                        <div class="info"></div>  
-                                    </div>
-                                </form> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
-                        <div class="single-footer-widget">
-                            <h4>Follow Me</h4>
-                            <p>Let us be social</p>
-                            <div class="footer-social d-flex align-items-center">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-behance"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- End footer Area -->		
+        @include('UI.inc.footer-bar');
+        <!-- end footer Area -->
+
 @include('UI.inc.footersource');

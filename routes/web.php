@@ -28,7 +28,7 @@ Route::post('/categorysave','CategoryController@store');
 Route::get('/getall-category','CategoryController@getAll');
 Route::post('/update-category','CategoryController@categoryUpdate');
 Route::post('/delete-category','CategoryController@categoryDelete');
-Route::get('/portfolio-category-name-check','CategoryController@categoryNameCheck');
+
 
 
 Route::get('/blog-manage','BlogController@manage');

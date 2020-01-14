@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\AboutProfile;
 use App\Blog;
 use App\Category;
 use App\Service;
@@ -16,8 +17,9 @@ class PortfolioController extends Controller
     }
 
     public function singlePortfolio($url){
+        $about = AboutProfile::first();
         $Portfolio = Portfolio::where('permalink',$url)->first();
-        return view('UI.portfolio single',compact('Portfolio'));
+        return view('UI.portfolio single',compact('Portfolio','about'));
     }
 
     public function create(){
@@ -25,6 +27,9 @@ class PortfolioController extends Controller
     }
 
     public function store(Request $request){
+        $this->validate($request,[
+            'featured_image' => 'required',
+        ]);
      Portfolio::Create($request->all());
      return redirect()->to('portfolio-manage')->with('message','Portfolio Delete Successfully');
     }

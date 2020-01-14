@@ -13,11 +13,12 @@ class BlogController extends Controller
     }*/
 
     public function index(){
+        $PopularPosts = Blog::where('Active_Status',1)->orderBy('id', 'ASC')->skip(0)->take(5)->get();
         $Blogs =  Blog::where('Active_Status',1)->orderBy('id', 'ASC')->get();
         $New =   Blog::where('Active_Status',1)->orderBy('id', 'DESC')->skip(0)->take(1)->get();
         $FeaturesVideo =   Blog::where('Active_Status',1)->orderBy('id', 'DESC')->skip(1)->take(2)->get();
         $Categories = Category::get();
-        return view('UI.blog',compact('Blogs','New','FeaturesVideo','Categories'));
+        return view('UI.blog',compact('Blogs','New','FeaturesVideo','Categories','PopularPosts'));
     }
 
     public function blogByUrl($url){
@@ -44,6 +45,11 @@ class BlogController extends Controller
     }
 
     public function store(Request $request){
+        $this->validate($request,[
+            'video_url' => 'URL',
+            'featured_image' => 'required',
+        ]);
+
         $userid = auth()->id();
         Blog::create([
             'browser_title' => $request->browser_title,
@@ -56,7 +62,7 @@ class BlogController extends Controller
             'seo_description' => $request->seo_description,
             'seo_keyword' => $request->seo_keyword,
             'featured_image' => $request->featured_image,
-            'imageAltText' => $request->seo_description,
+            'imageAltText' => $request->imageAltText,
             'imageTitleText' => $request->imageTitleText,
             'featured_image' => $request->featured_image,
             'blog_poster' => $userid
@@ -71,7 +77,12 @@ class BlogController extends Controller
         return view('Admin.blog update',compact('Blog'));
     }
 
-    public function update($id){
+    public function update($id,Request $request){
+
+        $this->validate($request,[
+            'video_url' => 'URL',
+        ]);
+
         $Blog = Blog::findOrFail($id);
         $Blog->browser_title = request('browser_title');
         $Blog->blog_title = request('blog_title');

@@ -38,36 +38,38 @@
                                             <div class="form-group">
                                                 <label style="text-align:left;padding-left: 0px;" for="Name" class="control-label col-sm-12">Name:</label>
                                                 <div style="padding-left: 0px;" class="col-sm-12">
-                                                    <input type="text"  class="form-control" id="Name" value="{{$Comment->Name}}" placeholder="Enter browser Title" name="Name">
+                                                    <input type="text"  class="form-control" id="Name" value="{{$Comment->Name}}" placeholder="Enter browser Title" name="Name" required>
                                                 </div>
                                             </div>
+
+                                            <input type="hidden" value="{{$Comment->Image}}" name="Image" id="setimageid"/>
 
                                             <div class="form-group">
                                                 <label style="text-align:left;padding-left: 0px;" id="Designation" class="control-label col-sm-12">Designation:</label>
                                                 <div style="padding-left: 0px;" class="col-sm-12">
-                                                    <input type="text" id="Designation" class="form-control"  value="{{$Comment->Designation}}" placeholder="Enter Blog Permalink" name="Designation">
+                                                    <input type="text" id="Designation" class="form-control"  value="{{$Comment->Designation}}" placeholder="Enter Blog Permalink" name="Designation" required>
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
                                                 <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12" for="comment">Comment:</label>
                                                 <div style="padding-left: 0px;" class="col-sm-12">
-                                                    <textarea type="text" class="form-control" id="comment" placeholder="Enter blog title" name="Comment">{{$Comment->Comment}}</textarea>
+                                                    <textarea type="text" class="form-control" id="comment" placeholder="Enter blog title" name="Comment" required>{{$Comment->Comment}}</textarea>
                                                 </div>
                                             </div>
+                                            <button class="btn btn-info" type="submit">Update</button>
                                         </div>
                                         <div class="col-sm-4">
-                                            <img style="width: 100%;margin-top: 27px;" src="/{{$Comment->images->imageurl}}">
+                                            @if($errors->has('Image'))
+                                                <div class="error" style="color: red">
+                                                    {{$errors->first('Image')}}
+                                                </div>
+                                            @endif
+                                            <img id="previewImage" style="width: 100%;margin-top: 27px;" src="/{{$Comment->images->imageurl}}">
                                             <p style="width:100%; border-top-left-radius:0px;border-top-right-radius:0px;"  data-toggle="modal" data-target="#imagemodal" class="btn btn-primary">Select Image</p>
                                         </div>
                                     </div>
                                 </div>
-                                <input type="hidden" value="{{$Comment->Image}}" name="Image" id="setimageid"/>
-                                    <div class="form-group">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-info" type="submit">Submit</button>
-                                        </div>
-                                    </div>
                             </form>
                         </div>
                     </div>
@@ -90,6 +92,8 @@
     $(document).ready(function() {
 
         $('#selectimagedata').click(function(){
+            var imageurl = $('#imagelocation').val();
+            $('#previewImage').attr('src','/'+imageurl);
             var imageid = $('#getimageId').val();
             $('#setimageid').attr('value',imageid);
         });

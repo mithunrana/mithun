@@ -17,6 +17,10 @@ class CreateAboutProfilesTable extends Migration
             $table->bigIncrements('id');
             $table->string('Name')->nullable();
             $table->string('Designation')->nullable();
+            $table->integer('CompleateProject')->nullable();
+            $table->integer('Experience')->nullable();
+            $table->integer('HappyClient')->nullable();
+            $table->integer('TotalSkillOfWork')->nullable();
             $table->longText('ShortBrief')->nullable();
             $table->longText('Details')->nullable();
             $table->integer('image1')->nullable();

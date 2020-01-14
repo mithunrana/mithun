@@ -15,6 +15,10 @@ class ExpertnessWithQualification extends Controller
     }
 
     public function storeExpertness(Request $request){
+        $this->validate($request,[
+            'Name' => 'required',
+            'Percentage' => 'numeric',
+        ]);
         Expertness::Create($request->all());
         return redirect()->to('manage-expertness')->with('message','Expertness Successfully Added');
     }
@@ -31,7 +35,11 @@ class ExpertnessWithQualification extends Controller
     }
 
 
-    public function updateExpertness($id){
+    public function updateExpertness($id,Request $request){
+        $this->validate($request,[
+            'Name' => 'required',
+            'Percentage' => 'numeric',
+        ]);
         $Expertness = Expertness::findOrFail($id);
         $Expertness->Name = request('Name');
         $Expertness->Percentage = request('Percentage');

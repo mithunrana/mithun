@@ -139,8 +139,6 @@
 
 <script>
     $(document).ready(function() {
-
-
         $('#previousimage').attr('src','/'+'{{$Portfolio->featuredimage->imageurl}}');
         $('#imagelocation').attr('value','/'+'{{$Portfolio->featuredimage->imageurl}}');
         $('#getimageId').attr('value','{{$Portfolio->featured_image}}');
@@ -156,6 +154,48 @@
             $('#setImageAltText').attr('value',imagealttext);
             $('#setImageTitleText').attr('value',imagetitletext);
         })
+
+
+        tinymce.init({
+            selector: '#servicedetails',
+            theme: "modern",
+            height: 200,
+            width: '100%',
+            relative_urls:false,
+            remove_script_host: false,
+            valid_children : "+body[style],-body[div],p[strong|a|#text]",
+            plugins: ["advlist autolink link image lists charmap print preview hr anchor pagebreak",
+                "searchreplace wordcount visualblocks visualchars insertdatetime media nonbreaking",
+                "table contextmenu directionality emoticons paste textcolor code"
+            ],
+
+            toolba1: "undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent",
+            toolba2: "| link unlink anchor | image media | forecolor backcolor | print preview code | caption",
+
+            image_caption: true,
+            image_advtab: true
+        });
+
+        tinymce.init({
+            selector: '#opencontent',
+            theme: "modern",
+            height: 200,
+            width: '100%',
+            relative_urls:false,
+            remove_script_host: false,
+            valid_children : "+body[style],-body[div],p[strong|a|#text]",
+            plugins: ["advlist autolink link image lists charmap print preview hr anchor pagebreak",
+                "searchreplace wordcount visualblocks visualchars insertdatetime media nonbreaking",
+                "table contextmenu directionality emoticons paste textcolor code"
+            ],
+
+            toolba1: "undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent",
+            toolba2: "| link unlink anchor | image media | forecolor backcolor | print preview code | caption",
+
+            image_caption: true,
+            image_advtab: true
+        });
+
     });
 </script>
 

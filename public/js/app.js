@@ -1945,6 +1945,8 @@ __webpack_require__.r(__webpack_exports__);
       categoryInsert: true,
       categoryUpdate: false,
       closeButton: false,
+      categoryNameCheck: '',
+      categoryUrlCheck: '',
       success: '',
       CategoyList: [],
       CategoryDetails: {
@@ -1987,36 +1989,18 @@ __webpack_require__.r(__webpack_exports__);
     setNull: function setNull() {
       this.success = '';
     },
-    UniqueCheck: function UniqueCheck() {
-      var _this2 = this;
-
-      if (this.CategoryDetails.CategoryName.length > 1) {
-        axios.get('portfolio-category-name-check', {
-          params: {
-            name: this.CategoryDetails.CategoryName
-          }
-        }).then(function (response) {
-          /*if(response.data==1){
-              this.success = 'Find';
-          }else{
-              this.success = 'Not Find';
-          }*/
-          _this2.success = response.data;
-        });
-      }
-    },
     CategorySave: function CategorySave() {
-      var _this3 = this;
+      var _this2 = this;
 
       if (this.CategoryDetails.CategoryName == '' || this.CategoryDetails.CategoryUrl == '' || this.CategoryDetails.CategorySeoKeyword == '' || this.CategoryDetails.CategorySeoDescription == '' || this.CategoryDetails.CategoryBrowserTitle == '') {
         alertify.alert('Blog Category', 'Please Fill Out All Field');
       } else {
         axios.post('/categorysave', this.CategoryDetails).then(function (response) {
-          _this3.success = response.data.success;
+          _this2.success = response.data.success;
 
-          _this3.init();
+          _this2.init();
 
-          _this3.CategoryDetails = {
+          _this2.CategoryDetails = {
             CategoryName: '',
             CategoryUrl: '',
             CategorySeoKeyword: '',
@@ -2033,30 +2017,30 @@ __webpack_require__.r(__webpack_exports__);
       this.CategoryDetails = row;
     },
     CategoryUpdate: function CategoryUpdate(data) {
-      var _this4 = this;
+      var _this3 = this;
 
       if (!confirm('Are you sure')) return;
       axios.post('update-category', data).then(function (response) {
-        _this4.success = response.data.success;
-        _this4.CategoryDetails = {
+        _this3.success = response.data.success;
+        _this3.CategoryDetails = {
           CategoryName: '',
           CategoryUrl: '',
           CategorySeoKeyword: '',
           CategorySeoDescription: '',
           CategoryBrowserTitle: ''
         };
-        _this4.categoryInsert = true;
-        _this4.categoryUpdate = false;
+        _this3.categoryInsert = true;
+        _this3.categoryUpdate = false;
       });
     },
     CategoryDelete: function CategoryDelete(data) {
-      var _this5 = this;
+      var _this4 = this;
 
       if (!confirm('Are you sure delete this category')) return;
       axios.post('delete-category', data).then(function (response) {
-        _this5.success = response.data.success;
+        _this4.success = response.data.success;
 
-        _this5.init();
+        _this4.init();
       });
       alertify.success('Category Delete Successfully');
     }
@@ -37895,7 +37879,16 @@ var render = function() {
             _c("div", { staticClass: "col-sm-6" }, [
               _c("div", { staticClass: "form-group" }, [
                 _c("label", { attrs: { for: "categoryname" } }, [
-                  _vm._v("Category Name:")
+                  _vm._v("Category Name: "),
+                  _vm.categoryNameCheck != ""
+                    ? _c(
+                        "span",
+                        {
+                          staticStyle: { color: "green", "font-size": "15px" }
+                        },
+                        [_vm._v(_vm._s(_vm.categoryNameCheck))]
+                      )
+                    : _vm._e()
                 ]),
                 _vm._v(" "),
                 _c("input", {
@@ -37911,9 +37904,6 @@ var render = function() {
                   attrs: { type: "text", id: "categoryname" },
                   domProps: { value: _vm.CategoryDetails.CategoryName },
                   on: {
-                    keyup: function($event) {
-                      return _vm.UniqueCheck()
-                    },
                     input: function($event) {
                       if ($event.target.composing) {
                         return
@@ -37930,7 +37920,16 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
                 _c("label", { attrs: { for: "categoryurl" } }, [
-                  _vm._v("Category Url:")
+                  _vm._v("Category Url: "),
+                  _vm.categoryUrlCheck != ""
+                    ? _c(
+                        "span",
+                        {
+                          staticStyle: { color: "green", "font-size": "15px" }
+                        },
+                        [_vm._v(_vm._s(_vm.categoryUrlCheck))]
+                      )
+                    : _vm._e()
                 ]),
                 _vm._v(" "),
                 _c("input", {

@@ -57,6 +57,10 @@ class AboutController extends Controller {
             $Profile = AboutProfile::find($users->id);
             $Profile->Name = $request->Name;
             $Profile->Designation = $request->Designation;
+            $Profile->CompleateProject = $request->CompleateProject;
+            $Profile->Experience = $request->Experience;
+            $Profile->HappyClient = $request->HappyClient;
+            $Profile->TotalSkillOfWork = $request->TotalSkillOfWork;
             $Profile->ShortBrief = $request->ShortBrief;
             $Profile->Details = $request->Details;
             $Profile->Download_link = $request->Download_link;
@@ -87,6 +91,10 @@ class AboutController extends Controller {
             $Profile = new  AboutProfile();
             $Profile->Name = $request->Name;
             $Profile->Designation = $request->Designation;
+            $Profile->CompleateProject = $request->CompleateProject;
+            $Profile->Experience = $request->Experience;
+            $Profile->HappyClient = $request->HappyClient;
+            $Profile->TotalSkillOfWork = $request->TotalSkillOfWork;
             $Profile->ShortBrief = $request->ShortBrief;
             $Profile->Details = $request->Details;
             $Profile->Discover_link = $request->Discover_link;

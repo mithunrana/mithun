@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\AboutProfile;
 use App\Comment;
 use App\Portfolio;
 use App\Qualification;
@@ -10,15 +11,17 @@ use App\Service;
 class ServiceController extends Controller
 {
     public function index(){
+        $about = AboutProfile::first();
         $service = Service::first();
         $services = Service::where('Active_Status',1)->get();
         $Comments = Comment::where('Active_Status',1)->get();
-        return view('UI.service',compact('service','services','Comments'));
+        return view('UI.service',compact('service','services','Comments','about'));
     }
 
     public function singleService($url){
+        $about = AboutProfile::first();
        $Service = Service::where('permalink',$url)->first();
-       return view('UI.service single',compact('Service'));
+       return view('UI.service single',compact('Service','about'));
     }
 
     public function serviceCreate(){
@@ -26,6 +29,10 @@ class ServiceController extends Controller
     }
 
     public function serviceStore(Request $request){
+        $this->validate($request,[
+            'ServiceIcon' => 'required',
+            'featured_image' => 'required',
+        ]);
         Service::create($request->all());
         return redirect()->to('service-manage')->with('message','Service Update Successfully');
     }

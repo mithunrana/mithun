@@ -54,10 +54,15 @@
                                             </div>
                                         </div>
 
+                                        @if($errors->has('video_url'))
+                                            <div class="error" style="color: red">
+                                                {{$errors->first('video_url')}}
+                                            </div>
+                                        @endif
                                         <div class="form-group col-sm-12">
                                             <label style="text-align:left;padding-left: 0px;" class="control-label col-sm-12" for="pwd">Video URL:</label>
                                             <div style="padding-left: 0px;" class="col-sm-12">
-                                                <input type="text" class="form-control" id="pwd" placeholder="Enter Video URL" value="{{$Blog->video_url}}" name="video_url" required>
+                                                <input type="text" class="form-control" id="pwd" placeholder="Enter Video URL" value="{{$Blog->video_url}}" name="video_url">
                                             </div>
                                         </div>
 
@@ -70,6 +75,7 @@
                                     </div>
                                 </div>
 
+                                <!--<input type="hidden" value="{{$Blog->id}}" name="updateid"/>-->
                                 <input type="hidden" value="{{$Blog->featured_image}}" name="featured_image" id="setimageid"/>
                                 <input type="hidden" value="{{$Blog->imageAltText}}" name="imageTitleText" id="setImageAltText"/>
                                 <input type="hidden"  value="{{$Blog->imageTitleText}}" name="imageAltText" id="setImageTitleText"/>
@@ -114,12 +120,12 @@
                                     <div class="form-group col-sm-12">
                                         <label style="text-align:left;" class="control-label col-sm-12" for="pwd">Blog Details:</label>
                                         <div class="col-sm-12">
-                                            <textarea type="text" rows="5" class="form-control" id="pwd" placeholder="Enter Blog Details" name="blog_details">{{$Blog->blog_details}}</textarea>
+                                            <textarea type="text" rows="5" class="form-control" id="blogdetails" placeholder="Enter Blog Details" name="blog_details">{{$Blog->blog_details}}</textarea>
                                         </div>
                                     </div>
                                     <div class="form-group col-sm-12">
                                         <div class="col-sm-12">
-                                            <button type="submit">Submit</button>
+                                            <button type="submit" class="btn btn-info">Submit</button>
                                         </div>
                                     </div>
                                 </div>
@@ -159,6 +165,26 @@
             $('#setImageAltText').attr('value',imagealttext);
             $('#setImageTitleText').attr('value',imagetitletext);
         })
+
+        tinymce.init({
+            selector: '#blogdetails',
+            theme: "modern",
+            height: 200,
+            width: '100%',
+            relative_urls:false,
+            remove_script_host: false,
+            valid_children : "+body[style],-body[div],p[strong|a|#text]",
+            plugins: ["advlist autolink link image lists charmap print preview hr anchor pagebreak",
+                "searchreplace wordcount visualblocks visualchars insertdatetime media nonbreaking",
+                "table contextmenu directionality emoticons paste textcolor code"
+            ],
+
+            toolba1: "undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent",
+            toolba2: "| link unlink anchor | image media | forecolor backcolor | print preview code | caption",
+
+            image_caption: true,
+            image_advtab: true
+        });
     });
 </script>
 

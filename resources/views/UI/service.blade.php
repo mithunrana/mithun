@@ -50,30 +50,30 @@
             </div>
         </div>
     </section>
-    <!-- End services Area -->					
+    <!-- End services Area -->
 
     <!-- Start fact Area -->
     <section style="padding: 30px 0px;background-color:#FF5722 " id="facts-area">
-        <div class="container">				
+        <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 single-fact">
-                    <h1 class="counter">2536</h1>
-                    <p>Projects Completed</p>
+                    <h1 class="counter">{{$about->CompleateProject}}</h1>
+                    <p>Compleated Project</p>
                 </div>
                 <div class="col-lg-3 col-md-6 single-fact">
-                    <h1 class="counter">6784</h1>
-                    <p>Happy Clients</p>
+                    <h1 class="counter">{{$about->HappyClient}}</h1>
+                    <p>Happy Client</p>
                 </div>
                 <div class="col-lg-3 col-md-6 single-fact">
-                    <h1 class="counter">2239</h1>
-                    <p>Cups of Coffee</p>
-                </div>	
+                    <h1 class="counter">{{$about->Experience}}</h1>
+                    <p>Experience Of Year</p>
+                </div>
                 <div class="col-lg-3 col-md-6 single-fact">
-                    <h1 class="counter">435</h1>
-                    <p>Real Professionals</p>
-                </div>												
+                    <h1 class="counter">{{$about->TotalSkillOfWork}}</h1>
+                    <p>Total Skill Of Work</p>
+                </div>
             </div>
-        </div>	
+        </div>
     </section>
     <!-- end fact Area -->
 
@@ -94,7 +94,7 @@
                     @foreach($Comments as $Comment)
                         <div class="single-testimonial item d-flex flex-row">
                             <div class="thumb">
-                                <img style="max-width:50px;"  src="/{{$Comment->images->imageurl}}" alt="">
+                                <img style="width:85px;"  src="/{{$Comment->images->imageurl}}" alt="">
                             </div>
                             <div class="desc">
                                 <p>
@@ -115,5 +115,6 @@
 
     <!-- start footer Area -->
     @include('UI.inc.footer-bar');
-    <!-- End footer Area -->		
+    <!-- End footer Area -->
+
     @include('UI.inc.footersource');

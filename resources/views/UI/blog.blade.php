@@ -116,34 +116,6 @@
                                 @endforeach
                             </div>
                     </section>
-
-                    <div class="container">
-                        <div class="row">
-                            <nav style="margin-bottom: 15px;margin-top: 15px;" class="d-flex">
-                                <ul class="pagination">
-                                    <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Previous">
-                                    <span aria-hidden="true">
-                                        <span class="lnr lnr-chevron-left"></span>
-                                    </span>
-                                    </a>
-                                    </li>
-                                    <li class="page-item"><a href="#" class="page-link">01</a></li>
-                                    <li class="page-item active"><a href="#" class="page-link">02</a></li>
-                                    <li class="page-item"><a href="#" class="page-link">03</a></li>
-                                    <li class="page-item"><a href="#" class="page-link">04</a></li>
-                                    <li class="page-item"><a href="#" class="page-link">09</a></li>
-                                    <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Next">
-                                    <span aria-hidden="true">
-                                    <span class="lnr lnr-chevron-right"></span>
-                                    </span>
-                                    </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
                 </div>
 
 
@@ -173,42 +145,22 @@
                         <div class="single-sidebar-widget popular-post-widget">
                             <h4 style="background-color: red;" class="popular-title">Popular Posts</h4>
                             <div class="popular-post-list">
+                                @foreach($PopularPosts as $PopularPost)
+                                    @php
+                                        $video_id = explode("?v=", $PopularPost->video_url);
+                                        $video_id = $video_id[1];
+                                        $thumbnail="http://img.youtube.com/vi/".$video_id."/mqdefault.jpg";
+                                    @endphp
                                 <div class="single-post-list d-flex flex-row align-items-center">
                                     <div class="thumb">
-                                        <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp1.jpg" alt="">
+                                        <img class="img-fluid" src="{{$thumbnail}}" alt="">
                                     </div>
                                     <div class="details">
-                                        <a href="blog-single.html"><h6>Space The Final Frontier</h6></a>
-                                        <p>02 Hours ago</p>
+                                        <h4><a style="color:black;" href="{{url('tutorial',[$Blog->permalink])}}" style="text-decoration: none;font-size: 18px;text-align: left;">{{str_limit($PopularPost->blog_title,30)}}</a></h4>
+                                        <p>{{$PopularPost->created_at->diffForHumans()}}</p>
                                     </div>
                                 </div>
-                                <div class="single-post-list d-flex flex-row align-items-center">
-                                    <div class="thumb">
-                                        <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp2.jpg" alt="">
-                                    </div>
-                                    <div class="details">
-                                        <a href="blog-single.html"><h6>The Amazing Hubble</h6></a>
-                                        <p>02 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="single-post-list d-flex flex-row align-items-center">
-                                    <div class="thumb">
-                                        <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp3.jpg" alt="">
-                                    </div>
-                                    <div class="details">
-                                        <a href="blog-single.html"><h6>Astronomy Or Astrology</h6></a>
-                                        <p>02 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="single-post-list d-flex flex-row align-items-center">
-                                    <div class="thumb">
-                                        <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp4.jpg" alt="">
-                                    </div>
-                                    <div class="details">
-                                        <a href="blog-single.html"><h6>Asteroids telescope</h6></a>
-                                        <p>02 Hours ago</p>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>

@@ -7,9 +7,9 @@
         <div class="row d-flex align-items-center justify-content-center">
             <div class="about-content col-lg-12">
                 <h1 class="text-white">
-                    Services
+                    {{$Service->service_title}}
                 </h1>
-                <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="services.html"> Services</a></p>
+                <p class="text-white link-nav"><a href="{{asset('')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/portfolio/{{$Service->permalink}}"> {{$Service->service_title}}</a></p>
             </div>
         </div>
     </div>
@@ -18,8 +18,7 @@
 
 <section class="service-view">
     <div class="container">
-        <div class="row">
-            <h1 style="margin-top: 5px;margin-bottom: 5px;">Leading Web Design & Development Company in Bangladesh</h1>
+        <div style="margin-top: 20px;" class="row">
             <div class="col-sm-5">
                 <img style="max-width: 100%;" src="/{{$Service->featuredimage->imageurl}}">
             </div>
@@ -38,20 +37,20 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 single-fact">
-                <h1 class="counter">2536</h1>
-                <p>Projects Completed</p>
+                <h1 class="counter">{{$about->CompleateProject}}</h1>
+                <p>Compleated Project</p>
             </div>
             <div class="col-lg-3 col-md-6 single-fact">
-                <h1 class="counter">6784</h1>
-                <p>Happy Clients</p>
+                <h1 class="counter">{{$about->HappyClient}}</h1>
+                <p>Happy Client</p>
             </div>
             <div class="col-lg-3 col-md-6 single-fact">
-                <h1 class="counter">2239</h1>
-                <p>Cups of Coffee</p>
+                <h1 class="counter">{{$about->Experience}}</h1>
+                <p>Experience Of Year</p>
             </div>
             <div class="col-lg-3 col-md-6 single-fact">
-                <h1 class="counter">435</h1>
-                <p>Real Professionals</p>
+                <h1 class="counter">{{$about->TotalSkillOfWork}}</h1>
+                <p>Total Skill Of Work</p>
             </div>
         </div>
     </div>
@@ -72,30 +71,20 @@
         </div>
         <div class="row">
             <div class="active-testimonial">
-                <div class="single-testimonial item d-flex flex-row">
-                    <div class="thumb">
-                        <img class="img-fluid" src="img/elements/user1.png" alt="">
+                @foreach($Comments as $Comment)
+                    <div class="single-testimonial item d-flex flex-row">
+                        <div class="thumb">
+                            <img style="width:85px;"  src="/{{$Comment->images->imageurl}}" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>
+                                {{$Comment->Comment}}
+                            </p>
+                            <h4>{{$Comment->Name}}</h4>
+                            <p>{{$Comment->Designation}}</p>
+                        </div>
                     </div>
-                    <div class="desc">
-                        <p>
-                            Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.
-                        </p>
-                        <h4>Harriet Maxwell</h4>
-                        <p>CEO at Google</p>
-                    </div>
-                </div>
-                <div class="single-testimonial item d-flex flex-row">
-                    <div class="thumb">
-                        <img class="img-fluid" src="img/elements/user2.png" alt="">
-                    </div>
-                    <div class="desc">
-                        <p>
-                            A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.
-                        </p>
-                        <h4>Carolyn Craig</h4>
-                        <p>CEO at Facebook</p>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -105,4 +94,6 @@
 <!-- start footer Area -->
 @include('UI.inc.footer-bar');
 <!-- End footer Area -->
+
+
 @include('UI.inc.footersource');

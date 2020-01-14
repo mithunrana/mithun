@@ -75,42 +75,22 @@
                             <div class="single-sidebar-widget popular-post-widget">
                                 <h4 style="background-color: red;" class="popular-title">Popular Posts</h4>
                                 <div class="popular-post-list">
-                                    <div class="single-post-list d-flex flex-row align-items-center">
-                                        <div class="thumb">
-                                            <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp1.jpg" alt="">
+                                    @foreach($PopularPosts as $PopularPost)
+                                        @php
+                                            $video_id = explode("?v=", $PopularPost->video_url);
+                                            $video_id = $video_id[1];
+                                            $thumbnail="http://img.youtube.com/vi/".$video_id."/mqdefault.jpg";
+                                        @endphp
+                                        <div class="single-post-list d-flex flex-row align-items-center">
+                                            <div class="thumb">
+                                                <img class="img-fluid" src="{{$thumbnail}}" alt="">
+                                            </div>
+                                            <div class="details">
+                                                <h4><a style="color:black;" href="{{url('tutorial',[$Blog->permalink])}}" style="text-decoration: none;font-size: 18px;text-align: left;">{{str_limit($PopularPost->blog_title,30)}}</a></h4>
+                                                <p>{{$PopularPost->created_at->diffForHumans()}}</p>
+                                            </div>
                                         </div>
-                                        <div class="details">
-                                            <a href="blog-single.html"><h6>Space The Final Frontier</h6></a>
-                                            <p>02 Hours ago</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-post-list d-flex flex-row align-items-center">
-                                        <div class="thumb">
-                                            <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp2.jpg" alt="">
-                                        </div>
-                                        <div class="details">
-                                            <a href="blog-single.html"><h6>The Amazing Hubble</h6></a>
-                                            <p>02 Hours ago</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-post-list d-flex flex-row align-items-center">
-                                        <div class="thumb">
-                                            <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp3.jpg" alt="">
-                                        </div>
-                                        <div class="details">
-                                            <a href="blog-single.html"><h6>Astronomy Or Astrology</h6></a>
-                                            <p>02 Hours ago</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-post-list d-flex flex-row align-items-center">
-                                        <div class="thumb">
-                                            <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp4.jpg" alt="">
-                                        </div>
-                                        <div class="details">
-                                            <a href="blog-single.html"><h6>Asteroids telescope</h6></a>
-                                            <p>02 Hours ago</p>
-                                        </div>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -121,53 +101,7 @@
         <!-- End post-content Area -->
 
         <!-- start footer Area -->
-        <footer class="footer-area section-gap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-6 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h4>About Me</h4>
-                            <p>
-                                We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.
-                            </p>
-                            <p class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-6 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h4>Newsletter</h4>
-                            <p>Stay updated with our latest trends</p>
-                            <div class="" id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" name="EMAIL" placeholder="Enter Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address '" required="" type="email">
-                                        <div class="input-group-btn">
-                                            <button class="btn btn-default" type="submit">
-                                                <span class="lnr lnr-arrow-right"></span>
-                                            </button>    
-                                        </div>
-                                        <div class="info"></div>  
-                                    </div>
-                                </form> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
-                        <div class="single-footer-widget">
-                            <h4>Follow Me</h4>
-                            <p>Let us be social</p>
-                            <div class="footer-social d-flex align-items-center">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-behance"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- End footer Area -->		
+        @include('UI.inc.footer-bar');
+        <!-- end footer Area -->
+
 @include('UI.inc.footersource');

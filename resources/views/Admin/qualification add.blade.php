@@ -34,17 +34,17 @@
                                 @csrf
                                 <div class="form-group">
                                     <label for="Degree">Name of Degree:</label>
-                                    <input type="text" class="form-control" name="Degree" id="Degree">
+                                    <input type="text" class="form-control" name="Degree" id="Degree" required>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="Session">Session:</label>
-                                    <input type="text" class="form-control" name="Session" id="Session">
+                                    <input type="text" class="form-control" name="Session" id="Session" required>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="Result">Name of Degree:</label>
-                                    <input type="text" class="form-control" name="Result" id="Result">
+                                    <input type="text" class="form-control" name="Result" id="Result" required>
                                 </div>
                                 <button type="submit" class="btn btn-info">Submit</button>
                             </form>

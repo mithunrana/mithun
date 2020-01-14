@@ -16,14 +16,6 @@ class CategoryController extends Controller
         return response()->json($categoryList);
     }
 
-    public function categoryNameCheck(Request $request){
-        $CategoryName = $request->get('name');
-        if(Category::where('CategoryName',$CategoryName)->first()){
-            return response()->json('get');
-        }else{
-            return response()->json('not get');
-        }
-    }
 
     public function store(Request $request){
         $Category = new Category([
