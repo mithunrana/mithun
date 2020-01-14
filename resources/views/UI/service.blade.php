@@ -37,7 +37,7 @@
                                 <img style="width: 100%;max-height:230px" src="{{$service->featuredimage->imageurl}}">
                             </div>
                             <div class="service-name">
-                                <h4 style="color:black;padding: 5px;text-transform: capitalize"><a href="service/{{$service->permalink}}">{{$service->service_title}}</a></h4>
+                                <h4 style="color:black;padding: 5px;text-transform: capitalize"><a style="color:black;" href="service/{{$service->permalink}}">{{$service->service_title}}</a></h4>
                                 <p style="margin-top: 20px;padding: 5px;">
                                     {{str_limit($service->MainContent, $limit = 100, $end = '...')}}
                                 </p>

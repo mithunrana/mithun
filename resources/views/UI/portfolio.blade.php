@@ -42,16 +42,16 @@
                             <div style="margin-top: 10px;" class="p-inner">
                                 <div class="row">
                                     <div class="col-sm-10">
-                                        <h2 style="font-size:16px;"><a href="portfolio/{{$portfolio->permalink}}">{{$portfolio->Portfolio_title}}</a></h2>
+                                        <h2 style="font-size:16px;"><a style="color:black;" href="portfolio/{{$portfolio->permalink}}">{{$portfolio->Portfolio_title}}</a></h2>
                                         <div class="w-more">
-                                            <span style="color:red;">{{$portfolio->portfolioCategory->CategoryName}}</span> / <span class="w-date">{{$portfolio->created_at->diffForHumans()}}</span>
+                                            <span style="color:red;">{{$portfolio->portfolioCategory->CategoryName}}</span>  <span style="float:right;" class="w-date">{{$portfolio->created_at->diffForHumans()}}</span>
                                         </div>
                                     </div>
                                     <div  class="col-sm-2">
                                         <div style="float: right;" class="w-like">
                                             <a data-magnify="gallery" href="{{asset('')}}{{$portfolio->featuredimage->imageurl}}" data-caption="{{$portfolio->Portfolio_title}}">
-                                                <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
-                                                    <p style="text-align:center;"><i class="fa fa-plus"></i></p>
+                                                <div style="height:35px; width:35px;padding: 5px;border:2px solid #FF5722;border-radius: 50%;display:inline-block;">
+                                                    <p style="text-align:center;"><i style="color:#FF5722;" class="fa fa-plus"></i></p>
                                                 </div>
                                             </a>
                                         </div>

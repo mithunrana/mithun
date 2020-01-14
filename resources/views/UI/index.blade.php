@@ -24,7 +24,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-6 banner-right d-flex align-self-end">
-                    <img class="img-fluid" src="/{{$about->profileImage1->imageurl}}" alt="">
+                    <img class="img-fluid" @isset($about->profileImage1) src="/{{$about->profileImage1->imageurl}}" @endisset src="/images/default-image.png" alt="">
                 </div>
             </div>
         </div>					
@@ -124,16 +124,16 @@
                                 <div style="margin-top: 10px;" class="p-inner">
                                     <div class="row">
                                         <div class="col-sm-10">
-                                            <h2 style="font-size:16px;"><a href="portfolio/{{$portfolio->permalink}}">{{$portfolio->Portfolio_title}}</a></h2>
+                                            <h2 style="font-size:16px;"><a style="color:black;" href="portfolio/{{$portfolio->permalink}}">{{$portfolio->Portfolio_title}}</a></h2>
                                             <div class="w-more">
-                                                <span style="color:red;">{{$portfolio->portfolioCategory->CategoryName}}</span> / <span class="w-date">{{$portfolio->created_at->diffForHumans()}}</span>
+                                                <span style="color:red;">{{$portfolio->portfolioCategory->CategoryName}}</span>  <span style="float:right;" class="w-date">{{$portfolio->created_at->diffForHumans()}}</span>
                                             </div>
                                         </div>
                                         <div  class="col-sm-2">
                                             <div style="float: right;" class="w-like">
                                                 <a data-magnify="gallery" href="{{asset('')}}{{$portfolio->featuredimage->imageurl}}" data-caption="{{$portfolio->Portfolio_title}}">
-                                                    <div style="height:35px; width:35px;padding: 5px;border:2px solid black;border-radius: 50%;display:inline-block;">
-                                                        <p style="text-align:center;"><i class="fa fa-plus"></i></p>
+                                                    <div style="height:35px; width:35px;padding: 5px;border:2px solid #FF5722;border-radius: 50%;display:inline-block;">
+                                                        <p style="text-align:center;"><i style="color:#FF5722;" class="fa fa-plus"></i></p>
                                                     </div>
                                                 </a>
                                             </div>
@@ -205,7 +205,7 @@
                 @php
                    $video_id = explode("?v=", $Blog->video_url);
                    $video_id = $video_id[1];
-                   $thumbnail="http://img.youtube.com/vi/".$video_id."/maxresdefault.jpg";
+                   $thumbnail="http://img.youtube.com/vi/".$video_id."/mqdefault.jpg";
                 @endphp
 
                 <div style="margin-top: 20px;" class="single-recent-blog col-lg-4 col-md-4">
@@ -222,7 +222,7 @@
                         </div>
                     </div>							
                     <a href="#">
-                        <h4><a href="tutorial/{{$Blog->permalink}}">Break Through Self Doubt And Fear</a></h4>
+                        <h4><a href="tutorial/{{$Blog->permalink}}">{{$Blog->blog_title}}</a></h4>
                     </a>
                 </div>
                 @endforeach

@@ -22,9 +22,10 @@ class BlogController extends Controller
     }
 
     public function blogByUrl($url){
+        $PopularPosts = Blog::where('Active_Status',1)->orderBy('id', 'ASC')->skip(0)->take(5)->get();
         $Categories = Category::get();
         $BlogDetails = Blog::where('permalink',$url)->first();
-        return view('UI.blogView',compact('BlogDetails','Categories'));
+        return view('UI.blogView',compact('BlogDetails','Categories','PopularPosts'));
     }
 
     public function blogByCategory($category){

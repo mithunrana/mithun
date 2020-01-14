@@ -86,7 +86,8 @@
                                                 <img class="img-fluid" src="{{$thumbnail}}" alt="">
                                             </div>
                                             <div class="details">
-                                                <h4><a style="color:black;" href="{{url('tutorial',[$Blog->permalink])}}" style="text-decoration: none;font-size: 18px;text-align: left;">{{str_limit($PopularPost->blog_title,30)}}</a></h4>
+                                                <h4 style="font-size:1.17em">
+                                                    <a style="color:black;" href="{{url('tutorial',[$PopularPost->permalink])}}" style="text-decoration: none;font-size: 18px;text-align: left;">{{str_limit($PopularPost->blog_title,45)}}</a></h4>
                                                 <p>{{$PopularPost->created_at->diffForHumans()}}</p>
                                             </div>
                                         </div>

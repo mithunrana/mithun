@@ -29,7 +29,7 @@
                         @php
                             $video_id = explode("?v=", $Blog->video_url);
                             $video_id = $video_id[1];
-                            $thumbnail="http://img.youtube.com/vi/".$video_id."/maxresdefault.jpg";
+                            $thumbnail="http://img.youtube.com/vi/".$video_id."/mqdefault.jpg";
                         @endphp
                         <div style="background-color: #d8d8d8">
                         <div style="text-align:center;" class="single-cat-widget">
@@ -58,7 +58,7 @@
                             @php
                                 $video_id = explode("?v=", $FeatureVideo->video_url);
                                 $video_id = $video_id[1];
-                                $thumbnail="http://img.youtube.com/vi/".$video_id."/maxresdefault.jpg";
+                                $thumbnail="http://img.youtube.com/vi/".$video_id."/mqdefault.jpg";
                             @endphp
                         <div class="single-cat-widget col-sm-12">
                             <div class="content relative">
@@ -67,8 +67,8 @@
                                         <img class="content-image img-fluid d-block mx-auto" src="{{$thumbnail}}" alt="">
                                     </div>
                                 </a>
-                                <h2 style="padding:5px;font-size: 16px;font-family: Kiron, SolaimanLipi, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif !important;">
-                                    <a href="tutorial/{{$Blog->permalink}}">{{$FeatureVideo->blog_title}}</a>
+                                <h2 style="padding:5px;font-size: 1.17em;font-family: Kiron, SolaimanLipi, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif !important;">
+                                    <a style="color:black;" href="tutorial/{{$Blog->permalink}}">{{$FeatureVideo->blog_title}}</a>
                                 </h2>
                             </div>
                         </div>
@@ -139,6 +139,7 @@
                                 </ul>
                             </ul>
                         </div>
+
                         <div class="single-sidebar-widget ads-widget">
                             <a href="#"><img class="img-fluid" src="{{asset('UI')}}/img/blog/ads-banner.jpg" alt=""></a>
                         </div>
@@ -156,7 +157,9 @@
                                         <img class="img-fluid" src="{{$thumbnail}}" alt="">
                                     </div>
                                     <div class="details">
-                                        <h4><a style="color:black;" href="{{url('tutorial',[$Blog->permalink])}}" style="text-decoration: none;font-size: 18px;text-align: left;">{{str_limit($PopularPost->blog_title,30)}}</a></h4>
+                                        <h4 style="font-size:1.17em">
+                                            <a style="color:black;" href="{{url('tutorial',[$PopularPost->permalink])}}" style="text-decoration: none;font-size: 18px;text-align: left;">{{str_limit($PopularPost->blog_title,45)}}</a>
+                                        </h4>
                                         <p>{{$PopularPost->created_at->diffForHumans()}}</p>
                                     </div>
                                 </div>

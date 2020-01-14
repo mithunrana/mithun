@@ -110,13 +110,13 @@
                                     <div class="form-group">
                                         <label style="text-align:left;" class="control-label" for="servicedetails">Portfolio Details:</label>
                                         <div>
-                                            <textarea type="text" rows="5" class="form-control" id="servicedetails" placeholder="Enter Blog Details" name="MainContent" required></textarea>
+                                            <textarea type="text" rows="5" class="form-control" id="servicedetails" placeholder="Enter Blog Details" name="MainContent"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label style="text-align:left;" class="control-label" for="opencontent">Portfolio Open Content:</label>
                                         <div>
-                                            <textarea type="text" rows="5" class="form-control" id="opencontent" placeholder="Enter Blog Details" name="OpenContent" required></textarea>
+                                            <textarea type="text" rows="5" class="form-control" id="opencontent" placeholder="Enter Blog Details" name="OpenContent"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">

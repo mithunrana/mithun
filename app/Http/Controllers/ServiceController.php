@@ -19,9 +19,10 @@ class ServiceController extends Controller
     }
 
     public function singleService($url){
+        $Comments = Comment::where('Active_Status',1)->get();
         $about = AboutProfile::first();
        $Service = Service::where('permalink',$url)->first();
-       return view('UI.service single',compact('Service','about'));
+       return view('UI.service single',compact('Service','about','Comments'));
     }
 
     public function serviceCreate(){

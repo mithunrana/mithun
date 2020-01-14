@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\AboutProfile;
 use App\Blog;
 use App\Category;
+use App\Comment;
 use App\Service;
 use Illuminate\Http\Request;
 use App\Portfolio;
@@ -17,9 +18,10 @@ class PortfolioController extends Controller
     }
 
     public function singlePortfolio($url){
+        $Comments = Comment::where('Active_Status',1)->get();
         $about = AboutProfile::first();
         $Portfolio = Portfolio::where('permalink',$url)->first();
-        return view('UI.portfolio single',compact('Portfolio','about'));
+        return view('UI.portfolio single',compact('Portfolio','about','Comments'));
     }
 
     public function create(){

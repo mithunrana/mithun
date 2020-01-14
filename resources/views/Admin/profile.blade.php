@@ -57,7 +57,7 @@
                     <div class="col-sm-8">
                             <div class="form-group">
                                 <label for="name">Name:</label>
-                                <input type="text" class="form-control" @isset($Profile->Name)value="{{$Profile->Name}}"@endisset name="Name" id="Name">
+                                <input type="text" class="form-control" @isset($Profile->Name)value="{{$Profile->Name}}" @endisset name="Name" id="Name">
                             </div>
                             <div class="form-group">
                                 <label for="Designation">Designation:</label>
