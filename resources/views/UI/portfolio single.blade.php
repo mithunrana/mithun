@@ -19,13 +19,14 @@
 <section class="service-view">
     <div class="container">
         <div style="margin-top: 20px;" class="row">
-            <div class="col-sm-5">
+            <div class="col-sm-8">
                 <img style="max-width: 100%;" src="/{{$Portfolio->featuredimage->imageurl}}">
             </div>
-            <div class="col-sm-7">
+            <div class="col-sm-4">
                 {!!html_entity_decode($Portfolio->MainContent)!!}
             </div>
-            <div class="col-sm-12">
+
+            <div style="margin-top: 20px;" class="col-sm-12">
                 {!!html_entity_decode($Portfolio->OpenContent)!!}
             </div>
         </div>

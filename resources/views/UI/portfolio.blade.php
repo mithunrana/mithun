@@ -35,7 +35,7 @@
                             <div class="relative">
                                 <div class="thumb">
                                     <a data-magnify="gallery" href="{{asset('')}}{{$portfolio->featuredimage->imageurl}}" data-caption="{{$portfolio->Portfolio_title}}">
-                                        <img class="image img-fluid" src="{{$portfolio->featuredimage->imageurl}}" alt="">
+                                        <img style="height:250px;" class="image img-fluid" src="{{$portfolio->featuredimage->imageurl}}" alt="">
                                     </a>
                                 </div>
                             </div>

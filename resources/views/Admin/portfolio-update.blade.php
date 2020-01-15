@@ -184,6 +184,7 @@
             relative_urls:false,
             remove_script_host: false,
             valid_children : "+body[style],-body[div],p[strong|a|#text]",
+            extended_valid_elements:"div[id|class|title]",
             plugins: ["advlist autolink link image lists charmap print preview hr anchor pagebreak",
                 "searchreplace wordcount visualblocks visualchars insertdatetime media nonbreaking",
                 "table contextmenu directionality emoticons paste textcolor code"

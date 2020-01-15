@@ -31,7 +31,7 @@
                 </div>						
                 <div class="row">
                     @foreach($services as $service)
-                    <div class="col-sm-4">
+                    <div style="margin-top: 20px;" class="col-sm-4">
                         <div style="box-shadow: 0 1px 3px white;overflow: hidden;border-radius: 5px;background-color: white;" class="con-section">
                             <div style="max-width: 360px;" class="featured-image">
                                 <img style="width: 100%;max-height:230px" src="{{$service->featuredimage->imageurl}}">
