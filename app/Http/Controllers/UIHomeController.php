@@ -13,7 +13,7 @@ class UIHomeController extends Controller
     public function index(){
 
 
-        $services = Service::where('Active_Status',1)->skip(0)->take(5)->get();
+        $services = Service::where('Active_Status',1)->skip(0)->take(6)->get();
         $about = AboutProfile::first();
         $Portfolios = Portfolio::where('Active_Status',1)->skip(0)->take(6)->get();
         $Blogs = Blog::where('Active_Status',1)->skip(0)->take(6)->get();

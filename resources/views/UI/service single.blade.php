@@ -21,9 +21,10 @@
         <div style="margin-top: 20px;" class="row">
             <div class="col-sm-5">
                 <img style="max-width: 100%;" src="/{{$Service->featuredimage->imageurl}}">
+                <p style="color:red;font-weight: bold;font-size: 21px;">Feel Free To Contact With Me. 01836375309</p>
             </div>
             <div class="col-sm-7">
-                {{$Service->MainContent}}
+                <p style="font-size: 19px;">{{$Service->MainContent}}</p>
             </div>
             <div class="col-sm-12">
                 {!!html_entity_decode($Service->OpenContent)!!}
