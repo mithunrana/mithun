@@ -33,6 +33,24 @@
     </div>
 </section>
 
+
+
+<section style="margin-top: 50px;margin-bottom: 50px;">
+    <div class="container">
+        <h2 style="text-align: center;margin-bottom: 10px;">Our Recent Compleated Project</h2>
+        <div class="row">
+            @foreach($Portfolios as $Portfolio)
+            <div class="col-sm-4">
+                <div style="border-radius: 5px; overflow: hidden;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);" class="shocasemain">
+                    <img width="100%;" height="250px"; src="/{{$Portfolio->featuredimage->imageurl}}">
+                    <h3 style="font-size:1.1rem;padding:10px;"><a style="color:black;" href="{{asset('')}}portfolio/{{$Portfolio->permalink}}">{{$Portfolio->Portfolio_title}}</a></h3>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
 <!-- Start fact Area -->
 <section style="padding: 30px 0px;background-color:#FF5722 " id="facts-area">
     <div class="container">

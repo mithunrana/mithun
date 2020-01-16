@@ -21,7 +21,9 @@ class PortfolioController extends Controller
         $Comments = Comment::where('Active_Status',1)->get();
         $about = AboutProfile::first();
         $Portfolio = Portfolio::where('permalink',$url)->first();
-        return view('UI.portfolio single',compact('Portfolio','about','Comments'));
+        $CategoryId = $Portfolio->category;
+        $RelatedPortfolio = Portfolio::where('category',$CategoryId)->skip(0)->take(6)->get();
+        return view('UI.portfolio single',compact('Portfolio','about','Comments','RelatedPortfolio'));
     }
 
     public function create(){

@@ -21,13 +21,26 @@
         <div style="margin-top: 20px;" class="row">
             <div class="col-sm-8">
                 <img style="max-width: 100%;" src="/{{$Portfolio->featuredimage->imageurl}}">
+                <div style="margin-top: 20px;" class="col-sm-12">
+                    {!!html_entity_decode($Portfolio->OpenContent)!!}
+                </div>
             </div>
             <div class="col-sm-4">
                 {!!html_entity_decode($Portfolio->MainContent)!!}
-            </div>
-
-            <div style="margin-top: 20px;" class="col-sm-12">
-                {!!html_entity_decode($Portfolio->OpenContent)!!}
+                <div class="row">
+                    <div style="text-align: center;width: 100%;margin-top: 10px;">
+                        <strong><h3>Related Portfolio</h3></strong>
+                    </div>
+                    @foreach($RelatedPortfolio as $Portfolio)
+                    <div class="col-md-6">
+                        <div style="height: 120px;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);margin-top: 20px;">
+                            <a href="{{asset('')}}portfolio/{{$Portfolio->permalink}}">
+                                <img style="max-width: 100%;max-height:100%;" src="/{{$Portfolio->featuredimage->imageurl}}">
+                            </a>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
             </div>
         </div>
     </div>

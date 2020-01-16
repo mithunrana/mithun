@@ -98,6 +98,19 @@
                         <a href="{{url('manage-comment')}}" class="small-box-footer">Manage Comment<i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
+                <div class="col-lg-3 col-xs-6">
+                    <div style="background-color: #36c4c9;color:black;" class="small-box text-white">
+                        <div class="inner">
+                            <h4 style="font-size:22px;">Gallery</h4>
+                            <h4 style="color:white"> @php $Total =  \App\Gallery::get();$active = \App\Gallery::Where('Active_Status','1')->get();$Deactive = \App\Gallery::Where('Active_Status','0')->get(); echo 'Total: '.count($Total); echo ' Active: '.count($active); @endphp </h4>
+                            <h4 class="text-danger">{{ 'Inactive: '.count($Deactive)}}</h4>
+                        </div>
+                        <div class="icon">
+                            <i style="font-size: 40px;" class="fa fa-address-card"></i>
+                        </div>
+                        <a href="{{url('manage-comment')}}" class="small-box-footer">Manage Comment<i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
             </div>
         </section>
     </div>

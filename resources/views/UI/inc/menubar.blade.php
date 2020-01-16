@@ -16,6 +16,7 @@
                             </li>
                             <li><a href="{{url('service')}}">Services</a></li>
                             <li><a href="{{url('portfolio')}}">Portfolio</a></li>
+                            <li><a href="{{url('mithunrana-image-gallery')}}">Gallery</a></li>
                             <li><a href="{{url('about')}}">About</a></li>
                             <li><a href="{{url('contact')}}">Contact</a></li>
                         </ul>

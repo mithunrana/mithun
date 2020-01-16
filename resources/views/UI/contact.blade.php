@@ -199,5 +199,4 @@
     <!-- start footer Area -->
     @include('UI.inc.footer-bar');
     <!-- end footer Area -->
-
     @include('UI.inc.footersource');

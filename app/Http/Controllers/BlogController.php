@@ -7,10 +7,7 @@ use App\Blog;
 use App\Category;
 class BlogController extends Controller
 {
-    /*public function __construct()
-    {
-        $this->middleware('auth');
-    }*/
+
 
     public function index(){
         $PopularPosts = Blog::where('Active_Status',1)->orderBy('id', 'ASC')->skip(0)->take(5)->get();

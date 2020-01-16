@@ -73,6 +73,12 @@
             <span>Comment</span>
           </a>
         </li>
+        <li>
+          <a href="{{url('manage-gallery')}}">
+            <i class="fa fa-file-image-o"></i>
+            <span>Gallery</span>
+          </a>
+        </li>
       </ul>
     </section>
     <!-- /.sidebar -->
