@@ -19,6 +19,12 @@
 
 
         <section id="app" class="content">
+            @if(Session::has('message'))
+                <div class="alert alert-success alert-dismissible">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    {{Session::get('message')}}
+                </div>
+            @endif
             <div class="row">
                 <div class="col-lg-3 col-xs-6">
                     <div style="background-color: #a4e2c0;color:black;" class="small-box text-white">

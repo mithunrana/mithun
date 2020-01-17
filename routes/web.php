@@ -98,15 +98,17 @@ Route::get('/service-delete/{id}','ServiceController@delete')->middleware(['auth
 Route::get('/service-active-deactive/{status}/{postid}','ServiceController@activeDeactive')->middleware(['auth']);
 
 
-Route::get('/manage-gallery','GalleryController@manage')->middleware(['auth']);
-Route::get('/gallery-active-deactive/{id}/{postid}','GalleryController@activeDeactive')->middleware(['auth']);
-Route::get('/gallery-create','GalleryController@create')->middleware(['auth']);
-Route::post('/gallery-store','GalleryController@store')->middleware(['auth']);
-Route::get('/gallery-delete/{id}','GalleryController@delete')->middleware(['auth']);
+Route::get('/manage-gallery','GalleryController@manage');
+Route::get('/gallery-active-deactive/{id}/{postid}','GalleryController@activeDeactive');
+Route::get('/gallery-create','GalleryController@create')->middleware(['auth']);;
+Route::post('/gallery-store','GalleryController@store')->middleware(['auth']);;
+Route::get('/gallery-delete/{id}','GalleryController@delete')->middleware(['auth']);;
+Route::get('/setting/','AdminController@passwordUpdate')->middleware(['auth']);;
+Route::post('/update-password/','AdminController@updatePassword')->middleware(['auth']);;
 
 
-Route::get('/getallimage','ImageUploadController@imagelist')->middleware(['auth']);
-Route::post('/formSubmit','ImageUploadController@imageUpload')->middleware(['auth']);
+Route::get('/getallimage','ImageUploadController@imagelist')->middleware(['auth']);;
+Route::post('/formSubmit','ImageUploadController@imageUpload')->middleware(['auth']);;
 
 Route::get('/{url}','BlogController@blogByCategory');
 

@@ -9,7 +9,9 @@
                     <h1 class="text-white">
                         Portfolio				
                     </h1>	
-                    <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="portfolio.html"> Portfolio</a></p>
+                    <p class="text-white link-nav"><a href="{{asset('')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>
+                        <a href="{{asset('')}}portfolio"> Portfolio</a>
+                    </p>
                 </div>	
             </div>
         </div>

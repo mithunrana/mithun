@@ -98,9 +98,9 @@
                                         <div style="text-align:center;" class="single-cat-widget">
                                             <div style="margin-bottom: 10px;" class="content relative">
                                                 <div class="overlay overlay-bg"></div>
-                                                <a href="#">
+                                                <a  href="{{url('tutorial',[$Blog->permalink])}}">
                                                     <div class="thumb">
-                                                        <img class="content-image img-fluid d-block mx-auto" src="{{$thumbnail}}" alt="">
+                                                       <img class="content-image img-fluid d-block mx-auto" src="{{$thumbnail}}" alt="">
                                                     </div>
                                                     <div class="content-details">
                                                         <img  style="height:40px;width:40px;" src="{{asset('UI')}}/img/download.png">

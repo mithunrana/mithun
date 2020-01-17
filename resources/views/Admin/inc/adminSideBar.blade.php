@@ -69,7 +69,7 @@
         </li>
         <li>
           <a href="{{url('manage-comment')}}">
-            <i class="fa fa-graduation-cap"></i>
+            <i class="fa fa-commenting"></i>
             <span>Comment</span>
           </a>
         </li>
@@ -79,6 +79,13 @@
             <span>Gallery</span>
           </a>
         </li>
+        <li>
+          <a href="{{url('setting')}}">
+            <i class="fa fa-gear fa-spin" style="font-size:20px"></i>
+            <span>Setting</span>
+          </a>
+        </li>
+
       </ul>
     </section>
     <!-- /.sidebar -->

@@ -9,7 +9,9 @@
                 <h1 class="text-white">
                     {{$Service->service_title}}
                 </h1>
-                <p class="text-white link-nav"><a href="{{asset('')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/portfolio/{{$Service->permalink}}"> {{$Service->service_title}}</a></p>
+                <p class="text-white link-nav"><a href="{{asset('')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>
+                    <a href="/service/{{$Service->permalink}}"> {{$Service->service_title}}</a>
+                </p>
             </div>
         </div>
     </div>
@@ -24,9 +26,9 @@
                 <p style="color:red;font-weight: bold;font-size: 21px;">Feel Free To Contact With Me. 01836375309</p>
             </div>
             <div class="col-sm-7">
-                <p style="font-size: 19px;">{{$Service->MainContent}}</p>
+                <p style="font-size: 21px;font-family:Calibri;">{{$Service->MainContent}}</p>
             </div>
-            <div class="col-sm-12">
+            <div style="font-size: 21px;font-family:Calibri;" class="col-sm-12">
                 {!!html_entity_decode($Service->OpenContent)!!}
             </div>
         </div>

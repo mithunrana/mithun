@@ -34,14 +34,15 @@
                     <div style="margin-top: 20px;" class="col-sm-4">
                         <div style="box-shadow: 0 1px 3px white;overflow: hidden;border-radius: 5px;background-color: white;" class="con-section">
                             <div style="max-width: 360px;" class="featured-image">
-                                <img style="width: 100%;max-height:230px" src="{{$service->featuredimage->imageurl}}">
+                                <a href="{{asset('')}}service/{{$service->permalink}}">
+                                <img style="width: 100%;height:230px" src="/{{$service->featuredimage->imageurl}}">
+                                </a>
                             </div>
                             <div class="service-name">
-                                <h4 style="color:black;padding: 5px;text-transform: capitalize"><a style="color:black;" href="service/{{$service->permalink}}">{{$service->service_title}}</a></h4>
-                                <p style="margin-top: 20px;padding: 5px;">
-                                    {{str_limit($service->MainContent, $limit = 100, $end = '...')}}
+                                <h4 style="color:black;padding: 5px;text-transform: capitalize"><a style="color:black;" href="{{asset('')}}service/{{$service->permalink}}">{{$service->service_title}}</a></h4>
+                                <p style="margin-top: 20px;padding: 5px;font-size:19px;">
+                                    <a style="color:black;" href="{{asset('')}}service/{{$service->permalink}}">{{str_limit($service->MainContent, $limit = 100, $end = '...')}} </a>
                                 </p>
-                                <a href="service/{{$service->permalink}}" style="color:red;font-size: 20px;padding: 5px 5px;">View Details -></a>
                             </div>
                         </div>
                     </div>

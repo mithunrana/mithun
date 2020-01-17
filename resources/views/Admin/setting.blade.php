@@ -31,31 +31,14 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">
-                            <table class="table table-striped">
-                                <thead>
-                                <tr>
-                                    <th>Blog Name</th>
-                                    <th>Action</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                @foreach($Galleries as $Gallery)
-                                    <tr>
-                                        <td><img style="height:80px;" src="{{$Gallery->images->imageurl}}"></td>
-                                        <td>{{$Gallery->EventNameOFImage}}</td>
-                                        <td>
-                                            @if($Gallery->Active_Status==0)
-                                                <a class="btn btn-danger" href="{{url('gallery-active-deactive',[$Gallery->Active_Status,$Gallery->id])}}">Deactive <i class="fa fa-ban" aria-hidden="true"></i></a>
-                                            @endif
-                                            @if($Gallery->Active_Status==1)
-                                                <a class="btn btn-success" href="{{url('gallery-active-deactive',[$Gallery->Active_Status,$Gallery->id])}}">Active <i class="fa fa-check"></i></a>
-                                            @endif
-                                            <a href="{{url('gallery-delete',[$Gallery->id])}}" onclick="return ConfirmDelete();" class="btn btn-danger">Delete <i  style="font-size:17px;" class="fa fa-close"></i></a>
-                                        </td>
-                                    </tr>
-                                @endforeach
-                                </tbody>
-                            </table>
+                            <form method="POST" action="{{url('update-password')}}">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="password">New Password</label>
+                                    <input type="text" class="form-control" name="password" id="password">
+                                </div>
+                                <button type="submit" class="btn btn-info">Update Password</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -74,16 +57,4 @@
     <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
-<script>
-    function ConfirmDelete()
-    {
-        var x = confirm("Are you sure you want to delete?");
-        if (x){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-</script>
 @include('Admin.inc.footersource');
