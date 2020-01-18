@@ -6,11 +6,11 @@
             <div class="container">				
                 <div class="row d-flex align-items-center justify-content-center">
                     <div style="margin-top: 0px;padding: 76px 0px" class="about-content col-lg-12">
-                        <h1 class="text-white">
+                        <h1 style="font-size:32px" class="text-white">
                             About {{$Profile->Name}}
                         </h1>	
                         <p class="text-white link-nav"><a href="{{asset('')}}">Home </a>
-                            <span class="lnr lnr-arrow-right"></span>  <a href=""> About Me</a>
+                            <span class="lnr lnr-arrow-right"></span>  <a href="{{url('about-mithun-rana')}}"> About Me</a>
                         </p>
                     </div>	
                 </div>
@@ -31,7 +31,7 @@
                         <p>
                             {{$Profile->ShortBrief}}
                         </p>
-                        <a href="#" class="primary-btn text-uppercase">View Full Details</a>
+                        <a href="{{asset('documents')}}/{{$Profile->Download_link}}" class="primary-btn text-uppercase" download>Download Resume</a>
                     </div>
                     <div class="col-lg-12 pt-60">
                         {{$Profile->Details}}
@@ -62,7 +62,7 @@
                 <div class="menu-content pb-70">
                     <div class="title text-center">
                         <h1 class="mb-10">My Qualifications</h1>
-                        <p>Who are in extremely love with eco friendly system.</p>
+                        <p>Here My Academic And Traing Certification Details.</p>
                     </div>
                 </div>
             </div>				
@@ -73,7 +73,7 @@
                         <h4>
                             <time>{{$Qualification->Degree}}</time>
                         </h4>
-                        <p><b>Session: </b>{{$Qualification->Session}}</p>
+                        <p style="color:white;"><b>Session: </b>{{$Qualification->Session}}</p>
                         <p style="color:white;"><b>Result: </b> {{$Qualification->Result}}</p>
                     </div>
                 </li>

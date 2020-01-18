@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="about-content col-lg-12">
-                <h1 class="text-white">
+                <h1 style="font-size:32px" class="text-white">
                     {{$Service->service_title}}
                 </h1>
                 <p class="text-white link-nav"><a href="{{asset('')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>

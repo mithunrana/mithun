@@ -7,10 +7,10 @@
         <div class="container">				
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="about-content col-lg-12">
-                    <h1 class="text-white">
-                        Contact Us				
+                    <h1 style="font-size:32px" class="text-white">
+                        Contact me
                     </h1>	
-                    <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Contact Me</a></p>
+                    <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="{{url('contact-mithun-rana')}}"> Contact Me</a></p>
                 </div>	
             </div>
         </div>
@@ -52,21 +52,33 @@
                     </div>														
                 </div>
                 <div class="col-lg-8">
-                    <form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
+                    @if(Session::has('success'))
+                        <div class="alert alert-success">
+                            <b>Successfully</b> Your contact mail send....!
+                        </div>
+                    @endif
+                    @if(Session::has('failmessage'))
+                        <div class="alert alert-success">
+                            <b>Fail</b> Your contact mail send....!
+                        </div>
+                    @endif
+
+                    <form class="form-area contact-form text-right" action="{{url('sendmail')}}" method="post">
+                        @csrf
                         <div class="row">	
                             <div class="col-lg-6 form-group">
-                                <input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
+                                <input class="common-input mb-20 form-control{{$errors->has('name') ? ' is-invalid' : ''}}" value="{{old('name')}}" name="name" placeholder="Enter your name" type="text">
 
-                                <input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
+                                <input class="common-input mb-20 form-control{{$errors->has('email') ? ' is-invalid' : ''}}" value="{{old('email')}}"  name="email" placeholder="Enter email address" type="email">
 
-                                <input name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control" required="" type="text">
+                                <input class="common-input mb-20 form-control{{$errors->has('subject') ? ' is-invalid' : ''}}"  value="{{old('subject')}}" name="subject" placeholder="Enter subject" type="text">
                             </div>
                             <div class="col-lg-6 form-group">
-                                <textarea class="common-textarea form-control" name="message" placeholder="Enter Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Messege'" required=""></textarea>				
+                                <textarea class="common-textarea form-control{{$errors->has('message') ? ' is-invalid' : ''}}" value="{{old('message')}}" name="message" placeholder="Enter Messege"></textarea>
                             </div>
                             <div class="col-lg-12">
                                 <div class="alert-msg" style="text-align: left;"></div>
-                                <button class="genric-btn primary" style="float: right;">Send Message</button>											
+                                <button style="margin-bottom: 10px;" class="genric-btn primary" style="float: right;">Send Message</button>
                             </div>
                         </div>
                     </form>	

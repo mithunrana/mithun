@@ -8,11 +8,11 @@
         <div class="container">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="about-content col-lg-12">
-                    <h1 class="text-white">
+                    <h1 style="font-size:32px" class="text-white">
                         Bangla Video Tutorial
                     </h1>
                     <p class="text-white link-nav"><a href="{{asset('')}}">Home </a>
-                        <span class="lnr lnr-arrow-right"></span><a href="/tutorials">Tutorials</a>
+                        <span class="lnr lnr-arrow-right"></span><a href="/bangla-video-tutorial">Tutorials</a>
                     </p>
                 </div>
             </div>

@@ -6,11 +6,11 @@
         <div class="container">				
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="about-content col-lg-12">
-                    <h1 class="text-white">
-                        Portfolio				
+                    <h1 style="font-size:32px" class="text-white">
+                       Mithun Rana Portfolio
                     </h1>	
                     <p class="text-white link-nav"><a href="{{asset('')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>
-                        <a href="{{asset('')}}portfolio"> Portfolio</a>
+                        <a href="{{asset('')}}portfolio">My Portfolio</a>
                     </p>
                 </div>	
             </div>
@@ -24,8 +24,8 @@
             <div class="row d-flex justify-content-center">
                 <div class="menu-content col-lg-8">
                     <div  class="title text-center">
-                        <h1 style="color:#FF5722;" class="mb-10">Our Latest Featured Projects</h1>
-                        <p style="color:#FF5722;">Who are in extremely love with eco friendly system.</p>
+                        <h1 style="color:#FF5722;" class="mb-10">My Latest Featured Projects</h1>
+                        <p style="color:#FF5722;">Here is my latest some compleated project</p>
                     </div>
                 </div>
             </div>

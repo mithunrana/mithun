@@ -2,12 +2,15 @@
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
+      @php
+        $About = \App\AboutProfile::first();
+      @endphp
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="{{asset('Admin')}}/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="{{asset('')}}{{$About->profileImage1->imageurl}}" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>{{$About->Name}}</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>

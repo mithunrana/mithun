@@ -6,10 +6,10 @@
         <div class="container">				
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="about-content col-lg-12">
-                    <h1 class="text-white">
-                        Services				
+                    <h1 style="font-size:32px" class="text-white">
+                      Mithun Rana Services
                     </h1>	
-                    <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="services.html"> Services</a></p>
+                    <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="service"> Services</a></p>
                 </div>	
             </div>
         </div>
@@ -24,8 +24,7 @@
                 <div class="row d-flex justify-content-center">
                     <div class="menu-content  col-lg-7">
                         <div class="title text-center">
-                            <h1 style="color:#FF5722" class="mb-10">My Offered Services</h1>
-                            <p style="color:white;">At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p>
+                            <h1 style="color:#FF5722;font-size:32px" class="mb-10">My Offered Services</h1>
                         </div>
                     </div>
                 </div>						

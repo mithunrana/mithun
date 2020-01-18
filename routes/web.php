@@ -4,13 +4,13 @@ use Illuminate\Http\Request;
 //=========================USER SITE REQUEST START HERE ========================//
 //Route::get('/', function () {return view('welcome');});
 Route::get('/', 'UIHomeController@index');
-Route::get('/about','AboutController@index');
-Route::get('/contact','ContactController@index');
+Route::get('/about-mithun-rana','AboutController@index');
+Route::get('/contact-mithun-rana','ContactController@index');
 Route::get('/portfolio','PortfolioController@index');
 Route::get('/portfolio/{url}','PortfolioController@singlePortfolio');
 Route::get('/service','ServiceController@index');
 Route::get('/service/{url}','ServiceController@singleService');
-Route::get('/tutorials','BlogController@index');
+Route::get('/bangla-video-tutorial','BlogController@index');
 Route::get('/tutorial/{url}','BlogController@blogByUrl');
 Route::get('/mithunrana-image-gallery','GalleryController@index');
 Route::get('/admin-login','UIHomeController@login');
@@ -19,8 +19,9 @@ Route::get('login', 'UIHomeController@login')->name('login');
 //=========================USER SITE REQUEST END HERE ========================//
 
 
+
 //=========================ADMIN SITE REQUEST START HERE ========================//
-Route::get('/admin-panel','AdminController@index')->middleware(['auth']);
+Route::get('/admin-panel','AdminController@index');
 Route::get('/category','CategoryController@index')->middleware(['auth']);
 Route::post('/categorysave','CategoryController@store')->middleware(['auth']);
 Route::get('/getall-category','CategoryController@getAll')->middleware(['auth']);
@@ -100,15 +101,18 @@ Route::get('/service-active-deactive/{status}/{postid}','ServiceController@activ
 
 Route::get('/manage-gallery','GalleryController@manage');
 Route::get('/gallery-active-deactive/{id}/{postid}','GalleryController@activeDeactive');
-Route::get('/gallery-create','GalleryController@create')->middleware(['auth']);;
-Route::post('/gallery-store','GalleryController@store')->middleware(['auth']);;
-Route::get('/gallery-delete/{id}','GalleryController@delete')->middleware(['auth']);;
-Route::get('/setting/','AdminController@passwordUpdate')->middleware(['auth']);;
-Route::post('/update-password/','AdminController@updatePassword')->middleware(['auth']);;
+Route::get('/gallery-create','GalleryController@create')->middleware(['auth']);
+Route::post('/gallery-store','GalleryController@store')->middleware(['auth']);
+Route::get('/gallery-delete/{id}','GalleryController@delete')->middleware(['auth']);
+Route::get('/setting/','AdminController@passwordUpdate');
+Route::post('/update-password/','AdminController@updatePassword');
 
 
-Route::get('/getallimage','ImageUploadController@imagelist')->middleware(['auth']);;
-Route::post('/formSubmit','ImageUploadController@imageUpload')->middleware(['auth']);;
+Route::get('/getallimage','ImageUploadController@imagelist')->middleware(['auth']);
+Route::post('/formSubmit','ImageUploadController@imageUpload')->middleware(['auth']);
+
+Route::post('/sendmail','AdminController@sendMail');
+
 
 Route::get('/{url}','BlogController@blogByCategory');
 

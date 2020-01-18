@@ -5,10 +5,11 @@
                     <div class="single-footer-widget">
                         <h4>About Me</h4>
                         <p>
-                            We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.
+                            I’m Mithun Rana, Fullstack web developer, web design and development i have 3year plus experience.
+                            more i have some skill in Graphics Design, search engine optimization(SEO, Digital Marketing, and something video editing
                         </p>
                         <p class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Mithun Rana. Copyright @ 2019. All Rights Reserved.<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.mithunrana.com" target="_blank">mithunrana</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
                 </div>
@@ -34,12 +35,15 @@
                 <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
                     <div class="single-footer-widget">
                         <h4>Follow Me</h4>
-                        <p>Let us be social</p>
+                        <p>Let Me be social</p>
                         <div class="footer-social d-flex align-items-center">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-behance"></i></a>
+                            @php
+                            $About = \App\AboutProfile::first();
+                            @endphp
+                            <a href="{{$About->Facebook_Link}}"><i class="fa fa-facebook"></i></a>
+                            <a href="{{$About->Twitter_Link}}"><i class="fa fa-twitter"></i></a>
+                            <a href="{{$About->Dribble_Link}}"><i class="fa fa-dribbble"></i></a>
+                            <a href="{{$About->Behance_Link}}"><i class="fa fa-behance"></i></a>
                         </div>
                     </div>
                 </div>

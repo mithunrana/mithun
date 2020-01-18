@@ -16,17 +16,20 @@
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
+          @php
+          $About = \App\AboutProfile::first();
+          @endphp
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="{{asset('Admin')}}/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <img src="{{asset('')}}{{$About->profileImage1->imageurl}}" class="user-image" alt="User Image">
+              <span class="hidden-xs">{{$About->Name}}</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="{{asset('Admin')}}/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="{{asset('')}}{{$About->profileImage1->imageurl}}" class="img-circle" alt="User Image">
                 <p>
-                  SOFTWARE ENGINEER BANGLADESH
+                 {{$About->Designation}}
                 </p>
               </li>
               <!-- Menu Footer-->
@@ -45,6 +48,7 @@
                   </form>
                 </div>
               </li>
+
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->

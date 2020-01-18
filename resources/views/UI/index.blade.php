@@ -43,7 +43,6 @@
                     <div class="menu-content  col-lg-7">
                         <div class="title text-center">
                             <h1 style="color:#FF5722" class="mb-10">My Offered Services</h1>
-                            <p style="color:white;">At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p>
                         </div>
                     </div>
                 </div>						
@@ -104,8 +103,8 @@
             <div class="row d-flex justify-content-center">
                 <div class="menu-content col-lg-8">
                     <div  class="title text-center">
-                        <h1 style="color:#FF5722;" class="mb-10">Our Latest Featured Projects</h1>
-                        <p style="color:#FF5722;">Who are in extremely love with eco friendly system.</p>
+                        <h1 style="color:#FF5722;" class="mb-10">My Latest Featured Projects</h1>
+                        <p style="color:#FF5722;">Here is my latest some compleated project.</p>
                     </div>
                 </div>
             </div>
@@ -162,7 +161,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div style="border: 2px solid #ff5722;" class="row">
                 <div class="active-testimonial">
                     @foreach($Comments as $Comment)
                         <div class="single-testimonial item d-flex flex-row">
@@ -193,10 +192,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 pb-30 header-text">
-                    <h1 style="color:#FF5722">Latest posts from our blog</h1>
-                    <p style="color:#FF5722">
-                        You may be a skillful, effective employer but if you don’t trust your personnel and the opposite, then the chances of improving and expanding the business
-                    </p>
+                    <h1 style="color:#FF5722">Latest posts from My blog</h1>
                 </div>
             </div>
             <div class="row">
