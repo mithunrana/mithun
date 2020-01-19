@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
     <head>
-        <!-- Mobile Specific Meta -->
+        <!-- Mobile Specific Meta  Sart-->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Favicon-->
-        <link rel="shortcut icon" href="img/fav.png">
-        <!-- Author Meta -->
-        <meta name="author" content="colorlib">
-        <!-- Meta Description -->
-        <meta name="description" content="">
-        <!-- Meta Keyword -->
-        <meta name="keywords" content="">
-        <!-- meta character set -->
         <meta charset="UTF-8">
-        <!-- Site Title -->
-        <title>Personal</title>
+        <!-- Mobile Specific Meta  Sart-->
 
-        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-        <!--
-        CSS
-        ============================================= -->
+        <!-- Favicon Start-->
+        <link rel="shortcut icon" href="img/fav.png">
+        <!-- Favicon End-->
+
+
+        <!-- SEO RELATED DATA START-->
+        <title> @isset($title) {{$title}} @endisset</title>
+        <meta name="author" content="colorlib">
+        <meta name="description" content=" @isset($description) {{$description}} @endisset">
+        <meta name="keywords" content=" @isset($keywords) {{$keywords}} @endisset">
+        <link rel="canonical" href="@php echo url()->current(); @endphp" />
+        <meta name="fb:app_id" property="fb:app_id" content="308590786521219" />
+        <meta property="og:url"           content="@php echo url()->current(); @endphp"/>
+        <meta property="og:title"         content="@isset($title){{$title}}@endisset"/>
+        <meta property="og:description"   content="@isset($description){{$description}}@endisset" />
+        <meta property="og:image"         content="@isset($description){{asset('')}}{{$image}}@endisset" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+        <!-- SEO RELATED DATA END-->
+
+
+        <!--CSS============================================= -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
         <link rel="stylesheet" href="{{asset('UI')}}/css/linearicons.css">
         <link rel="stylesheet" href="{{asset('UI')}}/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{asset('UI')}}/css/bootstrap.css">

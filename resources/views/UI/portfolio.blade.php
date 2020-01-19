@@ -70,7 +70,7 @@
     <!-- End portfolio-area Area -->
 
     <!-- start footer Area -->
-    @include('UI.inc.footer-bar');
+    @include('UI.inc.footer-bar')
     <!-- end footer Area -->
 
-    @include('UI.inc.footersource');
+    @include('UI.inc.footersource')

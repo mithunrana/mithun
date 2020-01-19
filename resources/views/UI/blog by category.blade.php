@@ -1,3 +1,9 @@
+@php
+    $title = $Category->CategoryBrowserTitle;
+    $keywords =  $Category->CategorySeoKeyword;
+    $description =  $Category->CategorySeoDescription;
+@endphp
+
 @include('UI.inc.headersource');
 <body>
 @include('UI.inc.menubar');
@@ -131,7 +137,7 @@
 <!-- End post-content Area -->
 
 <!-- start footer Area -->
-@include('UI.inc.footer-bar');
+@include('UI.inc.footer-bar')
 <!-- end footer Area -->
 
-@include('UI.inc.footersource');
+@include('UI.inc.footersource')

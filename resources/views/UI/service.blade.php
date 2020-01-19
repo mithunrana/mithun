@@ -85,7 +85,7 @@
                 <div class="menu-content pb-70 col-lg-8">
                     <div class="title text-center">
                         <h1 class="mb-10">Client’s Feedback About Me</h1>
-                        <p>It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.</p>
+                        <p>There are some testimonials from my clients i have got..</p>
                     </div>
                 </div>
             </div>
@@ -111,10 +111,8 @@
     </section>
     <!-- End testimonial Area -->
 
-
-
     <!-- start footer Area -->
-    @include('UI.inc.footer-bar');
+    @include('UI.inc.footer-bar')
     <!-- End footer Area -->
 
-    @include('UI.inc.footersource');
+    @include('UI.inc.footersource')

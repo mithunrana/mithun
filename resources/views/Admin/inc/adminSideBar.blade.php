@@ -7,10 +7,10 @@
       @endphp
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="{{asset('')}}{{$About->profileImage1->imageurl}}" class="img-circle" alt="User Image">
+          <img @isset($About->profileImage1) src="{{asset('')}}{{$About->profileImage1->imageurl}}" @endisset src="{{asset('')}}Images/default-image.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>{{$About->Name}}</p>
+          <p> @isset($About->Name) {{$About->Name}} @endisset</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>

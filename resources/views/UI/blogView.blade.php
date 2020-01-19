@@ -1,3 +1,10 @@
+@php
+$title = $BlogDetails->browser_title;
+$keywords =  $BlogDetails->seo_keyword;
+$description =  $BlogDetails->seo_description;
+$image = $BlogDetails->featuredimage->imageurl;
+@endphp
+
 @include('UI.inc.headersource');
     <body>	
         @include('UI.inc.menubar');
@@ -102,7 +109,7 @@
         <!-- End post-content Area -->
 
         <!-- start footer Area -->
-        @include('UI.inc.footer-bar');
+        @include('UI.inc.footer-bar')
         <!-- end footer Area -->
 
-@include('UI.inc.footersource');
+@include('UI.inc.footersource')

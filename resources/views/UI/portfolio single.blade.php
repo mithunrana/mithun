@@ -1,3 +1,10 @@
+
+@php
+    $title = $Portfolio->BrowserTitle;
+    $keywords =  $Portfolio->SeoKeyword;
+    $description =  $Portfolio->SeoDescription;
+@endphp
+
 @include('UI.inc.headersource');
 <body>
 @include('UI.inc.menubar');
@@ -106,7 +113,7 @@
 <!-- End testimonial Area -->
 
 <!-- start footer Area -->
-@include('UI.inc.footer-bar');
+@include('UI.inc.footer-bar')
 <!-- End footer Area -->
 
-@include('UI.inc.footersource');
+@include('UI.inc.footersource')

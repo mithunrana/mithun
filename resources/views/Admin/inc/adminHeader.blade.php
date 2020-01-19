@@ -21,15 +21,15 @@
           @endphp
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="{{asset('')}}{{$About->profileImage1->imageurl}}" class="user-image" alt="User Image">
-              <span class="hidden-xs">{{$About->Name}}</span>
+              <img  @isset($About->profileImage1) src="{{asset('')}}{{$About->profileImage1->imageurl}}"  @endisset src="{{asset('')}}Images/default-image.png" class="user-image" alt="User Image">
+              <span class="hidden-xs"> @isset($About->Name) {{$About->Name}} @endisset</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="{{asset('')}}{{$About->profileImage1->imageurl}}" class="img-circle" alt="User Image">
+                <img @isset($About->profileImage1) src="{{asset('')}}{{$About->profileImage1->imageurl}}" @endisset src="{{asset('')}}Images/default-image.png" class="img-circle" alt="User Image">
                 <p>
-                 {{$About->Designation}}
+                  @isset($About->Designation) {{$About->Designation}} @endisset
                 </p>
               </li>
               <!-- Menu Footer-->

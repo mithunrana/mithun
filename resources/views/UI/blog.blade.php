@@ -1,3 +1,9 @@
+@php
+    $title = "Bangla Video Tutorial |  | Android Apps Development | Web Design";
+    $keywords =  "bangla video tutorial, web design bangla video tutorial, web development bangla video tutorial, android apps development bangla video tutorial, seo bangla video tutorial";
+    $description =  "Bangla video tutorial, web design bangla video tutorial, web development bangla video tutorial, seo bangla video tutorial, android apps development bangla video tutorial";
+@endphp
+
 @include('UI.inc.headersource');
 <body>	
     @include('UI.inc.menubar');
@@ -174,7 +180,7 @@
     <!-- End post-content Area -->
 
     <!-- start footer Area -->
-    @include('UI.inc.footer-bar');
+    @include('UI.inc.footer-bar')
     <!-- end footer Area -->	
 
-    @include('UI.inc.footersource');
+    @include('UI.inc.footersource')

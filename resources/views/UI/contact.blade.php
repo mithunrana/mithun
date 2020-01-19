@@ -1,3 +1,10 @@
+
+@php
+    $title = "Contact Software Engineer Bangladesh Mithun Rana";
+    $keywords =  "software engineer, mithun rana, software engineer mithun rana, software engineer in bangladesh, how to contact engineer mithun rana";
+    $description =  "Fell free to contact with software engineer mithun rana, here is my contact details if anybody want easily contact with me";
+@endphp
+
 @include('UI.inc.headersource');
 <body>	
     @include('UI.inc.menubar');
@@ -209,6 +216,6 @@
     </section>
 
     <!-- start footer Area -->
-    @include('UI.inc.footer-bar');
+    @include('UI.inc.footer-bar')
     <!-- end footer Area -->
-    @include('UI.inc.footersource');
+    @include('UI.inc.footersource')

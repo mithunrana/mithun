@@ -2336,9 +2336,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .p1-gradient-bg, .banner-left .primary-btn, .home-about-right .primary-btn, .facts-area, .thumb .overlay-bg, .price-area .single-price:hover, .brands-area, .about-banner, .sb_bar {
-    background: -moz-linear-gradient(0deg, #e2a173 0%, #fb6b04 100%);
-    background: -webkit-linear-gradient(0deg, #e2a173 0%, #fb6b04 100%);
-    background: -ms-linear-gradient(0deg, #e2a173 0%, #fb6b04 100%);
+    background: -moz-linear-gradient(0deg, #ff6a00  0%, #fb6b04 100%);
+    background: -webkit-linear-gradient(0deg, #ff6a00  0%, #fb6b04 100%);
+    background: -ms-linear-gradient(0deg, #ff6a00  0%, #fb6b04 100%);
 }
 
 /*.p1-gradient-color, .single-services:hover .lnr {*/
@@ -3094,13 +3094,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .sb_progress {
-    height: 14px !important;
+    height: 16px !important;
     border-radius: 12px;
     border: 3px solid #eee;
 }
 
 .sb_bar {
-    height: 8px !important;
+    height: 10px !important;
     border-radius: 12px;
 }
 

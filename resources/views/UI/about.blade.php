@@ -1,3 +1,11 @@
+
+@php
+    $title = "About Software Engineer Mithun Rana | CEO Of TECH HELP INFO";
+    $keywords =  "About mithun rana, software engineer mithun rana, mithun rana, rana, mithun, software engineer, software engineer in bangladesh";
+    $description =  "About mithun rana: Mithun rana software engineer in bangladesh, I'm fullstack web
+     application developer, i have 3year+ experience in web application development, and i am owner of tech help info";
+@endphp
+
 @include('UI.inc.headersource');
     <body>
         @include('UI.inc.menubar');
@@ -91,7 +99,7 @@
                     <div class="menu-content pb-70 col-lg-8">
                         <div class="title text-center">
                             <h1 class="mb-10">Client’s Feedback About Me</h1>
-                            <p>It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.</p>
+                            <p>There are some testimonials from my clients i have got..</p>
                         </div>
                     </div>
                 </div>
@@ -119,7 +127,7 @@
 
 
         <!-- start footer Area -->
-        @include('UI.inc.footer-bar');
+        @include('UI.inc.footer-bar')
         <!-- end footer Area -->
 
-@include('UI.inc.footersource');
+@include('UI.inc.footersource')
