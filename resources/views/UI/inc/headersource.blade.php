@@ -21,7 +21,7 @@
         <meta property="og:url"           content="@php echo url()->current(); @endphp"/>
         <meta property="og:title"         content="@isset($title){{$title}}@endisset"/>
         <meta property="og:description"   content="@isset($description){{$description}}@endisset" />
-        <meta property="og:image"         content="@isset($description){{asset('')}}{{$image}}@endisset" />
+        <meta property="og:image"         content="@isset($image){{asset('')}}{{$image}}@endisset" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="315" />
         <!-- SEO RELATED DATA END-->
