@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 19, 2020 at 08:41 PM
--- Server version: 10.4.10-MariaDB
--- PHP Version: 7.3.12
+-- Generation Time: Jan 20, 2020 at 03:57 PM
+-- Server version: 10.4.8-MariaDB
+-- PHP Version: 7.2.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `mithun`
+-- Database: `laravel`
 --
 
 -- --------------------------------------------------------
@@ -105,7 +105,7 @@ CREATE TABLE `blogs` (
 --
 
 INSERT INTO `blogs` (`id`, `browser_title`, `blog_title`, `permalink`, `video_url`, `embedded_video`, `blog_details`, `category`, `blog_poster`, `featured_image`, `seo_keyword`, `seo_description`, `imageAltText`, `imageTitleText`, `Active_Status`, `created_at`, `updated_at`) VALUES
-(1, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo', 'https://www.youtube.com/watch?v=iDgFHctbOf8', '<iframe width=\"100%\" height=\"450\" src=\"https://www.youtube.com/embed/N9zUUYZzIPU\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo&nbsp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>', 1, 1, 25, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo', 'fasdf', 'fasf', 1, '2020-01-14 07:19:07', '2020-01-17 11:07:30');
+(1, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo', 'https://www.youtube.com/watch?v=iDgFHctbOf8', '<iframe width=\"100%\" height=\"450\" src=\"https://www.youtube.com/embed/N9zUUYZzIPU\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo&nbsp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>', 1, 1, 24, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo', 'fasf', 'fasdf', 1, '2020-01-14 07:19:07', '2020-01-20 05:00:14');
 
 -- --------------------------------------------------------
 
@@ -254,7 +254,8 @@ INSERT INTO `images` (`id`, `imageurl`, `created_at`, `updated_at`) VALUES
 (36, 'images/mithunrana-website.PNG', NULL, NULL),
 (37, 'images/avtech-happy-new-year-design.jpg', NULL, NULL),
 (38, 'images/avtech-cctv-camera.jpg', NULL, NULL),
-(39, 'images/mithunrana-rana-graphics-design.jpg', NULL, NULL);
+(39, 'images/mithunrana-rana-graphics-design.jpg', NULL, NULL),
+(44, 'images/Avtech-cctv-list-bangladesh.jpg', '2020-01-20 06:27:36', '2020-01-20 06:27:36');
 
 -- --------------------------------------------------------
 
@@ -423,11 +424,11 @@ CREATE TABLE `services` (
 
 INSERT INTO `services` (`id`, `service_title`, `BrowserTitle`, `permalink`, `featured_image`, `ServiceIcon`, `SeoKeyword`, `SeoDescription`, `FeaturedImageAltText`, `FeaturedImageTitleText`, `MainContent`, `OpenContent`, `Active_Status`, `created_at`, `updated_at`) VALUES
 (1, 'Web Design', 'Web Design Service Provider Company Bangladesh | Mithun Rana', 'web-design-service-provider-company-bangladesh', 22, 29, 'web design, web design service provider company bangladesh, mithun rana, web designer , software engineer mithun rana', 'web design, web design service provider company bangladesh, mithun rana, web designer , software engineer mithun rana', 'Web Design', 'web design', 'Website development is our main service at Tech Help Info. We are one of the leading website development company in Bangladesh since 2014, Our customers are not only from Bangladesh, we have global client like india, bangladesh, china, usa etc. So if you are thinking a world class website design & functional website development (Tech Help Info) is the best web site design and development company in bangladesh is your one stop solution.\r\n\r\nEach impression checks with regards to catching clients on the web. Presently like never before, your online picture is basic to the accomplishment of your business. An extravagant plan isn\'t sufficient for your webpage now a days clients are requesting sites that are easy to understand, useful, appealing, and available just as receptive to all gadgets.', '<h1>Web Development Service Provider Company Bangladesh</h1>\r\n<p style=\"font-size: 19px;\">There is no disarray that &lt;a href=\"https://www.techhelpinfo.com\"&gt;Tech Help Info&lt;/a&gt; is the best Web Design organization in Bangladesh. We have confidence in QUALITY and on time convey your task. In the in the mean time have done numerous nearby and universal site with great notoriety. We likewise in great site improvement and enormous size of web application for your business arrangement!</p>\r\n<p style=\"font-size: 19px;\">&lt;a href=\"https://www.techhelpinfo.com\"&gt;Tech Help Info&lt;/a&gt; is Website Development Company in Bangladesh. Our Specialist is Static, Dynamic Website Development (Web Application Development, E-Commerce Solution, Large Scale of Web Application like ERP) and Wordpres, Joomla, Cakephp, Codeigniter, PHP, MYSQL, Jave,, Magento, HTML5, CSS3 and responsive and SEO Friendly Website Development in Bangladesh and everywhere throughout the world. &lt;a href=\"https://www.techhelpinfo.com\"&gt;Tech Help Info&lt;/a&gt; is best Website Design and Development Company in Bangladesh. We have high talented expert Website Design group who can serve the best and world class quality web composition and web application arrangements inside a brief timeframe for your business site. Our remarkable web composition and improvement expert can give the definite work what you need to work for your business and can convey on schedule. We are the best Web plan and advancement organization in the Bangladesh and south Asia as well. We have done loads of value site in USA, CANADA, AUSTRALIA, UK, SINGAPORE, FRANCE and numerous different nations everywhere throughout the world. We constantly dedicated to our customers to serve the quality assistance on schedule. If you don\'t mind visit our portfolio to see quality web architecture. You are constantly free to take our support of maintain your business easily all around.</p>\r\n<h2><span style=\"text-decoration: underline;\">Feature OF Web Design</span></h2>\r\n<h3>2.&nbsp;Clear, User-friendly Navigation.</h3>\r\n<h3>1.&nbsp;Quality Web Content.</h3>\r\n<h3>3.&nbsp;Simple and Professional Web Design.</h3>\r\n<h3>4. Webpage Speed.&nbsp;</h3>\r\n<h3>5.&nbsp;Search Engine Optimization.</h3>\r\n<h3>6.&nbsp;Web Compatibility.</h3>', 1, '2020-01-15 07:30:47', '2020-01-19 12:33:02'),
-(2, 'Web Development', 'Web Development Service Provider Company Bangladesh | Mithun Rana', '#', 23, 30, 'Web Development Service Provider Company Bangladesh, web development', 'Web Development Service Provider Company Bangladesh, web development', 'web development', 'web development', 'Web Development Service Provider Company Bangladesh, web development', '<p>Web Development Service Provider Company Bangladesh, web development</p>', 1, '2020-01-15 07:51:47', '2020-01-19 12:33:38'),
-(3, 'SEO', 'SEO Service Provider Company Bangladesh | Mithun Rana', '#', 20, 27, 'seo, SEO Service Provider Company Bangladesh , mithun rana, seo expert in bangladesh', 'seo, SEO Service Provider Company Bangladesh , mithun rana, seo expert in bangladesh', 'SEP', 'SEO search engine optimization', 'seo, SEO Service Provider Company Bangladesh , mithun rana, seo expert in bangladesh', '<p>seo, SEO Service Provider Company Bangladesh , mithun rana, seo expert in bangladesh</p>', 1, '2020-01-15 07:58:19', '2020-01-19 12:34:02'),
-(4, 'Digital marketing', 'Digital Marketing Service Provider Company Bangladesh | Mithun Rana', '#', 24, 25, 'Digital Marketing Service Provider Company Bangladesh, digital marketing, mithun rana software engineer mithun rana', 'software engineer mithun rana provide digital marketing service in bangladesh', 'Digital Marketing', 'Digital Marketing', 'software engineer mithun rana provide digital marketing service in bangladesh', '<p>software engineer mithun rana provide digital marketing service in bangladesh</p>', 1, '2020-01-15 08:10:42', '2020-01-19 12:38:33'),
-(5, 'Graphics Design', 'Graphics Design Service Provider Company Bangladesh | Mithun Rana', '#', 19, 26, 'Graphics Design, Graphics Design Service Provider Company Bangladesh, mithun rana, software engineer mithun rana', 'mithun rana provide graphics design service in bangladesh, Graphics Design, Graphics Design Service Provider Company Bangladesh, mithun rana, software engineer mithun rana', 'Graphics Design', 'Graphics Design', 'Graphics Design, Graphics Design Service Provider Company Bangladesh, mithun rana, software engineer mithun rana', '<p>Graphics Design, Graphics Design Service Provider Company Bangladesh, mithun rana, software engineer mithun rana</p>', 1, '2020-01-15 08:21:12', '2020-01-19 12:39:39'),
-(6, 'Video Animation', 'Video Editing Service Provider Company In Bangladesh | Mithun Rana', '#', 21, 28, 'Video Editing Service Provider Company In Bangladesh | Mithun Rana', 'Video Editing Service Provider Company In Bangladesh | Mithun Rana', 'Video Editing', 'Video Editing', 'Video Editing Service Provider Company In Bangladesh | Mithun Rana', '<p>Video Editing Service Provider Company In Bangladesh | Mithun Rana</p>', 1, '2020-01-15 08:41:47', '2020-01-19 12:39:06');
+(2, 'Web Development', 'Web Development Service Provider Company Bangladesh | Mithun Rana', '#', 23, 30, 'Web Development Service Provider Company Bangladesh, web development', 'Web Development Service Provider Company Bangladesh, web development', 'web development', 'web development', 'we provide best custom software and web applicaiton development service in bangladesh. We build them with care and strong belief in agile approach.', '<p>Web Development Service Provider Company Bangladesh, web development</p>', 1, '2020-01-15 07:51:47', '2020-01-20 01:30:22'),
+(3, 'SEO', 'SEO Service Provider Company Bangladesh | Mithun Rana', '#', 20, 27, 'seo, SEO Service Provider Company Bangladesh , mithun rana, seo expert in bangladesh', 'seo, SEO Service Provider Company Bangladesh , mithun rana, seo expert in bangladesh', 'SEP', 'SEO search engine optimization', 'we are the best search engine optimization(SEO) service provider in bangladesh, we provide world wide and local seo service', '<p>seo, SEO Service Provider Company Bangladesh , mithun rana, seo expert in bangladesh</p>', 1, '2020-01-15 07:58:19', '2020-01-20 01:32:09'),
+(4, 'Digital marketing', 'Digital Marketing Service Provider Company Bangladesh | Mithun Rana', '#', 24, 25, 'Digital Marketing Service Provider Company Bangladesh, digital marketing, mithun rana software engineer mithun rana', 'software engineer mithun rana provide digital marketing service in bangladesh', 'Digital Marketing', 'Digital Marketing', 'In this time digital marketing is the best way for grow business or any service, and we provide best digital marketing service', '<p>software engineer mithun rana provide digital marketing service in bangladesh</p>', 1, '2020-01-15 08:10:42', '2020-01-20 01:33:25'),
+(5, 'Graphics Design', 'Graphics Design Service Provider Company Bangladesh | Mithun Rana', '#', 19, 26, 'Graphics Design, Graphics Design Service Provider Company Bangladesh, mithun rana, software engineer mithun rana', 'mithun rana provide graphics design service in bangladesh, Graphics Design, Graphics Design Service Provider Company Bangladesh, mithun rana, software engineer mithun rana', 'Graphics Design', 'Graphics Design', 'first impression is the best impression so graphics design is the main element of impression and we provide best graphics design service in bangladesh', '<p>Graphics Design, Graphics Design Service Provider Company Bangladesh, mithun rana, software engineer mithun rana</p>', 1, '2020-01-15 08:21:12', '2020-01-20 01:35:10'),
+(6, 'Video Animation', 'Video Editing Service Provider Company In Bangladesh | Mithun Rana', '#', 21, 28, 'Video Editing Service Provider Company In Bangladesh | Mithun Rana', 'Video Editing Service Provider Company In Bangladesh | Mithun Rana', 'Video Editing', 'Video Editing', 'web provide video editing and video animation service in bangladesh.', '<p>Video Editing Service Provider Company In Bangladesh | Mithun Rana</p>', 1, '2020-01-15 08:41:47', '2020-01-20 01:36:10');
 
 -- --------------------------------------------------------
 
@@ -451,7 +452,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'mithunrana.developer@gmail.com', 'mithunrana.developer@gmail.com', NULL, '$2y$10$wA6CtYt5B1.iul3GxPG7FONCGwhDH0hQ5.Ad9jPkoK1ljbORtjKyW', NULL, '2020-01-17 13:10:49', '2020-01-18 10:53:14');
+(1, 'mithunrana.developer@gmail.com', 'mithunrana.developer@gmail.com', NULL, '$2y$10$ZIdT9GLgGkEFDatMARjwguRG.k8LKciX/UH6V2yhsC7YlRxct.wPO', NULL, '2020-01-17 13:10:49', '2020-01-20 04:07:56');
 
 --
 -- Indexes for dumped tables
@@ -586,7 +587,7 @@ ALTER TABLE `galleries`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `migrations`
