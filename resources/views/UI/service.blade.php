@@ -1,3 +1,14 @@
+
+@php
+    $title = "Web Design Service Provider Company Bangladesh | Web Development Service Provider Company Bangladesh, SEO Service Provider Company Bangladesh, Digital Marketing Service Provider Company Bangldesh
+    Video Animation Service Provider Company Bangladesh, Graphics Design Service Provider Company Bangladesh";
+    $keywords =  "Web Design Service Provider Company Bangladesh | Web Development Service Provider Company Bangladesh, SEO Service Provider Company Bangladesh, Digital Marketing Service Provider Company Bangldesh
+    Video Animation Service Provider Company Bangladesh, Graphics Design Service Provider Company Bangladesh";
+    $description =  "Web Design Service Provider Company Bangladesh | Web Development Service Provider Company Bangladesh, SEO Service Provider Company Bangladesh, Digital Marketing Service Provider Company Bangldesh
+    Video Animation Service Provider Company Bangladesh, Graphics Design Service Provider Company Bangladesh";
+@endphp
+
+
 @include('UI.inc.headersource');
 <body>	
     @include('UI.inc.menubar');

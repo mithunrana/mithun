@@ -5,19 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a215687a-b125-41dd-8599-63d499aac5f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/mithun.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mithun.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ExpertnessWithQualification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ExpertnessWithQualification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_02_123212_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_02_123212_create_comments_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_02_123429_create_expertnesses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_02_123429_create_expertnesses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_02_123559_create_qualifications_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_02_123559_create_qualifications_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/portfolio category component.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/portfolio category component.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/comment add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/comment add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/comment manage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/comment manage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/expertness manage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/expertness manage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/inc/adminSideBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/inc/adminSideBar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/qualification manage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/qualification manage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/gallery.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/gallery.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/portfolio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/portfolio.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/service.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/service.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Products View.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Products View.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soshinebd/inc/Admin Panel/footer-source-file.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/inc/Admin Panel/footer-source-file.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soshinebd/inc/Menu-Bar.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/inc/Menu-Bar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soshinebd/inc/Source-File.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/inc/Source-File.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soshinebd/specifiaction/avtech-dgc1003.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soshinebd/specifiaction/avtech-dgc1004.pdf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,11 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/user list.php" />
-        <option value="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/specific mail send.php" />
-        <option value="$PROJECT_DIR$/../soshinebd/application/controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/client Mail send.php" />
-        <option value="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/End User Mail Send.php" />
         <option value="$PROJECT_DIR$/../soshinebd/inc/discoverproducts.php" />
         <option value="$PROJECT_DIR$/../soshinebd/inc/solutions.php" />
         <option value="$PROJECT_DIR$/../soshinebd/inc/products.php" />
@@ -99,7 +100,6 @@
         <option value="$PROJECT_DIR$/app/Blog.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UIHomeController.php" />
         <option value="$PROJECT_DIR$/public/UI/css/main.css" />
-        <option value="$PROJECT_DIR$/resources/views/UI/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/UI/blog.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Admin/portfoliomanage.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/components/image-upload-component.vue" />
@@ -133,9 +133,15 @@
         <option value="$PROJECT_DIR$/resources/views/Admin/qualification manage.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Admin/expertness manage.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ExpertnessWithQualification.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/Admin/inc/adminSideBar.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/components/portfolio category component.vue" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/gallery.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/login.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/portfolio.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/service.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/index.blade.php" />
       </list>
     </option>
   </component>
@@ -223,11 +229,15 @@
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/geoip2/geoip2" />
+      <path value="$PROJECT_DIR$/vendor/maxmind/web-service-common" />
+      <path value="$PROJECT_DIR$/vendor/maxmind-db/reader" />
+      <path value="$PROJECT_DIR$/vendor/stevebauman/location" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="13" />
-    <option name="y" value="145" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-16" />
+    <option name="y" value="225" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -237,92 +247,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="inc" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../soshinebd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -392,16 +324,17 @@
       <workItem from="1577940151844" duration="25739000" />
       <workItem from="1578124045314" duration="3943000" />
       <workItem from="1578142531634" duration="5679000" />
+      <workItem from="1579506880004" duration="7069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275702000" />
+    <option name="totallyTimeSpent" value="282771000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.18496802" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.18710022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50080776" side_tool="true" weight="0.17270789" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -416,7 +349,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.18743229" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -510,89 +443,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="393" column="23" selection-start-line="389" selection-start-column="16" selection-end-line="393" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UIHomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="73" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="73" />
-          <folding>
-            <element signature="e#40#61#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/portfolio add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/blog.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1607">
-          <caret line="232" column="30" selection-start-line="232" selection-start-column="30" selection-end-line="232" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/portfolio-update.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="147" column="87" lean-forward="true" selection-start-line="143" selection-start-column="8" selection-end-line="147" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/image-upload-component.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="58" column="150" selection-start-line="58" selection-start-column="137" selection-end-line="58" selection-end-column="150" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/blog-add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="61" column="142" selection-start-line="61" selection-start-column="142" selection-end-line="61" selection-end-column="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/service add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Service.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Admin/blog update.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -877,13 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Admin/inc/adminSideBar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
@@ -912,6 +755,75 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9">
           <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="226" column="62" selection-start-line="226" selection-start-column="62" selection-end-line="226" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/portfolio.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/gallery.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/service.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="108" selection-start-line="7" selection-start-column="108" selection-end-line="7" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/service single.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/portfolio single.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/contact.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/about.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="7" />
         </state>
       </provider>
     </entry>

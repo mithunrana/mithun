@@ -1,3 +1,10 @@
+
+@php
+    $title = "Software Engineer In Bangladesh | Mithun Rana Portfolio";
+    $keywords =  "Software Engineer In Bangladesh | Mithun Rana Portfolio, mithun rana web development portfolio, mithun rana portfolio, web development portfolio, web design portfolio";
+    $description =  "Fell free to contact with software engineer mithun rana, here is my contact details if anybody want easily contact with me  image gallery, mithun rana image, mithun rana image gallery";
+@endphp
+
 @include('UI.inc.headersource');
 <body>	
     @include('UI.inc.menubar');

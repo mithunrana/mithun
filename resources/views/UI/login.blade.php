@@ -1,3 +1,10 @@
+
+@php
+    $title = "Admin Login";
+    $keywords =  "Software Engineer Mithun Rana Login Panel";
+    $description =  "Fell free to contact with software engineer mithun rana, here is my contact details if anybody want easily contact with me  image gallery, mithun rana image, mithun rana image gallery";
+@endphp
+
 @include('UI.inc.headersource');
 <body>
 @include('UI.inc.menubar');

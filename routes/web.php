@@ -18,6 +18,11 @@ Auth::routes(['register' => false]);
 Route::get('login', 'UIHomeController@login')->name('login');
 //=========================USER SITE REQUEST END HERE ========================//
 
+Route::get('get-ip-details', function () {
+    $ip = '27.147.169.66';
+    $data = \Location::get($ip);
+    dd($data);
+});
 
 
 //=========================ADMIN SITE REQUEST START HERE ========================//
