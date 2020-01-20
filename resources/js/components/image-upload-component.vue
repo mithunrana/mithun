@@ -6,6 +6,10 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title"><a href="#"  @click="imageGallery" >Gallery</a> | <a href="#"  @click="uploadNew"  >New Upload</a></h4>
+                        <div v-if="success != ''" class="alert alert-success" role="alert">
+                            <a href="#" class="close" data-dismiss="alert" @click="setNull()" aria-label="close">&times;</a>
+                            {{success}}
+                        </div>
                     </div>
                     <div class="modal-body">
                         <div class="row">
@@ -13,15 +17,10 @@
                                 <div class="panel panel-default">
                                     <div v-if="UploadNew" class="panel-body">
                                         <div class="card-body">
-                                            <div v-if="success != ''" class="alert alert-success" role="alert">
-                                                {{success}}
-                                            </div>
                                             <form @submit="formSubmit" enctype="multipart/form-data">
-                                                <strong>Name:</strong>
-                                                <input type="text" class="form-control" v-model="name">
                                                 <strong>Image:</strong>
-                                                <input type="file" class="form-control" v-on:change="onImageChange">
-                                                <button  class="btn btn-success">Submit</button>
+                                                <input type="file" class="form-control" v-on:change="onImageChange" >
+                                                <button style="margin-top: 10px;"  class="btn btn-success">Upload</button>
                                             </form>
                                         </div>
                                     </div>
@@ -32,18 +31,6 @@
                                                         <div style="max-height: 600px;overflow: scroll;overflow-x: hidden;">
                                                         <div v-for="perimage in imageslist" style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
                                                             <img :imgid="perimage.id" class="img-thumbnail" @click="clickView(perimage)" style="max-width: 100%;height: 140px;" :src="'/'+perimage.imageurl">
-                                                        </div>
-                                                        <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'/Admin/img/b1.jpg'">
-                                                        </div>
-                                                        <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'/Admin/img/b1.jpg'">
-                                                        </div>
-                                                        <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'/Admin/img/b1.jpg'">
-                                                        </div>
-                                                        <div style="padding-right: 5px;padding-left: 5px;" class="col-sm-3 col-xs-6">
-                                                            <img class="img-thumbnail" style="max-width: 100%;height: 140px;" :src="'/Admin/img/b1.jpg'">
                                                         </div>
                                                         </div>
                                                     </div>
@@ -122,6 +109,9 @@
                 console.log(e.target.files[0]);
                 this.image = e.target.files[0];
             },
+            setNull(){
+                this.success = '';
+            },
             clickView(row){
               this.imageData = row;
               //alert(this.imageData.imageurl);
@@ -137,10 +127,12 @@
                 let formData = new FormData();
                 formData.append('image', this.image);
 
-                axios.post('/formSubmit', formData, config).then(function (response) {currentObj.success = response.data.success;})
-                    .catch(function (error) {
-                        currentObj.output = error;
-                    });
+                axios.post('/formSubmit', formData, config).then(function (response) {
+                    currentObj.success = response.data.success;
+                })
+                .catch(function (error) {
+                    currentObj.output = error;
+                });
                 this.init();
                 this.UploadNew = false;
                 this.ImageGallery = true;

@@ -2134,19 +2134,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -2187,6 +2174,9 @@ __webpack_require__.r(__webpack_exports__);
     onImageChange: function onImageChange(e) {
       console.log(e.target.files[0]);
       this.image = e.target.files[0];
+    },
+    setNull: function setNull() {
+      this.success = '';
     },
     clickView: function clickView(row) {
       this.imageData = row; //alert(this.imageData.imageurl);
@@ -38228,7 +38218,41 @@ var render = function() {
                   { attrs: { href: "#" }, on: { click: _vm.uploadNew } },
                   [_vm._v("New Upload")]
                 )
-              ])
+              ]),
+              _vm._v(" "),
+              _vm.success != ""
+                ? _c(
+                    "div",
+                    {
+                      staticClass: "alert alert-success",
+                      attrs: { role: "alert" }
+                    },
+                    [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "close",
+                          attrs: {
+                            href: "#",
+                            "data-dismiss": "alert",
+                            "aria-label": "close"
+                          },
+                          on: {
+                            click: function($event) {
+                              return _vm.setNull()
+                            }
+                          }
+                        },
+                        [_vm._v("×")]
+                      ),
+                      _vm._v(
+                        "\n                        " +
+                          _vm._s(_vm.success) +
+                          "\n                    "
+                      )
+                    ]
+                  )
+                : _vm._e()
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "modal-body" }, [
@@ -38238,23 +38262,6 @@ var render = function() {
                     _vm.UploadNew
                       ? _c("div", { staticClass: "panel-body" }, [
                           _c("div", { staticClass: "card-body" }, [
-                            _vm.success != ""
-                              ? _c(
-                                  "div",
-                                  {
-                                    staticClass: "alert alert-success",
-                                    attrs: { role: "alert" }
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                                            " +
-                                        _vm._s(_vm.success) +
-                                        "\n                                        "
-                                    )
-                                  ]
-                                )
-                              : _vm._e(),
-                            _vm._v(" "),
                             _c(
                               "form",
                               {
@@ -38262,30 +38269,6 @@ var render = function() {
                                 on: { submit: _vm.formSubmit }
                               },
                               [
-                                _c("strong", [_vm._v("Name:")]),
-                                _vm._v(" "),
-                                _c("input", {
-                                  directives: [
-                                    {
-                                      name: "model",
-                                      rawName: "v-model",
-                                      value: _vm.name,
-                                      expression: "name"
-                                    }
-                                  ],
-                                  staticClass: "form-control",
-                                  attrs: { type: "text" },
-                                  domProps: { value: _vm.name },
-                                  on: {
-                                    input: function($event) {
-                                      if ($event.target.composing) {
-                                        return
-                                      }
-                                      _vm.name = $event.target.value
-                                    }
-                                  }
-                                }),
-                                _vm._v(" "),
                                 _c("strong", [_vm._v("Image:")]),
                                 _vm._v(" "),
                                 _c("input", {
@@ -38296,8 +38279,11 @@ var render = function() {
                                 _vm._v(" "),
                                 _c(
                                   "button",
-                                  { staticClass: "btn btn-success" },
-                                  [_vm._v("Submit")]
+                                  {
+                                    staticClass: "btn btn-success",
+                                    staticStyle: { "margin-top": "10px" }
+                                  },
+                                  [_vm._v("Upload")]
                                 )
                               ]
                             )
@@ -38319,123 +38305,37 @@ var render = function() {
                                       "overflow-x": "hidden"
                                     }
                                   },
-                                  [
-                                    _vm._l(_vm.imageslist, function(perimage) {
-                                      return _c(
-                                        "div",
-                                        {
-                                          staticClass: "col-sm-3 col-xs-6",
+                                  _vm._l(_vm.imageslist, function(perimage) {
+                                    return _c(
+                                      "div",
+                                      {
+                                        staticClass: "col-sm-3 col-xs-6",
+                                        staticStyle: {
+                                          "padding-right": "5px",
+                                          "padding-left": "5px"
+                                        }
+                                      },
+                                      [
+                                        _c("img", {
+                                          staticClass: "img-thumbnail",
                                           staticStyle: {
-                                            "padding-right": "5px",
-                                            "padding-left": "5px"
-                                          }
-                                        },
-                                        [
-                                          _c("img", {
-                                            staticClass: "img-thumbnail",
-                                            staticStyle: {
-                                              "max-width": "100%",
-                                              height: "140px"
-                                            },
-                                            attrs: {
-                                              imgid: perimage.id,
-                                              src: "/" + perimage.imageurl
-                                            },
-                                            on: {
-                                              click: function($event) {
-                                                return _vm.clickView(perimage)
-                                              }
+                                            "max-width": "100%",
+                                            height: "140px"
+                                          },
+                                          attrs: {
+                                            imgid: perimage.id,
+                                            src: "/" + perimage.imageurl
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.clickView(perimage)
                                             }
-                                          })
-                                        ]
-                                      )
-                                    }),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-3 col-xs-6",
-                                        staticStyle: {
-                                          "padding-right": "5px",
-                                          "padding-left": "5px"
-                                        }
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass: "img-thumbnail",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            height: "140px"
-                                          },
-                                          attrs: { src: "/Admin/img/b1.jpg" }
-                                        })
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-3 col-xs-6",
-                                        staticStyle: {
-                                          "padding-right": "5px",
-                                          "padding-left": "5px"
-                                        }
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass: "img-thumbnail",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            height: "140px"
-                                          },
-                                          attrs: { src: "/Admin/img/b1.jpg" }
-                                        })
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-3 col-xs-6",
-                                        staticStyle: {
-                                          "padding-right": "5px",
-                                          "padding-left": "5px"
-                                        }
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass: "img-thumbnail",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            height: "140px"
-                                          },
-                                          attrs: { src: "/Admin/img/b1.jpg" }
-                                        })
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-3 col-xs-6",
-                                        staticStyle: {
-                                          "padding-right": "5px",
-                                          "padding-left": "5px"
-                                        }
-                                      },
-                                      [
-                                        _c("img", {
-                                          staticClass: "img-thumbnail",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            height: "140px"
-                                          },
-                                          attrs: { src: "/Admin/img/b1.jpg" }
+                                          }
                                         })
                                       ]
                                     )
-                                  ],
-                                  2
+                                  }),
+                                  0
                                 )
                               ])
                             ]),
