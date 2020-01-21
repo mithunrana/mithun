@@ -2134,6 +2134,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -2146,6 +2147,7 @@ __webpack_require__.r(__webpack_exports__);
       image: '',
       success: '',
       imageslist: [],
+      uploadPercentage: 0,
       imageData: {
         imageurl: null,
         id: null
@@ -2172,11 +2174,13 @@ __webpack_require__.r(__webpack_exports__);
       this.UploadNew = false;
     },
     onImageChange: function onImageChange(e) {
+      this.file = this.$refs.file.files[0];
       console.log(e.target.files[0]);
       this.image = e.target.files[0];
     },
     setNull: function setNull() {
       this.success = '';
+      this.uploadPercentage = 0;
     },
     clickView: function clickView(row) {
       this.imageData = row; //alert(this.imageData.imageurl);
@@ -2187,7 +2191,10 @@ __webpack_require__.r(__webpack_exports__);
       var config = {
         headers: {
           'content-type': 'multipart/form-data'
-        }
+        },
+        onUploadProgress: function (progressEvent) {
+          this.uploadPercentage = parseInt(Math.round(progressEvent.loaded / progressEvent.total * 100));
+        }.bind(this)
       };
       var formData = new FormData();
       formData.append('image', this.image);
@@ -38252,7 +38259,13 @@ var render = function() {
                       )
                     ]
                   )
-                : _vm._e()
+                : _vm._e(),
+              _vm._v(" "),
+              _c("progress", {
+                staticStyle: { width: "100%" },
+                attrs: { max: "100" },
+                domProps: { value: _vm.uploadPercentage }
+              })
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "modal-body" }, [
@@ -38272,6 +38285,7 @@ var render = function() {
                                 _c("strong", [_vm._v("Image:")]),
                                 _vm._v(" "),
                                 _c("input", {
+                                  ref: "file",
                                   staticClass: "form-control",
                                   attrs: { type: "file" },
                                   on: { change: _vm.onImageChange }

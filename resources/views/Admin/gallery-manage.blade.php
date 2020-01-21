@@ -31,9 +31,10 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">
-                            <table class="table table-striped">
+                            <table class="table imagestable table-striped">
                                 <thead>
                                 <tr>
+                                    <th>Images#</th>
                                     <th>Blog Name</th>
                                     <th>Action</th>
                                 </tr>
@@ -85,5 +86,8 @@
             return false;
         }
     }
+    $(document).ready(function() {
+        $('.imagestable').DataTable();
+    });
 </script>
 @include('Admin.inc.footersource');

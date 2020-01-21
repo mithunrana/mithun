@@ -9,6 +9,8 @@ use Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Mail;
+use App\Expertness;
+use Barryvdh\DomPDF\Facade as PDF;
 class AdminController extends Controller
 {
 
@@ -48,16 +50,13 @@ class AdminController extends Controller
         Session::flash("success");
         return back();
 
-        /*if(Mail::to($email)->send(new ContactMail($subject,$message,$name))){
-            //Mail::to($incomeMailAddress)->send(new IncomeingMail($subject,$message,$name));
-            Session::flash("success");
-            return back();
-        }else{
-            Session::flash("failmessage");
-            return back();
-        }*/
-
     }
 
+
+    public function generatePdf(){
+       $Expertness = Expertness::get();
+        $pdf = PDF::loadView('UI.expertnesslist',compact('Expertness'))->setPaper('a4','portrait');
+        return $pdf->stream('ExpertnessList.pdf',$Expertness);
+    }
 
 }

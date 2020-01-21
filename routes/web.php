@@ -18,11 +18,21 @@ Auth::routes(['register' => false]);
 Route::get('login', 'UIHomeController@login')->name('login');
 //=========================USER SITE REQUEST END HERE ========================//
 
+
+//========Get Location By Ip Address========//
 Route::get('get-ip-details', function () {
     $ip = '27.147.169.66';
     $data = \Location::get($ip);
     dd($data);
 });
+//========Get Location By Ip Address========//
+
+
+
+//========PDF GENERATE START HERE========//
+Route::get('/expertnesslist','AdminController@generatePdf')->middleware(['auth']);
+//========PDF GENERATE END HERE========//
+
 
 
 //=========================ADMIN SITE REQUEST START HERE ========================//
@@ -109,8 +119,8 @@ Route::get('/gallery-active-deactive/{id}/{postid}','GalleryController@activeDea
 Route::get('/gallery-create','GalleryController@create')->middleware(['auth']);
 Route::post('/gallery-store','GalleryController@store')->middleware(['auth']);
 Route::get('/gallery-delete/{id}','GalleryController@delete')->middleware(['auth']);
-Route::get('/setting/','AdminController@passwordUpdate');
-Route::post('/update-password/','AdminController@updatePassword');
+Route::get('/setting/','AdminController@passwordUpdate')->middleware(['auth']);
+Route::post('/update-password/','AdminController@updatePassword')->middleware(['auth']);
 
 
 Route::get('/getallimage','ImageUploadController@imagelist')->middleware(['auth']);

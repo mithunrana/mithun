@@ -13,7 +13,7 @@
     @include('UI.inc.menubar');
 
     <!-- start banner Area -->
-    <section class="banner-area">
+   <section style="margin-top: 60px;" class="banner-area">
         <div class="container">
             <div class="row fullscreen align-items-center justify-content-between">
                 <div class="col-lg-6 col-md-6 banner-left">

@@ -45,6 +45,7 @@
                             <a href="{{$About->Dribble_Link}}"><i class="fa fa-dribbble"></i></a>
                             <a href="{{$About->Behance_Link}}"><i class="fa fa-behance"></i></a>
                         </div>
+                        <a style="margin-left: 12px;font-size: 16px;color:white;text-transform: capitalize;" href="admin-login">Login</a>
                     </div>
                 </div>
             </div>

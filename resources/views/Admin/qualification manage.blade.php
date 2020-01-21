@@ -31,7 +31,7 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">
-                            <table class="table table-striped">
+                            <table class="table QualificationTable table-striped">
                                 <thead>
                                 <tr>
                                     <th>Blog Name</th>
@@ -90,5 +90,10 @@
             return false;
         }
     }
+
+    $(document).ready(function() {
+        $('.QualificationTable').DataTable();
+    });
+
 </script>
 @include('Admin.inc.footersource');

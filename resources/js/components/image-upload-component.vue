@@ -10,6 +10,7 @@
                             <a href="#" class="close" data-dismiss="alert" @click="setNull()" aria-label="close">&times;</a>
                             {{success}}
                         </div>
+                        <progress style="width: 100%;" max="100" :value.prop="uploadPercentage"></progress>
                     </div>
                     <div class="modal-body">
                         <div class="row">
@@ -19,7 +20,7 @@
                                         <div class="card-body">
                                             <form @submit="formSubmit" enctype="multipart/form-data">
                                                 <strong>Image:</strong>
-                                                <input type="file" class="form-control" v-on:change="onImageChange" >
+                                                <input type="file" ref="file" class="form-control" v-on:change="onImageChange" >
                                                 <button style="margin-top: 10px;"  class="btn btn-success">Upload</button>
                                             </form>
                                         </div>
@@ -87,6 +88,7 @@
                 image: '',
                 success: '',
                 imageslist: [],
+                uploadPercentage: 0,
                 imageData:{imageurl:null,id:null}
             }
         },
@@ -106,11 +108,13 @@
                 this.UploadNew = false;
             },
             onImageChange(e){
+                this.file = this.$refs.file.files[0];
                 console.log(e.target.files[0]);
                 this.image = e.target.files[0];
             },
             setNull(){
                 this.success = '';
+                this.uploadPercentage = 0;
             },
             clickView(row){
               this.imageData = row;
@@ -121,11 +125,15 @@
                 let currentObj = this;
 
                 const config = {
-                    headers: { 'content-type': 'multipart/form-data' }
+                    headers: { 'content-type': 'multipart/form-data' },
+                    onUploadProgress: function( progressEvent ) {
+                        this.uploadPercentage = parseInt( Math.round( ( progressEvent.loaded / progressEvent.total ) * 100 ));
+                    }.bind(this)
                 }
 
                 let formData = new FormData();
                 formData.append('image', this.image);
+
 
                 axios.post('/formSubmit', formData, config).then(function (response) {
                     currentObj.success = response.data.success;

@@ -31,7 +31,7 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">
-                            <table class="table table-striped">
+                            <table class="table serviceTable table-striped">
                                 <thead>
                                 <tr>
                                     <th>Blog Name</th>
@@ -92,6 +92,9 @@
     }
 
     $(document).ready(function() {
+
+        $('.serviceTable').DataTable();
+
         $('#test').click(function(){
             alertify.alert('Alert Title', 'Alert Message!');
         })

@@ -15,9 +15,9 @@
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="about-content col-lg-12">
                     <h1 style="font-size:32px" class="text-white">
-                        Contact me
+                        Contact With Mithun Rana
                     </h1>	
-                    <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="{{url('contact-mithun-rana')}}"> Contact Me</a></p>
+                    <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="{{url('contact-mithun-rana')}}"> Contact Mithun rana</a></p>
                 </div>	
             </div>
         </div>
@@ -139,68 +139,68 @@
 
     <section>
         <div class="container">
-            <h3 style="text-align: center;margin-bottom: 10px;">MITHUN RANA SOCIAL ACCOUNT</h3>
+            <h3 style="text-align: center;margin-bottom: 10px;">{{$About->Name}} SOCIAL ACCOUNT</h3>
             <div class="row">
                 <div class="col-sm-3">
                     <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
-                        <a style="color: white;font-weight: bold;" target="_blank" href="{{$About->Facebook_Link}}">mithun rana on facebook</a>
+                        <a style="color: white;font-weight: bold;text-transform: capitalize" target="_blank" href="{{$About->Facebook_Link}}">{{$About->Name}} on facebook</a>
                     </p>
                 </div>
                 <div class="col-sm-3">
                     <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
-                        <a style="color: white;font-weight: bold;" target="_blank" href="{{$About->Youtube_Link}}">mithun rana on Youtube</a>
+                        <a style="color: white;font-weight: bold;text-transform: capitalize" target="_blank" href="{{$About->Youtube_Link}}">{{$About->Name}} on Youtube</a>
                     </p>
                 </div>
                 <div class="col-sm-3">
                     <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
-                        <a style="color: white;font-weight: bold;" target="_blank" href="{{$About->Twitter_Link}}">mithun rana on Twitter</a>
+                        <a style="color: white;font-weight: bold;text-transform: capitalize" target="_blank" target="_blank" href="{{$About->Twitter_Link}}">{{$About->Name}} on Twitter</a>
                     </p>
                 </div>
                 <div class="col-sm-3">
                     <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
-                        <a style="color: white;font-weight: bold;" target="_blank" href="{{$About->Linkedin_Link}}">mithun rana on Linked In</a>
-                    </p>
-                </div>
-
-                <div class="col-sm-3">
-                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
-                        <a style="color: white;font-weight: bold;" target="_blank" href="{{$About->Instagram_Link}}">mithun rana on Instagram</a>
-                    </p>
-                </div>
-                <div class="col-sm-3">
-                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
-                        <a style="color: white;font-weight: bold;" target="_blank" href="{{$About->Pinterest_Link}}">mithun rana on pinterest</a>
-                    </p>
-                </div>
-                <div class="col-sm-3">
-                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
-                        <a style="color: white;font-weight: bold;" target="_blank" href="{{$About->Behance_Link}}">mithun rana on behance</a>
-                    </p>
-                </div>
-                <div class="col-sm-3">
-                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
-                        <a style="color: white;font-weight: bold;" target="_blank" href="{{$About->Dribble_Link}}">mithun rana on dribbble</a>
+                        <a style="color: white;font-weight: bold;text-transform: capitalize" target="_blank" target="_blank" href="{{$About->Linkedin_Link}}">{{$About->Name}} on Linked In</a>
                     </p>
                 </div>
 
                 <div class="col-sm-3">
                     <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
-                        <a style="color: white;font-weight: bold;" target="_blank" href="{{$About->Vimeo_Link}}">mithun rana on Vimeo</a>
+                        <a style="color: white;font-weight: bold;text-transform: capitalize" target="_blank" target="_blank" href="{{$About->Instagram_Link}}">{{$About->Name}} on Instagram</a>
                     </p>
                 </div>
                 <div class="col-sm-3">
                     <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
-                        <a style="color: white;font-weight: bold;" target="_blank" href="{{$About->Github_Link}}">mithun rana on Github</a>
+                        <a style="color: white;font-weight: bold;" target="_blank" href="{{$About->Pinterest_Link}}">{{$About->Name}} on pinterest</a>
                     </p>
                 </div>
                 <div class="col-sm-3">
                     <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
-                        <a style="color: white;font-weight: bold;" target="_blank" href="{{$About->stackoverflow_link}}">mithun rana on Stackoverflow</a>
+                        <a style="color: white;font-weight: bold;text-transform: capitalize" target="_blank" target="_blank" href="{{$About->Behance_Link}}">{{$About->Name}} on behance</a>
                     </p>
                 </div>
                 <div class="col-sm-3">
                     <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
-                        <a style="color: white;font-weight: bold;" target="_blank" href="{{$About->Fiveer_Link}}">mithun rana on Fiverr</a>
+                        <a style="color: white;font-weight: bold;text-transform: capitalize" target="_blank" target="_blank" href="{{$About->Dribble_Link}}">{{$About->Name}} on dribbble</a>
+                    </p>
+                </div>
+
+                <div class="col-sm-3">
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;text-transform: capitalize" target="_blank" target="_blank" href="{{$About->Vimeo_Link}}">{{$About->Name}} on Vimeo</a>
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;text-transform: capitalize" target="_blank" target="_blank" href="{{$About->Github_Link}}">{{$About->Name}} on Github</a>
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;text-transform: capitalize" target="_blank" target="_blank" href="{{$About->stackoverflow_link}}">{{$About->Name}} on Stackoverflow</a>
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <p style="background-color: #ff5722;border-radius: 3px;text-transform: capitalize;text-align: center;">
+                        <a style="color: white;font-weight: bold;text-transform: capitalize;" target="_blank" target="_blank" href="{{$About->Fiveer_Link}}">{{$About->Name}} on Fiverr</a>
                     </p>
                 </div>
             </div>

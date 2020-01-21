@@ -2458,7 +2458,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area .fullscreen {
-    height: 750px !important;
+    /*height:1500px !important;*/
 }
 
 .banner-left h6 {
