@@ -240,6 +240,13 @@
 
 <script>
     $(document).ready(function() {
+
+        $('#previousimage').attr('src','/'+'{{$Profile->profileImage1->imageurl}}');
+        $('#imagelocation').attr('value','/'+'{{$Profile->profileImage1->imageurl}}');
+        $('#getimageId').attr('value','{{$Profile->image1}}');
+        $('#getImageAltText').attr('value','{{$Profile->imageAltText}}');
+        $('#getImageTitleText').attr('value','{{$Profile->imageTitleText}}');
+
         $('#selectimagedata').click(function(){
             var imageid = $('#getimageId').val();
             var imagealttext = $('#getImageAltText').val();

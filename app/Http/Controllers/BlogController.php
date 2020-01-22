@@ -26,10 +26,11 @@ class BlogController extends Controller
     }
 
     public function blogByCategory($category){
+        $PopularPosts = Blog::where('Active_Status',1)->orderBy('id', 'ASC')->skip(0)->take(5)->get();
         $Category = Category::where('CategoryUrl',$category)->first();
         $Categories = Category::get();
         $Blogs =  Blog::where('category',$Category->id)->where('Active_Status',1)->orderBy('id', 'ASC')->get();
-        return view('UI.blog by category',compact('Blogs','Categories','Category'));
+        return view('UI.blog by category',compact('Blogs','Categories','Category','PopularPosts'));
     }
 
     public function create(){

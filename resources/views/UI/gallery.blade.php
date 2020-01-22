@@ -32,7 +32,7 @@
             @foreach($Galleries as $Gallery)
             <div style="margin-top: 10px;" class="col-sm-4 col-md-3 col-6">
                 <a data-magnify="gallery" href="{{asset('')}}{{$Gallery->images->imageurl}}" data-caption="hell world">
-                <img style="border-bottom-right-radius: 0rem;border-bottom-left-radius: 0rem;height: 200px;width: 100%;" src="/{{$Gallery->images->imageurl}}" alt="{{$Gallery->EventNameOFImage}}" title="{{$Gallery->EventNameOFImage}}" class="img-thumbnail">
+                <img style="border-bottom-right-radius: 0rem;border-bottom-left-radius: 0rem;height: 200px;width: 100%;" src="/{{$Gallery->images->imageurl}}" alt="{{$Gallery->imageAltText}}" title="{{$Gallery->imageTitleText}}" class="img-thumbnail">
                 </a>
                 <!--<p style="text-align: center;color:black;font-size: 16px;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;background-color: #e0e0e0;">{{$Gallery->EventNameOFImage}}</p>-->
             </div>

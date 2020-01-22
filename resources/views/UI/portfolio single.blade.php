@@ -16,7 +16,10 @@
                 <h1 style="font-size:32px" class="text-white">
                     {{$Portfolio->Portfolio_title}}
                 </h1>
-                <p class="text-white link-nav"><a href="{{asset('')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/portfolio/{{$Portfolio->permalink}}"> {{$Portfolio->Portfolio_title}}</a></p>
+                <p class="text-white link-nav">
+                    <a href="{{asset('')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>
+                    <a href="/portfolio/{{$Portfolio->permalink}}"> {{$Portfolio->Portfolio_title}}</a>
+                </p>
             </div>
         </div>
     </div>
@@ -27,7 +30,7 @@
     <div class="container">
         <div style="margin-top: 20px;" class="row">
             <div class="col-sm-8">
-                <img style="max-width: 100%;" src="/{{$Portfolio->featuredimage->imageurl}}">
+                <img style="max-width: 100%;" src="/{{$Portfolio->featuredimage->imageurl}}" alt="{{$Portfolio->FeaturedImageAltText}}" title="{{$Portfolio->FeaturedImageTitleText}}">
                 <div style="margin-top: 20px;" class="col-sm-12">
                     {!!html_entity_decode($Portfolio->OpenContent)!!}
                 </div>
@@ -42,7 +45,7 @@
                     <div class="col-md-6">
                         <div style="height: 120px;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);margin-top: 20px;">
                             <a href="{{asset('')}}portfolio/{{$Portfolio->permalink}}">
-                                <img style="max-width: 100%;max-height:100%;" src="/{{$Portfolio->featuredimage->imageurl}}">
+                                <img style="max-width: 100%;max-height:100%;" src="/{{$Portfolio->featuredimage->imageurl}}" alt="{{$Portfolio->FeaturedImageAltText}}" title="{{$Portfolio->FeaturedImageTitleText}}">
                             </a>
                         </div>
                     </div>

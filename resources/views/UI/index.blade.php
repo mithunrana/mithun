@@ -34,7 +34,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-6 banner-right d-flex align-self-end">
-                    <img class="img-fluid" @isset($about->profileImage1) src="/{{$about->profileImage1->imageurl}}" @endisset src="/images/default-image.png" alt="">
+                    <img style="margin-top: 10px;margin-bottom: 10px;" class="img-fluid" @isset($about->profileImage1) src="/{{$about->profileImage1->imageurl}}" @endisset src="/images/default-image.png" title="{{$about->imageTitleText}}" alt="{{$about->imageAltText}}">
                 </div>
             </div>
         </div>					
@@ -61,7 +61,11 @@
                     <div class="col-lg-4 col-md-6">
                         <div style="background-color:white;">
                                 <div class="single-services">
-                                <span style="background-color:#FF5722;color: white;padding: 15px;"  class="lnr"><a href="service/{{$service->permalink}}"><img src="{{$service->icon->imageurl}}" style="width:35px;height:35px;margin-bottom: 10px;"></a></span>
+                                <span style="background-color:#FF5722;color: white;padding: 15px;"  class="lnr">
+                                    <a href="service/{{$service->permalink}}">
+                                        <img src="{{$service->icon->imageurl}}" style="width:35px;height:35px;margin-bottom: 10px;" alt="{{$service->FeaturedImageAltText}}" title="{{$service->FeaturedImageTitleText}}">
+                                    </a>
+                                </span>
                                 <a  href="service/{{$service->permalink}}"><h4 style="color:#ff5722;">{{$service->service_title}}</h4></a>
                                 <p style="color:black;">
                                     {{str_limit($service->MainContent,100)}}
@@ -126,7 +130,7 @@
                                 <div class="relative">
                                     <div class="thumb">
                                         <a data-magnify="gallery" href="{{asset('')}}{{$portfolio->featuredimage->imageurl}}" data-caption="{{$portfolio->Portfolio_title}}">
-                                        <img style="height:250px;" class="image img-fluid" src="{{$portfolio->featuredimage->imageurl}}" alt="">
+                                        <img style="height:250px;" class="image img-fluid" src="{{$portfolio->featuredimage->imageurl}}" alt="{{$portfolio->FeaturedImageAltText}}" title="{{$portfolio->FeaturedImageTitleText}}">
                                         </a>
                                     </div>
                                 </div>
@@ -217,7 +221,9 @@
                 <div style="margin-top: 20px;" class="single-recent-blog col-lg-4 col-md-4">
                     <div class="thumb">
                        <!-- <img class="f-img img-fluid mx-auto" src="{{asset('UI')}}/img/b1.jpg" alt="">-->
-                       <a href="tutorial/{{$Blog->permalink}}"><img class="f-img img-fluid mx-auto" src="{{$thumbnail}}" alt=""></a>
+                       <a href="tutorial/{{$Blog->permalink}}">
+                           <img class="f-img img-fluid mx-auto" src="{{$thumbnail}}" alt="{{$Blog->imageAltText}}" title="{{$Blog->imageTitleText}}">
+                       </a>
                     </div>
                     <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
                         <div>

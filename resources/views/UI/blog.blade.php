@@ -4,6 +4,7 @@
     $description =  "Bangla video tutorial, web design bangla video tutorial, web development bangla video tutorial, seo bangla video tutorial, android apps development bangla video tutorial";
 @endphp
 
+
 @include('UI.inc.headersource');
 <body>	
     @include('UI.inc.menubar');
@@ -46,7 +47,7 @@
                                         <img style="max-height:350px;" class="content-image img-fluid d-block mx-auto" src="{{$thumbnail}}" alt="">
                                     </div>
                                     <div class="content-details">
-                                        <img  style="height:60px;width:60px;" src="{{asset('UI')}}/img/download.png">
+                                        <img  style="height:60px;width:60px;" src="{{asset('UI')}}/img/download.png" alt="{{$Blog->imageAltText}}" title="{{$Blog->imageTitleText}}">
                                     </div>
                                 </a>
                             </div>
@@ -70,7 +71,7 @@
                             <div class="content relative">
                                 <a href="tutorial/{{$Blog->permalink}}">
                                     <div class="thumb">
-                                        <img class="content-image img-fluid d-block mx-auto" src="{{$thumbnail}}" alt="">
+                                        <img class="content-image img-fluid d-block mx-auto" src="{{$thumbnail}}" alt="{{$FeatureVideo->imageAltText}}" title="{{$FeatureVideo->imageTitleText}}">
                                     </div>
                                 </a>
                                 <h2 style="padding:5px;font-size: 1.17em;font-family: Kiron, SolaimanLipi, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif !important;">
@@ -106,7 +107,7 @@
                                                 <div class="overlay overlay-bg"></div>
                                                 <a  href="{{url('tutorial',[$Blog->permalink])}}">
                                                     <div class="thumb">
-                                                       <img class="content-image img-fluid d-block mx-auto" src="{{$thumbnail}}" alt="">
+                                                       <img class="content-image img-fluid d-block mx-auto" src="{{$thumbnail}}" alt="{{$Blog->imageAltText}}" title="{{$Blog->imageTitleText}}">
                                                     </div>
                                                     <div class="content-details">
                                                         <img  style="height:40px;width:40px;" src="{{asset('UI')}}/img/download.png">
@@ -149,6 +150,7 @@
                         <div class="single-sidebar-widget ads-widget">
                             <a href="#"><img class="img-fluid" src="{{asset('UI')}}/img/blog/ads-banner.jpg" alt=""></a>
                         </div>
+
                         <div class="single-sidebar-widget popular-post-widget">
                             <h4 style="background-color: red;" class="popular-title">Popular Posts</h4>
                             <div class="popular-post-list">
@@ -160,7 +162,7 @@
                                     @endphp
                                 <div class="single-post-list d-flex flex-row align-items-center">
                                     <div class="thumb">
-                                        <img class="img-fluid" src="{{$thumbnail}}" alt="">
+                                        <img class="img-fluid" src="{{$thumbnail}}" alt="{{$PopularPost->imageAltText}}" title="{{$PopularPost->imageTitleText}}">
                                     </div>
                                     <div class="details">
                                         <h4 style="font-size:1.17em">

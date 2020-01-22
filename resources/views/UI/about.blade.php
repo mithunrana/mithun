@@ -9,29 +9,32 @@
 @include('UI.inc.headersource');
     <body>
         @include('UI.inc.menubar');
+
         <!-- start banner Area -->
-        <section class="about-banner">
-            <div class="container">				
+        <section class="relative about-banner">
+            <div class="overlay overlay-bg"></div>
+            <div class="container">
                 <div class="row d-flex align-items-center justify-content-center">
-                    <div style="margin-top: 0px;padding: 76px 0px" class="about-content col-lg-12">
+                    <div class="about-content col-lg-12">
                         <h1 style="font-size:32px" class="text-white">
                             About {{$Profile->Name}}
-                        </h1>	
+                        </h1>
                         <p class="text-white link-nav"><a href="{{asset('')}}">Home </a>
                             <span class="lnr lnr-arrow-right"></span>  <a href="{{url('about-mithun-rana')}}"> About Me</a>
                         </p>
-                    </div>	
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- End banner Area -->	
+        <!-- End banner Area -->
+
 
         <!-- Start home-about Area -->
         <section class="home-about-area section-gap">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-6 col-md-6 home-about-left">
-                        <img class="img-fluid" @isset($Profile->image2) src="/{{$Profile->profileImage2->imageurl}}" @endisset alt="">
+                        <img class="img-fluid" @isset($Profile->image2) src="/{{$Profile->profileImage2->imageurl}}" @endisset title="{{$Profile->imageTitleText}}" alt="{{$Profile->imageAltText}}">
                     </div>
                     <div class="col-lg-5 col-md-6 home-about-right">
                         <h6>About Me</h6>

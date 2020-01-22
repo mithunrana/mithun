@@ -150,7 +150,7 @@
                                                     <div class="contentEditableContainer contentImageEditable">
                                                         <div class="contentEditable" align='center'>
                                                             <div style="height:150px;width:150px;border-radius:50%;overflow:hidden;box-shadow: 0 1px 3px red;">
-                                                                <img src="http://www.mithunrana.com/images/mithun-rana.jpg" width="155" height="155"  alt='Logo'  data-default="placeholder" />
+                                                                <img src="https://www.mithunrana.com/images/mithun-rana.jpg" width="155" height="155"  alt='Logo'  data-default="placeholder" />
                                                             </div>
                                                         </div>
                                                     </div>

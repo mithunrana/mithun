@@ -74,6 +74,8 @@ class AboutController extends Controller {
             $Profile->Twitter_Link = $request->Twitter_Link;
             $Profile->image1 = $request->image1;
             $Profile->image2 = $request->image2;
+            $Profile->imageAltText = $request->imageAltText;
+            $Profile->imageTitleText = $request->imageTitleText;
             $Profile->Linkedin_Link = $request->Linkedin_Link;
             $Profile->Fiveer_Link = $request->Fiveer_Link;
             $Profile->Upwork_Link = $request->Upwork_Link;
@@ -108,6 +110,8 @@ class AboutController extends Controller {
             $Profile->Twitter_Link = $request->Twitter_Link;
             $Profile->image1 = $request->image1;
             $Profile->image2 = $request->image2;
+            $Profile->imageAltText = $request->imageAltText;
+            $Profile->imageTitleText = $request->imageTitleText;
             $Profile->Linkedin_Link = $request->Linkedin_Link;
             $Profile->Fiveer_Link = $request->Fiveer_Link;
             $Profile->Upwork_Link = $request->Upwork_Link;

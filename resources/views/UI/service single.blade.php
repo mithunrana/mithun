@@ -28,7 +28,7 @@
     <div class="container">
         <div style="margin-top: 20px;" class="row">
             <div class="col-sm-5">
-                <img style="max-width: 100%;" src="/{{$Service->featuredimage->imageurl}}">
+                <img style="max-width: 100%;" src="/{{$Service->featuredimage->imageurl}}" alt="{{$Service->FeaturedImageAltText}}" title="{{$Service->FeaturedImageTitleText}}">
                 <p style="color:red;font-weight: bold;font-size: 21px;">Feel Free To Contact With Me. 01836375309</p>
             </div>
             <div class="col-sm-7">
@@ -50,7 +50,7 @@
             @foreach($Portfolios as $Portfolio)
             <div class="col-sm-4">
                 <div style="border-radius: 5px; overflow: hidden;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);" class="shocasemain">
-                    <img width="100%;" height="250px"; src="/{{$Portfolio->featuredimage->imageurl}}">
+                    <img width="100%;" height="250px"; src="/{{$Portfolio->featuredimage->imageurl}}" alt="{{$Portfolio->FeaturedImageAltText}}" title="{{$Portfolio->FeaturedImageTitleText}}">
                     <h3 style="font-size:1.1rem;padding:10px;"><a style="color:black;" href="{{asset('')}}portfolio/{{$Portfolio->permalink}}">{{$Portfolio->Portfolio_title}}</a></h3>
                 </div>
             </div>

@@ -21,7 +21,7 @@ Route::get('login', 'UIHomeController@login')->name('login');
 
 //========Get Location By Ip Address========//
 Route::get('get-ip-details', function () {
-    $ip = '27.147.169.66';
+    $ip = '103.88.24.19';
     $data = \Location::get($ip);
     dd($data);
 });

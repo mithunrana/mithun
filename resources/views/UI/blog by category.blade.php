@@ -46,7 +46,7 @@
                                             <div class="overlay overlay-bg"></div>
                                             <a href="{{url('tutorial',[$Blog->permalink])}}" >
                                                 <div class="thumb">
-                                                    <img class="content-image img-fluid d-block mx-auto" src="{{$thumbnail}}" alt="">
+                                                    <img class="content-image img-fluid d-block mx-auto" src="{{$thumbnail}}" alt="{{$Blog->imageAltText}}" title="{{$Blog->imageTitleText}}">
                                                 </div>
                                                 <div class="content-details">
                                                     <img  style="height:40px;width:40px;" src="{{asset('UI')}}/img/download.png">
@@ -88,45 +88,28 @@
                     <div class="single-sidebar-widget ads-widget">
                         <a href="#"><img class="img-fluid" src="{{asset('UI')}}/img/blog/ads-banner.jpg" alt=""></a>
                     </div>
+
                     <div class="single-sidebar-widget popular-post-widget">
                         <h4 style="background-color: red;" class="popular-title">Popular Posts</h4>
                         <div class="popular-post-list">
-                            <div class="single-post-list d-flex flex-row align-items-center">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp1.jpg" alt="">
+                            @foreach($PopularPosts as $PopularPost)
+                                @php
+                                    $video_id = explode("?v=", $PopularPost->video_url);
+                                    $video_id = $video_id[1];
+                                    $thumbnail="http://img.youtube.com/vi/".$video_id."/mqdefault.jpg";
+                                @endphp
+                                <div class="single-post-list d-flex flex-row align-items-center">
+                                    <div class="thumb">
+                                        <img class="img-fluid" src="{{$thumbnail}}" alt="{{$PopularPost->imageAltText}}" title="{{$PopularPost->imageTitleText}}">
+                                    </div>
+                                    <div class="details">
+                                        <h4 style="font-size:1.17em">
+                                            <a style="color:black;" href="{{url('tutorial',[$PopularPost->permalink])}}" style="text-decoration: none;font-size: 18px;text-align: left;">{{str_limit($PopularPost->blog_title,45)}}</a>
+                                        </h4>
+                                        <p>{{$PopularPost->created_at->diffForHumans()}}</p>
+                                    </div>
                                 </div>
-                                <div class="details">
-                                    <a href="blog-single.html"><h6>Space The Final Frontier</h6></a>
-                                    <p>02 Hours ago</p>
-                                </div>
-                            </div>
-                            <div class="single-post-list d-flex flex-row align-items-center">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp2.jpg" alt="">
-                                </div>
-                                <div class="details">
-                                    <a href="blog-single.html"><h6>The Amazing Hubble</h6></a>
-                                    <p>02 Hours ago</p>
-                                </div>
-                            </div>
-                            <div class="single-post-list d-flex flex-row align-items-center">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp3.jpg" alt="">
-                                </div>
-                                <div class="details">
-                                    <a href="blog-single.html"><h6>Astronomy Or Astrology</h6></a>
-                                    <p>02 Hours ago</p>
-                                </div>
-                            </div>
-                            <div class="single-post-list d-flex flex-row align-items-center">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('UI')}}/img/blog/pp4.jpg" alt="">
-                                </div>
-                                <div class="details">
-                                    <a href="blog-single.html"><h6>Asteroids telescope</h6></a>
-                                    <p>02 Hours ago</p>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>

@@ -90,7 +90,7 @@ $image = $BlogDetails->featuredimage->imageurl;
                                         @endphp
                                         <div class="single-post-list d-flex flex-row align-items-center">
                                             <div class="thumb">
-                                                <img class="img-fluid" src="{{$thumbnail}}" alt="">
+                                                <img class="img-fluid" src="{{$thumbnail}}" alt="{{$PopularPost->imageAltText}}" title="{{$PopularPost->imageTitleText}}">
                                             </div>
                                             <div class="details">
                                                 <h4 style="font-size:1.17em">

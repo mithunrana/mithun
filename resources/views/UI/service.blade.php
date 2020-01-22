@@ -45,7 +45,7 @@
                         <div style="box-shadow: 0 1px 3px white;overflow: hidden;border-radius: 5px;background-color: white;" class="con-section">
                             <div style="max-width: 360px;" class="featured-image">
                                 <a href="{{asset('')}}service/{{$service->permalink}}">
-                                <img style="width: 100%;height:230px" src="/{{$service->featuredimage->imageurl}}">
+                                <img style="width: 100%;height:230px" src="/{{$service->featuredimage->imageurl}}" alt="{{$service->FeaturedImageAltText}}" title="{{$service->FeaturedImageTitleText}}">
                                 </a>
                             </div>
                             <div class="service-name">

@@ -150,7 +150,7 @@
                                                     <div class="contentEditableContainer contentImageEditable">
                                                         <div class="contentEditable" align='center'>
                                                             <div style="height:150px;width:150px;border-radius:50%;overflow:hidden;box-shadow: 0 1px 3px red;">
-                                                                <img src="http://www.mithunrana.com/images/mithun-rana.jpg" width="155" height="155"  alt='Logo'  data-default="placeholder" />
+                                                                <img src="https://www.mithunrana.com/images/mithun-rana.jpg" width="155" height="155"  alt='Logo'  data-default="placeholder" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -251,7 +251,7 @@
                                                                 <div class="contentEditableContainer contentTwitterEditable" style='display:inline;'>
                                                                     <div class="contentEditable" >
                                                                         <a target='_blank' href="https://twitter.com/mdmithun_rana" data-default="placeholder"  style="text-decoration:none;">
-                                                                            <img src="https://www.mithunrana.com/images/twitter.png" data-default="placeholder" data-max-width='30' data-customIcon="true" width='30' height='30' alt='twitter' style='margin-right:40x;'>
+                                                                            <img src="https://mithunrana.com/images/twitter.png" data-default="placeholder" data-max-width='30' data-customIcon="true" width='30' height='30' alt='twitter' style='margin-right:40x;'>
                                                                         </a>
                                                                     </div>
                                                                 </div>
@@ -260,7 +260,7 @@
                                                                 <div class="contentEditableContainer contentImageEditable" style='display:inline;'>
                                                                     <div class="contentEditable" >
                                                                         <a target='_blank' href="https://www.pinterest.com/mithun_rana/" data-default="placeholder"  style="text-decoration:none;">
-                                                                            <img src="https://www.mithunrana.com/images/pinterest.png" width="30" height="30" data-max-width="30" alt='pinterest' style='margin-right:40x;' />
+                                                                            <img src="https://mithunrana.com/images/pinterest.png" width="30" height="30" data-max-width="30" alt='pinterest' style='margin-right:40x;' />
                                                                         </a>
                                                                     </div>
                                                                 </div>
