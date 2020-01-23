@@ -4,6 +4,7 @@
         <!-- Mobile Specific Meta  Sart-->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta charset="UTF-8">
+        <meta name="p:domain_verify" content="655f6b3c3ad92fc46bd1e0cfd26158ab"/>
         <!-- Mobile Specific Meta  Sart-->
 
         <!-- Favicon Start-->
