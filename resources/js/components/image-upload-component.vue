@@ -44,7 +44,7 @@
                                                         <form action="">
                                                             <div style="margin-bottom:2px;" class="form-group">
                                                                 <label for="imagelocation">Image Location:</label>
-                                                                <input type="text" v-model="imageData.imageurl" class="form-control" id="imagelocation">
+                                                                <input type="text" v-model="imageData.imageurl" class="form-control" autocomplete="off" id="imagelocation">
                                                             </div>
                                                             <div style="margin-bottom:2px;" class="form-group">
                                                                 <label for="getImageAltText">Image Alt:</label>

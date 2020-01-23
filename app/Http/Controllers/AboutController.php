@@ -63,7 +63,7 @@ class AboutController extends Controller {
             $Profile->TotalSkillOfWork = $request->TotalSkillOfWork;
             $Profile->ShortBrief = $request->ShortBrief;
             $Profile->Details = $request->Details;
-            $Profile->Download_link = $request->Download_link;
+            $Profile->Discover_link = $request->Discover_link;
             $Profile->Email1 = $request->Email1;
             $Profile->Email2 = $request->Email2;
             $Profile->Phone1 = $request->Phone1;

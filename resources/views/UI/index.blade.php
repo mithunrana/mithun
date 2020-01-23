@@ -23,7 +23,7 @@
                     <p>
                         {{$about->ShortBrief}}
                     </p>
-                    <a style="margin:5px 0px;" href="{{	$about->Discover_link}}" class="primary-btn text-uppercase">discover now</a>
+                    <a style="margin:5px 0px;" href="{{asset('')}}{{$about->Discover_link}}" class="primary-btn text-uppercase">discover now</a>
                     <a style="margin:5px 0px;" href="{{asset('documents')}}/{{$about->Download_link}}" class="primary-btn text-uppercase" download>Download Resume</a>
                     <ul style="margin-top: 10px;">
                         <li style="list-style:none;display: inline-block;margin: 0 3px;"><a target="_blank" href="{{$about->Facebook_Link}}"><i id="icon-design" class="fa fa-facebook"></i></a></li>

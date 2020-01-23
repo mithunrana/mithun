@@ -213,7 +213,7 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="Details">Details:</label>
-                                <textarea type="text" rows="6" class="form-control" name="Details" id="Details"></textarea>
+                                <textarea type="text" rows="6" class="form-control" name="Details" id="Details">@isset($Profile->Details){{$Profile->Details}}@endisset</textarea>
                             </div>
                         </div>
                     </div>

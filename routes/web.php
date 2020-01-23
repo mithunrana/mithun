@@ -36,7 +36,7 @@ Route::get('/expertnesslist','AdminController@generatePdf')->middleware(['auth']
 
 
 //=========================ADMIN SITE REQUEST START HERE ========================//
-Route::get('/admin-panel','AdminController@index');
+Route::get('/admin-panel','AdminController@index')->middleware(['auth']);
 Route::get('/category','CategoryController@index')->middleware(['auth']);
 Route::post('/categorysave','CategoryController@store')->middleware(['auth']);
 Route::get('/getall-category','CategoryController@getAll')->middleware(['auth']);

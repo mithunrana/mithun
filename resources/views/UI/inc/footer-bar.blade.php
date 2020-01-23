@@ -9,7 +9,7 @@
                             more i have some skill in Graphics Design, search engine optimization(SEO, Digital Marketing, and something video editing
                         </p>
                         <p class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Mithun Rana. Copyright @ 2019. All Rights Reserved.<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.mithunrana.com" target="_blank">mithunrana</a>
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Mithun Rana All Rights Reserved. <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="{{asset('')}}" >mithunrana</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
                 </div>
