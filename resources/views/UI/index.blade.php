@@ -34,7 +34,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-6 banner-right d-flex align-self-end">
-                    <img style="margin-top: 10px;margin-bottom: 10px;" class="img-fluid" @isset($about->profileImage1) src="/{{$about->profileImage1->imageurl}}" @endisset src="/images/default-image.png" title="{{$about->imageTitleText}}" alt="{{$about->imageAltText}}">
+                    <img style="margin-top: 10px;margin-bottom: 10px;" class="img-fluid" @isset($about->profileImage1) src="{{asset('')}}{{$about->profileImage1->imageurl}}" @endisset src="/images/default-image.png" title="{{$about->imageTitleText}}" alt="{{$about->imageAltText}}">
                 </div>
             </div>
         </div>					
@@ -63,7 +63,7 @@
                                 <div class="single-services">
                                 <span style="background-color:#FF5722;color: white;padding: 15px;"  class="lnr">
                                     <a href="service/{{$service->permalink}}">
-                                        <img src="{{$service->icon->imageurl}}" style="width:35px;height:35px;margin-bottom: 10px;" alt="{{$service->FeaturedImageAltText}}" title="{{$service->FeaturedImageTitleText}}">
+                                        <img src="{{asset('')}}{{$service->icon->imageurl}}" style="width:35px;height:35px;margin-bottom: 10px;" alt="{{$service->FeaturedImageAltText}}" title="{{$service->FeaturedImageTitleText}}">
                                     </a>
                                 </span>
                                 <a  href="service/{{$service->permalink}}"><h4 style="color:#ff5722;">{{$service->service_title}}</h4></a>
@@ -130,7 +130,7 @@
                                 <div class="relative">
                                     <div class="thumb">
                                         <a data-magnify="gallery" href="{{asset('')}}{{$portfolio->featuredimage->imageurl}}" data-caption="{{$portfolio->Portfolio_title}}">
-                                        <img style="height:250px;" class="image img-fluid" src="{{$portfolio->featuredimage->imageurl}}" alt="{{$portfolio->FeaturedImageAltText}}" title="{{$portfolio->FeaturedImageTitleText}}">
+                                        <img style="height:250px;" class="image img-fluid" src="{{asset('')}}{{$portfolio->featuredimage->imageurl}}" alt="{{$portfolio->FeaturedImageAltText}}" title="{{$portfolio->FeaturedImageTitleText}}">
                                         </a>
                                     </div>
                                 </div>

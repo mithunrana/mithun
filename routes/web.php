@@ -14,6 +14,7 @@ Route::get('/bangla-video-tutorial','BlogController@index');
 Route::get('/tutorial/{url}','BlogController@blogByUrl');
 Route::get('/mithunrana-image-gallery','GalleryController@index');
 Route::get('/admin-login','UIHomeController@login');
+Route::get('/privacy-policy','PrivacyPolicyController@index');
 Auth::routes(['register' => false]);
 Route::get('login', 'UIHomeController@login')->name('login');
 //=========================USER SITE REQUEST END HERE ========================//
@@ -121,6 +122,15 @@ Route::post('/gallery-store','GalleryController@store')->middleware(['auth']);
 Route::get('/gallery-delete/{id}','GalleryController@delete')->middleware(['auth']);
 Route::get('/setting/','AdminController@passwordUpdate')->middleware(['auth']);
 Route::post('/update-password/','AdminController@updatePassword')->middleware(['auth']);
+
+
+Route::get('/manage-privacy-policy','PrivacyPolicyController@privacyPolicyManage')->middleware(['auth']);
+Route::get('/add-privacy-policy','PrivacyPolicyController@add')->middleware(['auth']);
+Route::post('/store-privacy-policy','PrivacyPolicyController@store')->middleware(['auth']);
+Route::get('/edit-privacy-policy/{id}','PrivacyPolicyController@edit')->middleware(['auth']);
+Route::post('/update-privacy-policy/{id}','PrivacyPolicyController@update')->middleware(['auth']);
+Route::get('/delete-privacy-policy/{id}','PrivacyPolicyController@delete')->middleware(['auth']);
+Route::get('/active-deactive-privacy-policy/{id}/{activestaus}','PrivacyPolicyController@activeDeactive')->middleware(['auth']);
 
 
 Route::get('/getallimage','ImageUploadController@imagelist')->middleware(['auth']);

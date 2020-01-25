@@ -20,15 +20,26 @@ class AdminController extends Controller
    }
 
     public function passwordUpdate(){
-        return view('Admin.setting');
+        $id = auth()->id();
+        $User = User::where('id',$id)->first();
+        return view('Admin.setting',compact('User'));
     }
 
     public function updatePassword(Request $request){
-       $id =  auth()->id();
-       $User =  User::findOrFail($id);
-        $User->password = Hash::make($request->password);
-        $User->save();
-        return redirect()->to('admin-panel')->with('message','Password Update Successfully');
+        $id =  auth()->id();
+        $User =  User::findOrFail($id);
+        if($request->password==''){
+            $User->name = $request->name;
+            $User->email = $request->email;
+            $User->save();
+            return redirect()->to('admin-panel')->with('message','Information Update Successfully');
+        }else{
+            $User->password = Hash::make($request->password);
+            $User->name = $request->name;
+            $User->email = $request->email;
+            $User->save();
+            return redirect()->to('admin-panel')->with('message','Information Update Successfully');
+        }
     }
 
     public function sendMail(Request $request){

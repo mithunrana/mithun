@@ -76,6 +76,12 @@
           </a>
         </li>
         <li>
+          <a href="{{url('manage-privacy-policy')}}">
+            <i class="fa fa-info"></i>
+            <span>Privacy Policy</span>
+          </a>
+        </li>
+        <li>
           <a href="{{url('manage-gallery')}}">
             <i class="fa fa-file-image-o"></i>
             <span>Gallery</span>

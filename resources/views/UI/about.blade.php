@@ -34,7 +34,7 @@
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-6 col-md-6 home-about-left">
-                        <img class="img-fluid" @isset($Profile->image2) src="/{{$Profile->profileImage2->imageurl}}" @endisset title="{{$Profile->imageTitleText}}" alt="{{$Profile->imageAltText}}">
+                        <img class="img-fluid" @isset($Profile->image2) src="{{asset('')}}{{$Profile->profileImage2->imageurl}}" @endisset title="{{$Profile->imageTitleText}}" alt="{{$Profile->imageAltText}}">
                     </div>
                     <div class="col-lg-5 col-md-6 home-about-right">
                         <h6>About Me</h6>
@@ -66,6 +66,7 @@
             </div>	
         </section>
         <!-- End home-about Area -->	
+
 
         <!-- Start timeline Area -->
         <section class="timeline pb-120">

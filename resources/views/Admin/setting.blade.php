@@ -35,9 +35,17 @@
                                 @csrf
                                 <div class="form-group">
                                     <label for="password">New Password</label>
-                                    <input type="text" class="form-control" name="password" id="password">
+                                    <input type="text" class="form-control" name="password" value="" id="password">
                                 </div>
-                                <button type="submit" class="btn btn-info">Update Password</button>
+                                <div class="form-group">
+                                    <label for="name">Name :</label>
+                                    <input type="text" class="form-control" name="name" value="{{$User->name}}" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email :</label>
+                                    <input type="text" class="form-control" name="email" value="{{$User->email}}" id="email">
+                                </div>
+                                <button type="submit" class="btn btn-info">Update Info</button>
                             </form>
                         </div>
                     </div>
