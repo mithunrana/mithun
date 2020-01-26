@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a215687a-b125-41dd-8599-63d499aac5f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/UI/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/blog by category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/blog by category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/blogView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/blogView.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Products View.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Products View.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../soshinebd/inc/Admin Panel/footer-source-file.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/inc/Admin Panel/footer-source-file.php" afterDir="false" />
@@ -30,29 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/UI/contact.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="72" column="114" selection-start-line="72" selection-start-column="114" selection-end-line="72" selection-end-column="114" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
+            <state relative-caret-position="1949">
               <caret line="134" column="18" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -110,8 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/UI/inc/footer-bar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/UI/blog.blade.php" />
         <option value="$PROJECT_DIR$/public/UI/css/main.css" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
         <option value="$PROJECT_DIR$/resources/views/Admin/inc/adminHeader.blade.php" />
@@ -153,14 +134,16 @@
         <option value="$PROJECT_DIR$/resources/js/components/image-upload-component.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/portfolio category component.vue" />
         <option value="$PROJECT_DIR$/resources/views/Admin/inc/adminSideBar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/UI/blog by category.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/UI/inc/menubar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/UI/inc/headersource.blade.php" />
         <option value="$PROJECT_DIR$/public/robots.txt" />
-        <option value="$PROJECT_DIR$/resources/views/UI/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/UI/contact.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/blogView.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/blog by category.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/blog.blade.php" />
       </list>
     </option>
   </component>
@@ -259,7 +242,7 @@
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-16" />
     <option name="y" value="225" />
     <option name="width" value="1400" />
@@ -407,15 +390,15 @@
       <workItem from="1579880647972" duration="13704000" />
       <workItem from="1579951504055" duration="4434000" />
       <workItem from="1580016901334" duration="13953000" />
-      <workItem from="1580037235552" duration="465000" />
+      <workItem from="1580037235552" duration="2334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="359739000" />
+    <option name="totallyTimeSpent" value="361608000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.19669509" />
@@ -527,20 +510,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/comment-edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-395">
-          <caret line="32" column="79" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/expertness add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Admin/expertness edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -834,24 +803,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/blog by category.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/robots.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -872,9 +827,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/blog.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1683">
+          <caret line="99" column="57" selection-start-line="99" selection-start-column="57" selection-end-line="99" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/blog by category.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="98" column="53" selection-start-line="98" selection-start-column="53" selection-end-line="98" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/blogView.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="88" column="61" selection-start-line="88" selection-start-column="61" selection-end-line="88" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="217" column="36" selection-start-line="217" selection-start-column="31" selection-end-line="217" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
+        <state relative-caret-position="1949">
           <caret line="134" column="18" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
         </state>
       </provider>

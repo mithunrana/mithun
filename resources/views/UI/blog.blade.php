@@ -36,7 +36,7 @@
                         @php
                             $video_id = explode("?v=", $Blog->video_url);
                             $video_id = $video_id[1];
-                            $thumbnail="http://img.youtube.com/vi/".$video_id."/mqdefault.jpg";
+                            $thumbnail="https://img.youtube.com/vi/".$video_id."/mqdefault.jpg";
                         @endphp
                         <div style="background-color: #d8d8d8">
                         <div style="text-align:center;" class="single-cat-widget">
@@ -97,7 +97,7 @@
                                     @php
                                         $video_id = explode("?v=", $Blog->video_url);
                                         $video_id = $video_id[1];
-                                        $thumbnail="http://img.youtube.com/vi/".$video_id."/mqdefault.jpg";
+                                        $thumbnail="https://img.youtube.com/vi/".$video_id."/mqdefault.jpg";
                                     @endphp
                                 <div style="margin-top:20px;" class="col-lg-4 col-6">
                                     <div style="background-color: #d8d8d8;">

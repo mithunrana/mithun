@@ -215,7 +215,7 @@
                 @php
                    $video_id = explode("?v=", $Blog->video_url);
                    $video_id = $video_id[1];
-                   $thumbnail="http://img.youtube.com/vi/".$video_id."/mqdefault.jpg";
+                   $thumbnail="https://img.youtube.com/vi/".$video_id."/mqdefault.jpg";
                 @endphp
 
                 <div style="margin-top: 20px;" class="single-recent-blog col-lg-4 col-md-4">

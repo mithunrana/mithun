@@ -86,7 +86,7 @@ $image = $BlogDetails->featuredimage->imageurl;
                                         @php
                                             $video_id = explode("?v=", $PopularPost->video_url);
                                             $video_id = $video_id[1];
-                                            $thumbnail="http://img.youtube.com/vi/".$video_id."/mqdefault.jpg";
+                                            $thumbnail="https://img.youtube.com/vi/".$video_id."/mqdefault.jpg";
                                         @endphp
                                         <div class="single-post-list d-flex flex-row align-items-center">
                                             <div class="thumb">
