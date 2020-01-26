@@ -36,7 +36,7 @@ class ServiceController extends Controller
             'featured_image' => 'required',
         ]);
         Service::create($request->all());
-        return redirect()->to('service-manage')->with('message','Service Update Successfully');
+        return redirect()->to('admin/service-manage')->with('message','Service Update Successfully');
     }
 
     public function serviceManage(){
@@ -62,14 +62,14 @@ class ServiceController extends Controller
         $Service->MainContent = request('MainContent');
         $Service->OpenContent = request('OpenContent');
         $Service->save();
-        return redirect()->to('service-manage')->with('message','Service Update Successfully');
+        return redirect()->to('admin/service-manage')->with('message','Service Update Successfully');
     }
 
 
     public function delete($id){
         $Qualification = Service::find($id);
         $Qualification->delete();
-        return redirect()->to('service-manage')->with('message','Service delete Successfully');
+        return redirect()->to('admin/service-manage')->with('message','Service delete Successfully');
     }
 
     public function activeDeactive($status,$serviceId){
@@ -79,12 +79,12 @@ class ServiceController extends Controller
             $Portfolio =  Service::findOrFail($portfolioId);
             $Portfolio->Active_Status = '1';
             $Portfolio->save();
-            return redirect()->to('service-manage')->with('message','Service Active Successfully');
+            return redirect()->to('admin/service-manage')->with('message','Service Active Successfully');
         }else{
             $Portfolio =  Service::findOrFail($portfolioId);
             $Portfolio->Active_Status = '0';
             $Portfolio->save();
-            return redirect()->to('service-manage')->with('message','Service Deactive Successfully');
+            return redirect()->to('admin/service-manage')->with('message','Service Deactive Successfully');
         }
     }
 }

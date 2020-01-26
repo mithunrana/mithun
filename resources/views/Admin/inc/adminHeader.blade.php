@@ -35,7 +35,7 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="{{url('profile-update')}}" class="btn btn-default btn-flat">Profile</a>
+                  <a href="{{url('admin/profile-update')}}" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
                   <a class="dropdown-item btn btn-danger"  href="{{ route('logout') }}"

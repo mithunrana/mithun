@@ -3625,12 +3625,12 @@ dl.accordion.time-line:before {
 }
 
 .sidebar-widgets {
-    padding-bottom: 120px;
+    padding-bottom: 10px;
 }
 
 .widget-wrap {
     background: #fafaff;
-    padding: 20px 0px;
+    padding: 0px 0px;
     border: 1px solid #eee;
 }
 
@@ -3641,7 +3641,7 @@ dl.accordion.time-line:before {
 }
 
 .widget-wrap .single-sidebar-widget {
-    margin: 30px 30px;
+    margin: 1px 10px;
     padding-bottom: 30px;
     border-bottom: 1px solid #eee;
 }

@@ -8,7 +8,7 @@
         <!-- Mobile Specific Meta  Sart-->
 
         <!-- Favicon Start-->
-        <link rel="shortcut icon" href="img/fav.png">
+        <link rel="shortcut icon" href="{{asset('')}}images/mithun-rana-icon.png">
         <!-- Favicon End-->
 
 

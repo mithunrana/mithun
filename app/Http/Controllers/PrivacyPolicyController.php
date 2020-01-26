@@ -27,7 +27,7 @@ class PrivacyPolicyController extends Controller
             'PrivacyPolicyContent' => 'required',
         ]);
         PrivacyPolicyModel::Create($request->all());
-        return redirect()->to('manage-privacy-policy')->with('message','Privacy Policy Added Successfully');
+        return redirect()->to('admin/manage-privacy-policy')->with('message','Privacy Policy Added Successfully');
     }
 
     public function edit($id){
@@ -44,13 +44,13 @@ class PrivacyPolicyController extends Controller
         $PrivacyPolicy->PrivacyPolicyTitle = $request->PrivacyPolicyTitle;
         $PrivacyPolicy->PrivacyPolicyContent = $request->PrivacyPolicyContent;
         $PrivacyPolicy->save();
-        return redirect()->to('manage-privacy-policy')->with('message','Privacy Policy Update Successfully');
+        return redirect()->to('admin/manage-privacy-policy')->with('message','Privacy Policy Update Successfully');
     }
 
     public function delete($id){
         $PrivacyPolicy = PrivacyPolicyModel::find($id);
         $PrivacyPolicy->delete();
-        return redirect()->to('manage-privacy-policy')->with('message','Privacy Policy Delete Successfully');
+        return redirect()->to('admin/manage-privacy-policy')->with('message','Privacy Policy Delete Successfully');
         return view('Admin.');
     }
 
@@ -61,12 +61,12 @@ class PrivacyPolicyController extends Controller
             $PrivacyPolicy =  PrivacyPolicyModel::findOrFail($PrivacyId);
             $PrivacyPolicy->Active_Status = '1';
             $PrivacyPolicy->save();
-            return redirect()->to('manage-privacy-policy')->with('message','Privacy Active Successfully');
+            return redirect()->to('admin/manage-privacy-policy')->with('message','Privacy Active Successfully');
         }else{
             $PrivacyPolicy =  PrivacyPolicyModel::findOrFail($PrivacyId);
             $PrivacyPolicy->Active_Status = '0';
             $PrivacyPolicy->save();
-            return redirect()->to('manage-privacy-policy')->with('message','Privacy Deactive Successfully');
+            return redirect()->to('admin/manage-privacy-policy')->with('message','Privacy Deactive Successfully');
         }
     }
 }

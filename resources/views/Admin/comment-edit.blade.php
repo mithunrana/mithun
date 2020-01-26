@@ -30,7 +30,7 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">
-                            <form class="form-horizontal" action="{{url('comment-update',[$Comment->id])}}" method="post">
+                            <form class="form-horizontal" action="{{url('admin/comment-update',[$Comment->id])}}" method="post">
                                 @csrf
                                 <div class="col-sm-12">
                                     <div class="row">

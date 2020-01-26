@@ -36,7 +36,7 @@
                         <div class="icon">
                             <i style="font-size: 40px;" class="fa fa-address-book"></i>
                         </div>
-                        <a href="{{url('blog-manage')}}" class="small-box-footer">Manage Blog Tutorial<i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{url('admin/blog-manage')}}" class="small-box-footer">Manage Blog Tutorial<i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
@@ -49,7 +49,7 @@
                         <div class="icon">
                             <i style="font-size: 40px;" class="fa fa-address-book-o"></i>
                         </div>
-                        <a href="{{url('portfolio-manage')}}" class="small-box-footer">Manage Portfolio<i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{url('admin/portfolio-manage')}}" class="small-box-footer">Manage Portfolio<i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
@@ -62,7 +62,7 @@
                         <div class="icon">
                             <i style="font-size: 40px;" class="fa fa-address-card-o"></i>
                         </div>
-                        <a href="{{url('service-manage')}}" class="small-box-footer">Service Manage<i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{url('admin/service-manage')}}" class="small-box-footer">Service Manage<i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
@@ -75,7 +75,7 @@
                         <div class="icon">
                             <i style="font-size: 40px;" class="fa fa-address-card"></i>
                         </div>
-                        <a href="{{url('manage-qualification')}}" class="small-box-footer">Manage Qualification<i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{url('admin/manage-qualification')}}" class="small-box-footer">Manage Qualification<i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
@@ -88,7 +88,7 @@
                         <div class="icon">
                             <i style="font-size: 40px;" class="fa fa-address-card"></i>
                         </div>
-                        <a href="{{url('manage-expertness')}}" class="small-box-footer">Manage Expertness<i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{url('admin/manage-expertness')}}" class="small-box-footer">Manage Expertness<i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
@@ -101,7 +101,7 @@
                         <div class="icon">
                             <i style="font-size: 40px;" class="fa fa-address-card"></i>
                         </div>
-                        <a href="{{url('manage-comment')}}" class="small-box-footer">Manage Comment<i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{url('admin/manage-comment')}}" class="small-box-footer">Manage Comment<i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
@@ -114,7 +114,7 @@
                         <div class="icon">
                             <i style="font-size: 40px;" class="fa fa-address-card"></i>
                         </div>
-                        <a href="{{url('manage-comment')}}" class="small-box-footer">Manage Comment<i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{url('admin/manage-comment')}}" class="small-box-footer">Manage Comment<i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
             </div>

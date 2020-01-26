@@ -35,7 +35,7 @@ class PortfolioController extends Controller
             'featured_image' => 'required',
         ]);
      Portfolio::Create($request->all());
-     return redirect()->to('portfolio-manage')->with('message','Portfolio Delete Successfully');
+     return redirect()->to('admin/portfolio-manage')->with('message','Portfolio Delete Successfully');
     }
 
     public function portfolioManage(){
@@ -63,14 +63,14 @@ class PortfolioController extends Controller
         $Portfolio->MainContent = request('MainContent');
         $Portfolio->OpenContent = request('OpenContent');
         $Portfolio->save();
-        return redirect()->to('portfolio-manage')->with('message','Portfolio Update Successfully');
+        return redirect()->to('admin/portfolio-manage')->with('message','Portfolio Update Successfully');
     }
 
 
     public function portfolioDelete($id){
         $Portfolio = Portfolio::find($id);
         $Portfolio->delete();
-        return redirect()->to('portfolio-manage')->with('message','Portfolio delete Successfully');
+        return redirect()->to('admin/portfolio-manage')->with('message','Portfolio delete Successfully');
     }
 
     public function portfolioActiveDeactive($id,$portfolioid){
@@ -80,18 +80,18 @@ class PortfolioController extends Controller
             $Portfolio =  Portfolio::findOrFail($portfolioId);
             $CategoryId = $Portfolio->category;
             if($CategoryId==0){
-                return redirect()->to('portfolio-manage')->with('message','Please Set Before Active Category');
+                return redirect()->to('admin/portfolio-manage')->with('message','Please Set Before Active Category');
             }else{
                 $Portfolio =  Portfolio::findOrFail($portfolioId);
                 $Portfolio->Active_Status = '1';
                 $Portfolio->save();
-                return redirect()->to('portfolio-manage')->with('message','Portfolio Active Successfully');
+                return redirect()->to('admin/portfolio-manage')->with('message','Portfolio Active Successfully');
             }
         }else{
             $Portfolio =  Portfolio::findOrFail($portfolioId);
             $Portfolio->Active_Status = '0';
             $Portfolio->save();
-            return redirect()->to('portfolio-manage')->with('message','Portfolio Deactive Successfully');
+            return redirect()->to('admin/portfolio-manage')->with('message','Portfolio Deactive Successfully');
         }
     }
 

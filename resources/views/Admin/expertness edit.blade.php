@@ -24,7 +24,7 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">
-                            <form method="post" action="{{url('update-expertness',[$Expertness->id])}}">
+                            <form method="post" action="{{url('admin/update-expertness',[$Expertness->id])}}">
                                 @csrf
                                 @if($errors->has('Name'))
                                     <div class="error" style="color: red">

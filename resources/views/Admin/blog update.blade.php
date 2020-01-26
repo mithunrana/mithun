@@ -29,7 +29,7 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">
-                            <form class="form-horizontal" action="{{url('blog-update',[$Blog->id])}}" method="post">
+                            <form class="form-horizontal" action="{{url('admin/blog-update',[$Blog->id])}}" method="post">
                                 @csrf
                                 <div class="col-sm-12">
                                     <div class="col-sm-8">

@@ -27,19 +27,19 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li>
-          <a href="{{url('blog-manage')}}">
+          <a href="{{url('admin/blog-manage')}}">
             <i class="fa fa-youtube-play"></i><span>Blog Tutorial</span>
           </a>
         </li>
 
         <li>
-          <a href="{{url('portfolio-manage')}}">
+          <a href="{{url('admin/portfolio-manage')}}">
             <i class="fa fa-youtube-play"></i><span>PORTFOLIO</span>
           </a>
         </li>
 
         <li>
-          <a href="{{url('service-manage')}}">
+          <a href="{{url('admin/service-manage')}}">
             <i class="fa fa-list"></i>
             <span>Service</span>
           </a>
@@ -58,37 +58,37 @@
           </a>
         </li>
         <li>
-          <a href="{{url('manage-expertness')}}">
+          <a href="{{url('admin/manage-expertness')}}">
             <i class="fa fa-chain-broken"></i>
             <span>Expertness</span>
           </a>
         </li>
         <li>
-          <a href="{{url('manage-qualification')}}">
+          <a href="{{url('admin/manage-qualification')}}">
             <i class="fa fa-graduation-cap"></i>
             <span>Qualification</span>
           </a>
         </li>
         <li>
-          <a href="{{url('manage-comment')}}">
+          <a href="{{url('admin/manage-comment')}}">
             <i class="fa fa-commenting"></i>
             <span>Comment</span>
           </a>
         </li>
         <li>
-          <a href="{{url('manage-privacy-policy')}}">
+          <a href="{{url('admin/manage-privacy-policy')}}">
             <i class="fa fa-info"></i>
             <span>Privacy Policy</span>
           </a>
         </li>
         <li>
-          <a href="{{url('manage-gallery')}}">
+          <a href="{{url('admin/manage-gallery')}}">
             <i class="fa fa-file-image-o"></i>
             <span>Gallery</span>
           </a>
         </li>
         <li>
-          <a href="{{url('setting')}}">
+          <a href="{{url('admin/setting')}}">
             <i class="fa fa-gear fa-spin" style="font-size:20px"></i>
             <span>Setting</span>
           </a>

@@ -1,2 +1,18 @@
-User-agent: *
-Disallow:
+User-Agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /public/
+Disallow: /admin/get-ip-details
+Disallow: /admin/expertnesslist
+Disallow: /admin-panel
+Disallow: /category
+Disallow: /categorysave
+Disallow: /getall-category
+Disallow: /update-category
+Disallow: /delete-category
+
+Disallow: /portfolio-category
+Disallow: /portfolio-category-save
+Disallow: /getall-portfolio-category/
+Disallow: /update-portfolio-category

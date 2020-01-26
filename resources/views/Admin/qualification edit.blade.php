@@ -30,7 +30,7 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">
-                            <form method="post" action="{{url('update-qualification',[$Qualification->id])}}">
+                            <form method="post" action="{{url('admin/update-qualification',[$Qualification->id])}}">
                                 @csrf
                                 <div class="form-group">
                                     <label for="Degree">Name of Degree:</label>

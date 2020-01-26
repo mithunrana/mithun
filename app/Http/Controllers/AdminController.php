@@ -32,13 +32,13 @@ class AdminController extends Controller
             $User->name = $request->name;
             $User->email = $request->email;
             $User->save();
-            return redirect()->to('admin-panel')->with('message','Information Update Successfully');
+            return redirect()->to('admin/admin-panel')->with('message','Information Update Successfully');
         }else{
             $User->password = Hash::make($request->password);
             $User->name = $request->name;
             $User->email = $request->email;
             $User->save();
-            return redirect()->to('admin-panel')->with('message','Information Update Successfully');
+            return redirect()->to('admin/admin-panel')->with('message','Information Update Successfully');
         }
     }
 

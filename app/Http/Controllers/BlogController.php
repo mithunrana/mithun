@@ -8,7 +8,6 @@ use App\Category;
 class BlogController extends Controller
 {
 
-
     public function index(){
         $PopularPosts = Blog::where('Active_Status',1)->orderBy('id', 'ASC')->skip(0)->take(5)->get();
         $Blogs =  Blog::where('Active_Status',1)->orderBy('id', 'ASC')->get();
@@ -66,7 +65,7 @@ class BlogController extends Controller
             'featured_image' => $request->featured_image,
             'blog_poster' => $userid
         ]);
-        return redirect()->to('blog-manage')->with('message','Blog Added Successfully');
+        return redirect()->to('admin/blog-manage')->with('message','Blog Added Successfully');
     }
 
 
@@ -96,14 +95,14 @@ class BlogController extends Controller
         $Blog->imageAltText = request('imageAltText');
         $Blog->imageTitleText = request('imageTitleText');
         $Blog->save();
-        return redirect()->to('blog-manage')->with('message','Blog Update Successfully');
+        return redirect()->to('admin/blog-manage')->with('message','Blog Update Successfully');
     }
 
 
     public function delete($id){
         $Blog = Blog::find($id);
         $Blog->delete();
-        return redirect()->to('blog-manage')->with('message','Blog delete Successfully');
+        return redirect()->to('admin/blog-manage')->with('message','Blog delete Successfully');
     }
 
 
@@ -114,18 +113,18 @@ class BlogController extends Controller
             $Portfolio =  Blog::findOrFail($portfolioId);
             $CategoryId = $Portfolio->category;
             if($CategoryId==0){
-                return redirect()->to('blog-manage')->with('message','Please Set Before Active Category');
+                return redirect()->to('admin/blog-manage')->with('message','Please Set Before Active Category');
             }else{
                 $Portfolio =  Blog::findOrFail($portfolioId);
                 $Portfolio->Active_Status = '1';
                 $Portfolio->save();
-                return redirect()->to('blog-manage')->with('message','Portfolio Active Successfully');
+                return redirect()->to('admin/blog-manage')->with('message','Portfolio Active Successfully');
             }
         }else{
             $Portfolio =  Blog::findOrFail($portfolioId);
             $Portfolio->Active_Status = '0';
             $Portfolio->save();
-            return redirect()->to('blog-manage')->with('message','Portfolio Deactive Successfully');
+            return redirect()->to('admin/blog-manage')->with('message','Portfolio Deactive Successfully');
         }
     }
 

@@ -20,7 +20,7 @@ class ExpertnessWithQualification extends Controller
             'Percentage' => 'numeric',
         ]);
         Expertness::Create($request->all());
-        return redirect()->to('manage-expertness')->with('message','Expertness Successfully Added');
+        return redirect()->to('admin/manage-expertness')->with('message','Expertness Successfully Added');
     }
 
     public function manageExpertness(){
@@ -44,13 +44,13 @@ class ExpertnessWithQualification extends Controller
         $Expertness->Name = request('Name');
         $Expertness->Percentage = request('Percentage');
         $Expertness->save();
-        return redirect()->to('manage-expertness')->with('message','Expertness Successfully Update');
+        return redirect()->to('admin/manage-expertness')->with('message','Expertness Successfully Update');
     }
 
     public function deleteExpertness($id){
         $Qualification = Expertness::find($id);
         $Qualification->delete();
-        return redirect()->to('manage-expertness')->with('message','Expertness delete Successfully');
+        return redirect()->to('admin/manage-expertness')->with('message','Expertness delete Successfully');
     }
 
     public function activeDeactiveExpertness($status,$expertnessId){
@@ -60,12 +60,12 @@ class ExpertnessWithQualification extends Controller
             $Portfolio =  Expertness::findOrFail($portfolioId);
             $Portfolio->Active_Status = '1';
             $Portfolio->save();
-            return redirect()->to('manage-expertness')->with('message','Expertness Active Successfully');
+            return redirect()->to('admin/manage-expertness')->with('message','Expertness Active Successfully');
         }else{
             $Portfolio =  Expertness::findOrFail($portfolioId);
             $Portfolio->Active_Status = '0';
             $Portfolio->save();
-            return redirect()->to('manage-expertness')->with('message','Expertness Deactive Successfully');
+            return redirect()->to('admin/manage-expertness')->with('message','Expertness Deactive Successfully');
         }
     }
 
@@ -88,7 +88,7 @@ class ExpertnessWithQualification extends Controller
         $Qualification->Session = request('Session');
         $Qualification->Result = request('Result');
         $Qualification->save();
-        return redirect()->to('manage-qualification')->with('message','Qualification Update Successfully');
+        return redirect()->to('admin/manage-qualification')->with('message','Qualification Update Successfully');
     }
 
     public function manageQualification(){
@@ -98,13 +98,13 @@ class ExpertnessWithQualification extends Controller
 
     public function storeQualification(Request $request){
         Qualification::Create($request->all());
-        return redirect()->to('manage-qualification')->with('message','Qualification Successfully Added');
+        return redirect()->to('admin/manage-qualification')->with('message','Qualification Successfully Added');
     }
 
     public function deleteQualification($id){
         $Qualification = Qualification::find($id);
         $Qualification->delete();
-        return redirect()->to('manage-qualification')->with('message','Qualification delete Successfully');
+        return redirect()->to('admin/manage-qualification')->with('message','Qualification delete Successfully');
     }
 
     public function activeDeactiveQualification($status,$qualificationId){
@@ -114,12 +114,12 @@ class ExpertnessWithQualification extends Controller
             $Portfolio =  Qualification::findOrFail($portfolioId);
             $Portfolio->Active_Status = '1';
             $Portfolio->save();
-            return redirect()->to('manage-qualification')->with('message','Qualification Active Successfully');
+            return redirect()->to('admin/manage-qualification')->with('message','Qualification Active Successfully');
         }else{
             $Portfolio =  Qualification::findOrFail($portfolioId);
             $Portfolio->Active_Status = '0';
             $Portfolio->save();
-            return redirect()->to('manage-qualification')->with('message','Qualification Deactive Successfully');
+            return redirect()->to('admin/manage-qualification')->with('message','Qualification Deactive Successfully');
         }
     }
 

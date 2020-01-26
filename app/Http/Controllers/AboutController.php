@@ -88,7 +88,7 @@ class AboutController extends Controller {
             $Profile->Google_Map = $request->Google_Map;
             $Profile->stackoverflow_link = $request->stackoverflow_link;
             $Profile->save();
-            return redirect()->to('profile-update')->with('message','Profile Update Successfully');
+            return redirect()->to('admin/profile-update')->with('message','Profile Update Successfully');
         }else{
             $Profile = new  AboutProfile();
             $Profile->Name = $request->Name;
@@ -124,7 +124,7 @@ class AboutController extends Controller {
             $Profile->Google_Map = $request->Google_Map;
             $Profile->stackoverflow_link = $request->stackoverflow_link;
             $Profile->save();
-            return redirect()->to('profile-update')->with('message','Profile Save Successfully');
+            return redirect()->to('admin/profile-update')->with('message','Profile Save Successfully');
         }
     }
 

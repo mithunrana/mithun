@@ -22,7 +22,7 @@ class CommentController extends Controller
         ]);
 
        Comment::Create($request->all());
-        return redirect()->to('manage-comment')->with('message','Comment Added Successfully');
+        return redirect()->to('admin/manage-comment')->with('message','Comment Added Successfully');
     }
 
     public function edit($id){
@@ -42,13 +42,13 @@ class CommentController extends Controller
         $Comment->Image = request('Image');
         $Comment->Comment = request('Comment');
         $Comment->save();
-        return redirect()->to('manage-comment')->with('message','Comment update Successfully');
+        return redirect()->to('admin/manage-comment')->with('message','Comment update Successfully');
     }
 
     public function delete($id){
         $Comment = Comment::find($id);
         $Comment->delete();
-        return redirect()->to('manage-comment')->with('message','Comment delete Successfully');
+        return redirect()->to('admin/manage-comment')->with('message','Comment delete Successfully');
     }
 
     public function activeDeactiveComment($status,$commentId){
@@ -58,12 +58,12 @@ class CommentController extends Controller
             $Portfolio =  Comment::findOrFail($portfolioId);
             $Portfolio->Active_Status = '1';
             $Portfolio->save();
-            return redirect()->to('manage-comment')->with('message','Comment Active Successfully');
+            return redirect()->to('admin/manage-comment')->with('message','Comment Active Successfully');
         }else{
             $Portfolio =  Comment::findOrFail($portfolioId);
             $Portfolio->Active_Status = '0';
             $Portfolio->save();
-            return redirect()->to('manage-comment')->with('message','Comment Deactive Successfully');
+            return redirect()->to('admin/manage-comment')->with('message','Comment Deactive Successfully');
         }
     }
 }

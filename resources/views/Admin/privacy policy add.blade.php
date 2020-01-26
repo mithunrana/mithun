@@ -26,7 +26,7 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">Service Add Side</div>
                         <div class="panel-body">
-                            <form class="form-horizontal" action="{{url('store-privacy-policy')}}" method="post">
+                            <form class="form-horizontal" action="{{url('admin/store-privacy-policy')}}" method="post">
                                 @csrf
                                 <div class="col-sm-12">
                                     @if($errors->has('PrivacyPolicyTitle'))

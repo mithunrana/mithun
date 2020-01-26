@@ -17,9 +17,8 @@
             </ol>
         </section>
 
-
         <section id="app" class="content">
-            <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('gallery-create')}}" class="btn btn-success pull-left">Add New +</a> <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('admin-panel')}}" class="btn btn-info pull-right"><i class="fa fa-dashboard"></i> Dashbord</a>
+            <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('admin/gallery-create')}}" class="btn btn-success pull-left">Add New +</a> <a style="margin-top:15px;margin-bottom: 15px;" href="{{url('admin/admin-panel')}}" class="btn btn-info pull-right"><i class="fa fa-dashboard"></i> Dashbord</a>
             <div class="row">
                 <div class="col-sm-12">
                     @if(Session::has('message'))
@@ -31,7 +30,7 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">
-                            <form method="POST" action="{{url('update-password')}}">
+                            <form method="POST" action="{{url('admin/update-password')}}">
                                 @csrf
                                 <div class="form-group">
                                     <label for="password">New Password</label>

@@ -25,7 +25,7 @@
             <!-- Modal -->
 
 
-            <form enctype="multipart/form-data" action="{{url('profile-cvupdate')}}" method="POST">
+            <form enctype="multipart/form-data" action="{{url('admin/profile-cvupdate')}}" method="POST">
                 @csrf
                 <div class="col-sm-12">
                     @if($errors->has('cv'))
@@ -42,7 +42,7 @@
 
             <!-- Main row -->
             <div class="row">
-                <form method="POST" action="{{url('profile-update')}}">
+                <form method="POST" action="{{url('admin/profile-update')}}">
                 @csrf
                 <input type="hidden" class="form-control" @isset($Profile->image1) value="{{$Profile->image1}}" @endisset id="image1" name="image1">
                 <input type="hidden" class="form-control" @isset($Profile->image2) value="{{$Profile->image2}}" @endisset id="image2" name="image2">

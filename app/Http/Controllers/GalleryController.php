@@ -30,7 +30,7 @@ class GalleryController extends Controller
             'imageTitleText' => $request->imageTitleText,
             'EventNameOFImage' => $request->EventNameOFImage,
         ]);
-        return redirect()->to('manage-gallery')->with('message','Image Added Successfully');
+        return redirect()->to('admin/manage-gallery')->with('message','Image Added Successfully');
     }
 
     public function manage(){
@@ -41,7 +41,7 @@ class GalleryController extends Controller
     public function delete($id){
         $Gallery = Gallery::find($id);
         $Gallery->delete();
-        return redirect()->to('manage-gallery')->with('message','Image Delete Successfully');
+        return redirect()->to('admin/manage-gallery')->with('message','Image Delete Successfully');
     }
 
     public function activeDeactive($status,$postid){
@@ -49,13 +49,13 @@ class GalleryController extends Controller
             $Gallery =  Gallery::findOrFail($postid);
             $Gallery->Active_Status = '1';
             $Gallery->save();
-            return redirect()->to('manage-gallery')->with('message','Image Active Successfully');
+            return redirect()->to('admin/manage-gallery')->with('message','Image Active Successfully');
         }
         else{
             $Gallery =  Gallery::findOrFail($postid);
             $Gallery->Active_Status = '0';
             $Gallery->save();
-            return redirect()->to('manage-gallery')->with('message','Image Deactive Successfully');
+            return redirect()->to('admin/manage-gallery')->with('message','Image Deactive Successfully');
         }
     }
 

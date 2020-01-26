@@ -30,7 +30,7 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">Panel with panel-primary class</div>
                         <div class="panel-body">
-                            <form method="post" action="{{url('store-expertness')}}">
+                            <form method="post" action="{{url('admin/store-expertness')}}">
                                 @csrf
                                 @if($errors->has('Name'))
                                     <div class="error" style="color: red">
