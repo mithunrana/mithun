@@ -70,7 +70,7 @@
                         </div>
                     @endif
 
-                    <form class="form-area contact-form text-right" action="{{url('admin.sendmail')}}" method="post">
+                    <form class="form-area contact-form text-right" action="{{url('admin/sendmail')}}" method="post">
                         @csrf
                         <div class="row">	
                             <div class="col-lg-6 form-group">

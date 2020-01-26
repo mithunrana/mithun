@@ -132,7 +132,7 @@ Route::get('/admin/active-deactive-privacy-policy/{id}/{activestaus}','PrivacyPo
 Route::get('/admin/getallimage','ImageUploadController@imagelist')->middleware(['auth']);
 Route::post('/admin/formSubmit','ImageUploadController@imageUpload')->middleware(['auth']);
 
-Route::post('/sendmail','AdminController@sendMail');
+Route::post('admin/sendmail','AdminController@sendMail');
 
 
 Route::get('/{url}','BlogController@blogByCategory');

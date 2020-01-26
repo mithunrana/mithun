@@ -59,7 +59,7 @@ class AdminController extends Controller
         Mail::to($email)->send(new ContactMail($subject,$message,$name));
         Mail::to($incomeMailAddress)->send(new IncomeingMail($subject,$message,$name,$email));
         Session::flash("success");
-        return back();
+        return redirect()->to('contact-mithun-rana');
 
     }
 
