@@ -7,6 +7,8 @@ Disallow: /admin/get-ip-details
 Disallow: /admin/expertnesslist
 Disallow: /admin-panel
 Disallow: /category
+Disallow: /formSubmit
+Disallow: /getallimage
 Disallow: /categorysave
 Disallow: /getall-category
 Disallow: /update-category
@@ -16,3 +18,4 @@ Disallow: /portfolio-category
 Disallow: /portfolio-category-save
 Disallow: /getall-portfolio-category/
 Disallow: /update-portfolio-category
+Sitemap: https://www.mithunrana.com/sitemap1.xml

@@ -20,7 +20,7 @@
                     <h6>This is me</h6>
                     <h1 style="margin-bottom:5px;">{{$about->Name}}</h1>
                     <h2 class="sub typed" style="font-size: 18px;margin-bottom:5px;text-transform: uppercase;color:#5f5f5f;height:20px;"></h2>
-                    <p>
+                    <p style="font-size:19px;">
                         {{$about->ShortBrief}}
                     </p>
                     <a style="margin:5px 0px;" href="{{asset('')}}{{$about->Discover_link}}" class="primary-btn text-uppercase">discover now</a>
@@ -67,7 +67,7 @@
                                     </a>
                                 </span>
                                 <a  href="service/{{$service->permalink}}"><h4 style="color:#ff5722;">{{$service->service_title}}</h4></a>
-                                <p style="color:black;">
+                                <p style="color:black;font-size: 19px;padding-bottom: 5px;">
                                     {{str_limit($service->MainContent,100)}}
                                 </p>
                                 </div>
@@ -183,7 +183,7 @@
                                 <img style="width:85px;"  src="/{{$Comment->images->imageurl}}" alt="">
                             </div>
                             <div class="desc">
-                                <p>
+                                <p style="font-size: 18px;">
                                     {{$Comment->Comment}}
                                 </p>
                                 <h4>{{$Comment->Name}}</h4>

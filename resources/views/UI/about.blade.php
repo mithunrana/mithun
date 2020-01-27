@@ -39,13 +39,13 @@
                     <div class="col-lg-5 col-md-6 home-about-right">
                         <h6>About Me</h6>
                         <h1 class="text-uppercase">{{$Profile->Name}}</h1>
-                        <p>
+                        <p style="font-size: 19px;">
                             {{$Profile->ShortBrief}}
                         </p>
                         <a href="{{asset('documents')}}/{{$Profile->Download_link}}" class="primary-btn text-uppercase" download>Download Resume</a>
                     </div>
                     <div class="col-lg-12 pt-60">
-                        {{$Profile->Details}}
+                        <div style="font-size: 19px;">{{$Profile->Details}}</div>
                         <h4 class="pt-30">Tools Expertness</h4>	
                     </div>
                 </div>

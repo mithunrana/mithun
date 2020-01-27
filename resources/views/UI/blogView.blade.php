@@ -6,7 +6,12 @@ $image = $BlogDetails->featuredimage->imageurl;
 @endphp
 
 @include('UI.inc.headersource');
-    <body>	
+    <body>
+    <!--===================== Facebook Share Api SDK START HERE=================================-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=308590786521219&autoLogAppEvents=1"></script>
+    <!--===================== Facebook Share Api SDK START HERE=================================-->
+
         @include('UI.inc.menubar');
         <!-- start banner Area -->
         <section class="relative about-banner">	
@@ -45,6 +50,18 @@ $image = $BlogDetails->featuredimage->imageurl;
                                 <div class="user-details row">
                                     <p class="user-name col-lg-12 col-md-12 col-6"><a href="#">{{$BlogDetails->aboutProfile->name}}</a> <span class="lnr lnr-user"></span></p>
                                     <p class="date col-lg-12 col-md-12 col-6"><a href="#">{{$BlogDetails->created_at->diffForHumans()}}</a> <span class="lnr lnr-calendar-full"></span></p>
+                                    <div class="fb-like"
+                                         data-href="@php echo url()->current(); @endphp"
+                                         data-layout="standard"
+                                         data-action="like"
+                                         data-size="large "
+                                         data-show-faces="true">
+                                    </div>
+                                    <div class="fb-share-button"
+                                         data-href="@php echo url()->current(); @endphp"
+                                         mobile_iframe="true"
+                                         data-layout="button_count">
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-9 col-md-9">

@@ -129,8 +129,8 @@ Route::get('/admin/delete-privacy-policy/{id}','PrivacyPolicyController@delete')
 Route::get('/admin/active-deactive-privacy-policy/{id}/{activestaus}','PrivacyPolicyController@activeDeactive')->middleware(['auth']);
 
 
-Route::get('/admin/getallimage','ImageUploadController@imagelist')->middleware(['auth']);
-Route::post('/admin/formSubmit','ImageUploadController@imageUpload')->middleware(['auth']);
+Route::get('/getallimage','ImageUploadController@imagelist')->middleware(['auth']);
+Route::post('/formSubmit','ImageUploadController@imageUpload')->middleware(['auth']);
 
 Route::post('admin/sendmail','AdminController@sendMail');
 

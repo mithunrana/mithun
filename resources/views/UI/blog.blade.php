@@ -1,5 +1,5 @@
 @php
-    $title = "Bangla Video Tutorial |  | Android Apps Development | Web Design";
+    $title = "Bangla Video Tutorial | Android Apps Development | Web Design";
     $keywords =  "bangla video tutorial, web design bangla video tutorial, web development bangla video tutorial, android apps development bangla video tutorial, seo bangla video tutorial";
     $description =  "Bangla video tutorial, web design bangla video tutorial, web development bangla video tutorial, seo bangla video tutorial, android apps development bangla video tutorial";
 @endphp

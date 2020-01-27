@@ -5,10 +5,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a215687a-b125-41dd-8599-63d499aac5f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/UI/blog by category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/blog by category.blade.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/.htaccess" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/.htaccess" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/config/config.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/config/config.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/config/database.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/config/database.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/config/routes.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/config/routes.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/controllers/Admin_Unique_Checker.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/controllers/Admin_Unique_Checker.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/controllers/Super_Admin.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/controllers/Super_Admin.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/controllers/UserController.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/controllers/UserController.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/models/Admin_Common_Model.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/models/Admin_Common_Model.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/models/UserAccountModel.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/models/UserAccountModel.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Admin Pannel.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Admin Pannel.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Blog post edit.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Blog post edit.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Brand Add and manage.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Brand Add and manage.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Discover Product Add.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Discover Product Add.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Discover Product Manage.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Discover Product Manage.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Discover Product Update.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Discover Product Update.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/End User List.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/End User List.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/End User Mail Send.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/End User Mail Send.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Manage About Us Page.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Manage About Us Page.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Manage Contact Page.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Manage Contact Page.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/PortFolio Manage.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/PortFolio Manage.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Portfolio Add.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Portfolio Add.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Portfolio Features add.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Portfolio Features add.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Portfolio UI  image add.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Portfolio UI  image add.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Portfolioedit.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Portfolioedit.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Products Add.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Products Add.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Products Category.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Products Category.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Products Edit.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Products Edit.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Products Manage.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Products Manage.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Solution Feature Add.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Solution Feature Add.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Solution Peripherals Product Add.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Solution Peripherals Product Add.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Solution Video Capture Product Add.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Solution Video Capture Product Add.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Solution Video Recording Product add.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Solution Video Recording Product add.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Solution edit.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Solution edit.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Solution manage.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Solution manage.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Solutions Add.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Solutions Add.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Tutorial Add.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Tutorial Add.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Tutorial Edit.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Tutorial Edit.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Tutorial Manage.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/Tutorial Manage.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/client edit.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/client edit.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/client list.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/client list.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/user add.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/user add.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/user edit.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/user edit.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/user list.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/user list.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/user profile.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Admin Panel/user profile.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Products View.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/Products View.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/contact-us.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/contact-us.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/portfolio main.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/portfolio main.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/product-by-search.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/product-by-search.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/user-login.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/user-login.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/user-signup.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/user-signup.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/application/views/user-verify.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/application/views/user-verify.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/inc/Admin Panel/sidebar.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/inc/Admin Panel/sidebar.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/inc/Menu-Bar.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/inc/Menu-Bar.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/inc/Source-File.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/inc/Source-File.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/inc/discoverproducts.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/inc/discoverproducts.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/inc/products.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/inc/products.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/Soshinebd final project/inc/solutions.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/Soshinebd final project/inc/solutions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mithun.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mithun.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/about.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/UI/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/blog.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/UI/blogView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/blogView.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/inc/footer-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/inc/footer-bar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/inc/headersource.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/inc/headersource.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/UI/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/privacy-policy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/privacy-policy.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Products View.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Products View.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../soshinebd/inc/Admin Panel/footer-source-file.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/inc/Admin Panel/footer-source-file.php" afterDir="false" />
@@ -30,17 +96,7 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1949">
-              <caret line="134" column="18" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -88,16 +144,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/Desktop/Soshinebd final project" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/UI/css/main.css" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/inc/adminHeader.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/blog update.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/blog-add.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Admin/blog-manage.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Admin/comment add.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Admin/comment manage.blade.php" />
@@ -135,15 +186,20 @@
         <option value="$PROJECT_DIR$/resources/js/components/portfolio category component.vue" />
         <option value="$PROJECT_DIR$/resources/views/Admin/inc/adminSideBar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/UI/inc/menubar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/UI/inc/headersource.blade.php" />
-        <option value="$PROJECT_DIR$/public/robots.txt" />
         <option value="$PROJECT_DIR$/resources/views/UI/contact.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/UI/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/UI/blogView.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/UI/blog by category.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/UI/blog.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/inc/footer-bar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/index.blade.php" />
+        <option value="$PROJECT_DIR$/../hikvision.com.bd/application/config/database.php" />
+        <option value="$PROJECT_DIR$/../hikvision.com.bd/inc/footer_file.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/about.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/blogView.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/UI/inc/headersource.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/public/robots.txt" />
+        <option value="$PROJECT_DIR$/resources/views/UI/privacy-policy.blade.php" />
       </list>
     </option>
   </component>
@@ -242,10 +298,10 @@
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-16" />
-    <option name="y" value="225" />
-    <option name="width" value="1400" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="119" />
+    <option name="y" value="93" />
+    <option name="width" value="926" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -254,65 +310,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mithun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mithun" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="Soshinebd final project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jobportal" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Soshinebd final project" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -391,17 +406,17 @@
       <workItem from="1579951504055" duration="4434000" />
       <workItem from="1580016901334" duration="13953000" />
       <workItem from="1580037235552" duration="2334000" />
+      <workItem from="1580104284327" duration="11963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="361608000" />
+    <option name="totallyTimeSpent" value="373571000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.19669509" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.16577825" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50080776" side_tool="true" weight="0.17270789" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -416,7 +431,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23618636" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.15817985" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -510,76 +525,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/expertness edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/expertness manage.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="56" column="66" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/gallery-create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/main admin panel.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1169">
-          <caret line="116" column="46" selection-start-line="116" selection-start-column="46" selection-end-line="116" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/portfolio add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1581">
-          <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/portfolio-update.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1462">
-          <caret line="32" column="79" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/portfoliomanage.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684">
-          <caret line="21" column="213" selection-start-line="21" selection-start-column="213" selection-end-line="21" selection-end-column="213" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/privacy policy add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="28" column="79" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/privacy policy edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="28" column="79" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/privacy policy manage.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="56" column="66" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Admin/profile.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -796,23 +741,6 @@
     <entry file="file://$PROJECT_DIR$/robots.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/inc/headersource.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="80" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/robots.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/about.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -827,13 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/blog.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="99" column="57" selection-start-line="99" selection-start-column="57" selection-end-line="99" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/UI/blog by category.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
@@ -841,24 +762,189 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/blogView.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/inc/footer-bar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="88" column="61" selection-start-line="88" selection-start-column="61" selection-end-line="88" selection-end-column="61" />
+        <state relative-caret-position="-254">
+          <caret line="6" column="62" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/blog.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/UI/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="217" column="36" selection-start-line="217" selection-start-column="31" selection-end-line="217" selection-end-column="36" />
+        <state relative-caret-position="425">
+          <caret line="185" column="58" selection-start-line="185" selection-start-column="58" selection-end-line="185" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#4;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hikvision.com.bd/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hikvision.com.bd/.htaccess">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hikvision.com.bd/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hikvision.com.bd/inc/footer_file.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="75" column="101" selection-start-line="75" selection-start-column="101" selection-end-line="75" selection-end-column="101" />
+          <folding>
+            <element signature="n#style#0;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#p#1;n#div#0;n#div#0;n#div#1;n#div#0;n#footer#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/robots.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1949">
-          <caret line="134" column="18" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
+        <state relative-caret-position="508">
+          <caret line="132" column="24" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/blogView.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/inc/headersource.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/privacy-policy.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/UI/about.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Soshinebd final project/application/views/contact-us.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1071" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Soshinebd final project/application/controllers/Super_Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="455" column="29" selection-start-line="455" selection-start-column="29" selection-end-line="455" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Soshinebd final project/application/controllers/PhpMailSend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#7;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#7;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Soshinebd final project/application/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="106" column="37" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#7;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#7;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#7;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#7;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#8;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#8;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#9;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#9;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#10;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#10;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

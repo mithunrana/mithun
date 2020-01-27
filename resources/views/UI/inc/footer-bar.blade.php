@@ -4,7 +4,7 @@
                 <div class="col-lg-5 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
                         <h4>About Me</h4>
-                        <p style="color:white;">
+                        <p style="color:white;font-size: 19px;">
                             I’m Mithun Rana, Fullstack web developer, web design and development i have 3year plus experience.
                             more i have some skill in Graphics Design, search engine optimization(SEO, Digital Marketing, and something video editing
                         </p>
