@@ -50,6 +50,12 @@ $image = $BlogDetails->featuredimage->imageurl;
                                 <div class="user-details row">
                                     <p class="user-name col-lg-12 col-md-12 col-6"><a href="#">{{$BlogDetails->aboutProfile->name}}</a> <span class="lnr lnr-user"></span></p>
                                     <p class="date col-lg-12 col-md-12 col-6"><a href="#">{{$BlogDetails->created_at->diffForHumans()}}</a> <span class="lnr lnr-calendar-full"></span></p>
+
+                                    <div style="margin-bottom: 10px;" class="youtube-subscribe-button">
+                                        <script src="https://apis.google.com/js/platform.js"></script>
+                                        <div class="g-ytsubscribe" data-channelid="UCdS11xOc5ymsmBjGM5lN2qA" data-layout="full" data-count="hidden"></div>
+                                    </div>
+
                                     <div class="fb-like"
                                          data-href="@php echo url()->current(); @endphp"
                                          data-layout="standard"

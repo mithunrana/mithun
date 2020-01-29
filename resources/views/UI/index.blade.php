@@ -20,9 +20,14 @@
                     <h6>This is me</h6>
                     <h1 style="margin-bottom:5px;">{{$about->Name}}</h1>
                     <h2 class="sub typed" style="font-size: 18px;margin-bottom:5px;text-transform: uppercase;color:#5f5f5f;height:20px;"></h2>
-                    <p style="font-size:19px;">
+                    <p style="font-size:20px;font-family:Arial,sans-serif;line-height: 1.4em;">
                         {{$about->ShortBrief}}
                     </p>
+
+
+                    <script src="https://apis.google.com/js/platform.js"></script>
+                    <div class="g-ytsubscribe" data-channelid="UCdS11xOc5ymsmBjGM5lN2qA" data-layout="full" data-count="default"></div>
+
                     <a style="margin:5px 0px;" href="{{asset('')}}{{$about->Discover_link}}" class="primary-btn text-uppercase">discover now</a>
                     <a style="margin:5px 0px;" href="{{asset('documents')}}/{{$about->Download_link}}" class="primary-btn text-uppercase" download>Download Resume</a>
                     <ul style="margin-top: 10px;">
@@ -62,11 +67,11 @@
                         <div style="background-color:white;">
                                 <div class="single-services">
                                 <span style="background-color:#FF5722;color: white;padding: 15px;"  class="lnr">
-                                    <a href="service/{{$service->permalink}}">
+                                    <a href="{{asset('')}}service/{{$service->permalink}}">
                                         <img src="{{asset('')}}{{$service->icon->imageurl}}" style="width:35px;height:35px;margin-bottom: 10px;" alt="{{$service->FeaturedImageAltText}}" title="{{$service->FeaturedImageTitleText}}">
                                     </a>
                                 </span>
-                                <a  href="service/{{$service->permalink}}"><h4 style="color:#ff5722;">{{$service->service_title}}</h4></a>
+                                <a  href="{{asset('')}}service/{{$service->permalink}}"><h4 style="color:#ff5722;">{{$service->service_title}}</h4></a>
                                 <p style="color:black;font-size: 19px;padding-bottom: 5px;">
                                     {{str_limit($service->MainContent,100)}}
                                 </p>
