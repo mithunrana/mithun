@@ -42,6 +42,11 @@
                     <img style="margin-top: 10px;margin-bottom: 10px;" class="img-fluid" @isset($about->profileImage1) src="{{asset('')}}{{$about->profileImage1->imageurl}}" @endisset src="/images/default-image.png" title="{{$about->imageTitleText}}" alt="{{$about->imageAltText}}">
                 </div>
             </div>
+            <div class="row">
+               <div style="font-size:20px;font-family:Arial,sans-serif;line-height: 1.4em;" class="col-sm-12">
+                   {{$about->Details}}
+               </div>
+            </div>
         </div>					
     </section>
     <!-- End banner Area -->
@@ -57,7 +62,7 @@
                 <div class="row d-flex justify-content-center">
                     <div class="menu-content  col-lg-7">
                         <div class="title text-center">
-                            <h1 style="color:#FF5722" class="mb-10">My Offered Services</h1>
+                            <h2 style="color:#FF5722" class="mb-10">My Offered Services</h2>
                         </div>
                     </div>
                 </div>						
@@ -122,7 +127,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="menu-content col-lg-8">
                     <div  class="title text-center">
-                        <h1 style="color:#FF5722;" class="mb-10">My Latest Featured Projects</h1>
+                        <h2 style="color:#FF5722;" class="mb-10">My Latest Featured Projects</h2>
                         <p style="color:#FF5722;">Here is my latest some compleated project.</p>
                     </div>
                 </div>
@@ -175,7 +180,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-70 col-lg-8">
                     <div class="title text-center">
-                        <h1 class="mb-10">Client’s Feedback About Me</h1>
+                        <h2 class="mb-10">Client’s Feedback About Me</h2>
                         <p>There are some testimonials from my clients i have got..</p>
                     </div>
                 </div>
@@ -211,7 +216,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 pb-30 header-text">
-                    <h1 style="color:#FF5722">Latest posts from My blog</h1>
+                    <h2 style="color:#FF5722">Latest posts from My blog</h2>
                 </div>
             </div>
             <div class="row">
