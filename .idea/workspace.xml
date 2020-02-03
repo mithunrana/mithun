@@ -5,65 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a215687a-b125-41dd-8599-63d499aac5f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/UI/blogView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/blogView.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/UI/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/controllers/Admin_Unique_Checker.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/controllers/Admin_Unique_Checker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/controllers/Super_Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/controllers/Super_Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/models/Admin_Common_Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/models/Admin_Common_Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/models/UserAccountModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/models/UserAccountModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Admin Pannel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Admin Pannel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Blog post edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Blog post edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Brand Add and manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Brand Add and manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Discover Product Add.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Discover Product Add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Discover Product Manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Discover Product Manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Discover Product Update.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Discover Product Update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/End User List.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/End User List.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/End User Mail Send.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/End User Mail Send.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Manage About Us Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Manage About Us Page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Manage Contact Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Manage Contact Page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/PortFolio Manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/PortFolio Manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Portfolio Add.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Portfolio Add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Portfolio Features add.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Portfolio Features add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Portfolio UI  image add.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Portfolio UI  image add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Portfolioedit.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Portfolioedit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Add.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Products Manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution Feature Add.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution Feature Add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution Peripherals Product Add.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution Peripherals Product Add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution Video Capture Product Add.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution Video Capture Product Add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution Video Recording Product add.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution Video Recording Product add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solution manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solutions Add.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Solutions Add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Tutorial Add.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Tutorial Add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Tutorial Edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Tutorial Edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Tutorial Manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/Tutorial Manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/client edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/client edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/client list.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/client list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/user add.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/user add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/user edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/user edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/user list.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/user list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/user profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Admin Panel/user profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/Products View.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/Products View.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/contact-us.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/contact-us.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/portfolio main.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/portfolio main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/product-by-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/product-by-search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/user-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/user-login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/user-signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/user-signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/application/views/user-verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/application/views/user-verify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/inc/Admin Panel/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/inc/Admin Panel/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/inc/Menu-Bar.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/inc/Menu-Bar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/inc/Source-File.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/inc/Source-File.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/inc/discoverproducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/inc/discoverproducts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/inc/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/inc/products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/inc/solutions.php" beforeDir="false" afterPath="$PROJECT_DIR$/../soshinebd/inc/solutions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soshinebd/soshinebd.sql" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,9 +31,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>useraccountmode</find>
-      <find>useraccountmodel</find>
-      <find>login</find>
       <find>userDetails</find>
       <find>useremail</find>
       <find>endUserList</find>
@@ -119,6 +58,9 @@
       <find>.widget-wrap</find>
       <find>sidebar-widgets</find>
       <find>.single-sidebar-widget</find>
+      <find>soshinebd</find>
+      <find>getCategoryIdByCategoryName</find>
+      <find>relatedTutorialSelect</find>
     </findStrings>
     <replaceStrings>
       <replace>{{asset('UI')}}</replace>
@@ -126,15 +68,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../soshinebd" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/Admin/expertness manage.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/gallery-create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/main admin panel.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/portfolio add.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Admin/portfolio-update.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Admin/portfoliomanage.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Admin/privacy policy add.blade.php" />
@@ -182,6 +120,10 @@
         <option value="$PROJECT_DIR$/../soshinebd/application/views/Products View.php" />
         <option value="$PROJECT_DIR$/resources/views/UI/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/UI/blogView.blade.php" />
+        <option value="$PROJECT_DIR$/../soshinebd/inc/Menu-Bar.php" />
+        <option value="$PROJECT_DIR$/../soshinebd/inc/footer.php" />
+        <option value="$PROJECT_DIR$/../soshinebd/application/models/Tutorial_Select_Model.php" />
+        <option value="$PROJECT_DIR$/../soshinebd/inc/Tutorial Main/TutorialListByCategory.php" />
       </list>
     </option>
   </component>
@@ -280,7 +222,7 @@
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="119" />
     <option name="y" value="93" />
     <option name="width" value="926" />
@@ -299,7 +241,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../soshinebd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../megatrading" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -382,17 +324,18 @@
       <workItem from="1580188493038" duration="1951000" />
       <workItem from="1580192998949" duration="1301000" />
       <workItem from="1580213290671" duration="932000" />
-      <workItem from="1580275045991" duration="3254000" />
+      <workItem from="1580275045991" duration="5843000" />
+      <workItem from="1580369129813" duration="846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="381009000" />
+    <option name="totallyTimeSpent" value="384444000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.17217484" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.17377399" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50080776" side_tool="true" weight="0.17270789" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -501,55 +444,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AboutController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="90" column="41" selection-start-line="90" selection-start-column="41" selection-end-line="90" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CommentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ExpertnessWithQualification.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="121" column="41" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GalleryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -763,66 +657,6 @@
     <entry file="file://$USER_HOME$/Desktop/Soshinebd final project/application/controllers/Super_Admin.php" />
     <entry file="file://$USER_HOME$/Desktop/Soshinebd final project/application/controllers/PhpMailSend.php" />
     <entry file="file://$USER_HOME$/Desktop/Soshinebd final project/application/controllers/UserController.php" />
-    <entry file="file://$PROJECT_DIR$/../soshinebd/application/controllers/Super_Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9554">
-          <caret line="404" column="38" selection-start-line="404" selection-start-column="38" selection-end-line="404" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../soshinebd/application/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="115" column="46" lean-forward="true" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#7;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#7;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#7;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#7;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#8;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#8;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#9;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#9;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#10;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#10;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../soshinebd/application/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -874,6 +708,96 @@
           <caret line="54" column="102" selection-start-line="54" selection-start-column="102" selection-end-line="54" selection-end-column="102" />
           <folding>
             <element signature="e#2897#2937#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../soshinebd/inc/Menu-Bar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="180" lean-forward="true" selection-start-line="12" selection-start-column="180" selection-end-line="12" selection-end-column="180" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../soshinebd/application/controllers/User_Products_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../soshinebd/inc/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="98" column="30" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#p#0;n#div#2;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#p#0;n#div#2;n#footer#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../soshinebd/application/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="115" column="46" lean-forward="true" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../soshinebd/application/controllers/Super_Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9366">
+          <caret line="404" column="38" selection-start-line="404" selection-start-column="38" selection-end-line="404" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../soshinebd/application/controllers/Tutorial.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="116" column="55" selection-start-line="116" selection-start-column="55" selection-end-line="116" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../soshinebd/application/models/Tutorial_Select_Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="54" column="79" selection-start-line="54" selection-start-column="79" selection-end-line="54" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../soshinebd/application/views/TutorialListByCategory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-478">
+          <caret line="22" column="83" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../soshinebd/inc/Tutorial Main/TutorialListByCategory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

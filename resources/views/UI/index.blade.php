@@ -93,19 +93,19 @@
         <div class="container">				
             <div class="row">
                 <div class="col-lg-3 col-md-6 single-fact">
-                    <h1 class="counter">{{$about->CompleateProject}}</h1>
+                    <h2 style="color:white;" class="counter">{{$about->CompleateProject}}</h2>
                     <p>Compleated Project</p>
                 </div>
                 <div class="col-lg-3 col-md-6 single-fact">
-                    <h1 class="counter">{{$about->HappyClient}}</h1>
+                    <h2 style="color:white;" class="counter">{{$about->HappyClient}}</h2>
                     <p>Happy Client</p>
                 </div>
                 <div class="col-lg-3 col-md-6 single-fact">
-                    <h1 class="counter">{{$about->Experience}}</h1>
+                    <h2 style="color:white;" class="counter">{{$about->Experience}}</h2>
                     <p>Experience Of Year</p>
                 </div>	
                 <div class="col-lg-3 col-md-6 single-fact">
-                    <h1 class="counter">{{$about->TotalSkillOfWork}}</h1>
+                    <h2 style="color:white;" class="counter">{{$about->TotalSkillOfWork}}</h2>
                     <p>Total Skill Of Work</p>
                 </div>												
             </div>
