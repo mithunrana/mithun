@@ -21,7 +21,7 @@
                     <h1 style="margin-bottom:5px;">{{$about->Name}}</h1>
                     <h2 class="sub typed" style="font-size: 18px;margin-bottom:5px;text-transform: uppercase;color:#5f5f5f;height:20px;"></h2>
                     <p style="font-size:20px;font-family:Arial,sans-serif;line-height: 1.4em;">
-                        {{$about->ShortBrief}}
+                        {!!html_entity_decode($about->ShortBrief)!!}
                     </p>
 
 
@@ -44,7 +44,7 @@
             </div>
             <div class="row">
                <div style="font-size:20px;font-family:Arial,sans-serif;line-height: 1.4em;" class="col-sm-12">
-                   {{$about->Details}}
+                   {!!html_entity_decode($about->Details)!!}
                </div>
             </div>
         </div>					
