@@ -14,25 +14,25 @@ $image = $BlogDetails->featuredimage->imageurl;
 
         @include('UI.inc.menubar');
         <!-- start banner Area -->
-        <section class="relative about-banner">	
+        <section class="relative about-banner">
             <div class="overlay overlay-bg"></div>
-            <div class="container">				
+            <div class="container">
                 <div class="row d-flex align-items-center justify-content-center">
                     <div class="about-content col-lg-12">
                         <h1 style="font-size:32px" class="text-white">
                             {{$BlogDetails->blog_title}}
-                        </h1>	
+                        </h1>
                         <p class="text-white link-nav"><a href="{{asset('')}}">Home </a>
                             <span class="lnr lnr-arrow-right"></span>
                             <a href="{{url('bangla-video-tutorial')}}">Tutorial</a>
                             <span class="lnr lnr-arrow-right"></span>
                             <a href="{{$BlogDetails->permalink}}">{{$BlogDetails->blog_title}}</a>
                         </p>
-                    </div>	
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- End banner Area -->					  
+        <!-- End banner Area -->
 
         <!-- Start post-content Area -->
         <section class="post-content-area single-post-area">
@@ -127,7 +127,7 @@ $image = $BlogDetails->featuredimage->imageurl;
                         </div>
                     </div>
                 </div>
-            </div>	
+            </div>
         </section>
         <!-- End post-content Area -->
 

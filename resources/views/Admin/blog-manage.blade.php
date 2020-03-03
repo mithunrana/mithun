@@ -93,6 +93,5 @@
     $(document).ready(function() {
         $('.BlogTable').DataTable();
     });
-
 </script>
 @include('Admin.inc.footersource');
